@@ -749,10 +749,17 @@
             function launchMinecraft(level) {
                 if (!selectedEdition) return;
                 if (launchTimer) clearTimeout(launchTimer);
-                infoBox.textContent = 'Launching Minecraft';
+                infoBox.textContent = 'Opening Minecraft ' + selectedEdition + ' · ' + level;
                 infoBox.className = 'dynamic-box active-minecraft';
-                // Destination pages will be connected when they are created.
-                // Keep the launch status visible instead of sending visitors to a broken link.
+
+                // Open the local Beginner page for Minecraft Java Edition.
+                if (selectedEdition === 'Java' && level === 'Beginner') {
+                    launchTimer = setTimeout(() => {
+                        window.location.href = './coreminecraft.html';
+                    }, 300);
+                    return;
+                }
+
                 launchTimer = setTimeout(() => {
                     infoBox.textContent = selectedEdition + ' · ' + level + ' selected';
                     launchTimer = null;

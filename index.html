@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CoreGG is a gaming hub featuring Minecraft Java Edition and Bedrock Edition, alongside other game experiences.">
+    <meta name="theme-color" content="#080812">
+    <meta name="robots" content="index,follow">
     <title>CoreGG - Gaming Hub</title>
     <style>
         :root {
@@ -340,6 +343,89 @@
         }
 
 
+        /* Minecraft edition picker: compact green split options that leave the wheel artwork intact. */
+        .wheel-wrapper {
+            transition: transform 0.38s cubic-bezier(0.2, 0.8, 0.2, 1);
+            transform-origin: center;
+        }
+
+        .wheel-container.minecraft-menu-open .wheel-wrapper {
+            transform: scale(0.88);
+        }
+
+        .picker-panel {
+            width: min(78vw, 360px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            margin-top: -16px;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transform: translateY(-8px) scale(0.97);
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 0.24s ease, transform 0.28s ease, visibility 0.28s, max-height 0.3s ease;
+            position: relative;
+            z-index: 4;
+        }
+
+        .picker-panel.is-open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transform: translateY(0) scale(1);
+            max-height: 140px;
+        }
+
+        .picker-heading {
+            color: #baffba;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 0 0 12px rgba(50, 205, 50, 0.3);
+        }
+
+        .picker-options {
+            display: flex;
+            width: 100%;
+            gap: 8px;
+        }
+
+        .edition-option {
+            flex: 1;
+            min-width: 0;
+            min-height: 46px;
+            border: 1px solid rgba(50, 205, 50, 0.7);
+            border-radius: 10px;
+            color: #d9ffd9;
+            background: linear-gradient(145deg, rgba(14, 46, 22, 0.96), rgba(5, 15, 10, 0.96));
+            box-shadow: inset 0 0 12px rgba(50, 205, 50, 0.08), 0 0 12px rgba(50, 205, 50, 0.08);
+            font: inherit;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            touch-action: manipulation;
+            transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+        }
+
+        .edition-option:hover,
+        .edition-option:focus-visible {
+            color: #fff;
+            border-color: #32CD32;
+            background: rgba(30, 100, 40, 0.92);
+            box-shadow: 0 0 18px rgba(50, 205, 50, 0.25);
+            transform: translateY(-2px);
+            outline: none;
+        }
+
+        .edition-option:active { transform: scale(0.98); }
+
         /* Responsive polish: preserve the neon motion while adapting to touch screens. */
         #genshin-link {
             cursor: pointer;
@@ -429,6 +515,17 @@
                 flex-shrink: 0;
             }
 
+            .picker-panel { width: min(84vw, 320px); margin-top: -18px; gap: 7px; }
+            .picker-heading { font-size: 9px; letter-spacing: 2px; }
+            .picker-options { gap: 7px; }
+
+            .edition-option {
+                min-height: 44px;
+                font-size: 10px;
+                letter-spacing: 1.2px;
+                padding: 8px 4px;
+            }
+
             .dynamic-box {
                 width: min(82vw, 300px);
                 min-width: 0;
@@ -452,6 +549,8 @@
             .header-logo { font-size: 15px; letter-spacing: 3px; }
             .wheel-wrapper { width: min(86vw, 46vh); }
             .dynamic-box { letter-spacing: 2px; }
+            .picker-panel { width: min(88vw, 320px); }
+            .edition-option { font-size: 9px; letter-spacing: 0.8px; }
         }
 
         @media (max-height: 650px) and (min-width: 701px) {
@@ -544,6 +643,22 @@
                 </svg>
             </div>
 
+            <section class="picker-panel" id="edition-menu" role="group" aria-label="Choose Minecraft edition" aria-hidden="true">
+                <div class="picker-heading">Choose your edition</div>
+                <div class="picker-options">
+                    <button class="edition-option" id="java-option" type="button">Java Edition</button>
+                    <button class="edition-option" id="bedrock-option" type="button">Bedrock Edition</button>
+                </div>
+            </section>
+
+            <section class="picker-panel" id="level-menu" role="group" aria-label="Choose experience level" aria-hidden="true">
+                <div class="picker-heading" id="level-heading">Choose your path</div>
+                <div class="picker-options">
+                    <button class="edition-option" id="beginner-option" type="button">Beginner</button>
+                    <button class="edition-option" id="professional-option" type="button">Professional</button>
+                </div>
+            </section>
+
             <div class="dynamic-box" id="info-box">System Standby</div>
         </div>
     </main>
@@ -561,8 +676,17 @@
             const bgGenshin = document.getElementById('bg-genshin');
             const bgMinecraft = document.getElementById('bg-minecraft');
             const infoBox = document.getElementById('info-box');
+            const wheelContainer = document.querySelector('.wheel-container');
+            const editionMenu = document.getElementById('edition-menu');
+            const levelMenu = document.getElementById('level-menu');
+            const levelHeading = document.getElementById('level-heading');
+            const javaOption = document.getElementById('java-option');
+            const bedrockOption = document.getElementById('bedrock-option');
+            const beginnerOption = document.getElementById('beginner-option');
+            const professionalOption = document.getElementById('professional-option');
             const defaultText = 'System Standby';
-            let resetTimer = null;
+            let selectedEdition = '';
+            let launchTimer = null;
 
             function showGame(game) {
                 backgroundLayer.classList.add('is-hovering');
@@ -571,8 +695,7 @@
                 bgGenshin.style.transform = game === 'genshin' ? 'scale(1.035)' : 'scale(1)';
                 bgMinecraft.style.transform = game === 'minecraft' ? 'scale(1.035)' : 'scale(1)';
                 infoBox.textContent = game === 'genshin' ? 'Genshin Impact' : 'Minecraft';
-                infoBox.className = 'dynamic-box ' +
-                    (game === 'genshin' ? 'active-genshin' : 'active-minecraft');
+                infoBox.className = 'dynamic-box ' + (game === 'genshin' ? 'active-genshin' : 'active-minecraft');
             }
 
             function resetBackground() {
@@ -585,54 +708,102 @@
                 infoBox.className = 'dynamic-box';
             }
 
-            // Desktop: smooth hover previews. Touch devices: tapping gives the same preview.
-            if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-                btnGenshin.addEventListener('mouseenter', () => showGame('genshin'));
-                btnMinecraft.addEventListener('mouseenter', () => showGame('minecraft'));
-                btnGenshin.addEventListener('mouseleave', resetBackground);
-                btnMinecraft.addEventListener('mouseleave', resetBackground);
+            function anyPickerOpen() {
+                return editionMenu.classList.contains('is-open') || levelMenu.classList.contains('is-open');
             }
 
-            // Native anchor navigation opens Genshin in a new tab immediately.
-            // No scripted popup or delayed redirect: this is more reliable on phones,
-            // desktop browsers, and keyboard navigation.
-            genshinLink.addEventListener('click', (event) => {
-                event.preventDefault(); // Stops the immediate link navigation
-                showGame('genshin');
-                infoBox.textContent = 'Launching Genshin Impact'; // Updates the status bar
-                
-                // Waits 1.25 seconds before redirecting in the same tab
-                setTimeout(() => {
-                    window.location.href = 'coregenshin.html';
+            function openEditionMenu() {
+                if (launchTimer) { clearTimeout(launchTimer); launchTimer = null; }
+                selectedEdition = '';
+                showGame('minecraft');
+                wheelContainer.classList.add('minecraft-menu-open');
+                editionMenu.classList.add('is-open');
+                editionMenu.setAttribute('aria-hidden', 'false');
+                levelMenu.classList.remove('is-open');
+                levelMenu.setAttribute('aria-hidden', 'true');
+            }
+
+            function closePickers(resetStatus = true) {
+                wheelContainer.classList.remove('minecraft-menu-open');
+                editionMenu.classList.remove('is-open');
+                levelMenu.classList.remove('is-open');
+                editionMenu.setAttribute('aria-hidden', 'true');
+                levelMenu.setAttribute('aria-hidden', 'true');
+                selectedEdition = '';
+                if (launchTimer) { clearTimeout(launchTimer); launchTimer = null; }
+                if (resetStatus) resetBackground();
+            }
+
+            function chooseEdition(edition) {
+                selectedEdition = edition;
+                showGame('minecraft');
+                infoBox.textContent = 'Minecraft ' + edition + ' Edition';
+                infoBox.className = 'dynamic-box active-minecraft';
+                editionMenu.classList.remove('is-open');
+                editionMenu.setAttribute('aria-hidden', 'true');
+                levelHeading.textContent = edition + ' Edition · Choose your path';
+                levelMenu.classList.add('is-open');
+                levelMenu.setAttribute('aria-hidden', 'false');
+            }
+
+            function launchMinecraft(level) {
+                if (!selectedEdition) return;
+                if (launchTimer) clearTimeout(launchTimer);
+                infoBox.textContent = 'Launching Minecraft';
+                infoBox.className = 'dynamic-box active-minecraft';
+                // Destination pages will be connected when they are created.
+                // Keep the launch status visible instead of sending visitors to a broken link.
+                launchTimer = setTimeout(() => {
+                    infoBox.textContent = selectedEdition + ' · ' + level + ' selected';
+                    launchTimer = null;
                 }, 1250);
+            }
+
+            if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+                btnGenshin.addEventListener('mouseenter', () => showGame('genshin'));
+                btnMinecraft.addEventListener('mouseenter', () => { if (!anyPickerOpen()) showGame('minecraft'); });
+                btnGenshin.addEventListener('mouseleave', () => { if (!anyPickerOpen()) resetBackground(); });
+                btnMinecraft.addEventListener('mouseleave', () => { if (!anyPickerOpen()) resetBackground(); });
+            }
+
+            genshinLink.addEventListener('click', (event) => {
+                event.preventDefault();
+                closePickers(false);
+                showGame('genshin');
+                infoBox.textContent = 'Launching Genshin Impact';
+                setTimeout(() => { window.location.href = 'coregenshin.html'; }, 1250);
             });
 
             btnMinecraft.addEventListener('click', (event) => {
                 event.preventDefault();
-                showGame('minecraft');
+                event.stopPropagation();
+                if (anyPickerOpen()) closePickers(); else openEditionMenu();
             });
 
-            // Minecraft is an SVG group rather than a native link/button.
             btnMinecraft.addEventListener('keydown', (event) => {
                 if (event.key === 'Enter' || event.key === ' ') {
                     event.preventDefault();
-                    showGame('minecraft');
+                    if (anyPickerOpen()) closePickers(); else openEditionMenu();
                 }
             });
 
-            // Restore a clean standby state when returning from another page/tab.
-            window.addEventListener('pageshow', (event) => {
-                if (resetTimer !== null) {
-                    window.clearTimeout(resetTimer);
-                    resetTimer = null;
-                }
-                resetBackground();
+            javaOption.addEventListener('click', (event) => { event.stopPropagation(); chooseEdition('Java'); });
+            bedrockOption.addEventListener('click', (event) => { event.stopPropagation(); chooseEdition('Bedrock'); });
+            beginnerOption.addEventListener('click', (event) => { event.stopPropagation(); launchMinecraft('Beginner'); });
+            professionalOption.addEventListener('click', (event) => { event.stopPropagation(); launchMinecraft('Professional'); });
 
+            document.addEventListener('click', (event) => {
+                if (anyPickerOpen() && !wheelContainer.contains(event.target)) closePickers();
+            });
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && anyPickerOpen()) closePickers();
+            });
+
+            window.addEventListener('pageshow', (event) => {
+                closePickers(false);
+                resetBackground();
                 if (event.persisted) {
-                    const animatedParts = document.querySelectorAll(
-                        '.ring-fast, .ring-slow, .ring-med, .core-pulse'
-                    );
-                    animatedParts.forEach((part) => {
+                    document.querySelectorAll('.ring-fast, .ring-slow, .ring-med, .core-pulse').forEach((part) => {
                         part.style.animation = 'none';
                         void part.getBoundingClientRect();
                         part.style.animation = '';

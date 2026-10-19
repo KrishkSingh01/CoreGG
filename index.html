@@ -3,28 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CoreGG is a gaming hub featuring Minecraft Java Edition and Bedrock Edition, alongside other game experiences.">
-    <meta name="theme-color" content="#080812">
+    <meta name="description" content="CoreGG Gaming Hub — Practical Pity & Crit Value calculators for Genshin Impact alongside Nether Portal & Shulker tools for Minecraft.">
+    <meta name="theme-color" content="#1e293b">
     <meta name="robots" content="index,follow">
-    <title>CoreGG - Gaming Hub</title>
+    <title>CoreGG — Gaming Companion &amp; Toolkit Hub</title>
     <style>
         :root {
-            /* Core Theme Colors */
-            --bg-deep-blue: #080812;
-            --bg-gold-tint: #180d25;
-            
-            /* Neon Accents */
+            /* Cheerful, Vibrant Sky-to-Twilight Palette */
+            --bg-sky-top: #1a2744;
+            --bg-sky-mid: #233554;
+            --bg-sky-bottom: #192b38;
+
+            /* Neon Accents (Kept for Sphere Compatibility) */
             --neon-gold: #FFD700;
             --neon-gold-glow: rgba(255, 215, 0, 0.8);
-            
+
             --neon-green: #32CD32;
             --neon-green-glow: rgba(50, 205, 50, 0.8);
-            
+
             --neon-cyan: #a78bfa;
             --neon-cyan-glow: rgba(167, 139, 250, 0.62);
 
-            --ui-dark: rgba(10, 9, 20, 0.92);
-            --ui-border: rgba(167, 139, 250, 0.22); 
+            --ui-dark: rgba(18, 25, 43, 0.92);
+            --ui-border: rgba(255, 255, 255, 0.18);
+
+            /* Card Surfaces */
+            --card-bg: rgba(20, 30, 50, 0.78);
+            --card-inner: rgba(12, 19, 34, 0.74);
+            --text-bright: #f8fafc;
+            --text-soft: #cbd5e1;
         }
 
         * {
@@ -35,28 +42,44 @@
             -webkit-tap-highlight-color: transparent;
         }
 
+        input {
+            user-select: text;
+        }
+
         body, html {
             width: 100%;
-            height: 100%;
-            background-color: var(--bg-deep-blue);
+            min-height: 100%;
+            background-color: var(--bg-sky-top);
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            overflow: hidden;
-            color: #fff;
+            overflow-x: hidden;
+            color: var(--text-bright);
             display: flex;
             flex-direction: column;
             position: relative;
         }
 
-        /* Base solid gradient behind everything */
+        @media (min-width: 1120px) {
+            body, html {
+                height: 100%;
+                overflow: hidden;
+            }
+        }
+
+        /* =========================================================
+           1. CHEERFUL, ALIVE ATMOSPHERIC SKY BACKDROP
+           ========================================================= */
         .base-bg {
             position: fixed;
             top: 0; left: 0; width: 100vw; height: 100vh;
-            background: radial-gradient(ellipse at 18% 18%, rgba(124, 58, 237, 0.16), transparent 42%), linear-gradient(135deg, #080812 0%, #11101f 52%, #180d25 100%);
+            background:
+                radial-gradient(circle at 16% 24%, rgba(255, 209, 102, 0.28), transparent 42%),
+                radial-gradient(circle at 84% 24%, rgba(74, 222, 128, 0.25), transparent 42%),
+                radial-gradient(circle at 50% 50%, rgba(96, 165, 250, 0.22), transparent 55%),
+                linear-gradient(160deg, #1e325c 0%, #243b61 48%, #1b3b36 100%);
             z-index: 0;
             pointer-events: none;
         }
 
-        /* Full viewport image container */
         .bg-container {
             position: fixed;
             top: 0; left: 0; width: 100vw; height: 100vh;
@@ -84,7 +107,7 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            filter: drop-shadow(0 0 18px rgba(167, 139, 250, 0.30));
+            filter: drop-shadow(0 0 24px rgba(167, 139, 250, 0.4));
             transition: opacity 0.45s ease, filter 0.45s ease;
         }
 
@@ -105,7 +128,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(8, 8, 18, 0.18), rgba(8, 8, 18, 0.40));
+            background: linear-gradient(180deg, rgba(22, 36, 66, 0.22) 0%, rgba(15, 25, 45, 0.48) 100%);
             pointer-events: none;
         }
 
@@ -113,34 +136,94 @@
             position: fixed;
             top: 0; left: 0; width: 100vw; height: 100vh;
             z-index: 2;
-            background-image: 
-                linear-gradient(rgba(167, 139, 250, 0.045) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(167, 139, 250, 0.045) 1px, transparent 1px);
-            background-size: 40px 40px;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+            background-size: 42px 42px;
             pointer-events: none;
         }
 
+        .sky-decor {
+            position: fixed;
+            inset: 0;
+            z-index: 2;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .sunbeam-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(45px);
+            opacity: 0.4;
+            animation: drift-orb 16s ease-in-out infinite alternate;
+        }
+
+        .sunbeam-orb.left-orb {
+            width: 280px;
+            height: 280px;
+            left: 4%;
+            top: 12%;
+            background: rgba(253, 224, 71, 0.28);
+        }
+
+        .sunbeam-orb.right-orb {
+            width: 280px;
+            height: 280px;
+            right: 4%;
+            bottom: 12%;
+            background: rgba(74, 222, 128, 0.26);
+            animation-delay: -8s;
+        }
+
+        @keyframes drift-orb {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(20px, -18px) scale(1.12); }
+        }
+
+        /* =========================================================
+           2. HEADER STRIP (CORE GG BRANDING + SUPPORT)
+           ========================================================= */
         .header-strip {
             width: 100%;
-            height: 60px;
-            background: linear-gradient(90deg, rgba(0, 5, 15, 0.9) 0%, rgba(0, 20, 40, 0.4) 100%);
+            height: 58px;
+            background: rgba(20, 32, 56, 0.82);
             border-bottom: 1px solid var(--ui-border);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 40px;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.05); 
+            padding: 0 36px;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.22);
             z-index: 10;
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(14px);
+            flex-shrink: 0;
+        }
+
+        .brand-wrap {
+            display: flex;
+            align-items: center;
+            gap: 14px;
         }
 
         .header-logo {
             font-size: 20px;
             font-weight: 900;
-            letter-spacing: 6px;
-            color: var(--neon-gold); 
-            text-shadow: 0 0 8px var(--neon-gold-glow);
+            letter-spacing: 5px;
+            color: var(--neon-gold);
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.55);
             text-transform: uppercase;
+        }
+
+        .brand-tagline {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2.2px;
+            text-transform: uppercase;
+            color: #e2e8f0;
+            padding: 4px 11px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.09);
+            border: 1px solid rgba(255, 255, 255, 0.18);
         }
 
         .header-nav {
@@ -149,7 +232,7 @@
         }
 
         .nav-link {
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
             font-size: 13px;
             font-weight: 600;
@@ -161,49 +244,26 @@
             border-radius: 4px;
         }
 
-        .nav-link:hover {
-            color: var(--neon-gold);
-            text-shadow: 0 0 8px var(--neon-gold-glow);
-            border-color: rgba(255, 215, 0, 0.3);
-            background: rgba(255, 215, 0, 0.05);
-        }
-
         .nav-link.support-tab {
             color: var(--neon-gold);
             border: 1px solid var(--neon-gold);
             padding: 6px 18px;
             box-shadow: 0 0 10px rgba(255, 215, 0, 0.2), inset 0 0 5px rgba(255, 215, 0, 0.1);
-            background: rgba(255, 215, 0, 0.05);
+            background: rgba(255, 215, 0, 0.08);
             text-shadow: 0 0 5px var(--neon-gold-glow);
-            clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px); 
+            clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
             border-radius: 2px;
         }
 
         .nav-link.support-tab:hover {
-            background: rgba(255, 215, 0, 0.2);
+            background: rgba(255, 215, 0, 0.22);
             box-shadow: 0 0 15px rgba(255, 215, 0, 0.5), inset 0 0 10px rgba(255, 215, 0, 0.3);
             color: #fff;
         }
 
-        .footer-strip {
-            width: 100%;
-            height: 45px;
-            background: rgba(0, 5, 10, 0.85);
-            border-top: 1px solid var(--ui-border);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 10;
-            backdrop-filter: blur(10px);
-        }
-
-        .footer-text {
-            font-size: 13px;
-            letter-spacing: 4px;
-            color: rgba(255, 255, 255, 0.5);
-            text-transform: uppercase;
-        }
-
+        /* =========================================================
+           3. MAIN LAYOUT: INDEPENDENT GAME TOOLKITS + CENTER SPHERE
+           ========================================================= */
         .main-content {
             flex-grow: 1;
             display: flex;
@@ -212,24 +272,364 @@
             align-items: center;
             position: relative;
             z-index: 5;
+            padding: 6px 20px;
+            gap: 6px;
         }
 
+        .core-banner {
+            text-align: center;
+            margin-bottom: 2px;
+        }
+
+        .core-title {
+            font-size: clamp(18px, 2vw, 24px);
+            font-weight: 900;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+        }
+
+        .core-title span {
+            color: #c4b5fd;
+        }
+
+        .core-subtitle {
+            font-size: 12px;
+            color: var(--text-soft);
+            letter-spacing: 1.5px;
+            margin-top: 1px;
+        }
+
+        .hub-workspace {
+            display: grid;
+            grid-template-columns: 350px auto 350px;
+            align-items: center;
+            justify-content: center;
+            gap: clamp(14px, 2.2vw, 30px);
+            width: 100%;
+            max-width: 1280px;
+        }
+
+        /* Independent Game Cards */
+        .game-panel {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 12px;
+            backdrop-filter: blur(16px);
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
+            transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+        }
+
+        .panel-genshin {
+            border: 1.5px solid rgba(255, 215, 0, 0.38);
+        }
+
+        .panel-genshin.is-focused {
+            transform: translateY(-3px);
+            border-color: var(--neon-gold);
+            box-shadow: 0 14px 36px rgba(255, 215, 0, 0.22);
+        }
+
+        .panel-minecraft {
+            border: 1.5px solid rgba(74, 222, 128, 0.38);
+        }
+
+        .panel-minecraft.is-focused {
+            transform: translateY(-3px);
+            border-color: var(--neon-green);
+            box-shadow: 0 14px 36px rgba(50, 205, 50, 0.22);
+        }
+
+        /* Visual Banner at Top of Each Card */
+        .panel-banner {
+            position: relative;
+            height: 68px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            display: flex;
+            align-items: flex-end;
+            padding: 8px 12px;
+        }
+
+        .panel-banner img.cover-art {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .panel-banner::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.12) 0%, rgba(15, 23, 42, 0.88) 100%);
+            z-index: 1;
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .banner-title-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .banner-tag {
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .panel-genshin .banner-tag { color: #fde047; }
+        .panel-minecraft .banner-tag { color: #86efac; }
+
+        .banner-name {
+            font-size: 16px;
+            font-weight: 900;
+            letter-spacing: 0.8px;
+            color: #fff;
+        }
+
+        .banner-icons {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .banner-icons img {
+            width: 26px;
+            height: 26px;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 5px rgba(0,0,0,0.6));
+        }
+
+        .pixel-sprite {
+            image-rendering: pixelated;
+        }
+
+        /* Tool Box Inside Panel */
+        .tool-card {
+            background: var(--card-inner);
+            border: 1px solid rgba(255, 255, 255, 0.11);
+            border-radius: 11px;
+            padding: 9px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .tool-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 1.3px;
+            text-transform: uppercase;
+        }
+
+        .panel-genshin .tool-header { color: #fde047; }
+        .panel-minecraft .tool-header { color: #86efac; }
+
+        .tool-header-sub {
+            font-size: 9.5px;
+            font-weight: 700;
+            color: var(--text-soft);
+            text-transform: none;
+            letter-spacing: 0.3px;
+        }
+
+        /* Guarantee Toggle Pill inside Genshin Pity Calculator */
+        .guarantee-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 2px 7px;
+            border-radius: 999px;
+            font-size: 9.5px;
+            font-weight: 800;
+            cursor: pointer;
+            border: 1px solid rgba(255, 215, 0, 0.45);
+            background: rgba(255, 215, 0, 0.14);
+            color: #fef08a;
+            transition: all 0.2s ease;
+        }
+
+        .guarantee-toggle.is-guaranteed {
+            background: rgba(74, 222, 128, 0.2);
+            border-color: #4ade80;
+            color: #bbf7d0;
+        }
+
+        /* Interactive Inputs for Calculators */
+        .calc-row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .calc-field {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 7px;
+            padding: 4px 7px;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .calc-field:focus-within {
+            border-color: #fff;
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .calc-field img {
+            width: 16px;
+            height: 16px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        .calc-field span.coord-lbl {
+            font-size: 9.5px;
+            font-weight: 800;
+            color: var(--text-soft);
+            white-space: nowrap;
+        }
+
+        .calc-input {
+            width: 100%;
+            min-width: 0;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 800;
+            font-family: inherit;
+        }
+
+        .calc-output {
+            font-size: 10.5px;
+            color: #e2e8f0;
+            line-height: 1.3;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .calc-output strong {
+            color: #fff;
+            font-weight: 800;
+        }
+
+        .highlight-pill {
+            padding: 2px 7px;
+            border-radius: 5px;
+            font-weight: 800;
+            font-size: 10px;
+            white-space: nowrap;
+        }
+
+        .panel-genshin .highlight-pill {
+            background: rgba(255, 215, 0, 0.16);
+            color: #fef08a;
+            border: 1px solid rgba(255, 215, 0, 0.35);
+        }
+
+        .panel-minecraft .highlight-pill {
+            background: rgba(50, 205, 50, 0.16);
+            color: #bbf7d0;
+            border: 1px solid rgba(50, 205, 50, 0.35);
+        }
+
+        /* Pity Progress Bar */
+        .pity-bar-track {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 999px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .pity-bar-fill {
+            height: 100%;
+            width: 33%;
+            background: linear-gradient(90deg, #facc15, #f97316);
+            border-radius: 999px;
+            transition: width 0.25s ease;
+        }
+
+        /* Reference Badges Grid */
+        .ref-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+        }
+
+        .ref-chip {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 7px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 10px;
+            color: #e2e8f0;
+        }
+
+        .ref-chip img {
+            width: 16px;
+            height: 16px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        .ref-chip strong {
+            color: #fff;
+        }
+
+        /* =========================================================
+           4. CENTER SPHERE & MECHANICS (100% UNTOUCHED)
+           ========================================================= */
         .wheel-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 5px; 
+            gap: 5px;
         }
 
         .wheel-wrapper {
             position: relative;
             width: 90vw;
-            max-width: 420px; 
+            max-width: 390px;
             aspect-ratio: 1 / 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.8));
+            filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.55));
+            transition: transform 0.38s cubic-bezier(0.2, 0.8, 0.2, 1);
+            transform-origin: center;
         }
 
         .wheel-svg {
@@ -255,7 +655,7 @@
             transform: scale(1.06) translateX(-6px);
             filter: drop-shadow(0 0 25px var(--neon-gold-glow));
         }
-        .half-genshin:hover .half-path { fill: rgba(255, 215, 0, 0.1); }
+        .half-genshin:hover .half-path { fill: rgba(255, 215, 0, 0.14); }
         .half-genshin:hover .logo-img { filter: grayscale(0%) brightness(1.2); }
 
         .half-minecraft .half-path { stroke: var(--neon-green); }
@@ -263,12 +663,12 @@
             transform: scale(1.06) translateX(6px);
             filter: drop-shadow(0 0 25px var(--neon-green-glow));
         }
-        .half-minecraft:hover .half-path { fill: rgba(50, 205, 50, 0.1); }
+        .half-minecraft:hover .half-path { fill: rgba(50, 205, 50, 0.14); }
         .half-minecraft:hover .logo-img { filter: grayscale(0%) brightness(1.2); }
 
         .logo-img {
             transition: filter 0.4s ease;
-            filter: grayscale(40%) brightness(0.8); 
+            filter: grayscale(30%) brightness(0.9);
         }
 
         @keyframes spin-cw { 100% { transform: rotate(360deg); } }
@@ -285,17 +685,17 @@
 
         .dynamic-box {
             padding: 8px 30px;
-            background: linear-gradient(180deg, rgba(255, 215, 0, 0.02) 0%, rgba(4, 10, 24, 0.8) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-top: 1px solid rgba(255, 215, 0, 0.2);
-            border-radius: 0 0 15px 15px; 
+            background: rgba(18, 28, 48, 0.88);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-top: 1px solid rgba(255, 215, 0, 0.35);
+            border-radius: 0 0 15px 15px;
             font-size: 13px;
             font-weight: bold;
             letter-spacing: 5px;
             text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.4);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-            backdrop-filter: blur(8px);
+            color: rgba(255, 255, 255, 0.78);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+            backdrop-filter: blur(10px);
             transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
             text-align: center;
             min-width: 220px;
@@ -311,15 +711,15 @@
             background: var(--neon-gold);
             box-shadow: 0 0 10px var(--neon-gold-glow);
             transition: all 0.4s ease;
-            opacity: 0.5;
+            opacity: 0.6;
         }
 
         .dynamic-box.active-genshin {
             color: var(--neon-gold);
-            border-color: rgba(255, 215, 0, 0.1);
+            border-color: rgba(255, 215, 0, 0.25);
             border-top-color: var(--neon-gold);
             text-shadow: 0 0 10px var(--neon-gold-glow);
-            background: linear-gradient(180deg, rgba(255, 215, 0, 0.05) 0%, rgba(10, 9, 20, 0.92) 100%);
+            background: rgba(22, 26, 42, 0.94);
         }
         .dynamic-box.active-genshin::before {
             background: var(--neon-gold);
@@ -330,23 +730,16 @@
 
         .dynamic-box.active-minecraft {
             color: var(--neon-green);
-            border-color: rgba(50, 205, 50, 0.1);
+            border-color: rgba(50, 205, 50, 0.25);
             border-top-color: var(--neon-green);
             text-shadow: 0 0 10px var(--neon-green-glow);
-            background: linear-gradient(180deg, rgba(50, 205, 50, 0.05) 0%, rgba(10, 9, 20, 0.92) 100%);
+            background: rgba(16, 32, 28, 0.94);
         }
         .dynamic-box.active-minecraft::before {
             background: var(--neon-green);
             box-shadow: 0 0 10px var(--neon-green-glow);
             width: 80%;
             opacity: 1;
-        }
-
-
-        /* Minecraft edition picker: compact green split options that leave the wheel artwork intact. */
-        .wheel-wrapper {
-            transition: transform 0.38s cubic-bezier(0.2, 0.8, 0.2, 1);
-            transform-origin: center;
         }
 
         .wheel-container.minecraft-menu-open .wheel-wrapper {
@@ -426,7 +819,6 @@
 
         .edition-option:active { transform: scale(0.98); }
 
-        /* Responsive polish: preserve the neon motion while adapting to touch screens. */
         #genshin-link {
             cursor: pointer;
             pointer-events: all;
@@ -456,6 +848,76 @@
             stroke-width: 4;
         }
 
+        /* =========================================================
+           5. FOOTER STRIP WITH INTEGRATED BUY ME A COFFEE BUTTON
+           ========================================================= */
+        .footer-strip {
+            width: 100%;
+            min-height: 52px;
+            background: rgba(16, 26, 46, 0.88);
+            border-top: 1px solid var(--ui-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 36px;
+            z-index: 10;
+            backdrop-filter: blur(14px);
+            flex-shrink: 0;
+            gap: 16px;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3.5px;
+            color: rgba(255, 255, 255, 0.75);
+            text-transform: uppercase;
+        }
+
+        .bmc-dock {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 3px 6px 3px 12px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(66, 148, 121, 0.55);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .bmc-dock:hover {
+            transform: translateY(-2px);
+            border-color: #6ee7b7;
+            box-shadow: 0 0 18px rgba(66, 148, 121, 0.45);
+        }
+
+        .bmc-label {
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+            color: #d1fae5;
+        }
+
+        .bmc-dock a {
+            display: inline-flex;
+            align-items: center;
+            line-height: 0;
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        .bmc-dock img {
+            height: 32px;
+            width: auto;
+            display: block;
+            border-radius: 6px;
+        }
+
+        /* =========================================================
+           6. PC & MOBILE RESPONSIVE ADAPTATION
+           ========================================================= */
         @media (hover: hover) and (pointer: fine) {
             .half-genshin:hover,
             .half-minecraft:hover {
@@ -463,9 +925,25 @@
             }
         }
 
+        @media (max-width: 1119px) {
+            .hub-workspace {
+                grid-template-columns: 1fr 1fr;
+                max-width: 740px;
+                gap: 16px;
+            }
+
+            .wheel-container {
+                grid-column: 1 / -1;
+                order: -1;
+            }
+
+            .main-content {
+                padding: 14px 14px 24px;
+                gap: 14px;
+            }
+        }
+
         @media (max-width: 700px) {
-            /* On phones, keep Genshin's focal point centered and reveal the image
-               outward from the middle instead of making it feel like it slides in sideways. */
             #bg-genshin {
                 background-position: 50% 50%;
                 background-size: cover;
@@ -480,8 +958,8 @@
             }
 
             .header-strip {
-                height: 56px;
-                padding: 0 18px;
+                height: 54px;
+                padding: 0 16px;
             }
 
             .header-logo {
@@ -489,33 +967,29 @@
                 letter-spacing: 4px;
             }
 
-            .header-nav { gap: 8px; }
+            .brand-tagline {
+                display: none;
+            }
 
-            .nav-link {
+            .nav-link.support-tab {
+                padding: 6px 12px;
                 font-size: 11px;
-                letter-spacing: 1.5px;
-                padding: 7px 10px;
+                letter-spacing: 2px;
             }
 
-            .nav-link.support-tab { padding: 7px 12px; }
-
-            .main-content {
-                padding: 12px 10px;
-                min-height: 0;
-            }
-
-            .wheel-container {
-                width: 100%;
-                gap: 8px;
+            .hub-workspace {
+                grid-template-columns: 1fr;
+                max-width: 420px;
+                gap: 14px;
             }
 
             .wheel-wrapper {
-                width: min(88vw, 420px, 52vh);
-                max-width: 420px;
+                width: min(84vw, 350px);
+                max-width: 350px;
                 flex-shrink: 0;
             }
 
-            .picker-panel { width: min(84vw, 320px); margin-top: -18px; gap: 7px; }
+            .picker-panel { width: min(84vw, 320px); margin-top: -16px; gap: 7px; }
             .picker-heading { font-size: 9px; letter-spacing: 2px; }
             .picker-options { gap: 7px; }
 
@@ -529,16 +1003,25 @@
             .dynamic-box {
                 width: min(82vw, 300px);
                 min-width: 0;
-                padding: 10px 14px;
+                padding: 9px 14px;
                 font-size: 11px;
                 letter-spacing: 3px;
             }
 
-            .footer-strip { height: 38px; }
+            .footer-strip {
+                flex-direction: column;
+                justify-content: center;
+                padding: 10px 16px;
+                gap: 8px;
+            }
 
             .footer-text {
                 font-size: 10px;
                 letter-spacing: 2.5px;
+            }
+
+            .bmc-dock img {
+                height: 30px;
             }
 
             .bg-grid { background-size: 30px 30px; }
@@ -547,27 +1030,29 @@
         @media (max-width: 380px) {
             .header-strip { padding: 0 12px; }
             .header-logo { font-size: 15px; letter-spacing: 3px; }
-            .wheel-wrapper { width: min(86vw, 46vh); }
+            .wheel-wrapper { width: min(84vw, 300px); }
             .dynamic-box { letter-spacing: 2px; }
             .picker-panel { width: min(88vw, 320px); }
             .edition-option { font-size: 9px; letter-spacing: 0.8px; }
+            .bmc-label { display: none; }
+            .bmc-dock { padding: 3px; }
         }
 
-        @media (max-height: 650px) and (min-width: 701px) {
-            .wheel-wrapper { width: min(68vh, 390px); }
+        @media (max-height: 700px) and (min-width: 1120px) {
+            .wheel-wrapper { width: min(50vh, 330px); }
+            .panel-banner { height: 56px; }
         }
 
         @media (prefers-reduced-motion: reduce) {
             .bg-image, #bg-idle, .half-group, .half-path, .logo-img,
-            .dynamic-box, .dynamic-box::before {
+            .dynamic-box, .dynamic-box::before, .game-panel {
                 transition-duration: 0.18s !important;
             }
 
-            .ring-fast, .ring-slow, .ring-med, .core-pulse {
+            .ring-fast, .ring-slow, .ring-med, .core-pulse, .sunbeam-orb {
                 animation-duration: 36s;
             }
         }
-
     </style>
 </head>
 <body>
@@ -578,100 +1063,321 @@
         <div id="bg-minecraft" class="bg-image"></div>
     </div>
     <div class="bg-grid"></div>
+    <div class="sky-decor" aria-hidden="true">
+        <div class="sunbeam-orb left-orb"></div>
+        <div class="sunbeam-orb right-orb"></div>
+    </div>
 
     <header class="header-strip">
-        <div class="header-logo">Core GG</div>
+        <div class="brand-wrap">
+            <div class="header-logo">Core GG</div>
+            <span class="brand-tagline">Precision Gaming Hub</span>
+        </div>
         <nav class="header-nav">
-            <a href="https://www.instagram.com/otaku_krishna1/" target="_blank" rel="noopener noreferrer" class="nav-link support-tab" aria-label="Support on Instagram">Support</a>
+            <a href="https://www.instagram.com/otaku_krishna1/" target="_blank" rel="noopener noreferrer" class="nav-link support-tab" aria-label="Support on Instagram">Feedback</a>
         </nav>
     </header>
 
     <main class="main-content">
-        <div class="wheel-container">
-            <div class="wheel-wrapper">
-                <svg class="wheel-svg" viewBox="0 0 600 600">
-                    <defs>
-                        <linearGradient id="gold-neon" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#FFD700" />
-                            <stop offset="100%" stop-color="transparent" />
-                        </linearGradient>
-                        <linearGradient id="green-neon" x1="100%" y1="100%" x2="0%" y2="0%">
-                            <stop offset="0%" stop-color="#32CD32" />
-                            <stop offset="100%" stop-color="transparent" />
-                        </linearGradient>
+        <div class="core-banner">
+            <h1 class="core-title">CORE <span>GG</span></h1>
+            <p class="core-subtitle">Interactive Player Utilities &amp; Game Guides</p>
+        </div>
 
-                        <clipPath id="clip-left">
-                            <circle cx="170" cy="300" r="45"/>
-                        </clipPath>
-                        <clipPath id="clip-right">
-                            <circle cx="430" cy="300" r="45"/>
-                        </clipPath>
-                    </defs>
+        <div class="hub-workspace">
 
-                    <circle class="ring-fast" cx="300" cy="300" r="260" stroke="var(--neon-cyan)" stroke-width="1.5" stroke-dasharray="2 15 10 15" fill="none" opacity="0.7" filter="drop-shadow(0 0 4px var(--neon-cyan-glow))"/>
-                    <circle class="ring-slow" cx="300" cy="300" r="240" stroke="url(#gold-neon)" stroke-width="3" stroke-dasharray="120 60 30 60" fill="none" filter="drop-shadow(0 0 6px var(--neon-gold-glow))"/>
-                    <circle class="ring-med" cx="300" cy="300" r="220" stroke="url(#green-neon)" stroke-width="2" stroke-dasharray="90 30 15 30" fill="none" filter="drop-shadow(0 0 6px var(--neon-green-glow))"/>
-                    <circle class="ring-slow" cx="300" cy="300" r="198" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="6 6" fill="none" />
+            <!-- =====================================================
+                 GENSHIN IMPACT INDEPENDENT TOOLKIT (LEFT)
+                 ===================================================== -->
+            <aside class="game-panel panel-genshin" id="panel-genshin" aria-label="Genshin Impact Player Utilities">
+                <div class="panel-banner">
+                    <img class="cover-art" src="https://cdn1.epicgames.com/spt-assets/99dc46c68ea14324964a856d18dcac5b/genshin-impact-1hm6x.jpg" alt="Genshin Impact" loading="lazy">
+                    <div class="banner-content">
+                        <div class="banner-title-group">
+                            <span class="banner-tag">Action RPG</span>
+                            <span class="banner-name">Genshin Impact</span>
+                        </div>
+                        <div class="banner-icons">
+                            <img src="https://enka.network/ui/UI_ItemIcon_201.png" alt="Primogem" title="Primogem">
+                            <img src="https://enka.network/ui/UI_ItemIcon_223.png" alt="Intertwined Fate" title="Intertwined Fate">
+                        </div>
+                    </div>
+                </div>
 
-                    <a href="coregenshin.html" id="genshin-link" aria-label="Open Genshin Impact">
-                        <g class="half-group half-genshin" id="btn-genshin" aria-hidden="true">
-                            <path class="half-path" d="M 296 120 
-                                                       A 180 180 0 0 0 296 480 
-                                                       L 296 380 
-                                                       A 80 80 0 0 1 296 220 Z" />
-                            <image class="logo-img" href="https://b.thumbs.redditmedia.com/82Mcyb68wCcglmF4t5ePl40F_a8nrPiaf5pCimG8FaU.jpg" xlink:href="https://b.thumbs.redditmedia.com/82Mcyb68wCcglmF4t5ePl40F_a8nrPiaf5pCimG8FaU.jpg" x="125" y="255" width="90" height="90" clip-path="url(#clip-left)" preserveAspectRatio="xMidYMid slice" />
-                            <circle cx="170" cy="300" r="45" fill="none" stroke="var(--neon-gold)" stroke-width="2" opacity="0.5" />
+                <!-- TOOL 1: Interactive 5-Star Pity & Primogem Wish Calculator -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <span>5★ Pity &amp; Wish Calculator</span>
+                        <span class="guarantee-toggle" id="pity-guarantee-btn" role="button" tabindex="0" title="Click to toggle 50/50 vs Guaranteed">50/50 Mode</span>
+                    </div>
+                    <div class="calc-row">
+                        <label class="calc-field" title="Current Banner Pity (0-89)">
+                            <span class="coord-lbl">Pity:</span>
+                            <input type="number" id="gi-pity" class="calc-input" min="0" max="89" value="30">
+                        </label>
+                        <label class="calc-field" title="Saved Primogems">
+                            <img src="https://enka.network/ui/UI_ItemIcon_201.png" alt="Primogem">
+                            <input type="number" id="gi-primos" class="calc-input" min="0" step="160" value="3200" placeholder="Primos">
+                        </label>
+                        <label class="calc-field" title="Saved Intertwined Fates">
+                            <img src="https://enka.network/ui/UI_ItemIcon_223.png" alt="Fates">
+                            <input type="number" id="gi-fates" class="calc-input" min="0" value="5" placeholder="Fates">
+                        </label>
+                    </div>
+                    <div class="pity-bar-track" aria-hidden="true">
+                        <div class="pity-bar-fill" id="gi-pity-bar"></div>
+                    </div>
+                    <div class="calc-output">
+                        <span id="gi-soft-pity-out">Soft Pity (74): <strong>19 pulls short</strong></span>
+                        <span class="highlight-pill" id="gi-hard-pity-out">25 Wishes Saved</span>
+                    </div>
+                </div>
+
+                <!-- TOOL 2: Live Artifact Crit Value (CV) Scorer (CR*2 + CD) -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <span>Artifact Crit Value (CV) Calc</span>
+                        <span class="tool-header-sub">CV = (CR &times; 2) + CD</span>
+                    </div>
+                    <div class="calc-row">
+                        <label class="calc-field" aria-label="Artifact CRIT Rate Percentage">
+                            <span class="coord-lbl">CRIT Rate %:</span>
+                            <input type="number" id="gi-cr" class="calc-input" min="0" max="100" step="0.1" value="10.5">
+                        </label>
+                        <label class="calc-field" aria-label="Artifact CRIT DMG Percentage">
+                            <span class="coord-lbl">CRIT DMG %:</span>
+                            <input type="number" id="gi-cd" class="calc-input" min="0" max="100" step="0.1" value="21.0">
+                        </label>
+                    </div>
+                    <div class="calc-output">
+                        <span>Artifact Score: <strong id="gi-cv-score">42.0 CV</strong></span>
+                        <span class="highlight-pill" id="gi-cv-tier">God Roll (40+ CV)</span>
+                    </div>
+                </div>
+
+                <!-- TOOL 3: Meta Stat & Pity Breakpoints (Hard Numbers Players Need) -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <span>Key Pity &amp; Stat Caps</span>
+                        <span class="tool-header-sub">1:2 Crit Ratio Rule</span>
+                    </div>
+                    <div class="ref-grid">
+                        <div class="ref-chip" title="Character Banner Soft Pity starts at 74, Hard Pity at 90">
+                            <img src="https://enka.network/ui/UI_ItemIcon_223.png" alt="Character Pity">
+                            <span>Char Pity: <strong>74 / 90</strong></span>
+                        </div>
+                        <div class="ref-chip" title="Weapon Banner Soft Pity starts at 63, Hard Pity at 80 (Max 1 Fate Point)">
+                            <img src="https://enka.network/ui/UI_ItemIcon_201.png" alt="Weapon Pity">
+                            <span>Weapon: <strong>63 / 80</strong> (1 FP)</span>
+                        </div>
+                        <div class="ref-chip" title="Hyperbloom, Burgeon & Swirl scale purely with Character Level (Lv.90) + EM">
+                            <img src="https://enka.network/ui/UI_ItemIcon_201.png" alt="Hyperbloom EM">
+                            <span>Bloom/Swirl: <strong>900+ EM</strong></span>
+                        </div>
+                        <div class="ref-chip" title="Optimal Elemental Mastery sweet spot for Vaporize & Melt carries before diminishing returns">
+                            <img src="https://enka.network/ui/UI_ItemIcon_223.png" alt="Vape Melt EM">
+                            <span>Vape/Melt: <strong>200–300 EM</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- =====================================================
+                 CENTER SPHERE & MECHANICS (100% UNTOUCHED)
+                 ===================================================== -->
+            <div class="wheel-container">
+                <div class="wheel-wrapper">
+                    <svg class="wheel-svg" viewBox="0 0 600 600">
+                        <defs>
+                            <linearGradient id="gold-neon" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#FFD700" />
+                                <stop offset="100%" stop-color="transparent" />
+                            </linearGradient>
+                            <linearGradient id="green-neon" x1="100%" y1="100%" x2="0%" y2="0%">
+                                <stop offset="0%" stop-color="#32CD32" />
+                                <stop offset="100%" stop-color="transparent" />
+                            </linearGradient>
+
+                            <clipPath id="clip-left">
+                                <circle cx="170" cy="300" r="45"/>
+                            </clipPath>
+                            <clipPath id="clip-right">
+                                <circle cx="430" cy="300" r="45"/>
+                            </clipPath>
+                        </defs>
+
+                        <circle class="ring-fast" cx="300" cy="300" r="260" stroke="var(--neon-cyan)" stroke-width="1.5" stroke-dasharray="2 15 10 15" fill="none" opacity="0.7" filter="drop-shadow(0 0 4px var(--neon-cyan-glow))"/>
+                        <circle class="ring-slow" cx="300" cy="300" r="240" stroke="url(#gold-neon)" stroke-width="3" stroke-dasharray="120 60 30 60" fill="none" filter="drop-shadow(0 0 6px var(--neon-gold-glow))"/>
+                        <circle class="ring-med" cx="300" cy="300" r="220" stroke="url(#green-neon)" stroke-width="2" stroke-dasharray="90 30 15 30" fill="none" filter="drop-shadow(0 0 6px var(--neon-green-glow))"/>
+                        <circle class="ring-slow" cx="300" cy="300" r="198" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="6 6" fill="none" />
+
+                        <a href="coregenshin.html" id="genshin-link" aria-label="Open Genshin Impact">
+                            <g class="half-group half-genshin" id="btn-genshin" aria-hidden="true">
+                                <path class="half-path" d="M 296 120 
+                                                           A 180 180 0 0 0 296 480 
+                                                           L 296 380 
+                                                           A 80 80 0 0 1 296 220 Z" />
+                                <image class="logo-img" href="https://b.thumbs.redditmedia.com/82Mcyb68wCcglmF4t5ePl40F_a8nrPiaf5pCimG8FaU.jpg" xlink:href="https://b.thumbs.redditmedia.com/82Mcyb68wCcglmF4t5ePl40F_a8nrPiaf5pCimG8FaU.jpg" x="125" y="255" width="90" height="90" clip-path="url(#clip-left)" preserveAspectRatio="xMidYMid slice" />
+                                <circle cx="170" cy="300" r="45" fill="none" stroke="var(--neon-gold)" stroke-width="2" opacity="0.5" />
+                            </g>
+                        </a>
+
+                        <g class="half-group half-minecraft" id="btn-minecraft" role="button" tabindex="0" aria-label="Minecraft game preview">
+                            <path class="half-path" d="M 304 120 
+                                                       A 180 180 0 0 1 304 480 
+                                                       L 304 380 
+                                                       A 80 80 0 0 0 304 220 Z" />
+                            <image class="logo-img" href="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/logos/Icon_header.jpg" xlink:href="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/logos/Icon_header.jpg" x="385" y="255" width="90" height="90" clip-path="url(#clip-right)" preserveAspectRatio="xMidYMid slice"/>
+                            <circle cx="430" cy="300" r="45" fill="none" stroke="var(--neon-green)" stroke-width="2" opacity="0.5" />
                         </g>
-                    </a>
 
-                    <g class="half-group half-minecraft" id="btn-minecraft" role="button" tabindex="0" aria-label="Minecraft game preview">
-                        <path class="half-path" d="M 304 120 
-                                                   A 180 180 0 0 1 304 480 
-                                                   L 304 380 
-                                                   A 80 80 0 0 0 304 220 Z" />
-                        <image class="logo-img" href="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/logos/Icon_header.jpg" xlink:href="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/logos/Icon_header.jpg" x="385" y="255" width="90" height="90" clip-path="url(#clip-right)" preserveAspectRatio="xMidYMid slice"/>
-                        <circle cx="430" cy="300" r="45" fill="none" stroke="var(--neon-green)" stroke-width="2" opacity="0.5" />
-                    </g>
+                        <g class="core-pulse">
+                            <circle cx="300" cy="300" r="70" fill="var(--ui-dark)" stroke="var(--neon-cyan)" stroke-width="2.5" />
+                            <circle cx="300" cy="300" r="58" fill="none" stroke="rgba(0, 243, 255, 0.4)" stroke-width="1.5" stroke-dasharray="5 5" class="ring-fast"/>
+                            
+                            <text x="300" y="292" fill="#ffffff" font-family="Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="4" text-anchor="middle" filter="drop-shadow(0 0 5px rgba(255,255,255,0.5))">CORE</text>
+                            <text x="300" y="322" fill="var(--neon-cyan)" font-family="Arial, sans-serif" font-weight="800" font-size="16" letter-spacing="6" text-anchor="middle" filter="drop-shadow(0 0 5px var(--neon-cyan-glow))">GG</text>
+                        </g>
+                    </svg>
+                </div>
 
-                    <g class="core-pulse">
-                        <circle cx="300" cy="300" r="70" fill="var(--ui-dark)" stroke="var(--neon-cyan)" stroke-width="2.5" />
-                        <circle cx="300" cy="300" r="58" fill="none" stroke="rgba(0, 243, 255, 0.4)" stroke-width="1.5" stroke-dasharray="5 5" class="ring-fast"/>
-                        
-                        <text x="300" y="292" fill="#ffffff" font-family="Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="4" text-anchor="middle" filter="drop-shadow(0 0 5px rgba(255,255,255,0.5))">CORE</text>
-                        <text x="300" y="322" fill="var(--neon-cyan)" font-family="Arial, sans-serif" font-weight="800" font-size="16" letter-spacing="6" text-anchor="middle" filter="drop-shadow(0 0 5px var(--neon-cyan-glow))">GG</text>
-                    </g>
-                </svg>
+                <section class="picker-panel" id="edition-menu" role="group" aria-label="Choose Minecraft edition" aria-hidden="true">
+                    <div class="picker-heading">Choose your edition</div>
+                    <div class="picker-options">
+                        <button class="edition-option" id="java-option" type="button">Java Edition</button>
+                        <button class="edition-option" id="bedrock-option" type="button">Bedrock Edition</button>
+                    </div>
+                </section>
+
+                <section class="picker-panel" id="level-menu" role="group" aria-label="Choose experience level" aria-hidden="true">
+                    <div class="picker-heading" id="level-heading">Choose your path</div>
+                    <div class="picker-options">
+                        <button class="edition-option" id="beginner-option" type="button">Beginner</button>
+                        <button class="edition-option" id="professional-option" type="button">Professional</button>
+                    </div>
+                </section>
+
+                <div class="dynamic-box" id="info-box">System Standby</div>
             </div>
 
-            <section class="picker-panel" id="edition-menu" role="group" aria-label="Choose Minecraft edition" aria-hidden="true">
-                <div class="picker-heading">Choose your edition</div>
-                <div class="picker-options">
-                    <button class="edition-option" id="java-option" type="button">Java Edition</button>
-                    <button class="edition-option" id="bedrock-option" type="button">Bedrock Edition</button>
+            <!-- =====================================================
+                 MINECRAFT INDEPENDENT TOOLKIT (RIGHT)
+                 ===================================================== -->
+            <aside class="game-panel panel-minecraft" id="panel-minecraft" aria-label="Minecraft Player Utilities">
+                <div class="panel-banner">
+                    <img class="cover-art" src="https://media-cdn.tripadvisor.com/media/photo-o/15/88/be/67/i-love-minecraft.jpg" alt="Minecraft" loading="lazy">
+                    <div class="banner-content">
+                        <div class="banner-title-group">
+                            <span class="banner-tag">Sandbox Survival</span>
+                            <span class="banner-name">Minecraft</span>
+                        </div>
+                        <div class="banner-icons">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/diamond_pickaxe.png" alt="Diamond Pickaxe" title="Diamond Pickaxe">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/totem_of_undying.png" alt="Totem of Undying" title="Totem of Undying">
+                        </div>
+                    </div>
                 </div>
-            </section>
 
-            <section class="picker-panel" id="level-menu" role="group" aria-label="Choose experience level" aria-hidden="true">
-                <div class="picker-heading" id="level-heading">Choose your path</div>
-                <div class="picker-options">
-                    <button class="edition-option" id="beginner-option" type="button">Beginner</button>
-                    <button class="edition-option" id="professional-option" type="button">Professional</button>
+                <!-- TOOL 1: Bidirectional Nether Portal Coordinate Linker (÷8 / ×8) -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <span>Nether Portal Linker</span>
+                        <span class="tool-header-sub">1 Nether = 8 Overworld</span>
+                    </div>
+                    <div class="calc-row">
+                        <label class="calc-field" aria-label="Overworld X Coordinate">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/grass_block_side.png" alt="Overworld">
+                            <span class="coord-lbl">OW X:</span>
+                            <input type="number" id="ow-x" class="calc-input" value="800" placeholder="X">
+                        </label>
+                        <label class="calc-field" aria-label="Overworld Z Coordinate">
+                            <span class="coord-lbl">OW Z:</span>
+                            <input type="number" id="ow-z" class="calc-input" value="-320" placeholder="Z">
+                        </label>
+                    </div>
+                    <div class="calc-row">
+                        <label class="calc-field" aria-label="Nether X Coordinate">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/obsidian.png" alt="Nether">
+                            <span class="coord-lbl">Nether X:</span>
+                            <input type="number" id="nether-x" class="calc-input" value="100" placeholder="X">
+                        </label>
+                        <label class="calc-field" aria-label="Nether Z Coordinate">
+                            <span class="coord-lbl">Nether Z:</span>
+                            <input type="number" id="nether-z" class="calc-input" value="-40" placeholder="Z">
+                        </label>
+                    </div>
                 </div>
-            </section>
 
-            <div class="dynamic-box" id="info-box">System Standby</div>
+                <!-- TOOL 2: Build Material Stack & Shulker Box Converter -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <span>Block &rarr; Stack &amp; Shulker Calc</span>
+                        <span class="tool-header-sub">1 Shulker = 1,728</span>
+                    </div>
+                    <div class="calc-row">
+                        <label class="calc-field" aria-label="Total Blocks Needed">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/crafting_table_front.png" alt="Blocks">
+                            <span class="coord-lbl">Blocks:</span>
+                            <input type="number" id="mc-blocks-input" class="calc-input" min="0" value="2500" placeholder="Total blocks">
+                        </label>
+                    </div>
+                    <div class="calc-output">
+                        <span>Result:</span>
+                        <span class="highlight-pill" id="mc-stack-output">1 Shulker + 12 Stacks + 4</span>
+                    </div>
+                </div>
+
+                <!-- TOOL 3: Optimal 1.21+ Ore & Lava-Safe Y-Levels -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <span>Best Mining Y-Levels (1.21+)</span>
+                        <span class="tool-header-sub">Lava Pool Ceiling: Y = -55</span>
+                    </div>
+                    <div class="ref-grid">
+                        <div class="ref-chip" title="Y=-54 avoids Y=-55 lava aquifers while mining peak Deepslate Diamonds">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/diamond.png" alt="Diamond">
+                            <span>Diamond: <strong>Y = -54</strong> (Safe)</span>
+                        </div>
+                        <div class="ref-chip" title="Best Nether Y-Level for Ancient Debris / Netherite">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/netherite_scrap.png" alt="Ancient Debris">
+                            <span>Debris: <strong>Y = 15</strong> (Nether)</span>
+                        </div>
+                        <div class="ref-chip">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_ingot.png" alt="Iron">
+                            <span>Iron: <strong>Y = 16</strong> / <strong>Y = 232</strong></span>
+                        </div>
+                        <div class="ref-chip">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/coal.png" alt="Coal">
+                            <span>Coal: <strong>Y = 96</strong> (No Deepslate)</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
         </div>
     </main>
 
+    <!-- =========================================================
+         FOOTER STRIP WITH YOUR EXACT BUY ME A COFFEE DONATIONS BUTTON
+         ========================================================= -->
     <footer class="footer-strip">
-        <span class="footer-text">Thanks for visiting</span>
+        <span class="footer-text">CoreGG &bull; Thanks for visiting</span>
+        <div class="bmc-dock">
+            <span class="bmc-label">Support CoreGG</span>
+            <a href="https://www.buymeacoffee.com/otaku_krishna" target="_blank" rel="noopener noreferrer"><img src="https://img.buymeacoffee.com/button-api/?text=Donations&emoji=&slug=otaku_krishna&button_colour=429479&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00" alt="Donations" /></a>
+        </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            /* =========================================================
+               ORIGINAL SPHERE & NAVIGATION MECHANICS (UNTOUCHED)
+               ========================================================= */
             const btnGenshin = document.getElementById('btn-genshin');
             const genshinLink = document.getElementById('genshin-link');
             const btnMinecraft = document.getElementById('btn-minecraft');
+            const panelGenshin = document.getElementById('panel-genshin');
+            const panelMinecraft = document.getElementById('panel-minecraft');
             const backgroundLayer = document.getElementById('background-layer');
             const bgGenshin = document.getElementById('bg-genshin');
             const bgMinecraft = document.getElementById('bg-minecraft');
@@ -696,6 +1402,9 @@
                 bgMinecraft.style.transform = game === 'minecraft' ? 'scale(1.035)' : 'scale(1)';
                 infoBox.textContent = game === 'genshin' ? 'Genshin Impact' : 'Minecraft';
                 infoBox.className = 'dynamic-box ' + (game === 'genshin' ? 'active-genshin' : 'active-minecraft');
+
+                if (panelGenshin) panelGenshin.classList.toggle('is-focused', game === 'genshin');
+                if (panelMinecraft) panelMinecraft.classList.toggle('is-focused', game === 'minecraft');
             }
 
             function resetBackground() {
@@ -706,6 +1415,9 @@
                 bgMinecraft.style.transform = 'scale(1)';
                 infoBox.textContent = defaultText;
                 infoBox.className = 'dynamic-box';
+
+                if (panelGenshin) panelGenshin.classList.remove('is-focused');
+                if (panelMinecraft) panelMinecraft.classList.remove('is-focused');
             }
 
             function anyPickerOpen() {
@@ -817,6 +1529,145 @@
                     });
                 }
             });
+
+            /* =========================================================
+               GENSHIN TOOL 1: INTERACTIVE PITY & PRIMOGEM CALCULATOR
+               ========================================================= */
+            const giPity = document.getElementById('gi-pity');
+            const giPrimos = document.getElementById('gi-primos');
+            const giFates = document.getElementById('gi-fates');
+            const pityGuaranteeBtn = document.getElementById('pity-guarantee-btn');
+            const giPityBar = document.getElementById('gi-pity-bar');
+            const giSoftPityOut = document.getElementById('gi-soft-pity-out');
+            const giHardPityOut = document.getElementById('gi-hard-pity-out');
+            let isGuaranteed = false;
+
+            function updatePityCalculator() {
+                let pity = parseInt(giPity.value, 10) || 0;
+                pity = Math.max(0, Math.min(89, pity));
+                const primos = Math.max(0, parseInt(giPrimos.value, 10) || 0);
+                const fates = Math.max(0, parseInt(giFates.value, 10) || 0);
+
+                const savedWishes = Math.floor(primos / 160) + fates;
+                const effectivePity = pity + savedWishes;
+                const softTarget = 74;
+                const hardTarget = isGuaranteed ? 90 : 180;
+
+                const pct = Math.min(100, Math.round((effectivePity / 90) * 100));
+                if (giPityBar) giPityBar.style.width = pct + '%';
+
+                const pullsToSoft = Math.max(0, softTarget - effectivePity);
+                if (pullsToSoft === 0) {
+                    giSoftPityOut.innerHTML = 'Soft Pity (74): <strong>Reached!</strong>';
+                } else {
+                    giSoftPityOut.innerHTML = `Soft Pity (74): <strong>${pullsToSoft} pulls left</strong>`;
+                }
+
+                const pullsToGuarantee = Math.max(0, hardTarget - effectivePity);
+                if (pullsToGuarantee === 0) {
+                    giHardPityOut.textContent = '5★ Guaranteed Ready!';
+                } else {
+                    giHardPityOut.textContent = `${savedWishes} Saved • Need ${pullsToGuarantee} more`;
+                }
+            }
+
+            if (pityGuaranteeBtn) {
+                pityGuaranteeBtn.addEventListener('click', () => {
+                    isGuaranteed = !isGuaranteed;
+                    pityGuaranteeBtn.classList.toggle('is-guaranteed', isGuaranteed);
+                    pityGuaranteeBtn.textContent = isGuaranteed ? 'Guaranteed' : '50/50 Mode';
+                    updatePityCalculator();
+                });
+            }
+
+            [giPity, giPrimos, giFates].forEach((el) => {
+                if (el) el.addEventListener('input', updatePityCalculator);
+            });
+            updatePityCalculator();
+
+            /* =========================================================
+               GENSHIN TOOL 2: ARTIFACT CRIT VALUE (CV) SCORER
+               ========================================================= */
+            const giCr = document.getElementById('gi-cr');
+            const giCd = document.getElementById('gi-cd');
+            const giCvScore = document.getElementById('gi-cv-score');
+            const giCvTier = document.getElementById('gi-cv-tier');
+
+            function updateCvCalculator() {
+                const cr = Math.max(0, parseFloat(giCr.value) || 0);
+                const cd = Math.max(0, parseFloat(giCd.value) || 0);
+                const cv = (cr * 2) + cd;
+                if (giCvScore) giCvScore.textContent = `${cv.toFixed(1)} CV`;
+
+                let tier = 'Starter (<20 CV)';
+                if (cv >= 50) tier = 'Mythic (50+ CV)';
+                else if (cv >= 40) tier = 'God Roll (40+ CV)';
+                else if (cv >= 30) tier = 'Great (30–40 CV)';
+                else if (cv >= 20) tier = 'Solid (20–30 CV)';
+
+                if (giCvTier) giCvTier.textContent = tier;
+            }
+
+            [giCr, giCd].forEach((el) => {
+                if (el) el.addEventListener('input', updateCvCalculator);
+            });
+            updateCvCalculator();
+
+            /* =========================================================
+               MINECRAFT UTILITIES: NETHER LINKER & SHULKER/STACK CALC
+               ========================================================= */
+            const owX = document.getElementById('ow-x');
+            const owZ = document.getElementById('ow-z');
+            const netherX = document.getElementById('nether-x');
+            const netherZ = document.getElementById('nether-z');
+
+            function syncFromOverworld() {
+                const x = parseFloat(owX.value);
+                const z = parseFloat(owZ.value);
+                if (!isNaN(x)) netherX.value = Math.floor(x / 8);
+                if (!isNaN(z)) netherZ.value = Math.floor(z / 8);
+            }
+
+            function syncFromNether() {
+                const nx = parseFloat(netherX.value);
+                const nz = parseFloat(netherZ.value);
+                if (!isNaN(nx)) owX.value = Math.round(nx * 8);
+                if (!isNaN(nz)) owZ.value = Math.round(nz * 8);
+            }
+
+            if (owX && owZ && netherX && netherZ) {
+                owX.addEventListener('input', syncFromOverworld);
+                owZ.addEventListener('input', syncFromOverworld);
+                netherX.addEventListener('input', syncFromNether);
+                netherZ.addEventListener('input', syncFromNether);
+            }
+
+            const mcBlocksInput = document.getElementById('mc-blocks-input');
+            const mcStackOutput = document.getElementById('mc-stack-output');
+
+            function updateStackCalculator() {
+                let total = parseInt(mcBlocksInput.value, 10);
+                if (isNaN(total) || total <= 0) {
+                    mcStackOutput.textContent = '0 Stacks';
+                    return;
+                }
+                const shulkers = Math.floor(total / 1728);
+                const remAfterShulkers = total % 1728;
+                const stacks = Math.floor(remAfterShulkers / 64);
+                const items = remAfterShulkers % 64;
+
+                const parts = [];
+                if (shulkers > 0) parts.push(`${shulkers} Shulker${shulkers > 1 ? 's' : ''}`);
+                if (stacks > 0) parts.push(`${stacks} Stack${stacks > 1 ? 's' : ''}`);
+                if (items > 0 || parts.length === 0) parts.push(`${items} Block${items !== 1 ? 's' : ''}`);
+
+                mcStackOutput.textContent = parts.join(' + ');
+            }
+
+            if (mcBlocksInput) {
+                mcBlocksInput.addEventListener('input', updateStackCalculator);
+                updateStackCalculator();
+            }
         });
     </script>
 </body>

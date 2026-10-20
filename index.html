@@ -1464,7 +1464,7 @@
                 infoBox.textContent = 'Opening Minecraft ' + selectedEdition + ' · ' + level;
                 infoBox.className = 'dynamic-box active-minecraft';
 
-                // Open the local Beginner page for Minecraft Java Edition.
+                // Open the Beginner guide pages using relative URLs so they work on GitHub Pages.
                 if (selectedEdition === 'Java' && level === 'Beginner') {
                     launchTimer = setTimeout(() => {
                         window.location.href = './coreminecraft.html';
@@ -1472,10 +1472,9 @@
                     return;
                 }
 
-                // Open the local Beginner page for Minecraft Bedrock Edition.
                 if (selectedEdition === 'Bedrock' && level === 'Beginner') {
                     launchTimer = setTimeout(() => {
-                        window.location.href = 'file:///C:/Users/krish/Downloads/HTML/MY%20WEBSITE/coreminecraftbedrock.html';
+                        window.location.href = './coreminecraftbedrock.html';
                     }, 300);
                     return;
                 }

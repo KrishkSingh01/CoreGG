@@ -1472,6 +1472,14 @@
                     return;
                 }
 
+                // Open the local Beginner page for Minecraft Bedrock Edition.
+                if (selectedEdition === 'Bedrock' && level === 'Beginner') {
+                    launchTimer = setTimeout(() => {
+                        window.location.href = 'file:///C:/Users/krish/Downloads/HTML/MY%20WEBSITE/coreminecraftbedrock.html';
+                    }, 300);
+                    return;
+                }
+
                 launchTimer = setTimeout(() => {
                     infoBox.textContent = selectedEdition + ' · ' + level + ' selected';
                     launchTimer = null;

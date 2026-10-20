@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17251b">
+  <meta name="description" content="A beginner-friendly Minecraft Bedrock and Pocket Edition survival guide with controls, crafting, first-night survival, mining, farming, and multiplayer tips.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CoreGG | Minecraft Bedrock & Pocket Edition Beginner Guide">
+  <meta property="og:description" content="Learn Minecraft Bedrock and Pocket Edition one block at a time: touch controls, first-night survival, crafting, mining, and beginner tips.">
+  <title>CoreGG | Minecraft Bedrock & Pocket Edition Survival Guide</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#111a14;--surface:#1b2a20;--surface-2:#24382a;--surface-3:#304b35;--green:#75c64b;--green-bright:#a2ed68;--gold:#e6c875;--text:#f1f5e9;--muted:#b9c8b6;--line:#49664b;--danger:#ffb0a5;--shadow:0 14px 34px rgba(0,0,0,.28);--pixel:4px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background-color:light-dark(#111a14,#111a14);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}body:before{content:"";position:fixed;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(12,20,14,.76),rgba(12,20,14,.97)),repeating-linear-gradient(0deg,transparent 0 31px,rgba(133,187,103,.035) 32px),repeating-linear-gradient(90deg,transparent 0 31px,rgba(133,187,103,.035) 32px)}a{color:var(--green-bright)}button,input,select,textarea{font:inherit}button,a,input,select,textarea{outline-offset:3px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--gold)}button{cursor:pointer}img{max-width:100%}.skip-link{position:absolute;left:-9999px;top:0;background:#fff;color:#111;padding:.7rem;z-index:100}.skip-link:focus{left:1rem;top:1rem}.shell{width:min(1180px,calc(100% - 2rem));margin-inline:auto}.site-header{position:sticky;top:0;z-index:50;background:rgba(17,26,20,.96);border-bottom:3px solid var(--green);box-shadow:0 5px 18px rgba(0,0,0,.28);backdrop-filter:blur(10px)}.header-inner{min-height:82px;display:flex;align-items:center;gap:1.2rem;justify-content:space-between;padding:.8rem 0}.brand{display:flex;flex-direction:column;line-height:1;text-decoration:none;flex-shrink:0}.brand-name{font-weight:950;font-size:1.5rem;letter-spacing:.16em;color:#fff}.brand-name span{color:var(--green-bright)}.brand-sub{margin-top:.45rem;color:var(--muted);font-size:.62rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.nav{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;justify-content:flex-end}.pixel-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:42px;padding:.65rem .9rem;border:2px solid #5e8151;border-radius:3px;background:#263b2a;color:var(--text);font-weight:800;font-size:.82rem;text-decoration:none;box-shadow:inset 0 -3px rgba(0,0,0,.2);transition:background .16s,border-color .16s,transform .16s}.pixel-btn:hover{background:#355335;border-color:var(--green-bright);transform:translateY(-1px)}.pixel-btn.primary{background:#4c8b32;border-color:#8ed45f;color:#fff}.pixel-btn.secondary{background:#27382c}.pixel-btn.small{min-height:34px;padding:.4rem .65rem;font-size:.76rem}.icon{width:1.1rem;height:1.1rem;display:inline-grid;place-items:center;font-size:1rem}.hero{position:relative;overflow:hidden;margin:1.5rem auto 1.2rem;border:3px solid #4b6b45;background:linear-gradient(120deg,#1b3021 0%,#27462d 55%,#3d5c32 100%);box-shadow:var(--shadow);isolation:isolate}.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(13,23,16,.8),rgba(13,23,16,.12)),radial-gradient(circle at 82% 25%,rgba(164,229,97,.2),transparent 28rem)}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:1rem;padding:clamp(1.5rem,5vw,4rem)}.eyebrow{display:inline-flex;align-items:center;gap:.5rem;color:var(--green-bright);font-size:.75rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.eyebrow:before{content:"";width:9px;height:9px;background:var(--green-bright);box-shadow:0 0 0 4px rgba(162,237,104,.12)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.2rem,5.2vw,4.5rem);line-height:1.04;letter-spacing:-.045em;margin:.9rem 0 1rem;max-width:14ch}h1 span{color:var(--green-bright)}.hero p{max-width:58ch;color:#d4e0cf;font-size:1.03rem}.hero-actions{display:flex;gap:.65rem;flex-wrap:wrap;margin-top:1.3rem}.hero-note{font-size:.78rem!important;color:#c0d0b8!important;margin-top:1rem;margin-bottom:0}.pixel-scene{min-height:270px;position:relative;display:flex;align-items:center;justify-content:center;isolation:isolate}.sun{position:absolute;right:16%;top:8%;width:76px;height:76px;background:#c9e987;box-shadow:0 0 35px rgba(201,233,135,.22);border:5px solid #e0f2ad}.cloud{position:absolute;height:18px;background:#c3d7ae;box-shadow:18px -14px 0 #c3d7ae,36px 0 0 #c3d7ae,18px 0 0 #c3d7ae}.cloud.one{left:10%;top:25%;width:36px}.cloud.two{right:9%;top:43%;width:28px;transform:scale(.7)}.mountain{position:absolute;bottom:70px;width:0;height:0;border-left:110px solid transparent;border-right:110px solid transparent;border-bottom:145px solid #34563a}.mountain.back{left:0;border-left-width:100px;border-right-width:100px;border-bottom:110px solid #496d3c}.mountain.front{right:0;border-left-width:125px;border-right-width:125px;border-bottom:155px solid #294a32}.ground{position:absolute;bottom:35px;left:0;right:0;height:58px;background:repeating-linear-gradient(90deg,#4c8138 0 36px,#578e3f 36px 72px);border-top:12px solid #7bb84d;box-shadow:0 16px 0 #513f2a}.block-house{position:absolute;bottom:92px;left:50%;transform:translateX(-50%);width:125px;height:96px;background:repeating-linear-gradient(0deg,#9a7044 0 23px,#7d5735 24px 26px),repeating-linear-gradient(90deg,transparent 0 30px,rgba(0,0,0,.12) 31px 33px);border:5px solid #513c29;box-shadow:inset 0 0 0 4px rgba(255,220,150,.13)}.block-house:before{content:"";position:absolute;left:-12px;right:-12px;top:-30px;height:28px;background:#4c7638;border:4px solid #263f28;clip-path:polygon(0 100%,12% 0,88% 0,100% 100%)}.door{position:absolute;bottom:0;left:44px;width:31px;height:52px;background:#563a23;border:4px solid #38271b}.window{position:absolute;right:12px;top:22px;width:20px;height:20px;background:#8fd8d7;border:4px solid #60452a}.torch{position:absolute;bottom:100px;left:calc(50% + 78px);width:9px;height:36px;background:#7b4b24;border:2px solid #4c311b}.torch:before{content:"";position:absolute;top:-14px;left:-7px;width:17px;height:16px;background:#ffda72;box-shadow:0 0 20px #ffc44d}.section{padding:2rem 0}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1rem}.section-heading h2{font-size:clamp(1.45rem,3vw,2rem);margin:0;letter-spacing:-.02em}.section-heading p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem}.section-kicker{color:var(--green-bright);font-weight:900;text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;margin-bottom:.35rem}.panel{background:linear-gradient(180deg,#1e3023,#18251c);border:2px solid var(--line);box-shadow:var(--shadow)}.search-panel{padding:1rem;display:grid;grid-template-columns:1fr auto;gap:.7rem;margin-bottom:1rem}.search-box{display:flex;align-items:center;gap:.65rem;background:#101a13;border:2px solid #4b6948;padding:.15rem .75rem}.search-box input{width:100%;min-width:0;background:transparent;color:var(--text);border:0;padding:.7rem 0;outline:none}.search-box input::placeholder{color:#93a791}.search-hint{color:var(--muted);font-size:.75rem;margin:.5rem 0 0}.quick-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}.quick-card{display:flex;flex-direction:column;min-height:150px;padding:1rem;text-decoration:none;color:var(--text);background:#1d3022;border:2px solid #3d5b3e;transition:transform .16s,border-color .16s,background .16s}.quick-card:hover{transform:translateY(-3px);border-color:var(--green);background:#263d2a}.card-icon{display:grid;place-items:center;width:46px;height:46px;margin-bottom:.8rem;background:#365936;border:2px solid #6c9b54;font-size:1.35rem}.quick-card h3{font-size:1rem;margin:0 0 .35rem}.quick-card p{font-size:.82rem;color:var(--muted);margin:0}.guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}.guide-card{padding:1rem;background:#1b2a20;border:2px solid #3c583c;display:flex;flex-direction:column;min-height:220px}.guide-card .tag{align-self:flex-start;background:#314b31;color:#c6f3a6;border:1px solid #5d8750;padding:.2rem .45rem;font-size:.67rem;font-weight:900;text-transform:uppercase;letter-spacing:.07em}.guide-card h3{margin:.8rem 0 .45rem;font-size:1.12rem}.guide-card p{color:var(--muted);font-size:.88rem;margin-bottom:1rem}.guide-card details{margin-top:auto;border-top:1px solid #3d553c;padding-top:.7rem}.guide-card summary{color:var(--green-bright);font-weight:800;cursor:pointer}.guide-card details p{margin:.7rem 0 0}.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.tool-panel{padding:1.2rem}.tool-panel h3{margin-bottom:.35rem}.muted{color:var(--muted)}.recipe-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.45rem;max-width:210px;margin:.8rem 0}.recipe-slot{aspect-ratio:1;display:grid;place-items:center;background:#304832;border:2px solid #5b7d4f;font-size:1.5rem;padding:.35rem}.recipe-slot.empty{background:#152117;border-color:#354d35}.recipe-output{display:flex;align-items:center;gap:.8rem;padding:.8rem;background:#17261b;border:2px solid #638b4f;margin-top:auto}.recipe-output .big{font-size:2rem}.database-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.7rem}.data-tile{padding:.85rem;border:2px solid #3e5c3e;background:#1a2a1f;display:flex;flex-direction:column}.data-tile strong{display:block;margin:.35rem 0;font-size:.98rem}.data-tile p{margin:0;color:var(--muted);font-size:.82rem}.notice{padding:1rem;border-left:4px solid var(--gold);background:#292a1d;color:#e9e3c4;font-size:.85rem}
+
+    /* Beginner Visual & Image Styling */
+    .mc-sprite{width:38px;height:38px;image-rendering:pixelated;object-fit:contain;filter:drop-shadow(0 3px 4px rgba(0,0,0,.45));flex-shrink:0}
+    .mc-sprite.lg{width:48px;height:48px}
+    .mc-sprite.sm{width:28px;height:28px}
+    .card-head-pic{display:flex;align-items:center;justify-content:space-between;gap:.6rem;margin-bottom:.3rem}
+    .visual-banner{width:100%;height:110px;background:linear-gradient(180deg,#152419,#0f1a12);border:2px solid #355037;margin-bottom:.75rem;display:flex;align-items:center;justify-content:center;gap:.8rem;padding:.75rem;position:relative;overflow:hidden}
+    .visual-banner::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at center,rgba(162,237,104,.12),transparent 70%);pointer-events:none}
+    .key-badge{display:inline-block;padding:.15rem .45rem;background:#101a13;border:2px solid #6c9b54;color:var(--green-bright);font-family:monospace;font-weight:900;font-size:.82rem;border-radius:3px;box-shadow:inset 0 -2px rgba(0,0,0,.4)}
+    .key-list{display:grid;gap:.55rem;margin-top:.8rem}
+    .key-row{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.55rem .75rem;background:#142117;border:1px solid #385239;font-size:.86rem}
+    .tier-badge{display:inline-block;font-size:.68rem;font-weight:900;text-transform:uppercase;padding:.15rem .45rem;background:#263d29;color:var(--gold);border:1px solid #5d8750;margin-bottom:.35rem;align-self:flex-start}
+
+    .site-footer{margin-top:2rem;border-top:3px solid var(--green);background:#0d150f;padding:1.8rem 0 1rem}.footer-brand{display:flex;justify-content:center;align-items:center;gap:.7rem;color:#c3d0bf;font-size:.7rem;font-weight:900;letter-spacing:.2em;margin-bottom:.6rem}.footer-brand b{color:var(--green-bright)}.footer-disclaimer{max-width:850px;margin:0 auto;color:#adbdab;font-size:.78rem;line-height:1.65;text-align:center}.credits{max-width:850px;margin:1rem auto 0;padding-top:1rem;border-top:1px solid #2b422d;text-align:center}.credits h2{font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green-bright);margin-bottom:.4rem}.credits p{font-size:.78rem;color:#adbdab;margin:.3rem 0}.credits a{color:#b8ed96}.footer-bottom{margin-top:1rem;padding-top:.8rem;border-top:1px solid #233624;text-align:center;color:#71836e;font-size:.65rem;letter-spacing:.12em}.no-results{display:none;padding:1rem;border:1px dashed #64845a;color:var(--muted);text-align:center}.no-results.show{display:block}.reduced-motion *{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+    @media(max-width:850px){.header-inner{align-items:flex-start;flex-direction:column;gap:.8rem}.nav{justify-content:flex-start;width:100%}.hero-grid{grid-template-columns:1fr}.pixel-scene{min-height:220px;max-width:460px;width:100%;margin:auto}.quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.guide-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.database-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:560px){.shell{width:min(100% - 1rem,1180px)}.header-inner{padding:.75rem 0}.brand-name{font-size:1.3rem}.nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem}.nav .pixel-btn{padding:.55rem .35rem;font-size:.74rem}.hero{margin-top:.7rem}.hero-grid{padding:1.25rem}.hero p{font-size:.93rem}.pixel-scene{min-height:185px}.sun{width:54px;height:54px}.ground{bottom:25px;height:44px}.block-house{bottom:70px;transform:translateX(-50%) scale(.78);transform-origin:bottom center}.mountain{bottom:50px;transform:scale(.8);transform-origin:bottom}.mountain.back{left:-30px}.mountain.front{right:-40px}.torch{bottom:76px}.section{padding:1.35rem 0}.section-heading{align-items:flex-start;flex-direction:column}.search-panel{grid-template-columns:1fr}.quick-grid,.guide-grid,.split-grid,.database-grid{grid-template-columns:1fr}.quick-card{min-height:0}.guide-card{min-height:0}.recipe-grid{max-width:180px}.footer-disclaimer{font-size:.72rem}.footer-bottom{line-height:1.8}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"CoreGG Minecraft Bedrock Guide","description":"Independent beginner-friendly Minecraft Bedrock and Pocket Edition survival guides and visual reference.","inLanguage":"en"}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="CoreGG home"><span class="brand-name">CORE <span>GG</span></span><span class="brand-sub">Minecraft Bedrock Guide</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="pixel-btn" href="index.html"><span class="icon" aria-hidden="true">⌂</span> Home</a>
+        <a class="pixel-btn" href="https://www.instagram.com/otaku_krishna1/" target="_blank" rel="noopener noreferrer"><span class="icon" aria-hidden="true">✦</span> Support <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">Bedrock & Pocket Edition • Survival Handbook</span>
+          <h1 id="hero-title">Your next world starts <span>here.</span></h1>
+          <p>New to Minecraft on mobile, console, or Windows? Learn one step at a time. Master touch, controller, or keyboard controls, survive your first night, craft essential tools, and explore safely with visual guides.</p>
+          <div class="hero-actions"><a class="pixel-btn primary" href="#first-steps">Start your first day <span aria-hidden="true">→</span></a><a class="pixel-btn" href="#crafting">View crafting recipes</a></div>
+          <p class="hero-note">Made for brand-new Bedrock and Pocket Edition players. A simple reference—no login or setup needed.</p>
+        </div>
+        <div class="pixel-scene" role="img" aria-label="A simple block-style landscape with hills, a small wooden starter house, a torch and a bright sun">
+          <div class="sun"></div><div class="cloud one"></div><div class="cloud two"></div><div class="mountain back"></div><div class="mountain"></div><div class="mountain front"></div><div class="block-house"><div class="door"></div><div class="window"></div></div><div class="torch"></div><div class="ground"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEARCH & QUICK JUMP -->
+    <section class="section" aria-labelledby="find-heading">
+      <div class="section-heading"><div><div class="section-kicker">Beginner Handbook</div><h2 id="find-heading">What do you want to learn?</h2><p>Search any beginner topic: touch controls, crafting, coal, iron, mobs, or farming.</p></div></div>
+      <div class="panel" style="padding:1rem">
+        <form class="search-panel" id="siteSearch" role="search">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Try: controls, bed, pickaxe, coal, creeper, wheat…" aria-label="Search Bedrock and Pocket Edition beginner guides"><span class="muted" aria-hidden="true">⌘</span></label>
+          <button class="pixel-btn primary" type="submit">Search</button>
+        </form>
+        <p class="search-hint">Tip: Type a word like “torch”, “hunger”, “iron”, or “zombie” to filter the guides below.</p>
+        <div class="quick-grid" id="quickGrid">
+          <a class="quick-card searchable" data-search="controls keyboard mouse touch mobile joystick controller wasd inventory crouch sprint hud hearts hunger" href="#controls-hud">
+            <span class="card-icon"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/compass_16.png" alt="Compass" loading="lazy"></span>
+            <h3>1. Controls & HUD</h3>
+            <p>Learn how to move, open your inventory, and read your health and hunger bars.</p>
+          </a>
+          <a class="quick-card searchable" data-search="beginner first steps survival first night shelter wood bed food tools" href="#first-steps">
+            <span class="card-icon"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/oak_sapling.png" alt="Oak Sapling" loading="lazy"></span>
+            <h3>2. First Day Guide</h3>
+            <p>Step-by-step instructions from punching your first tree to sleeping through the night.</p>
+          </a>
+          <a class="quick-card searchable" data-search="crafting recipe items ingredients crafting table furnace pickaxe torch chest bed shield" href="#crafting">
+            <span class="card-icon"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/crafting_table_front.png" alt="Crafting Table" loading="lazy"></span>
+            <h3>3. Essential Recipes</h3>
+            <p>Visual 3×3 crafting grids for your first tools, torches, furnace, chest, and bed.</p>
+          </a>
+          <a class="quick-card searchable" data-search="mining ores coal iron pickaxe tiers progression mobs creeper zombie skeleton farming" href="#tools-mining">
+            <span class="card-icon"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_pickaxe.png" alt="Iron Pickaxe" loading="lazy"></span>
+            <h3>4. Ores, Mobs & Food</h3>
+            <p>Upgrade from wood to iron, spot nighttime monsters, and grow your own farm.</p>
+          </a>
+        </div>
+        <div class="no-results" id="noResults" role="status">No matching beginner guide found. Try a simpler word or clear your search box.</div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: CONTROLS & HUD -->
+    <section class="section" id="controls-hud" aria-labelledby="controls-heading">
+      <div class="section-heading"><div><div class="section-kicker">Step 00 • Basics</div><h2 id="controls-heading">Bedrock & Pocket Edition Controls and Screen Guide</h2><p>Before you punch your first tree, learn the controls for your device and understand the status bars.</p></div></div>
+      <div class="split-grid">
+        <div class="panel tool-panel searchable" data-search="controls keyboard mouse touch mobile joystick controller wasd jump crouch sneak sprint inventory coordinates">
+          <div class="card-head-pic">
+            <h3>Keyboard & Mouse Controls</h3>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/writable_book.png" alt="Book and Quill" loading="lazy">
+          </div>
+          <p class="muted">Controls vary by device and can be changed in Settings. These are common defaults:</p>
+          <div class="key-list">
+            <div class="key-row"><span>Mobile: Move</span><span><kbd class="key-badge">Joystick / D-pad</kbd></span></div>
+            <div class="key-row"><span>Mobile: Look around</span><span><kbd class="key-badge">Drag screen</kbd></span></div>
+            <div class="key-row"><span>Mobile: Break / use blocks</span><span><kbd class="key-badge">Tap / Hold</kbd></span></div>
+            <div class="key-row"><span>Mobile: Jump</span><span><kbd class="key-badge">↑ button</kbd></span></div>
+            <div class="key-row"><span>Mobile: Inventory / crafting</span><span><kbd class="key-badge">… button</kbd></span></div>
+            <div class="key-row"><span>Keyboard: Move / jump</span><span><kbd class="key-badge">WASD</kbd> <kbd class="key-badge">Space</kbd></span></div>
+            <div class="key-row"><span>Keyboard: Break / place</span><span><kbd class="key-badge">Left / Right Click</kbd></span></div>
+            <div class="key-row"><span>Keyboard: Inventory</span><span><kbd class="key-badge">E</kbd></span></div>
+            <div class="key-row"><span>Controller: Move / look</span><span><kbd class="key-badge">Left / Right Stick</kbd></span></div>
+            <div class="key-row"><span>Change or customise controls</span><span><kbd class="key-badge">Settings</kbd></span></div>
+          </div>
+          <p class="search-hint">Mobile tip: try Settings → Touch → Change Control Mode to find a layout that feels comfortable.</p>
+        </div>
+
+        <div class="panel tool-panel searchable" data-search="hud screen hearts health hunger bar food hotbar experience armor">
+          <div class="card-head-pic">
+            <h3>Understanding Your HUD (Screen Bars)</h3>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/golden_apple.png" alt="Apple" loading="lazy">
+          </div>
+          <p class="muted">What the icons at the bottom of your screen mean in Survival mode:</p>
+          <div class="data-tile" style="margin-top:.75rem">
+            <div class="card-head-pic"><strong>❤️ Health Bar (10 Red Hearts)</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/apple.png" alt="Red Apple" loading="lazy"></div>
+            <p>Located above the left side of your hotbar. Taking fall damage, monster hits, or drowning drains hearts. If all 10 hearts empty, you die and drop your items at that spot.</p>
+          </div>
+          <div class="data-tile" style="margin-top:.6rem">
+            <div class="card-head-pic"><strong>🍖 Hunger Bar (10 Drumsticks)</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/cooked_beef.png" alt="Steak" loading="lazy"></div>
+            <p>Located on the right side. Use the eat/use button while holding food (or the platform’s use control). <strong>Crucial Rule:</strong> When you have at least 9 drumsticks full, your Hearts heal automatically! Below 3 drumsticks, you cannot sprint.</p>
+          </div>
+          <div class="data-tile" style="margin-top:.6rem">
+            <div class="card-head-pic"><strong>🛡️ Armor & Hotbar (Slots 1–9)</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_chestplate.png" alt="Iron Chestplate" loading="lazy"></div>
+            <p>Tap a hotbar slot on mobile, use your controller’s item-selection controls, or use the mouse wheel / number keys on keyboard. Equip armor inside your inventory (<kbd class="key-badge">E</kbd>) to reduce damage.</p>
+          </div>
+        </div>
+      </div>
+      <div class="notice" style="margin-top:1rem">
+        <strong>Bedrock / Pocket Edition notes:</strong> “Pocket Edition” is the older name commonly used for Minecraft on phones and tablets; it is now part of Bedrock Edition. Bedrock supports touch, controllers, and keyboard/mouse depending on your device. You can customise touch buttons in Settings, and coordinates may need to be enabled in world settings.
+      </div>
+    </section>
+
+    <!-- SECTION 2: FIRST DAY STEP BY STEP -->
+    <section class="section" id="first-steps" aria-labelledby="steps-heading">
+      <div class="section-heading"><div><div class="section-kicker">Step 01 • Survival Walkthrough</div><h2 id="steps-heading">Surviving Your First Day (20 Minutes)</h2><p>A full Minecraft day-night cycle is about 20 real-world minutes. Use these 6 steps to prepare before night.</p></div><span class="tag" style="border:1px solid #5d8750;padding:.3rem .55rem;color:#c6f3a6;background:#314b31;font-size:.72rem;font-weight:900">DAY 1 GUIDE</span></div>
+      <div class="guide-grid" id="guideGrid">
+        <article class="guide-card searchable" data-search="wood logs tree oak planks crafting table punch tree">
+          <div class="visual-banner">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_log.png" alt="Oak Log" loading="lazy">
+            <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Oak Planks" loading="lazy">
+            <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/crafting_table_front.png" alt="Crafting Table" loading="lazy">
+          </div>
+          <span class="tag">Step 1 · Morning</span>
+          <h3>Punch Trees for Wood</h3>
+          <p>Walk up to any tree and tap and hold the log on mobile, or use your device’s break/attack control until it pops out. Collect 5 to 8 Wood Logs.</p>
+          <details><summary>How to make a Crafting Table</summary><p>Open your inventory (often <strong>E</strong> on keyboard, or the inventory button on mobile/controller). Place 1 Log into the 2×2 crafting grid to get 4 Wood Planks. Fill all 4 slots of the 2×2 grid with Planks to create a <strong>Crafting Table</strong>.</p></details>
+        </article>
+
+        <article class="guide-card searchable" data-search="wooden pickaxe stone cobblestone upgrade tools sticks">
+          <div class="visual-banner">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/wooden_pickaxe.png" alt="Wooden Pickaxe" loading="lazy">
+            <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy">
+            <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stone_pickaxe.png" alt="Stone Pickaxe" loading="lazy">
+          </div>
+          <span class="tag">Step 2 · Mid-Morning</span>
+          <h3>Craft a Pickaxe & Mine Stone</h3>
+          <p>Place your Crafting Table, then tap or use the interact button to open the 3×3 grid. Craft Sticks and a <strong>Wooden Pickaxe</strong>.</p>
+          <details><summary>Why only craft one wooden tool?</summary><p>Wooden tools are slow and weak. Use your Wooden Pickaxe to mine <strong>15–20 gray Stone blocks</strong> (from a hillside or shallow dig), then immediately craft a <strong>Stone Pickaxe, Stone Axe, and Stone Sword</strong>!</p></details>
+        </article>
+
+        <article class="guide-card searchable" data-search="coal charcoal torches light dark cave furnace">
+          <div class="visual-banner">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/coal_ore.png" alt="Coal Ore" loading="lazy">
+            <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/coal.png" alt="Coal" loading="lazy">
+            <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/torch.png" alt="Torch" loading="lazy">
+          </div>
+          <span class="tag">Step 3 · Noon</span>
+          <h3>Find Coal & Make Torches</h3>
+          <p>Look at rocky cliffs or surface caves for gray stone speckled with black spots—that is <strong>Coal Ore</strong>. Mine it with your Pickaxe.</p>
+          <details><summary>What if I cannot find Coal?</summary><p>Craft a <strong>Furnace</strong> using 8 Cobblestone. Put Wood Logs in the top slot and Wood Planks in the bottom fuel slot to smelt <strong>Charcoal</strong>. Both Coal and Charcoal craft Torches when placed above a Stick!</p></details>
+        </article>
+
+        <article class="guide-card searchable" data-search="sheep wool meat food cow pig chicken furnace cook">
+          <div class="visual-banner">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/white_wool.png" alt="White Wool" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/beef.png" alt="Raw Beef" loading="lazy">
+            <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/cooked_beef.png" alt="Steak" loading="lazy">
+          </div>
+          <span class="tag">Step 4 · Afternoon</span>
+          <h3>Gather 3 Wool & Raw Food</h3>
+          <p>While exploring in daylight, look for <strong>3 Sheep</strong> of the same color to get 3 Wool blocks, plus Cows, Pigs, or Chickens for meat.</p>
+          <details><summary>Always cook your meat!</summary><p>Cooked meat restores <strong>3× to 4× more hunger</strong> than raw meat. Put raw beef, porkchops, or mutton into your Furnace with coal or wood planks to cook it.</p></details>
+        </article>
+
+        <article class="guide-card searchable" data-search="shelter house dirt wood door night monsters safe">
+          <div class="visual-banner">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/oak_door.png" alt="Oak Door" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/furnace_front_on.png" alt="Lit Furnace" loading="lazy">
+          </div>
+          <span class="tag">Step 5 · Before Sunset</span>
+          <h3>Build a Starter Shelter</h3>
+          <p>Before the sun touches the horizon, build a small enclosed room (at least 3 blocks tall with a roof) or hollow out a small room in the side of a hill.</p>
+          <details><summary>Essential shelter checklist</summary><p>Craft a <strong>Wooden Door</strong> so you can walk in and out while keeping monsters out. Bring your Crafting Table and Furnace inside, and place <strong>Torches</strong> on the walls so monsters cannot spawn inside.</p></details>
+        </article>
+
+        <article class="guide-card searchable" data-search="bed sleep skip night respawn point wool planks">
+          <div class="visual-banner">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/red_bed.png" alt="Bed" loading="lazy">
+            <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/clock_00.png" alt="Daytime Clock" loading="lazy">
+          </div>
+          <span class="tag">Step 6 · Nightfall</span>
+          <h3>Craft a Bed & Skip the Night</h3>
+          <p>Combine 3 matching Wool (middle row) and 3 Wood Planks (bottom row) in your Crafting Table to craft a <strong>Bed</strong>.</p>
+          <details><summary>What if I didn't find 3 Sheep?</summary><p>Stay inside your lit shelter! Spend the 7-minute night smelting food in your Furnace, organizing a Chest, or digging a staircase mine inside your shelter floor. Never break your bed once placed—it saves your respawn location!</p></details>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 3: ESSENTIAL 3x3 CRAFTING RECIPES -->
+    <section class="section" id="crafting" aria-labelledby="craft-heading">
+      <div class="section-heading"><div><div class="section-kicker">Step 02 • Visual Workbench</div><h2 id="craft-heading">8 Must-Know Beginner Crafting Recipes</h2><p>Exact 3×3 crafting table patterns for your first hour in Minecraft. Any wood plank type works unless noted.</p></div></div>
+      <div class="guide-grid">
+
+        <!-- Recipe 1: Sticks & Crafting Table -->
+        <div class="panel tool-panel searchable" data-search="crafting table sticks wood planks recipe">
+          <h3>1. Sticks (Makes 4)</h3>
+          <p class="muted" style="font-size:.82rem">Place 2 Wood Planks vertically to make handles for tools and torches.</p>
+          <div class="recipe-grid" aria-label="Stick crafting grid">
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot empty"></div><div class="recipe-slot empty"></div>
+          </div>
+          <div class="recipe-output">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stick.png" alt="Sticks" loading="lazy">
+            <div><strong>4 × Sticks</strong><div class="muted" style="font-size:.78rem">Ingredients: 2 Wood Planks</div></div>
+          </div>
+        </div>
+
+        <!-- Recipe 2: Pickaxe -->
+        <div class="panel tool-panel searchable" data-search="pickaxe wooden stone iron crafting recipe mine">
+          <h3>2. Pickaxe (Any Tier)</h3>
+          <p class="muted" style="font-size:.82rem">Top row uses 3 Planks, 3 Cobblestone, or 3 Iron Ingots.</p>
+          <div class="recipe-grid" aria-label="Pickaxe crafting grid">
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stick.png" alt="Stick" loading="lazy"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stick.png" alt="Stick" loading="lazy"></div><div class="recipe-slot empty"></div>
+          </div>
+          <div class="recipe-output">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stone_pickaxe.png" alt="Stone Pickaxe" loading="lazy">
+            <div><strong>1 × Pickaxe</strong><div class="muted" style="font-size:.78rem">3 Material + 2 Sticks</div></div>
+          </div>
+        </div>
+
+        <!-- Recipe 3: Sword -->
+        <div class="panel tool-panel searchable" data-search="sword weapon combat stone iron crafting recipe">
+          <h3>3. Sword (Any Tier)</h3>
+          <p class="muted" style="font-size:.82rem">Essential for defending yourself and hunting animals for food.</p>
+          <div class="recipe-grid" aria-label="Sword crafting grid">
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stick.png" alt="Stick" loading="lazy"></div><div class="recipe-slot empty"></div>
+          </div>
+          <div class="recipe-output">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stone_sword.png" alt="Stone Sword" loading="lazy">
+            <div><strong>1 × Sword</strong><div class="muted" style="font-size:.78rem">2 Material + 1 Stick</div></div>
+          </div>
+        </div>
+
+        <!-- Recipe 4: Torches -->
+        <div class="panel tool-panel searchable" data-search="torch light coal charcoal stick crafting recipe">
+          <h3>4. Torches (Makes 4)</h3>
+          <p class="muted" style="font-size:.82rem">Lights up dark caves and stops hostile monsters from spawning.</p>
+          <div class="recipe-grid" aria-label="Torch crafting grid">
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/coal.png" alt="Coal" loading="lazy"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stick.png" alt="Stick" loading="lazy"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot empty"></div><div class="recipe-slot empty"></div>
+          </div>
+          <div class="recipe-output">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/torch.png" alt="Torch" loading="lazy">
+            <div><strong>4 × Torches</strong><div class="muted" style="font-size:.78rem">1 Coal/Charcoal + 1 Stick</div></div>
+          </div>
+        </div>
+
+        <!-- Recipe 5: Furnace -->
+        <div class="panel tool-panel searchable" data-search="furnace smelt cook iron food cobblestone crafting recipe">
+          <h3>5. Furnace</h3>
+          <p class="muted" style="font-size:.82rem">Cooks raw meat, melts Raw Iron into ingots, and makes Charcoal.</p>
+          <div class="recipe-grid" aria-label="Furnace crafting grid">
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div>
+          </div>
+          <div class="recipe-output">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/furnace_front.png" alt="Furnace" loading="lazy">
+            <div><strong>1 × Furnace</strong><div class="muted" style="font-size:.78rem">8 Cobblestone (hollow ring)</div></div>
+          </div>
+        </div>
+
+        <!-- Recipe 6: Chest -->
+        <div class="panel tool-panel searchable" data-search="chest storage items wood planks crafting recipe">
+          <h3>6. Chest (Storage)</h3>
+          <p class="muted" style="font-size:.82rem">Stores 27 stacks of items safely at your base. Place 2 side-by-side for a Large Chest!</p>
+          <div class="recipe-grid" aria-label="Chest crafting grid">
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div>
+          </div>
+          <div class="recipe-output">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/crafting_table_top.png" alt="Chest" loading="lazy">
+            <div><strong>1 × Chest</strong><div class="muted" style="font-size:.78rem">8 Wood Planks (hollow ring)</div></div>
+          </div>
+        </div>
+
+        <!-- Recipe 7: Bed -->
+        <div class="panel tool-panel searchable" data-search="bed sleep wool planks respawn night crafting recipe">
+          <h3>7. Bed (Skip Night)</h3>
+          <p class="muted" style="font-size:.82rem">Requires 3 Wool of the <strong>exact same color</strong> and any 3 Wood Planks.</p>
+          <div class="recipe-grid" aria-label="Bed crafting grid">
+            <div class="recipe-slot empty"></div><div class="recipe-slot empty"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/white_wool.png" alt="Wool" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/white_wool.png" alt="Wool" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/white_wool.png" alt="Wool" loading="lazy"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div>
+          </div>
+          <div class="recipe-output">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/red_bed.png" alt="Bed" loading="lazy">
+            <div><strong>1 × Bed</strong><div class="muted" style="font-size:.78rem">3 Matching Wool + 3 Planks</div></div>
+          </div>
+        </div>
+
+        <!-- Recipe 8: Shield -->
+        <div class="panel tool-panel searchable" data-search="shield block skeleton arrows creeper iron ingot planks crafting recipe">
+          <h3>8. Shield (Lifesaver!)</h3>
+          <p class="muted" style="font-size:.82rem">Use your device’s shield/block control to defend yourself from many incoming attacks.</p>
+          <div class="recipe-grid" aria-label="Shield crafting grid">
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_ingot.png" alt="Iron Ingot" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot empty"></div>
+          </div>
+          <div class="recipe-output">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/shield.png" alt="Shield" loading="lazy">
+            <div><strong>1 × Shield</strong><div class="muted" style="font-size:.78rem">1 Iron Ingot + 6 Wood Planks</div></div>
+          </div>
+        </div>
+
+        <!-- Bonus Recipe 9: Axe & Bucket Info -->
+        <div class="panel tool-panel searchable" data-search="axe bucket water iron ingot wood logs chop trees">
+          <h3>9. Iron Bucket & Axe</h3>
+          <p class="muted" style="font-size:.82rem">Craft a Bucket with 3 Iron Ingots in a V-shape to carry water for farming and safety.</p>
+          <div class="recipe-grid" aria-label="Bucket crafting grid">
+            <div class="recipe-slot empty"></div><div class="recipe-slot empty"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_ingot.png" alt="Iron Ingot" loading="lazy"></div><div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_ingot.png" alt="Iron Ingot" loading="lazy"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_ingot.png" alt="Iron Ingot" loading="lazy"></div><div class="recipe-slot empty"></div>
+          </div>
+          <div class="recipe-output">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/water_bucket.png" alt="Water Bucket" loading="lazy">
+            <div><strong>1 × Bucket</strong><div class="muted" style="font-size:.78rem">3 Iron Ingots (V-Shape)</div></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: TOOL & ORE PROGRESSION -->
+    <section class="section" id="tools-mining" aria-labelledby="mining-heading">
+      <div class="section-heading"><div><div class="section-kicker">Step 03 • Underground Guide</div><h2 id="mining-heading">Tool Tiers & Beginner Ores</h2><p>In Minecraft, mining an ore with the wrong pickaxe destroys the block without dropping anything! Follow this exact upgrade ladder.</p></div></div>
+      <div class="database-grid">
+        <article class="data-tile searchable" data-search="wooden pickaxe tier 1 stone coal">
+          <span class="tier-badge">Tier 1 • Starter</span>
+          <div class="card-head-pic">
+            <strong>Wooden Pickaxe</strong>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/wooden_pickaxe.png" alt="Wooden Pickaxe" loading="lazy">
+          </div>
+          <p><strong>Can Mine:</strong> Stone, Cobblestone, and Coal Ore.<br><strong>Warning:</strong> Do NOT mine Iron Ore with a wooden pickaxe—it will break nothing! Upgrade to Stone immediately.</p>
+        </article>
+
+        <article class="data-tile searchable" data-search="stone pickaxe tier 2 iron copper">
+          <span class="tier-badge">Tier 2 • Early Game</span>
+          <div class="card-head-pic">
+            <strong>Stone Pickaxe</strong>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stone_pickaxe.png" alt="Stone Pickaxe" loading="lazy">
+          </div>
+          <p><strong>Can Mine:</strong> Iron Ore, Copper Ore, and Lapis Lazuli.<br><strong>Tip:</strong> Cheap and easy to repair. Always carry 2 Stone Pickaxes when exploring caves.</p>
+        </article>
+
+        <article class="data-tile searchable" data-search="iron pickaxe tier 3 diamond gold redstone">
+          <span class="tier-badge">Tier 3 • Main Goal</span>
+          <div class="card-head-pic">
+            <strong>Iron Pickaxe</strong>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_pickaxe.png" alt="Iron Pickaxe" loading="lazy">
+          </div>
+          <p><strong>Can Mine:</strong> Diamonds, Gold Ore, Redstone, and Emeralds.<br><strong>How to get:</strong> Smelt Raw Iron in a Furnace with Coal to get Iron Ingots.</p>
+        </article>
+
+        <article class="data-tile searchable" data-search="diamond pickaxe tier 4 obsidian">
+          <span class="tier-badge">Tier 4 • Advanced</span>
+          <div class="card-head-pic">
+            <strong>Diamond Pickaxe</strong>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/diamond_pickaxe.png" alt="Diamond Pickaxe" loading="lazy">
+          </div>
+          <p><strong>Can Mine:</strong> Everything, including Obsidian.<br><strong>Where to find Diamonds:</strong> Deep underground in Deepslate layers (below <strong>Y = 16</strong>, best at <strong>Y = -58</strong>).</p>
+        </article>
+      </div>
+
+      <!-- Ore Spotting Cards -->
+      <div class="guide-grid" style="margin-top:.8rem">
+        <article class="data-tile searchable" data-search="coal ore fuel torches where to find y level">
+          <div class="card-head-pic">
+            <strong>Coal Ore (Fuel & Light)</strong>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/coal_ore.png" alt="Coal Ore" loading="lazy">
+          </div>
+          <p>Drops Coal directly when mined with any pickaxe. Found abundantly in cliffs, hills, and surface caves between <strong>Y = 0 and Y = 256</strong> (most common around) <strong>Y = 96</strong></p>
+        </article>
+
+        <article class="data-tile searchable" data-search="iron ore raw iron smelt armor shield bucket y level">
+          <div class="card-head-pic">
+            <strong>Iron Ore (Your #1 Priority)</strong>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/iron_ore.png" alt="Iron Ore" loading="lazy">
+          </div>
+          <p>Requires a <strong>Stone Pickaxe</strong> or better. Drops <em>Raw Iron</em> which you must smelt in a Furnace. Very common in shallow caves around <strong>Y = 16</strong> and high mountain peaks.</p>
+        </article>
+
+        <article class="data-tile searchable" data-search="which tool for which block shovel axe pickaxe hoe">
+          <div class="card-head-pic">
+            <strong>Match the Tool to the Block</strong>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_axe.png" alt="Iron Axe" loading="lazy">
+          </div>
+          <p><strong>Pickaxe:</strong> Stone, Ores, Furnace.<br><strong>Axe:</strong> Logs, Planks, Chests, Crafting Tables.<br><strong>Shovel:</strong> Dirt, Grass, Sand, Gravel.<br><strong>Hoe:</strong> Tilling dirt for farming crops.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 5: MOBS & ANIMALS -->
+    <section class="section" id="world-guide" aria-labelledby="world-heading">
+      <div class="section-heading"><div><div class="section-kicker">Step 04 • Creature Field Guide</div><h2 id="world-heading">Mobs Every Beginner Will Meet</h2><p>Friendly animals spawn in grassy daylight. Hostile monsters spawn in the dark or at night.</p></div></div>
+      <div class="database-grid">
+        <article class="data-tile searchable" data-search="creeper hostile mob green explodes hiss gunpowder">
+          <div class="card-head-pic">
+            <strong>💥 Creeper (Hostile)</strong>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/gunpowder.png" alt="Gunpowder" loading="lazy">
+          </div>
+          <p>Silent, green, four-legged monster that does not burn in sunlight. Walks up to you, hisses, flashes, and <strong>explodes</strong>! <strong>How to fight:</strong> Hit once with your sword, immediately sprint backward so the timer resets, then repeat.</p>
+        </article>
+
+        <article class="data-tile searchable" data-search="zombie hostile mob night burns sunlight rotten flesh">
+          <div class="card-head-pic">
+            <strong>🧟 Zombie (Hostile)</strong>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/rotten_flesh.png" alt="Rotten Flesh" loading="lazy">
+          </div>
+          <p>Slow-moving melee monster that groans and walks toward you. Burns in morning sunlight unless standing in water or shade. Watch out for <strong>Baby Zombies</strong>—they run very fast!</p>
+        </article>
+
+        <article class="data-tile searchable" data-search="skeleton hostile mob bow arrows shield bones">
+          <div class="card-head-pic">
+            <strong>🏹 Skeleton (Hostile)</strong>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/bow.png" alt="Bow" loading="lazy">
+          </div>
+          <p>Shoots arrows from a distance and rattles when walking. <strong>How to fight:</strong> use your shield action with a <strong>Shield</strong> to bounce their arrows harmlessly away, then rush in between shots. Drops Bones and Arrows.</p>
+        </article>
+
+        <article class="data-tile searchable" data-search="spider hostile mob climbs walls string neutral day">
+          <div class="card-head-pic">
+            <strong>🕷️ Spider (Hostile at Night)</strong>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/string.png" alt="String" loading="lazy">
+          </div>
+          <p>Can climb up vertical walls! Hostile in the dark, but becomes <strong>peaceful during bright daylight</strong> unless you hit it first. Drops <strong>String</strong> (used to craft a Bow, Fishing Rod, or Wool).</p>
+        </article>
+
+        <article class="data-tile searchable" data-search="enderman tall black purple eyes don't look neutral">
+          <div class="card-head-pic">
+            <strong>👁️ Enderman (Neutral)</strong>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/ender_pearl.png" alt="Ender Pearl" loading="lazy">
+          </div>
+          <p>Tall black creature with glowing purple eyes that teleports. <strong>Golden Rule:</strong> Never put your crosshair directly on its face! It is completely peaceful unless you look at its head or attack it.</p>
+        </article>
+
+        <article class="data-tile searchable" data-search="sheep passive animal wool mutton bed">
+          <div class="card-head-pic">
+            <strong>🐑 Sheep (Friendly)</strong>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/shears.png" alt="Shears" loading="lazy">
+          </div>
+          <p>Gives Wool for your Bed and Raw Mutton for food. Once you have 2 Iron Ingots, craft <strong>Shears</strong> to harvest 1–3 Wool per sheep without hurting them! Sheep regrow wool after eating grass.</p>
+        </article>
+
+        <article class="data-tile searchable" data-search="cow pig chicken passive animal food beef leather">
+          <div class="card-head-pic">
+            <strong>🐄 Cows, Pigs & Chickens</strong>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/leather.png" alt="Leather" loading="lazy">
+          </div>
+          <p>Harmless animals that provide your best early food. Cows drop Raw Beef and Leather. Lead them into a fenced pen by holding <strong>Wheat</strong> (for Cows/Sheep) or <strong>Seeds</strong> (for Chickens).</p>
+        </article>
+
+        <article class="data-tile searchable" data-search="villager village house bed trade emerald iron golem">
+          <div class="card-head-pic">
+            <strong>🧑‍🌾 Villager (Friendly)</strong>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/emerald.png" alt="Emerald" loading="lazy">
+          </div>
+          <p>Found in NPC Villages with Hay Bales, farms, and houses. Tap or use the interact button to trade items for Emeralds. Do <strong>not</strong> hit Villagers or their giant protector, the <strong>Iron Golem</strong>!</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- BEDROCK MULTIPLAYER BASICS -->
+    <section class="section" id="bedrock-basics" aria-labelledby="bedrock-heading">
+      <div class="section-heading"><div><div class="section-kicker">Bonus • Bedrock Basics</div><h2 id="bedrock-heading">Playing with Friends & World Settings</h2><p>A few things worth knowing if you play on a phone, tablet, console, or Windows PC.</p></div></div>
+      <div class="database-grid">
+        <article class="data-tile searchable" data-search="bedrock pocket edition mobile android ios name">
+          <strong>📱 Pocket Edition = Bedrock</strong>
+          <p>The mobile version is part of Bedrock Edition. Menus and controls may look a little different between devices and updates.</p>
+        </article>
+        <article class="data-tile searchable" data-search="crossplay friends multiplayer microsoft account bedrock java">
+          <strong>🌐 Play with friends</strong>
+          <p>Bedrock players can often play together across supported mobile, console, and Windows devices. Java and Bedrock players normally cannot join the same standard world together.</p>
+        </article>
+        <article class="data-tile searchable" data-search="world settings coordinates show coordinates cheats achievements">
+          <strong>📍 Turn on coordinates</strong>
+          <p>Coordinates help you return to your base. Look for “Show Coordinates” in world settings; enabling cheats can affect achievements in that world, so read the prompt before changing settings.</p>
+        </article>
+        <article class="data-tile searchable" data-search="marketplace add-ons safety download trusted">
+          <strong>🧩 Add-ons & Marketplace</strong>
+          <p>Use the in-game Marketplace or trusted sources, check compatibility with your version, and make a copy of your world before trying add-ons.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 6: FARMING & GOLDEN SURVIVAL RULES -->
+    <section class="section" id="farming-rules" aria-labelledby="rules-heading">
+      <div class="section-heading"><div><div class="section-kicker">Step 05 • Sustainable Survival</div><h2 id="rules-heading">Beginner Farming & 6 Golden Rules</h2><p>Stop running out of food and avoid the classic mistakes that get every new player killed.</p></div></div>
+      <div class="split-grid">
+        <div class="panel tool-panel searchable" data-search="farming wheat seeds bread hoe water crops food">
+          <div class="card-head-pic">
+            <h3>How to Start a Simple Wheat Farm</h3>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/bread.png" alt="Bread" loading="lazy">
+          </div>
+          <p class="muted">Never go hungry again with this 4-step starter farm:</p>
+          <div class="data-tile" style="margin-top:.6rem">
+            <div class="card-head-pic"><strong>1. Break Tall Grass for Seeds</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/wheat_seeds.png" alt="Wheat Seeds" loading="lazy"></div>
+            <p>Punch short grass on the ground with your hand to collect green <strong>Wheat Seeds</strong></p>
+          </div>
+          <div class="data-tile" style="margin-top:.55rem">
+            <div class="card-head-pic"><strong>2. Till Dirt Near Water with a Hoe</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/wooden_hoe.png" alt="Wooden Hoe" loading="lazy"></div>
+            <p>Craft a Wooden or Stone Hoe (2 Material + 2 Sticks). tap/use Dirt or Grass blocks within <strong>4 blocks of water</strong> (a river, pond, or 1 bucket of water) to turn it into dark, wet Farmland.</p>
+          </div>
+          <div class="data-tile" style="margin-top:.55rem">
+            <div class="card-head-pic"><strong>3. Plant, Wait & Craft Bread</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/wheat.png" alt="Wheat" loading="lazy"></div>
+            <p>tap/use Farmland with Seeds. Wait until the stalks turn golden-brown at the top before harvesting! Place <strong>3 Wheat in a horizontal row</strong> in your Crafting Table to make <strong>Bread</strong></p>
+          </div>
+        </div>
+
+        <div class="panel tool-panel searchable" data-search="golden rules mistakes dig straight down lava water bucket coordinates f3">
+          <div class="card-head-pic">
+            <h3>The 6 Golden Rules of Minecraft</h3>
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/totem_of_undying.png" alt="Survival Icon" loading="lazy">
+          </div>
+          <ul class="muted" style="padding-left:1.2rem;margin-top:.6rem;display:grid;gap:.55rem">
+            <li><strong>Rule #1: Never dig straight down!</strong> You can fall directly into a hidden lava pool or a deep ravine. Dig a 2-block-wide staircase instead so you can always see the block below you.</li>
+            <li><strong>Rule #2: Never dig straight up!</strong> Overhead Lava, Gravel, or Sand can fall on your head and suffocate you. Place a Torch at your feet when mining upward.</li>
+            <li><strong>Rule #3: Hold Shift near steep drops!</strong> Holding <kbd class="key-badge">Left Shift</kbd> locks your feet to the block you are standing on—making it impossible to walk off a cliff or bridge.</li>
+            <li><strong>Rule #4: Bedrock Combat:</strong> Bedrock combat does not use Java Edition’s same attack-cooldown meter. Keep your distance, use a shield when available, and avoid fighting groups of monsters early on.</li>
+            <li><strong>Rule #5: Write down your base coordinates:</strong> Enable <strong>Show Coordinates</strong> in world settings if available, then write down your base’s <strong>X, Y, and Z</strong> values so you can find it again.</li>
+            <li><strong>Rule #6: Always carry a Water Bucket:</strong> Pour water over yourself if you catch fire, or pour it onto red-hot Lava to turn it into safe, solid Stone and Obsidian.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="notice" style="margin:1.2rem 0 0"><strong>Pro Tip for Bedrock Beginners:</strong> Use the <strong>Recipe Book</strong> in your inventory or crafting screen. It shows recipes as you unlock them by collecting materials. On mobile, tap the recipe book and use the on-screen inventory slots.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-brand"><b>CORE GG</b><span aria-hidden="true">◆</span><span>PLAYER FIELD GUIDE</span></div>
+      <p class="footer-disclaimer">CoreGG is an independent fan-made learning resource. It is not an official Minecraft product and is not approved by or associated with Mojang or Microsoft. Minecraft and related game assets belong to their respective owners.</p>
+      <div class="credits"><h2>Game & trademark credits</h2><p><strong>Minecraft Bedrock Edition</strong> (including the version commonly called Pocket Edition on mobile) is developed by Mojang Studios and published by Microsoft.</p><p>All Minecraft names, trademarks and game content remain the property of their respective owners.</p><p>For current rules on using Minecraft names and assets, read the <a href="https://www.minecraft.net/en-us/usage-guidelines" target="_blank" rel="noopener noreferrer">Minecraft Usage Guidelines</a>.</p><p>For official beginner help and release information, visit <a href="https://www.minecraft.net/en-us/minecraft-tips-for-beginners" target="_blank" rel="noopener noreferrer">Minecraft beginner guides</a> and the <a href="https://www.minecraft.net/en-us/article/minecraft-controls" target="_blank" rel="noopener noreferrer">official Minecraft controls guide</a>.</p></div>
+      <div class="footer-bottom">COREGG <span aria-hidden="true">•</span> MADE FOR LEARNING <span aria-hidden="true">•</span> BEDROCK & POCKET EDITION</div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      'use strict';
+      const $ = (selector, root=document) => root.querySelector(selector);
+      const $$ = (selector, root=document) => Array.from(root.querySelectorAll(selector));
+
+      // Pure in-memory search filtering (no database or localStorage used)
+      const searchForm = $('#siteSearch');
+      const searchInput = $('#searchInput');
+      const noResults = $('#noResults');
+
+      function runSearch(){
+        const query = searchInput.value.trim().toLowerCase();
+        let visible = 0;
+        $$('.searchable').forEach(el => {
+          const haystack = ((el.innerText || '') + ' ' + (el.dataset.search || '')).toLowerCase();
+          const match = !query || haystack.includes(query);
+          el.hidden = !match;
+          if(match) visible++;
+        });
+        noResults.classList.toggle('show', !!query && visible === 0);
+        if(query){
+          const first = $$('.searchable').find(el => !el.hidden);
+          if(first){
+            first.scrollIntoView({
+              behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+              block: 'center'
+            });
+          }
+        }
+      }
+
+      searchForm.addEventListener('submit', e => {
+        e.preventDefault();
+        runSearch();
+      });
+      searchInput.addEventListener('input', () => {
+        if(searchInput.value.trim() === '') runSearch();
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -245,21 +245,31 @@
         }
 
         .nav-link.support-tab {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 42px;
             color: var(--neon-gold);
-            border: 1px solid var(--neon-gold);
-            padding: 6px 18px;
-            box-shadow: 0 0 10px rgba(255, 215, 0, 0.2), inset 0 0 5px rgba(255, 215, 0, 0.1);
-            background: rgba(255, 215, 0, 0.08);
-            text-shadow: 0 0 5px var(--neon-gold-glow);
-            clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+            border: 1px solid rgba(255, 215, 0, 0.58);
+            padding: 8px 14px;
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.08);
+            background: rgba(255, 215, 0, 0.055);
+            text-shadow: none;
+            clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
             border-radius: 2px;
+            letter-spacing: 2px;
+            white-space: nowrap;
         }
 
         .nav-link.support-tab:hover {
-            background: rgba(255, 215, 0, 0.22);
-            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5), inset 0 0 10px rgba(255, 215, 0, 0.3);
+            background: rgba(255, 215, 0, 0.13);
+            border-color: var(--neon-gold);
+            box-shadow: 0 0 12px rgba(255, 215, 0, 0.16);
             color: #fff;
         }
+
+        .nav-link.support-tab:focus-visible { outline: 2px solid var(--neon-gold); outline-offset: 3px; }
+        .header-nav { display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex-wrap: wrap; }
 
         /* =========================================================
            3. MAIN LAYOUT: INDEPENDENT GAME TOOLKITS + CENTER SPHERE
@@ -958,9 +968,15 @@
             }
 
             .header-strip {
-                height: 54px;
-                padding: 0 16px;
+                height: auto;
+                min-height: 54px;
+                flex-wrap: wrap;
+                gap: 8px;
+                padding: 8px 12px;
             }
+
+            .header-nav { gap: 6px; }
+            .header-nav .nav-link { padding: 6px 8px; font-size: 10px; letter-spacing: 1px; }
 
             .header-logo {
                 font-size: 17px;
@@ -1074,7 +1090,8 @@
             <span class="brand-tagline">Precision Gaming Hub</span>
         </div>
         <nav class="header-nav">
-            <a href="https://www.instagram.com/otaku_krishna1/" target="_blank" rel="noopener noreferrer" class="nav-link support-tab" aria-label="Support on Instagram">Feedback</a>
+            <a href="https://www.instagram.com/otaku_krishna1/" target="_blank" rel="noopener noreferrer" class="nav-link" aria-label="Send feedback on Instagram">Feedback</a>
+            <a href="https://www.buymeacoffee.com/otaku_krishna" target="_blank" rel="noopener noreferrer" class="nav-link support-tab" aria-label="Support CoreGG on Buy Me a Coffee" title="Optional support for CoreGG">♡ Support</a>
         </nav>
     </header>
 
@@ -1362,10 +1379,6 @@
          ========================================================= -->
     <footer class="footer-strip">
         <span class="footer-text">CoreGG &bull; Thanks for visiting</span>
-        <div class="bmc-dock">
-            <span class="bmc-label">Support CoreGG</span>
-            <a href="https://www.buymeacoffee.com/otaku_krishna" target="_blank" rel="noopener noreferrer"><img src="https://img.buymeacoffee.com/button-api/?text=Donations&emoji=&slug=otaku_krishna&button_colour=429479&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00" alt="Donations" /></a>
-        </div>
     </footer>
 
     <script>

@@ -780,7 +780,8 @@
     "Nefer": "https://img.game8.co/4288763/a7574f483b41a8fef28a41b9ea747199.png/show",
     "Nicole": "https://img.game8.co/4505822/f73feb3aa3e39d420364041ba1257a5b.png/show",
     "Durin": "https://img.game8.co/4353831/cbe1bccea7b676dd9a92177d16b83338.png/show",
-    "Valeriy": "https://pbs.twimg.com/media/HLtjUW8WsAAp0sM.jpg"
+    "Mitya": "https://img.game8.co/e2ehcqmjzeh95hi5cym2wc8zfylf",
+    "Valeriy": "https://img.game8.co/9v367euxcut0brb1zz60ecvs0g1v"
 };
         const assetImages = {
     "Splendor of Tranquil Waters": "https://img.game8.co/3793198/8b2ef7f3d4fc9346af58eff789ad3975.png/show",
@@ -880,6 +881,11 @@
     "Finale of the Deep Galleries (4-Piece)": "https://img.game8.co/4138581/49e3cb9d812bdc6e2fb4ab760e84699b.png/show",
     "Aqua Simulacra": "https://img.game8.co/3528570/002bacc1da7d27ed47513dcddf5664a3.png/show",
     "Vermillion Hereafter": "https://img.game8.co/3511299/a790c8a19e3ab797ae67c920134c5240.png/show",
+    "Starsealed Edict": "https://img.game8.co/i7b566u4cka4t4cp6p4ehfrsk5rh",
+    "Winter's Heavy Heart": "https://img.game8.co/4628471/90e4599939b3e40283080d38cb95c662.png/show",
+    "Wandering Evenstar": "https://img.game8.co/3596778/eb5ab1972d4b804d76d3e843597f08c9.png/show",
+    "A Day Carved from Rising Winds": "https://img.game8.co/4385383/e517f9aeabe5c647481265fab7f9566a.png/show",
+    "Summit Shaper": "https://img.game8.co/3311113/3b0e2ee76a9d421e3f7e4a640f7a9b99.png/show",
     "Vermillion Hereafter (4-Piece)": "https://img.game8.co/3511299/a790c8a19e3ab797ae67c920134c5240.png/show",
 };
         const weaponRarities = {
@@ -907,6 +913,10 @@
     "Finale of the Deep (F2P)": 4,
     "Amenoma Kageuchi": 4,
     "Aquila Favonia": 5,
+    "Summit Shaper": 5,
+    "Starsealed Edict": 5,
+    "Winter's Heavy Heart": 4,
+    "Wandering Evenstar": 4,
     "Sapwood Blade": 4,
     "Sapwood Blade (F2P)": 4,
     "Prototype Amber": 4,
@@ -1419,6 +1429,23 @@
                     { name: "C6: Elemental Transition at the Gate of Reason", desc: "Enhances his Detection Core and gives it a chance to create a Beacon during Overloaded mode. Nearby party members' Stellar-Conduct damage is also Elevated by 20%." }
                 ]
             },
+            "Valeriy": {
+                constellation: "Ursus Magnus",
+                stats: [
+                    { label: "ATK", value: "2,800+ target for his ATK-scaling shield and support effects" },
+                    { label: "Energy Recharge", value: "160–180% for a Burst every rotation; adjust to team and weapon" },
+                    { label: "CRIT", value: "Low priority for support; more relevant for personal damage and C6" },
+                    { label: "Substats", value: "ATK% > Energy Recharge; CRIT is secondary" }
+                ],
+                constellations: [
+                    { name: "C1: The Cadence of Suppressive Fire", desc: "Restores Energy after his special Charged Attack and grants extra Impact Momentum on his first Skill use after entering combat." },
+                    { name: "C2: Ranks That Charge as One", desc: "His Skill gives nearby party members 100 Elemental Mastery for 18s; excess Impact Momentum can strengthen his shield." },
+                    { name: "C3: Vigilance at Close Quarters", desc: "Raises Valeriy’s Normal Attack talent by 3 levels." },
+                    { name: "C4: Fortitude Unshaken by Attrition", desc: "Raises his Impact Momentum limit and charging efficiency, and increases the passive’s Momentum cap." },
+                    { name: "C5: Resolve to Divide and Destroy", desc: "Raises Valeriy’s Elemental Skill talent by 3 levels." },
+                    { name: "C6: The Strength to Breach Enemy Lines", desc: "His special Charged Attack and Burst shells deal 100% more damage; Enemies hit take Electro DMG with 10% more CRIT Rate for 7s; Stellar-Conduct hits also gain 40% CRIT DMG." }
+                ]
+            },
             "Flins": {
                 constellation: "Flins' Constellations",
                 stats: [
@@ -1767,13 +1794,45 @@
                         "sands": "Elemental Mastery",
                         "goblet": "Elemental Mastery",
                         "circlet": "CRIT Rate / CRIT DMG",
-                        "image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/165002/ecd34b52bd4a26b227fdbb58215fe46c_8363697304532950719.jpg",
+                        "image": "https://img.game8.co/t72luvza0fgzwh6a0kls4kfmpefk",
                         "stats": [],
                         "teams": [
                                     { "label": "On-Field Stellar-Conduct", "members": ["Odette", "Yae Miko", "Valeriy"] },
                                     { "label": "Off-Field Stellar-Conduct", "members": ["Sandrone", "Odette", "Yae Miko"] },
                                     { "label": "F2P Friendly", "members": ["Traveler (Cryo)", "Sucrose", "Diona"] }
                         ]
+            },
+            {
+                "id": "valeriy",
+                "name": "Valeriy",
+                "element": "Electro",
+                "elementColor": "#8a2be2",
+                "rarity": 4,
+                "role": "Support / Shielder",
+                "weaponType": "Sword",
+                "introGuide": "Valeriy is a 4-star Electro Sword support and shielder. His ATK-scaling Supercharged Shield protects the party, while his special Charged Attack grants Offensive Directive to boost Electro DMG; the boost is stronger in Radiance: Stellar-Conduct.",
+                "title": "Fort Fulguration",
+                "constellation": "Ursus Magnus",
+                "loreQuote": "Commander of the Special Assignments Battalion.",
+                "talentPriority": "Normal Attack > Elemental Skill > Elemental Burst",
+                "bestWeapon": { "name": "Summit Shaper", "img": PLACEHOLDER_IMG },
+                "altWeapons": [
+                    { "name": "Aquila Favonia", "img": PLACEHOLDER_IMG },
+                    { "name": "Finale of the Deep", "img": PLACEHOLDER_IMG }
+                ],
+                "bestArtifact": { "name": "Heart of the Furnace (4-Piece)", "img": PLACEHOLDER_IMG },
+                "altArtifacts": [
+                    { "name": "A Day Carved from Rising Winds (4-Piece)", "img": PLACEHOLDER_IMG }
+                ],
+                "sands": "ATK% / Energy Recharge",
+                "goblet": "ATK%",
+                "circlet": "ATK%",
+                "image": "https://img.game8.co/nrxdlr6z9e4ap78v6qtbni9ez0lr",
+                "stats": [],
+                "teams": [
+                    { "label": "Mitya Stellar-Conduct", "members": ["Mitya", "Odette", "Yae Miko"] },
+                    { "label": "Cyno Stellar-Conduct", "members": ["Cyno", "Traveler (Cryo)", "Qiqi"] }
+                ]
             },
             {
                         "id": "flins",

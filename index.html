@@ -1103,6 +1103,7 @@
         <nav class="header-nav">
             <a href="https://www.instagram.com/otaku_krishna1/" target="_blank" rel="noopener noreferrer" class="nav-link" aria-label="Send feedback on Instagram">Feedback</a>
             <a id="minecraft-java-professional" href="./coreminecraftpro.html" class="nav-link">Java Pro Guide</a>
+            <a id="minecraft-bedrock-professional" href="./minecraft-bedrock-professional.html" class="nav-link">Bedrock Pro Guide</a>
             <a href="https://www.buymeacoffee.com/otaku_krishna" target="_blank" rel="noopener noreferrer" class="nav-link support-tab" aria-label="Support CoreGG on Buy Me a Coffee" title="Optional support for CoreGG">♡ Support</a>
         </nav>
     </header>
@@ -1282,7 +1283,7 @@
                     <div class="picker-heading" id="level-heading">Choose your path</div>
                     <div class="picker-options">
                         <button class="edition-option" id="beginner-option" type="button">Beginner</button>
-                        <button class="edition-option" id="professional-option" data-java-href="./coreminecraftpro.html" type="button">Professional</button>
+                        <button class="edition-option" id="professional-option" data-java-href="./coreminecraftpro.html" data-bedrock-href="./minecraft-bedrock-professional.html" type="button">Professional</button>
                     </div>
                 </section>
 
@@ -1508,6 +1509,14 @@
                 if (selectedEdition === 'Bedrock' && level === 'Beginner') {
                     launchTimer = setTimeout(() => {
                         window.location.href = './coreminecraftbedrock.html';
+                    }, 300);
+                    return;
+                }
+
+                if (selectedEdition === 'Bedrock' && level === 'Professional') {
+                    const bedrockProGuide = professionalOption.dataset.bedrockHref || './minecraft-bedrock-professional.html';
+                    launchTimer = setTimeout(() => {
+                        window.location.href = bedrockProGuide;
                     }, 300);
                     return;
                 }

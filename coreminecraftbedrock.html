@@ -83,22 +83,22 @@
         <p class="search-hint">Tip: Type a word like “torch”, “hunger”, “iron”, or “zombie” to filter the guides below.</p>
         <div class="quick-grid" id="quickGrid">
           <a class="quick-card searchable" data-search="controls keyboard mouse touch mobile joystick controller wasd inventory crouch sprint hud hearts hunger" href="#controls-hud">
-            <span class="card-icon"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/compass_16.png" alt="Compass" loading="lazy"></span>
+            <span class="card-icon"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/compass_16.png" alt="Compass" loading="eager" decoding="async" fetchpriority="high"></span>
             <h3>1. Controls & HUD</h3>
             <p>Learn how to move, open your inventory, and read your health and hunger bars.</p>
           </a>
           <a class="quick-card searchable" data-search="beginner first steps survival first night shelter wood bed food tools" href="#first-steps">
-            <span class="card-icon"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/oak_sapling.png" alt="Oak Sapling" loading="lazy"></span>
+            <span class="card-icon"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/oak_sapling.png" alt="Oak Sapling" loading="eager" decoding="async"></span>
             <h3>2. First Day Guide</h3>
             <p>Step-by-step instructions from punching your first tree to sleeping through the night.</p>
           </a>
           <a class="quick-card searchable" data-search="crafting recipe items ingredients crafting table furnace pickaxe torch chest bed shield" href="#crafting">
-            <span class="card-icon"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/crafting_table_front.png" alt="Crafting Table" loading="lazy"></span>
+            <span class="card-icon"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/crafting_table_front.png" alt="Crafting Table" loading="eager" decoding="async"></span>
             <h3>3. Essential Recipes</h3>
             <p>Visual 3×3 crafting grids for your first tools, torches, furnace, chest, and bed.</p>
           </a>
           <a class="quick-card searchable" data-search="mining ores coal iron pickaxe tiers progression mobs creeper zombie skeleton farming" href="#tools-mining">
-            <span class="card-icon"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_pickaxe.png" alt="Iron Pickaxe" loading="lazy"></span>
+            <span class="card-icon"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_pickaxe.png" alt="Iron Pickaxe" loading="eager" decoding="async"></span>
             <h3>4. Ores, Mobs & Food</h3>
             <p>Upgrade from wood to iron, spot nighttime monsters, and grow your own farm.</p>
           </a>
@@ -114,7 +114,7 @@
         <div class="panel tool-panel searchable" data-search="controls keyboard mouse touch mobile joystick controller wasd jump crouch sneak sprint inventory coordinates">
           <div class="card-head-pic">
             <h3>Keyboard & Mouse Controls</h3>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/writable_book.png" alt="Book and Quill" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/writable_book.png" alt="Book and Quill" loading="eager" decoding="async">
           </div>
           <p class="muted">Controls vary by device and can be changed in Settings. These are common defaults:</p>
           <div class="key-list">
@@ -135,19 +135,19 @@
         <div class="panel tool-panel searchable" data-search="hud screen hearts health hunger bar food hotbar experience armor">
           <div class="card-head-pic">
             <h3>Understanding Your HUD (Screen Bars)</h3>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/golden_apple.png" alt="Apple" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/golden_apple.png" alt="Apple" loading="lazy" decoding="async">
           </div>
           <p class="muted">What the icons at the bottom of your screen mean in Survival mode:</p>
           <div class="data-tile" style="margin-top:.75rem">
-            <div class="card-head-pic"><strong>❤️ Health Bar (10 Red Hearts)</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/apple.png" alt="Red Apple" loading="lazy"></div>
+            <div class="card-head-pic"><strong>❤️ Health Bar (10 Red Hearts)</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/apple.png" alt="Red Apple" loading="lazy" decoding="async"></div>
             <p>Located above the left side of your hotbar. Taking fall damage, monster hits, or drowning drains hearts. If all 10 hearts empty, you die and drop your items at that spot.</p>
           </div>
           <div class="data-tile" style="margin-top:.6rem">
-            <div class="card-head-pic"><strong>🍖 Hunger Bar (10 Drumsticks)</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/cooked_beef.png" alt="Steak" loading="lazy"></div>
+            <div class="card-head-pic"><strong>🍖 Hunger Bar (10 Drumsticks)</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/cooked_beef.png" alt="Steak" loading="lazy" decoding="async"></div>
             <p>Located on the right side. Use the eat/use button while holding food (or the platform’s use control). <strong>Crucial Rule:</strong> When you have at least 9 drumsticks full, your Hearts heal automatically! Below 3 drumsticks, you cannot sprint.</p>
           </div>
           <div class="data-tile" style="margin-top:.6rem">
-            <div class="card-head-pic"><strong>🛡️ Armor & Hotbar (Slots 1–9)</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_chestplate.png" alt="Iron Chestplate" loading="lazy"></div>
+            <div class="card-head-pic"><strong>🛡️ Armor & Hotbar (Slots 1–9)</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_chestplate.png" alt="Iron Chestplate" loading="lazy" decoding="async"></div>
             <p>Tap a hotbar slot on mobile, use your controller’s item-selection controls, or use the mouse wheel / number keys on keyboard. Equip armor inside your inventory (<kbd class="key-badge">E</kbd>) to reduce damage.</p>
           </div>
         </div>
@@ -163,11 +163,11 @@
       <div class="guide-grid" id="guideGrid">
         <article class="guide-card searchable" data-search="wood logs tree oak planks crafting table punch tree">
           <div class="visual-banner">
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_log.png" alt="Oak Log" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_log.png" alt="Oak Log" loading="lazy" decoding="async">
             <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Oak Planks" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Oak Planks" loading="lazy" decoding="async">
             <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/crafting_table_front.png" alt="Crafting Table" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/crafting_table_front.png" alt="Crafting Table" loading="lazy" decoding="async">
           </div>
           <span class="tag">Step 1 · Morning</span>
           <h3>Punch Trees for Wood</h3>
@@ -177,11 +177,11 @@
 
         <article class="guide-card searchable" data-search="wooden pickaxe stone cobblestone upgrade tools sticks">
           <div class="visual-banner">
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/wooden_pickaxe.png" alt="Wooden Pickaxe" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/wooden_pickaxe.png" alt="Wooden Pickaxe" loading="lazy" decoding="async">
             <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy" decoding="async">
             <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stone_pickaxe.png" alt="Stone Pickaxe" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stone_pickaxe.png" alt="Stone Pickaxe" loading="lazy" decoding="async">
           </div>
           <span class="tag">Step 2 · Mid-Morning</span>
           <h3>Craft a Pickaxe & Mine Stone</h3>
@@ -191,11 +191,11 @@
 
         <article class="guide-card searchable" data-search="coal charcoal torches light dark cave furnace">
           <div class="visual-banner">
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/coal_ore.png" alt="Coal Ore" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/coal_ore.png" alt="Coal Ore" loading="lazy" decoding="async">
             <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/coal.png" alt="Coal" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/coal.png" alt="Coal" loading="lazy" decoding="async">
             <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/torch.png" alt="Torch" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/torch.png" alt="Torch" loading="lazy" decoding="async">
           </div>
           <span class="tag">Step 3 · Noon</span>
           <h3>Find Coal & Make Torches</h3>
@@ -205,10 +205,10 @@
 
         <article class="guide-card searchable" data-search="sheep wool meat food cow pig chicken furnace cook">
           <div class="visual-banner">
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/white_wool.png" alt="White Wool" loading="lazy">
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/beef.png" alt="Raw Beef" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/white_wool.png" alt="White Wool" loading="lazy" decoding="async">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/beef.png" alt="Raw Beef" loading="lazy" decoding="async">
             <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/cooked_beef.png" alt="Steak" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/cooked_beef.png" alt="Steak" loading="lazy" decoding="async">
           </div>
           <span class="tag">Step 4 · Afternoon</span>
           <h3>Gather 3 Wool & Raw Food</h3>
@@ -218,9 +218,9 @@
 
         <article class="guide-card searchable" data-search="shelter house dirt wood door night monsters safe">
           <div class="visual-banner">
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy">
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/oak_door.png" alt="Oak Door" loading="lazy">
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/furnace_front_on.png" alt="Lit Furnace" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy" decoding="async">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/oak_door.png" alt="Oak Door" loading="lazy" decoding="async">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/furnace_front_on.png" alt="Lit Furnace" loading="lazy" decoding="async">
           </div>
           <span class="tag">Step 5 · Before Sunset</span>
           <h3>Build a Starter Shelter</h3>
@@ -230,9 +230,9 @@
 
         <article class="guide-card searchable" data-search="bed sleep skip night respawn point wool planks">
           <div class="visual-banner">
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/red_bed.png" alt="Bed" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/red_bed.png" alt="Bed" loading="lazy" decoding="async">
             <span aria-hidden="true" style="font-weight:900;color:var(--green-bright)">→</span>
-            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/clock_00.png" alt="Daytime Clock" loading="lazy">
+            <img class="mc-sprite lg" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/clock_00.png" alt="Daytime Clock" loading="lazy" decoding="async">
           </div>
           <span class="tag">Step 6 · Nightfall</span>
           <h3>Craft a Bed & Skip the Night</h3>
@@ -252,12 +252,12 @@
           <h3>1. Sticks (Makes 4)</h3>
           <p class="muted" style="font-size:.82rem">Place 2 Wood Planks vertically to make handles for tools and torches.</p>
           <div class="recipe-grid" aria-label="Stick crafting grid">
-            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot empty"></div>
-            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div><div class="recipe-slot empty"></div>
             <div class="recipe-slot empty"></div><div class="recipe-slot empty"></div><div class="recipe-slot empty"></div>
           </div>
           <div class="recipe-output">
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stick.png" alt="Sticks" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stick.png" alt="Sticks" loading="lazy" decoding="async">
             <div><strong>4 × Sticks</strong><div class="muted" style="font-size:.78rem">Ingredients: 2 Wood Planks</div></div>
           </div>
         </div>
@@ -267,12 +267,12 @@
           <h3>2. Pickaxe (Any Tier)</h3>
           <p class="muted" style="font-size:.82rem">Top row uses 3 Planks, 3 Cobblestone, or 3 Iron Ingots.</p>
           <div class="recipe-grid" aria-label="Pickaxe crafting grid">
-            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div>
-            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stick.png" alt="Stick" loading="lazy"></div><div class="recipe-slot empty"></div>
-            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stick.png" alt="Stick" loading="lazy"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy" decoding="async"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stick.png" alt="Stick" loading="lazy" decoding="async"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stick.png" alt="Stick" loading="lazy" decoding="async"></div><div class="recipe-slot empty"></div>
           </div>
           <div class="recipe-output">
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stone_pickaxe.png" alt="Stone Pickaxe" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stone_pickaxe.png" alt="Stone Pickaxe" loading="lazy" decoding="async">
             <div><strong>1 × Pickaxe</strong><div class="muted" style="font-size:.78rem">3 Material + 2 Sticks</div></div>
           </div>
         </div>
@@ -282,12 +282,12 @@
           <h3>3. Sword (Any Tier)</h3>
           <p class="muted" style="font-size:.82rem">Essential for defending yourself and hunting animals for food.</p>
           <div class="recipe-grid" aria-label="Sword crafting grid">
-            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot empty"></div>
-            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot empty"></div>
-            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stick.png" alt="Stick" loading="lazy"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy" decoding="async"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy" decoding="async"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stick.png" alt="Stick" loading="lazy" decoding="async"></div><div class="recipe-slot empty"></div>
           </div>
           <div class="recipe-output">
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stone_sword.png" alt="Stone Sword" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stone_sword.png" alt="Stone Sword" loading="lazy" decoding="async">
             <div><strong>1 × Sword</strong><div class="muted" style="font-size:.78rem">2 Material + 1 Stick</div></div>
           </div>
         </div>
@@ -297,12 +297,12 @@
           <h3>4. Torches (Makes 4)</h3>
           <p class="muted" style="font-size:.82rem">Lights up dark caves and stops hostile monsters from spawning.</p>
           <div class="recipe-grid" aria-label="Torch crafting grid">
-            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/coal.png" alt="Coal" loading="lazy"></div><div class="recipe-slot empty"></div>
-            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stick.png" alt="Stick" loading="lazy"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/coal.png" alt="Coal" loading="lazy" decoding="async"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stick.png" alt="Stick" loading="lazy" decoding="async"></div><div class="recipe-slot empty"></div>
             <div class="recipe-slot empty"></div><div class="recipe-slot empty"></div><div class="recipe-slot empty"></div>
           </div>
           <div class="recipe-output">
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/torch.png" alt="Torch" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/torch.png" alt="Torch" loading="lazy" decoding="async">
             <div><strong>4 × Torches</strong><div class="muted" style="font-size:.78rem">1 Coal/Charcoal + 1 Stick</div></div>
           </div>
         </div>
@@ -312,12 +312,12 @@
           <h3>5. Furnace</h3>
           <p class="muted" style="font-size:.82rem">Cooks raw meat, melts Raw Iron into ingots, and makes Charcoal.</p>
           <div class="recipe-grid" aria-label="Furnace crafting grid">
-            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div>
-            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div>
-            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy" decoding="async"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy" decoding="async"></div><div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy" decoding="async"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/cobblestone.png" alt="Cobblestone" loading="lazy" decoding="async"></div>
           </div>
           <div class="recipe-output">
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/furnace_front.png" alt="Furnace" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/furnace_front.png" alt="Furnace" loading="lazy" decoding="async">
             <div><strong>1 × Furnace</strong><div class="muted" style="font-size:.78rem">8 Cobblestone (hollow ring)</div></div>
           </div>
         </div>
@@ -327,12 +327,12 @@
           <h3>6. Chest (Storage)</h3>
           <p class="muted" style="font-size:.82rem">Stores 27 stacks of items safely at your base. Place 2 side-by-side for a Large Chest!</p>
           <div class="recipe-grid" aria-label="Chest crafting grid">
-            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div>
-            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div>
-            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div><div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div>
           </div>
           <div class="recipe-output">
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/crafting_table_top.png" alt="Chest" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/crafting_table_top.png" alt="Chest" loading="lazy" decoding="async">
             <div><strong>1 × Chest</strong><div class="muted" style="font-size:.78rem">8 Wood Planks (hollow ring)</div></div>
           </div>
         </div>
@@ -343,11 +343,11 @@
           <p class="muted" style="font-size:.82rem">Requires 3 Wool of the <strong>exact same color</strong> and any 3 Wood Planks.</p>
           <div class="recipe-grid" aria-label="Bed crafting grid">
             <div class="recipe-slot empty"></div><div class="recipe-slot empty"></div><div class="recipe-slot empty"></div>
-            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/white_wool.png" alt="Wool" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/white_wool.png" alt="Wool" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/white_wool.png" alt="Wool" loading="lazy"></div>
-            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/white_wool.png" alt="Wool" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/white_wool.png" alt="Wool" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/white_wool.png" alt="Wool" loading="lazy" decoding="async"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div>
           </div>
           <div class="recipe-output">
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/red_bed.png" alt="Bed" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/red_bed.png" alt="Bed" loading="lazy" decoding="async">
             <div><strong>1 × Bed</strong><div class="muted" style="font-size:.78rem">3 Matching Wool + 3 Planks</div></div>
           </div>
         </div>
@@ -357,12 +357,12 @@
           <h3>8. Shield (Lifesaver!)</h3>
           <p class="muted" style="font-size:.82rem">Use your device’s shield/block control to defend yourself from many incoming attacks.</p>
           <div class="recipe-grid" aria-label="Shield crafting grid">
-            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_ingot.png" alt="Iron Ingot" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div>
-            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div>
-            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_ingot.png" alt="Iron Ingot" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/oak_planks.png" alt="Plank" loading="lazy" decoding="async"></div><div class="recipe-slot empty"></div>
           </div>
           <div class="recipe-output">
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/shield.png" alt="Shield" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/shield.png" alt="Shield" loading="lazy" decoding="async">
             <div><strong>1 × Shield</strong><div class="muted" style="font-size:.78rem">1 Iron Ingot + 6 Wood Planks</div></div>
           </div>
         </div>
@@ -373,11 +373,11 @@
           <p class="muted" style="font-size:.82rem">Craft a Bucket with 3 Iron Ingots in a V-shape to carry water for farming and safety.</p>
           <div class="recipe-grid" aria-label="Bucket crafting grid">
             <div class="recipe-slot empty"></div><div class="recipe-slot empty"></div><div class="recipe-slot empty"></div>
-            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_ingot.png" alt="Iron Ingot" loading="lazy"></div><div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_ingot.png" alt="Iron Ingot" loading="lazy"></div>
-            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_ingot.png" alt="Iron Ingot" loading="lazy"></div><div class="recipe-slot empty"></div>
+            <div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_ingot.png" alt="Iron Ingot" loading="lazy" decoding="async"></div><div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_ingot.png" alt="Iron Ingot" loading="lazy" decoding="async"></div>
+            <div class="recipe-slot empty"></div><div class="recipe-slot"><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_ingot.png" alt="Iron Ingot" loading="lazy" decoding="async"></div><div class="recipe-slot empty"></div>
           </div>
           <div class="recipe-output">
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/water_bucket.png" alt="Water Bucket" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/water_bucket.png" alt="Water Bucket" loading="lazy" decoding="async">
             <div><strong>1 × Bucket</strong><div class="muted" style="font-size:.78rem">3 Iron Ingots (V-Shape)</div></div>
           </div>
         </div>
@@ -393,7 +393,7 @@
           <span class="tier-badge">Tier 1 • Starter</span>
           <div class="card-head-pic">
             <strong>Wooden Pickaxe</strong>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/wooden_pickaxe.png" alt="Wooden Pickaxe" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/wooden_pickaxe.png" alt="Wooden Pickaxe" loading="lazy" decoding="async">
           </div>
           <p><strong>Can Mine:</strong> Stone, Cobblestone, and Coal Ore.<br><strong>Warning:</strong> Do NOT mine Iron Ore with a wooden pickaxe—it will break nothing! Upgrade to Stone immediately.</p>
         </article>
@@ -402,7 +402,7 @@
           <span class="tier-badge">Tier 2 • Early Game</span>
           <div class="card-head-pic">
             <strong>Stone Pickaxe</strong>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stone_pickaxe.png" alt="Stone Pickaxe" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/stone_pickaxe.png" alt="Stone Pickaxe" loading="lazy" decoding="async">
           </div>
           <p><strong>Can Mine:</strong> Iron Ore, Copper Ore, and Lapis Lazuli.<br><strong>Tip:</strong> Cheap and easy to repair. Always carry 2 Stone Pickaxes when exploring caves.</p>
         </article>
@@ -411,7 +411,7 @@
           <span class="tier-badge">Tier 3 • Main Goal</span>
           <div class="card-head-pic">
             <strong>Iron Pickaxe</strong>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_pickaxe.png" alt="Iron Pickaxe" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_pickaxe.png" alt="Iron Pickaxe" loading="lazy" decoding="async">
           </div>
           <p><strong>Can Mine:</strong> Diamonds, Gold Ore, Redstone, and Emeralds.<br><strong>How to get:</strong> Smelt Raw Iron in a Furnace with Coal to get Iron Ingots.</p>
         </article>
@@ -420,7 +420,7 @@
           <span class="tier-badge">Tier 4 • Advanced</span>
           <div class="card-head-pic">
             <strong>Diamond Pickaxe</strong>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/diamond_pickaxe.png" alt="Diamond Pickaxe" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/diamond_pickaxe.png" alt="Diamond Pickaxe" loading="lazy" decoding="async">
           </div>
           <p><strong>Can Mine:</strong> Everything, including Obsidian.<br><strong>Where to find Diamonds:</strong> Deep underground in Deepslate layers (below <strong>Y = 16</strong>, best at <strong>Y = -58</strong>).</p>
         </article>
@@ -431,7 +431,7 @@
         <article class="data-tile searchable" data-search="coal ore fuel torches where to find y level">
           <div class="card-head-pic">
             <strong>Coal Ore (Fuel & Light)</strong>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/coal_ore.png" alt="Coal Ore" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/coal_ore.png" alt="Coal Ore" loading="lazy" decoding="async">
           </div>
           <p>Drops Coal directly when mined with any pickaxe. Found abundantly in cliffs, hills, and surface caves between <strong>Y = 0 and Y = 256</strong> (most common around) <strong>Y = 96</strong></p>
         </article>
@@ -439,7 +439,7 @@
         <article class="data-tile searchable" data-search="iron ore raw iron smelt armor shield bucket y level">
           <div class="card-head-pic">
             <strong>Iron Ore (Your #1 Priority)</strong>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/iron_ore.png" alt="Iron Ore" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/iron_ore.png" alt="Iron Ore" loading="lazy" decoding="async">
           </div>
           <p>Requires a <strong>Stone Pickaxe</strong> or better. Drops <em>Raw Iron</em> which you must smelt in a Furnace. Very common in shallow caves around <strong>Y = 16</strong> and high mountain peaks.</p>
         </article>
@@ -447,7 +447,7 @@
         <article class="data-tile searchable" data-search="which tool for which block shovel axe pickaxe hoe">
           <div class="card-head-pic">
             <strong>Match the Tool to the Block</strong>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_axe.png" alt="Iron Axe" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_axe.png" alt="Iron Axe" loading="lazy" decoding="async">
           </div>
           <p><strong>Pickaxe:</strong> Stone, Ores, Furnace.<br><strong>Axe:</strong> Logs, Planks, Chests, Crafting Tables.<br><strong>Shovel:</strong> Dirt, Grass, Sand, Gravel.<br><strong>Hoe:</strong> Tilling dirt for farming crops.</p>
         </article>
@@ -461,7 +461,7 @@
         <article class="data-tile searchable" data-search="creeper hostile mob green explodes hiss gunpowder">
           <div class="card-head-pic">
             <strong>💥 Creeper (Hostile)</strong>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/gunpowder.png" alt="Gunpowder" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/gunpowder.png" alt="Gunpowder" loading="lazy" decoding="async">
           </div>
           <p>Silent, green, four-legged monster that does not burn in sunlight. Walks up to you, hisses, flashes, and <strong>explodes</strong>! <strong>How to fight:</strong> Hit once with your sword, immediately sprint backward so the timer resets, then repeat.</p>
         </article>
@@ -469,7 +469,7 @@
         <article class="data-tile searchable" data-search="zombie hostile mob night burns sunlight rotten flesh">
           <div class="card-head-pic">
             <strong>🧟 Zombie (Hostile)</strong>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/rotten_flesh.png" alt="Rotten Flesh" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/rotten_flesh.png" alt="Rotten Flesh" loading="lazy" decoding="async">
           </div>
           <p>Slow-moving melee monster that groans and walks toward you. Burns in morning sunlight unless standing in water or shade. Watch out for <strong>Baby Zombies</strong>—they run very fast!</p>
         </article>
@@ -477,7 +477,7 @@
         <article class="data-tile searchable" data-search="skeleton hostile mob bow arrows shield bones">
           <div class="card-head-pic">
             <strong>🏹 Skeleton (Hostile)</strong>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/bow.png" alt="Bow" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/bow.png" alt="Bow" loading="lazy" decoding="async">
           </div>
           <p>Shoots arrows from a distance and rattles when walking. <strong>How to fight:</strong> use your shield action with a <strong>Shield</strong> to bounce their arrows harmlessly away, then rush in between shots. Drops Bones and Arrows.</p>
         </article>
@@ -485,7 +485,7 @@
         <article class="data-tile searchable" data-search="spider hostile mob climbs walls string neutral day">
           <div class="card-head-pic">
             <strong>🕷️ Spider (Hostile at Night)</strong>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/string.png" alt="String" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/string.png" alt="String" loading="lazy" decoding="async">
           </div>
           <p>Can climb up vertical walls! Hostile in the dark, but becomes <strong>peaceful during bright daylight</strong> unless you hit it first. Drops <strong>String</strong> (used to craft a Bow, Fishing Rod, or Wool).</p>
         </article>
@@ -493,7 +493,7 @@
         <article class="data-tile searchable" data-search="enderman tall black purple eyes don't look neutral">
           <div class="card-head-pic">
             <strong>👁️ Enderman (Neutral)</strong>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/ender_pearl.png" alt="Ender Pearl" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/ender_pearl.png" alt="Ender Pearl" loading="lazy" decoding="async">
           </div>
           <p>Tall black creature with glowing purple eyes that teleports. <strong>Golden Rule:</strong> Never put your crosshair directly on its face! It is completely peaceful unless you look at its head or attack it.</p>
         </article>
@@ -501,7 +501,7 @@
         <article class="data-tile searchable" data-search="sheep passive animal wool mutton bed">
           <div class="card-head-pic">
             <strong>🐑 Sheep (Friendly)</strong>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/shears.png" alt="Shears" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/shears.png" alt="Shears" loading="lazy" decoding="async">
           </div>
           <p>Gives Wool for your Bed and Raw Mutton for food. Once you have 2 Iron Ingots, craft <strong>Shears</strong> to harvest 1–3 Wool per sheep without hurting them! Sheep regrow wool after eating grass.</p>
         </article>
@@ -509,7 +509,7 @@
         <article class="data-tile searchable" data-search="cow pig chicken passive animal food beef leather">
           <div class="card-head-pic">
             <strong>🐄 Cows, Pigs & Chickens</strong>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/leather.png" alt="Leather" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/leather.png" alt="Leather" loading="lazy" decoding="async">
           </div>
           <p>Harmless animals that provide your best early food. Cows drop Raw Beef and Leather. Lead them into a fenced pen by holding <strong>Wheat</strong> (for Cows/Sheep) or <strong>Seeds</strong> (for Chickens).</p>
         </article>
@@ -517,7 +517,7 @@
         <article class="data-tile searchable" data-search="villager village house bed trade emerald iron golem">
           <div class="card-head-pic">
             <strong>🧑‍🌾 Villager (Friendly)</strong>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/emerald.png" alt="Emerald" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/emerald.png" alt="Emerald" loading="lazy" decoding="async">
           </div>
           <p>Found in NPC Villages with Hay Bales, farms, and houses. Tap or use the interact button to trade items for Emeralds. Do <strong>not</strong> hit Villagers or their giant protector, the <strong>Iron Golem</strong>!</p>
         </article>
@@ -554,19 +554,19 @@
         <div class="panel tool-panel searchable" data-search="farming wheat seeds bread hoe water crops food">
           <div class="card-head-pic">
             <h3>How to Start a Simple Wheat Farm</h3>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/bread.png" alt="Bread" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/bread.png" alt="Bread" loading="lazy" decoding="async">
           </div>
           <p class="muted">Never go hungry again with this 4-step starter farm:</p>
           <div class="data-tile" style="margin-top:.6rem">
-            <div class="card-head-pic"><strong>1. Break Tall Grass for Seeds</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/wheat_seeds.png" alt="Wheat Seeds" loading="lazy"></div>
+            <div class="card-head-pic"><strong>1. Break Tall Grass for Seeds</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/wheat_seeds.png" alt="Wheat Seeds" loading="lazy" decoding="async"></div>
             <p>Punch short grass on the ground with your hand to collect green <strong>Wheat Seeds</strong></p>
           </div>
           <div class="data-tile" style="margin-top:.55rem">
-            <div class="card-head-pic"><strong>2. Till Dirt Near Water with a Hoe</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/wooden_hoe.png" alt="Wooden Hoe" loading="lazy"></div>
+            <div class="card-head-pic"><strong>2. Till Dirt Near Water with a Hoe</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/wooden_hoe.png" alt="Wooden Hoe" loading="lazy" decoding="async"></div>
             <p>Craft a Wooden or Stone Hoe (2 Material + 2 Sticks). tap/use Dirt or Grass blocks within <strong>4 blocks of water</strong> (a river, pond, or 1 bucket of water) to turn it into dark, wet Farmland.</p>
           </div>
           <div class="data-tile" style="margin-top:.55rem">
-            <div class="card-head-pic"><strong>3. Plant, Wait & Craft Bread</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/wheat.png" alt="Wheat" loading="lazy"></div>
+            <div class="card-head-pic"><strong>3. Plant, Wait & Craft Bread</strong><img class="mc-sprite sm" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/wheat.png" alt="Wheat" loading="lazy" decoding="async"></div>
             <p>tap/use Farmland with Seeds. Wait until the stalks turn golden-brown at the top before harvesting! Place <strong>3 Wheat in a horizontal row</strong> in your Crafting Table to make <strong>Bread</strong></p>
           </div>
         </div>
@@ -574,7 +574,7 @@
         <div class="panel tool-panel searchable" data-search="golden rules mistakes dig straight down lava water bucket coordinates f3">
           <div class="card-head-pic">
             <h3>The 6 Golden Rules of Minecraft</h3>
-            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/totem_of_undying.png" alt="Survival Icon" loading="lazy">
+            <img class="mc-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/totem_of_undying.png" alt="Survival Icon" loading="lazy" decoding="async">
           </div>
           <ul class="muted" style="padding-left:1.2rem;margin-top:.6rem;display:grid;gap:.55rem">
             <li><strong>Rule #1: Never dig straight down!</strong> You can fall directly into a hidden lava pool or a deep ravine. Dig a 2-block-wide staircase instead so you can always see the block below you.</li>
@@ -595,7 +595,7 @@
       <div class="footer-brand"><b>CORE GG</b><span aria-hidden="true">◆</span><span>PLAYER FIELD GUIDE</span></div>
       <p class="footer-disclaimer">CoreGG is an independent fan-made learning resource. It is not an official Minecraft product and is not approved by or associated with Mojang or Microsoft. Minecraft and related game assets belong to their respective owners.</p>
       <div class="credits"><h2>Game & trademark credits</h2><p><strong>Minecraft Bedrock Edition</strong> (including the version commonly called Pocket Edition on mobile) is developed by Mojang Studios and published by Microsoft.</p><p>All Minecraft names, trademarks and game content remain the property of their respective owners.</p><p>For current rules on using Minecraft names and assets, read the <a href="https://www.minecraft.net/en-us/usage-guidelines" target="_blank" rel="noopener noreferrer">Minecraft Usage Guidelines</a>.</p><p>For official beginner help and release information, visit <a href="https://www.minecraft.net/en-us/minecraft-tips-for-beginners" target="_blank" rel="noopener noreferrer">Minecraft beginner guides</a> and the <a href="https://www.minecraft.net/en-us/article/minecraft-controls" target="_blank" rel="noopener noreferrer">official Minecraft controls guide</a>.</p></div>
-      <div class="footer-bottom">COREGG <span aria-hidden="true">•</span> MADE FOR LEARNING <span aria-hidden="true">•</span> BEDROCK & POCKET EDITION</div>
+      <div class="footer-bottom">COREGG <span aria-hidden="true">•</span> MADE FOR LEARNING <span aria-hidden="true">•</span> BEDROCK & POCKET EDITION<a href="privacy.html" style="color:inherit;text-decoration:underline;text-underline-offset:.2em;margin-left:.4em">Privacy Policy</a></div>
     </div>
   </footer>
 

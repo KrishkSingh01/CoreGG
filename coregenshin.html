@@ -608,13 +608,13 @@
                     <div class="filter-group-title">Element</div>
                     <div class="filter-options">
                         <button class="filter-chip active" data-type="element" data-val="All">All</button>
-                        <button class="filter-chip" data-type="element" data-val="Pyro"><img src="https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg/revision/latest?cb=20240401115510" referrerpolicy="no-referrer" class="elem-svg" alt="Pyro"> Pyro</button>
-                        <button class="filter-chip" data-type="element" data-val="Hydro"><img src="https://static.wikia.nocookie.net/gensin-impact/images/8/80/Element_Hydro.svg/revision/latest?cb=20240401115449" referrerpolicy="no-referrer" class="elem-svg" alt="Hydro"> Hydro</button>
-                        <button class="filter-chip" data-type="element" data-val="Anemo"><img src="https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg/revision/latest?cb=20240401115016" referrerpolicy="no-referrer" class="elem-svg" alt="Anemo"> Anemo</button>
-                        <button class="filter-chip" data-type="element" data-val="Electro"><img src="https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg/revision/latest?cb=20240401115329" referrerpolicy="no-referrer" class="elem-svg" alt="Electro"> Electro</button>
-                        <button class="filter-chip" data-type="element" data-val="Dendro"><img src="https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Dendro.svg/revision/latest?cb=20240401115226" referrerpolicy="no-referrer" class="elem-svg" alt="Dendro"> Dendro</button>
-                        <button class="filter-chip" data-type="element" data-val="Cryo"><img src="https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/revision/latest?cb=20240401115157" referrerpolicy="no-referrer" class="elem-svg" alt="Cryo"> Cryo</button>
-                        <button class="filter-chip" data-type="element" data-val="Geo"><img src="https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Element_Geo.svg/revision/latest?cb=20240401115352" referrerpolicy="no-referrer" class="elem-svg" alt="Geo"> Geo</button>
+                        <button class="filter-chip" data-type="element" data-val="Pyro"><img src="https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg/revision/latest?cb=20240401115510" referrerpolicy="no-referrer" class="elem-svg" alt="Pyro" loading="eager" decoding="async" fetchpriority="high"> Pyro</button>
+                        <button class="filter-chip" data-type="element" data-val="Hydro"><img src="https://static.wikia.nocookie.net/gensin-impact/images/8/80/Element_Hydro.svg/revision/latest?cb=20240401115449" referrerpolicy="no-referrer" class="elem-svg" alt="Hydro" loading="eager" decoding="async"> Hydro</button>
+                        <button class="filter-chip" data-type="element" data-val="Anemo"><img src="https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg/revision/latest?cb=20240401115016" referrerpolicy="no-referrer" class="elem-svg" alt="Anemo" loading="eager" decoding="async"> Anemo</button>
+                        <button class="filter-chip" data-type="element" data-val="Electro"><img src="https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg/revision/latest?cb=20240401115329" referrerpolicy="no-referrer" class="elem-svg" alt="Electro" loading="eager" decoding="async"> Electro</button>
+                        <button class="filter-chip" data-type="element" data-val="Dendro"><img src="https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Dendro.svg/revision/latest?cb=20240401115226" referrerpolicy="no-referrer" class="elem-svg" alt="Dendro" loading="eager" decoding="async"> Dendro</button>
+                        <button class="filter-chip" data-type="element" data-val="Cryo"><img src="https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/revision/latest?cb=20240401115157" referrerpolicy="no-referrer" class="elem-svg" alt="Cryo" loading="lazy" decoding="async"> Cryo</button>
+                        <button class="filter-chip" data-type="element" data-val="Geo"><img src="https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Element_Geo.svg/revision/latest?cb=20240401115352" referrerpolicy="no-referrer" class="elem-svg" alt="Geo" loading="lazy" decoding="async"> Geo</button>
                     </div>
                 </div>
 
@@ -646,7 +646,7 @@
             <h2 id="credits-title" class="credits-title"><i class="fa-solid fa-star" aria-hidden="true"></i> Credits</h2>
             <p class="credits-text">Many of the character, weapon, artifact, and team-comp images used in this fan project were sourced from <a class="credits-link" href="https://game8.co/" target="_blank" rel="noopener noreferrer">Game8</a>. Full credit to Game8 for the supplied visual assets.</p>
         </section>
-        <div class="footer-bottom-line">BUILT FOR THE ADVENTURE <span>✦</span></div>
+        <div class="footer-bottom-line">BUILT FOR THE ADVENTURE <span>✦</span> &bull; <a href="privacy.html" style="color:inherit;text-decoration:underline;text-underline-offset:.2em;margin-left:.4em">Privacy Policy</a></div>
     </footer>
 
     <!-- Modal Container -->
@@ -3682,7 +3682,7 @@
             
             if(filters.rarity !== 'All' || filters.element !== 'All' || filters.role !== 'All') {
                 if(filters.rarity !== 'All') activeFiltersContainer.innerHTML += `<span class="filter-tag"><i class="fa-solid fa-star"></i> ${filters.rarity}-Star</span>`;
-                if(filters.element !== 'All') activeFiltersContainer.innerHTML += `<span class="filter-tag"><img src="${elemIcons[filters.element]}" referrerpolicy="no-referrer" data-element="${filters.element}" class="elem-svg" alt="${filters.element}"> ${filters.element}</span>`;
+                if(filters.element !== 'All') activeFiltersContainer.innerHTML += `<span class="filter-tag"><img src="${elemIcons[filters.element]}" referrerpolicy="no-referrer" data-element="${filters.element}" class="elem-svg" alt="${filters.element}" loading="lazy" decoding="async"> ${filters.element}</span>`;
                 if(filters.role !== 'All') activeFiltersContainer.innerHTML += `<span class="filter-tag">${filters.role}</span>`;
             } else {
                 activeFiltersContainer.innerHTML = `<span class="filter-tag">All Characters (${characters.length})</span>`;
@@ -3739,15 +3739,15 @@
 
                 card.innerHTML = `
                     <div class="char-img-container">
-                        <img src="${elemIcons[char.element]}" alt="${char.element}" style="position: absolute; top: 0.5rem; left: 0.5rem; width: 2.2rem; height: 2.2rem; opacity: 0.7; z-index: 10; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));">
-                        <img src="${char.image}" alt="Portrait of ${char.name}" loading="lazy">
+                        <img src="${elemIcons[char.element]}" alt="${char.element}" style="position: absolute; top: 0.5rem; left: 0.5rem; width: 2.2rem; height: 2.2rem; opacity: 0.7; z-index: 10; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));" loading="lazy" decoding="async">
+                        <img src="${char.image}" alt="Portrait of ${char.name}" loading="lazy" decoding="async">
                         <div style="position: absolute; top: 0.5rem; right: 0.5rem; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; color: var(--gi-goldBright); font-size: 0.625rem; z-index: 10; filter: drop-shadow(0 2px 2px rgba(0,0,0,0.8));">
                             ${Array(char.rarity).fill('<i class="fa-solid fa-star"></i>').join('')}
                         </div>
                     </div>
                     <div class="card-footer">
                         <div class="card-icon-badge">
-                            <img src="${elemIcons[char.element]}" alt="${char.element}" style="width: 1.25rem; height: 1.25rem; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.8));">
+                            <img src="${elemIcons[char.element]}" alt="${char.element}" style="width: 1.25rem; height: 1.25rem; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.8));" loading="lazy" decoding="async">
                         </div>
                         <h2 class="card-name">${char.name}</h2>
                     </div>
@@ -3774,7 +3774,7 @@
             const altWeaponsHtml = char.altWeapons.map(w => `
                 <div class="stat-row alt">
                     <div class="icon-circle">
-                        <img src="${getVisualAsset(w.name) || w.img}" alt="${w.name}" class="slot-img">
+                        <img src="${getVisualAsset(w.name) || w.img}" alt="${w.name}" class="slot-img" loading="lazy" decoding="async">
                     </div>
                     <div class="stat-row-content">
                         <span class="stat-row-label"><i class="fa-solid fa-scale-balanced"></i> Strong Alternative</span>
@@ -3786,7 +3786,7 @@
             const altArtifactsHtml = (char.altArtifacts || []).slice(0, 2).map(a => `
                 <div class="stat-row alt">
                     <div class="icon-circle">
-                        <img src="${getVisualAsset(a.name) || a.img}" alt="${a.name}" class="slot-img">
+                        <img src="${getVisualAsset(a.name) || a.img}" alt="${a.name}" class="slot-img" loading="lazy" decoding="async">
                     </div>
                     <div class="stat-row-content">
                         <span class="stat-row-label">Alternative Option</span>
@@ -3797,11 +3797,11 @@
 
             const teamCards = char.teams.map((team, idx) => {
                 const badges = [
-                    `<span class="team-badge badge-0"><img src="${elemIcons.Pyro}" referrerpolicy="no-referrer" data-element="Pyro" class="elem-svg" alt="Pyro"> Highest DMG</span>`,
-                    `<span class="team-badge badge-1"><img src="${elemIcons.Electro}" referrerpolicy="no-referrer" data-element="Electro" class="elem-svg" alt="Electro"> Alternative Meta</span>`,
-                    `<span class="team-badge badge-2"><img src="${elemIcons.Geo}" referrerpolicy="no-referrer" data-element="Geo" class="elem-svg" alt="Geo"> Standard Core</span>`,
-                    `<span class="team-badge badge-3"><img src="${elemIcons.Hydro}" referrerpolicy="no-referrer" data-element="Hydro" class="elem-svg" alt="Hydro"> Flex Synergy</span>`,
-                    `<span class="team-badge badge-4"><img src="${elemIcons.Dendro}" referrerpolicy="no-referrer" data-element="Dendro" class="elem-svg" alt="Dendro"> F2P Friendly</span>`
+                    `<span class="team-badge badge-0"><img src="${elemIcons.Pyro}" referrerpolicy="no-referrer" data-element="Pyro" class="elem-svg" alt="Pyro" loading="lazy" decoding="async"> Highest DMG</span>`,
+                    `<span class="team-badge badge-1"><img src="${elemIcons.Electro}" referrerpolicy="no-referrer" data-element="Electro" class="elem-svg" alt="Electro" loading="lazy" decoding="async"> Alternative Meta</span>`,
+                    `<span class="team-badge badge-2"><img src="${elemIcons.Geo}" referrerpolicy="no-referrer" data-element="Geo" class="elem-svg" alt="Geo" loading="lazy" decoding="async"> Standard Core</span>`,
+                    `<span class="team-badge badge-3"><img src="${elemIcons.Hydro}" referrerpolicy="no-referrer" data-element="Hydro" class="elem-svg" alt="Hydro" loading="lazy" decoding="async"> Flex Synergy</span>`,
+                    `<span class="team-badge badge-4"><img src="${elemIcons.Dendro}" referrerpolicy="no-referrer" data-element="Dendro" class="elem-svg" alt="Dendro" loading="lazy" decoding="async"> F2P Friendly</span>`
                 ];
                 
                 const rankBadge = badges[idx] || badges[2];
@@ -3809,7 +3809,7 @@
                 const membersHtml = team.members.map(m => `
                     <div class="member-box">
                         <div class="member-icon">
-                            <img src="${getCharacterPfp(m)}" alt="${m}" class="slot-img" loading="lazy">
+                            <img src="${getCharacterPfp(m)}" alt="${m}" class="slot-img" loading="lazy" decoding="async">
                         </div>
                         <span class="member-name">${m}</span>
                     </div>
@@ -3824,7 +3824,7 @@
                         <div class="team-members">
                             <div class="member-box main">
                                 <div class="member-icon">
-                                    <img src="${getCharacterPfp(char.name)}" alt="${char.name}" class="slot-img" loading="lazy">
+                                    <img src="${getCharacterPfp(char.name)}" alt="${char.name}" class="slot-img" loading="lazy" decoding="async">
                                 </div>
                                 <span class="member-name">${char.name}</span>
                             </div>
@@ -3841,12 +3841,12 @@
             modalBody.innerHTML = `
                 <div class="modal-img-wrapper ${bgClass}">
                     <div class="bg-pattern"></div>
-                    <img src="${elemIcons[char.element]}" referrerpolicy="no-referrer" data-element="${char.element}" class="elem-bg-icon" alt="${char.element}">
-                    <img src="${char.image}" alt="${char.name}" class="char-full-img">
+                    <img src="${elemIcons[char.element]}" referrerpolicy="no-referrer" data-element="${char.element}" class="elem-bg-icon" alt="${char.element}" loading="lazy" decoding="async">
+                    <img src="${char.image}" alt="${char.name}" class="char-full-img" loading="lazy" decoding="async">
                     
                     <div class="modal-title-box">
                         <div class="modal-title-icon" style="border-color: ${char.elementColor}">
-                            <img src="${elemIcons[char.element]}" referrerpolicy="no-referrer" data-element="${char.element}" alt="${char.element}" style="width: 1.8rem; height: 1.8rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));">
+                            <img src="${elemIcons[char.element]}" referrerpolicy="no-referrer" data-element="${char.element}" alt="${char.element}" style="width: 1.8rem; height: 1.8rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));" loading="lazy" decoding="async">
                         </div>
                         <div class="modal-title-text">
                             <h2>${char.name}</h2>
@@ -3900,7 +3900,7 @@
                             <div>
                                 <div class="stat-row">
                                     <div class="icon-circle">
-                                        <img src="${getVisualAsset(char.bestWeapon.name) || char.bestWeapon.img}" alt="${char.bestWeapon.name}" class="slot-img">
+                                        <img src="${getVisualAsset(char.bestWeapon.name) || char.bestWeapon.img}" alt="${char.bestWeapon.name}" class="slot-img" loading="lazy" decoding="async">
                                     </div>
                                     <div class="stat-row-content">
                                         <span class="stat-row-label"><i class="fa-solid fa-crown"></i> Best in Slot</span>
@@ -3925,7 +3925,7 @@
                             <div style="margin-bottom: 1.5rem;">
                                 <div class="stat-row">
                                     <div class="icon-circle">
-                                        <img src="${getVisualAsset(char.bestArtifact.name) || char.bestArtifact.img}" alt="${char.bestArtifact.name}" class="slot-img">
+                                        <img src="${getVisualAsset(char.bestArtifact.name) || char.bestArtifact.img}" alt="${char.bestArtifact.name}" class="slot-img" loading="lazy" decoding="async">
                                     </div>
                                     <div class="stat-row-content">
                                         <span class="stat-row-label">Best Artifact Set</span>

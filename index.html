@@ -53,7 +53,7 @@
 
         body, html {
             width: 100%;
-            min-height: 100%;
+            min-height: 100vh;
             background-color: var(--bg-sky-top);
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             overflow-x: hidden;
@@ -65,7 +65,7 @@
 
         @media (min-width: 1120px) {
             body, html {
-                min-height: 100%;
+                min-height: 100vh;
                 height: auto;
                 overflow-y: auto;
             }
@@ -869,6 +869,7 @@
            ========================================================= */
         .footer-strip {
             width: 100%;
+            margin-top: auto;
             min-height: 52px;
             background: rgba(16, 26, 46, 0.88);
             border-top: 1px solid var(--ui-border);
@@ -1101,6 +1102,7 @@
         </div>
         <nav class="header-nav">
             <a href="https://www.instagram.com/otaku_krishna1/" target="_blank" rel="noopener noreferrer" class="nav-link" aria-label="Send feedback on Instagram">Feedback</a>
+            <a id="minecraft-java-professional" href="./coreminecraftpro.html" class="nav-link">Java Pro Guide</a>
             <a href="https://www.buymeacoffee.com/otaku_krishna" target="_blank" rel="noopener noreferrer" class="nav-link support-tab" aria-label="Support CoreGG on Buy Me a Coffee" title="Optional support for CoreGG">♡ Support</a>
         </nav>
     </header>
@@ -1280,7 +1282,7 @@
                     <div class="picker-heading" id="level-heading">Choose your path</div>
                     <div class="picker-options">
                         <button class="edition-option" id="beginner-option" type="button">Beginner</button>
-                        <button class="edition-option" id="professional-option" type="button">Professional</button>
+                        <button class="edition-option" id="professional-option" data-java-href="./coreminecraftpro.html" type="button">Professional</button>
                     </div>
                 </section>
 
@@ -1487,10 +1489,18 @@
                 infoBox.textContent = 'Opening Minecraft ' + selectedEdition + ' · ' + level;
                 infoBox.className = 'dynamic-box active-minecraft';
 
-                // Open the Beginner guide pages using relative URLs so they work on GitHub Pages.
+                // Open guide pages using relative URLs so they work on GitHub Pages.
                 if (selectedEdition === 'Java' && level === 'Beginner') {
                     launchTimer = setTimeout(() => {
                         window.location.href = './coreminecraft.html';
+                    }, 300);
+                    return;
+                }
+
+                if (selectedEdition === 'Java' && level === 'Professional') {
+                    const proGuide = professionalOption.dataset.javaHref || './coreminecraftpro.html';
+                    launchTimer = setTimeout(() => {
+                        window.location.href = proGuide;
                     }, 300);
                     return;
                 }

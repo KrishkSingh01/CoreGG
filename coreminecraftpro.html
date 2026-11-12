@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CoreMinecraftPro is an advanced Minecraft Java Edition field guide covering PvP, movement, survival routing, technical farms, redstone, trading, and server operations.">
+  <meta name="theme-color" content="#17251b">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CoreGG">
+  <meta property="og:title" content="CoreMinecraftPro | Minecraft Java Professional Guide">
+  <meta property="og:description" content="Advanced Minecraft Java methods for experienced players: PvP, movement, survival routes, redstone, farms, and server operations.">
+  <meta name="twitter:card" content="summary">
+  <title>CoreMinecraftPro | Minecraft Java Professional Guide</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#111a14;--surface:#1b2a20;--surface-2:#24382a;--surface-3:#304b35;--green:#75c64b;--green-bright:#a2ed68;--gold:#e6c875;--text:#f1f5e9;--muted:#b9c8b6;--line:#49664b;--danger:#ffb0a5;--shadow:0 14px 34px rgba(0,0,0,.28);--pixel:4px}
+    *{box-sizing:border-box}.searchable[hidden]{display:none!important}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background-color:light-dark(#111a14,#111a14);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}body:before{content:"";position:fixed;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(12,20,14,.76),rgba(12,20,14,.97)),repeating-linear-gradient(0deg,transparent 0 31px,rgba(133,187,103,.035) 32px),repeating-linear-gradient(90deg,transparent 0 31px,rgba(133,187,103,.035) 32px)}a{color:var(--green-bright)}button,input,select,textarea{font:inherit}button,a,input,select,textarea{outline-offset:3px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--gold)}button{cursor:pointer}img{max-width:100%}.skip-link{position:absolute;left:-9999px;top:0;background:#fff;color:#111;padding:.7rem;z-index:100}.skip-link:focus{left:1rem;top:1rem}.shell{width:min(1180px,calc(100% - 2rem));margin-inline:auto}.site-header{position:sticky;top:0;z-index:50;background:rgba(17,26,20,.96);border-bottom:3px solid var(--green);box-shadow:0 5px 18px rgba(0,0,0,.28);backdrop-filter:blur(10px)}.header-inner{min-height:82px;display:flex;align-items:center;gap:1.2rem;justify-content:space-between;padding:.8rem 0}.brand{display:flex;flex-direction:column;line-height:1;text-decoration:none;flex-shrink:0}.brand-name{font-weight:950;font-size:1.5rem;letter-spacing:.16em;color:#fff}.brand-name span{color:var(--green-bright)}.brand-sub{margin-top:.45rem;color:var(--muted);font-size:.62rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.nav{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;justify-content:flex-end}.pixel-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:42px;padding:.65rem .9rem;border:2px solid #5e8151;border-radius:3px;background:#263b2a;color:var(--text);font-weight:800;font-size:.82rem;text-decoration:none;box-shadow:inset 0 -3px rgba(0,0,0,.2);transition:background .16s,border-color .16s,transform .16s}.pixel-btn:hover{background:#355335;border-color:var(--green-bright);transform:translateY(-1px)}.pixel-btn.primary{background:#4c8b32;border-color:#8ed45f;color:#fff}.pixel-btn.support-donation{background:rgba(117,198,75,.07);border-color:rgba(162,237,104,.58);color:#d8f5c6;box-shadow:none;min-height:44px}.pixel-btn.support-donation:hover{background:rgba(117,198,75,.14);border-color:var(--green-bright);box-shadow:0 0 10px rgba(162,237,104,.12)}.pixel-btn.support-donation:focus-visible{outline:2px solid var(--green-bright);outline-offset:3px}.pixel-btn.secondary{background:#27382c}.pixel-btn.small{min-height:34px;padding:.4rem .65rem;font-size:.76rem}.icon{width:1.1rem;height:1.1rem;display:inline-grid;place-items:center;font-size:1rem}.hero{position:relative;overflow:hidden;margin:1.5rem auto 1.2rem;border:3px solid #4b6b45;background:linear-gradient(120deg,#1b3021 0%,#27462d 55%,#3d5c32 100%);box-shadow:var(--shadow);isolation:isolate}.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(13,23,16,.8),rgba(13,23,16,.12)),radial-gradient(circle at 82% 25%,rgba(164,229,97,.2),transparent 28rem)}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:1rem;padding:clamp(1.5rem,5vw,4rem)}.eyebrow{display:inline-flex;align-items:center;gap:.5rem;color:var(--green-bright);font-size:.75rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.eyebrow:before{content:"";width:9px;height:9px;background:var(--green-bright);box-shadow:0 0 0 4px rgba(162,237,104,.12)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.2rem,5.2vw,4.5rem);line-height:1.04;letter-spacing:-.045em;margin:.9rem 0 1rem;max-width:14ch}h1 span{color:var(--green-bright)}.hero p{max-width:58ch;color:#d4e0cf;font-size:1.03rem}.hero-actions{display:flex;gap:.65rem;flex-wrap:wrap;margin-top:1.3rem}.hero-note{font-size:.78rem!important;color:#c0d0b8!important;margin-top:1rem;margin-bottom:0}.pixel-scene{min-height:270px;position:relative;display:flex;align-items:center;justify-content:center;isolation:isolate}.sun{position:absolute;right:16%;top:8%;width:76px;height:76px;background:#c9e987;box-shadow:0 0 35px rgba(201,233,135,.22);border:5px solid #e0f2ad}.cloud{position:absolute;height:18px;background:#c3d7ae;box-shadow:18px -14px 0 #c3d7ae,36px 0 0 #c3d7ae,18px 0 0 #c3d7ae}.cloud.one{left:10%;top:25%;width:36px}.cloud.two{right:9%;top:43%;width:28px;transform:scale(.7)}.mountain{position:absolute;bottom:70px;width:0;height:0;border-left:110px solid transparent;border-right:110px solid transparent;border-bottom:145px solid #34563a}.mountain.back{left:0;border-left-width:100px;border-right-width:100px;border-bottom:110px solid #496d3c}.mountain.front{right:0;border-left-width:125px;border-right-width:125px;border-bottom:155px solid #294a32}.ground{position:absolute;bottom:35px;left:0;right:0;height:58px;background:repeating-linear-gradient(90deg,#4c8138 0 36px,#578e3f 36px 72px);border-top:12px solid #7bb84d;box-shadow:0 16px 0 #513f2a}.block-house{position:absolute;bottom:92px;left:50%;transform:translateX(-50%);width:125px;height:96px;background:repeating-linear-gradient(0deg,#9a7044 0 23px,#7d5735 24px 26px),repeating-linear-gradient(90deg,transparent 0 30px,rgba(0,0,0,.12) 31px 33px);border:5px solid #513c29;box-shadow:inset 0 0 0 4px rgba(255,220,150,.13)}.block-house:before{content:"";position:absolute;left:-12px;right:-12px;top:-30px;height:28px;background:#4c7638;border:4px solid #263f28;clip-path:polygon(0 100%,12% 0,88% 0,100% 100%)}.door{position:absolute;bottom:0;left:44px;width:31px;height:52px;background:#563a23;border:4px solid #38271b}.window{position:absolute;right:12px;top:22px;width:20px;height:20px;background:#8fd8d7;border:4px solid #60452a}.torch{position:absolute;bottom:100px;left:calc(50% + 78px);width:9px;height:36px;background:#7b4b24;border:2px solid #4c311b}.torch:before{content:"";position:absolute;top:-14px;left:-7px;width:17px;height:16px;background:#ffda72;box-shadow:0 0 20px #ffc44d}.section{padding:2rem 0}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1rem}.section-heading h2{font-size:clamp(1.45rem,3vw,2rem);margin:0;letter-spacing:-.02em}.section-heading p{margin:.3rem 0 0;color:var(--muted);font-size:.92rem}.section-kicker{color:var(--green-bright);font-weight:900;text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;margin-bottom:.35rem}.panel{background:linear-gradient(180deg,#1e3023,#18251c);border:2px solid var(--line);box-shadow:var(--shadow)}.search-panel{padding:1rem;display:grid;grid-template-columns:1fr auto;gap:.7rem;margin-bottom:1rem}.search-box{display:flex;align-items:center;gap:.65rem;background:#101a13;border:2px solid #4b6948;padding:.15rem .75rem}.search-box input{width:100%;min-width:0;background:transparent;color:var(--text);border:0;padding:.7rem 0;outline:none}.search-box input::placeholder{color:#93a791}.search-hint{color:var(--muted);font-size:.75rem;margin:.5rem 0 0}.quick-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}.quick-card{display:flex;flex-direction:column;min-height:150px;padding:1rem;text-decoration:none;color:var(--text);background:#1d3022;border:2px solid #3d5b3e;transition:transform .16s,border-color .16s,background .16s}.quick-card:hover{transform:translateY(-3px);border-color:var(--green);background:#263d2a}.card-icon{display:grid;place-items:center;width:46px;height:46px;margin-bottom:.8rem;background:#365936;border:2px solid #6c9b54;font-size:1.35rem}.quick-card h3{font-size:1rem;margin:0 0 .35rem}.quick-card p{font-size:.82rem;color:var(--muted);margin:0}.guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}.guide-card{padding:1rem;background:#1b2a20;border:2px solid #3c583c;display:flex;flex-direction:column;min-height:220px}.guide-card .tag{align-self:flex-start;background:#314b31;color:#c6f3a6;border:1px solid #5d8750;padding:.2rem .45rem;font-size:.67rem;font-weight:900;text-transform:uppercase;letter-spacing:.07em}.guide-card h3{margin:.8rem 0 .45rem;font-size:1.12rem}.guide-card p{color:var(--muted);font-size:.88rem;margin-bottom:1rem}.guide-card details{margin-top:auto;border-top:1px solid #3d553c;padding-top:.7rem}.guide-card summary{color:var(--green-bright);font-weight:800;cursor:pointer}.guide-card details p{margin:.7rem 0 0}.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.tool-panel{padding:1.2rem}.tool-panel h3{margin-bottom:.35rem}.muted{color:var(--muted)}.recipe-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.45rem;max-width:210px;margin:.8rem 0}.recipe-slot{aspect-ratio:1;display:grid;place-items:center;background:#304832;border:2px solid #5b7d4f;font-size:1.5rem;padding:.35rem}.recipe-slot.empty{background:#152117;border-color:#354d35}.recipe-output{display:flex;align-items:center;gap:.8rem;padding:.8rem;background:#17261b;border:2px solid #638b4f;margin-top:auto}.recipe-output .big{font-size:2rem}.database-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.7rem}.data-tile{padding:.85rem;border:2px solid #3e5c3e;background:#1a2a1f;display:flex;flex-direction:column}.data-tile strong{display:block;margin:.35rem 0;font-size:.98rem}.data-tile p{margin:0;color:var(--muted);font-size:.82rem}.notice{padding:1rem;border-left:4px solid var(--gold);background:#292a1d;color:#e9e3c4;font-size:.85rem}
+
+    /* Beginner Visual & Image Styling */
+    .mc-sprite{width:38px;height:38px;image-rendering:pixelated;object-fit:contain;filter:drop-shadow(0 3px 4px rgba(0,0,0,.45));flex-shrink:0}
+    .mc-sprite.lg{width:48px;height:48px}
+    .mc-sprite.sm{width:28px;height:28px}
+    .card-head-pic{display:flex;align-items:center;justify-content:space-between;gap:.6rem;margin-bottom:.3rem}
+    .visual-banner{width:100%;height:110px;background:linear-gradient(180deg,#152419,#0f1a12);border:2px solid #355037;margin-bottom:.75rem;display:flex;align-items:center;justify-content:center;gap:.8rem;padding:.75rem;position:relative;overflow:hidden}
+    .visual-banner::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at center,rgba(162,237,104,.12),transparent 70%);pointer-events:none}
+    .key-badge{display:inline-block;padding:.15rem .45rem;background:#101a13;border:2px solid #6c9b54;color:var(--green-bright);font-family:monospace;font-weight:900;font-size:.82rem;border-radius:3px;box-shadow:inset 0 -2px rgba(0,0,0,.4)}
+    .key-list{display:grid;gap:.55rem;margin-top:.8rem}
+    .key-row{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.55rem .75rem;background:#142117;border:1px solid #385239;font-size:.86rem}
+    .tier-badge{display:inline-block;font-size:.68rem;font-weight:900;text-transform:uppercase;padding:.15rem .45rem;background:#263d29;color:var(--gold);border:1px solid #5d8750;margin-bottom:.35rem;align-self:flex-start}
+
+    .site-footer{margin-top:2rem;border-top:3px solid var(--green);background:#0d150f;padding:1.8rem 0 1rem}.footer-brand{display:flex;justify-content:center;align-items:center;gap:.7rem;color:#c3d0bf;font-size:.7rem;font-weight:900;letter-spacing:.2em;margin-bottom:.6rem}.footer-brand b{color:var(--green-bright)}.footer-disclaimer{max-width:850px;margin:0 auto;color:#adbdab;font-size:.78rem;line-height:1.65;text-align:center}.credits{max-width:850px;margin:1rem auto 0;padding-top:1rem;border-top:1px solid #2b422d;text-align:center}.credits h2{font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green-bright);margin-bottom:.4rem}.credits p{font-size:.78rem;color:#adbdab;margin:.3rem 0}.credits a{color:#b8ed96}.footer-bottom{margin-top:1rem;padding-top:.8rem;border-top:1px solid #233624;text-align:center;color:#71836e;font-size:.65rem;letter-spacing:.12em}.no-results{display:none;padding:1rem;border:1px dashed #64845a;color:var(--muted);text-align:center}.no-results.show{display:block}.reduced-motion *{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+    @media(max-width:850px){.header-inner{align-items:flex-start;flex-direction:column;gap:.8rem}.nav{justify-content:flex-start;width:100%}.hero-grid{grid-template-columns:1fr}.pixel-scene{min-height:220px;max-width:460px;width:100%;margin:auto}.quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.guide-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.database-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:560px){.shell{width:min(100% - 1rem,1180px)}.header-inner{padding:.75rem 0}.brand-name{font-size:1.3rem}.nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem}.nav .pixel-btn{padding:.55rem .35rem;font-size:.74rem}.hero{margin-top:.7rem}.hero-grid{padding:1.25rem}.hero p{font-size:.93rem}.pixel-scene{min-height:185px}.sun{width:54px;height:54px}.ground{bottom:25px;height:44px}.block-house{bottom:70px;transform:translateX(-50%) scale(.78);transform-origin:bottom center}.mountain{bottom:50px;transform:scale(.8);transform-origin:bottom}.mountain.back{left:-30px}.mountain.front{right:-40px}.torch{bottom:76px}.section{padding:1.35rem 0}.section-heading{align-items:flex-start;flex-direction:column}.search-panel{grid-template-columns:1fr}.quick-grid,.guide-grid,.split-grid,.database-grid{grid-template-columns:1fr}.quick-card{min-height:0}.guide-card{min-height:0}.recipe-grid{max-width:180px}.footer-disclaimer{font-size:.72rem}.footer-bottom{line-height:1.8}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+  
+    .pro-hero-scene{min-height:240px;border:2px solid rgba(162,237,104,.24);background:linear-gradient(180deg,#14251a,#0c1710);padding:.6rem}
+    .pro-hero-scene svg,.pro-diagram svg{display:block;width:100%;height:auto}
+    .pro-diagram{margin:0;padding:1rem;background:linear-gradient(180deg,#15251a,#101b13);border:2px solid #3e5c3e;box-shadow:var(--shadow)}
+    .pro-diagram figcaption{margin-top:.65rem;color:var(--muted);font-size:.78rem}
+    .pro-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
+    .pro-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .pro-card{padding:1rem;background:#1b2a20;border:2px solid #3c583c;min-width:0}
+    .pro-card h3{margin:.2rem 0 .55rem;font-size:1.05rem}
+    .pro-card p{color:var(--muted);font-size:.88rem;margin-bottom:.55rem}
+    .pro-card p:last-child{margin-bottom:0}
+    .pro-card ul,.pro-card ol{padding-left:1.2rem;margin:.5rem 0 0;color:var(--muted);font-size:.86rem;display:grid;gap:.45rem}
+    .pro-pill{display:inline-flex;align-items:center;gap:.35rem;margin:.1rem .25rem .2rem 0;padding:.22rem .5rem;border:1px solid #5d8750;background:#263d29;color:#d4f4ba;font-size:.7rem;font-weight:900;letter-spacing:.04em;text-transform:uppercase}
+    .pro-kicker{color:var(--green-bright);font-size:.72rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+    .pro-callout{padding:1rem 1.1rem;border-left:4px solid var(--gold);background:#292a1d;color:#eee5c1;font-size:.88rem}
+    .pro-callout strong{color:#fff2b8}
+    .pro-table-wrap{overflow-x:auto;border:1px solid #49664b;background:#142117}
+    .pro-table{width:100%;border-collapse:collapse;min-width:620px;font-size:.84rem}
+    .pro-table th,.pro-table td{padding:.7rem .8rem;border-bottom:1px solid #385239;text-align:left;vertical-align:top}
+    .pro-table th{color:#d8f5c6;background:#213625;font-size:.74rem;text-transform:uppercase;letter-spacing:.07em}
+    .pro-table td{color:#d2ddce}
+    .pro-table tr:last-child td{border-bottom:0}
+    .pro-checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem;padding:0;list-style:none}
+    .pro-checklist li{padding:.65rem .75rem;background:#142117;border:1px solid #385239;color:var(--muted);font-size:.84rem}
+    .pro-checklist li strong{color:var(--text)}
+    .pro-step{display:grid;grid-template-columns:2.1rem 1fr;gap:.75rem;align-items:start;padding:.75rem 0;border-bottom:1px solid #385239}
+    .pro-step:last-child{border-bottom:0}
+    .pro-step-num{display:grid;place-items:center;width:2rem;height:2rem;background:#365936;border:1px solid #79a75d;color:#e4ffd0;font-weight:950}
+    .pro-step p{margin:0;color:var(--muted);font-size:.87rem}
+    .pro-step strong{color:var(--text)}
+    .source-list{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.75rem}
+    .source-list a{display:inline-flex;padding:.5rem .65rem;border:1px solid #5d8750;background:#16271a;color:#c6f3a6;font-size:.78rem;font-weight:750;text-decoration:none}
+    .source-list a:hover{background:#263d29;border-color:var(--green-bright)}
+    .quick-grid.pro-jumps .quick-card{min-height:135px}
+    .pro-inline-link{color:#c6f3a6;font-weight:800}
+    .pro-mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:#c6f3a6}
+    @media(max-width:850px){.pro-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:560px){.pro-grid,.pro-grid.two,.pro-checklist{grid-template-columns:1fr}.pro-diagram{padding:.65rem}.pro-table{min-width:560px}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"CoreMinecraftPro","description":"Advanced Minecraft Java Edition professional guide covering PvP, movement, survival, redstone, farms, trading, and server operations.","inLanguage":"en"}</script>
+  <!-- Existing CoreGG ad integrations; no ad containers or placements are hidden by this page. -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5444671871825918" crossorigin="anonymous"></script>
+  <script src="https://quge5.com/88/tag.min.js" data-zone="307530" async data-cfasync="false"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./index.html" aria-label="CoreGG home"><span class="brand-name">CORE <span>GG</span></span><span class="brand-sub">Minecraft Java Pro Field Guide</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="pixel-btn" href="./index.html"><span class="icon" aria-hidden="true">⌂</span> Home</a>
+        <a class="pixel-btn" href="./coreminecraft.html">Java Beginner Guide</a>
+        <a class="pixel-btn support-donation" href="https://www.buymeacoffee.com/otaku_krishna" target="_blank" rel="noopener noreferrer" aria-label="Optionally support CoreGG on Buy Me a Coffee" title="Optional support for CoreGG"><span class="icon" aria-hidden="true">♡</span> Support CoreGG <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">Java Edition • Professional Field Guide</span>
+          <h1 id="hero-title">CoreMinecraft<span>Pro</span></h1>
+          <p>Make every movement, resource run, and redstone cycle deliberate. This field guide is for experienced Java players who want better PvP decisions, reliable technical builds, faster routes, and fewer avoidable losses.</p>
+          <div class="hero-actions"><a class="pixel-btn primary" href="#combat">Open the PvP playbook <span aria-hidden="true">→</span></a><a class="pixel-btn" href="#technical">Jump to technical systems</a></div>
+          <p class="hero-note">Stable-version baseline: Java Edition 26.3, checked November 12, 2026. Server settings, plugins, datapacks, and snapshots can change the mechanics described below.</p>
+        </div>
+        <figure class="pixel-scene pro-hero-scene">
+          <svg viewBox="0 0 520 300" role="img" aria-labelledby="pro-scene-title pro-scene-desc">
+            <title id="pro-scene-title">Advanced Java field operations illustration</title>
+            <desc id="pro-scene-desc">A pixel-style mountain route with a portal, a player, and a marked path between a base and a technical outpost.</desc>
+            <defs><linearGradient id="proSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#203a2b"/><stop offset="1" stop-color="#101a13"/></linearGradient></defs>
+            <rect width="520" height="300" fill="url(#proSky)"/><circle cx="410" cy="58" r="28" fill="#d6ef9c" opacity=".9"/>
+            <path d="M0 196 104 84l82 99 75-132 116 145 66-88 77 97v95H0Z" fill="#294a32"/>
+            <path d="m0 224 130-88 88 89 77-72 95 78 66-45 64 43v71H0Z" fill="#193624"/>
+            <path d="M0 258h520v42H0Z" fill="#496e37"/><path d="M0 258h520v10H0Z" fill="#84bf53"/>
+            <path d="M70 239c65-24 81-7 132-33 49-24 70-23 118-3 36 15 78-3 132-29" fill="none" stroke="#e6c875" stroke-width="4" stroke-dasharray="8 8"/>
+            <rect x="364" y="173" width="58" height="78" fill="#2b1838" stroke="#8f69b5" stroke-width="5"/><rect x="372" y="181" width="42" height="62" fill="#6a4a8b" opacity=".75"/>
+            <rect x="178" y="206" width="22" height="37" fill="#d4ab73"/><rect x="183" y="191" width="12" height="15" fill="#dfb88b"/><rect x="176" y="217" width="8" height="24" fill="#426841"/><rect x="196" y="217" width="8" height="24" fill="#426841"/>
+            <rect x="80" y="212" width="52" height="36" fill="#8a6442" stroke="#493423" stroke-width="4"/><path d="M74 214 105 188l33 26" fill="#526f37" stroke="#30482c" stroke-width="4"/>
+            <text x="101" y="276" fill="#e8f1db" text-anchor="middle" font-size="12" font-family="system-ui">BASE</text><text x="393" y="276" fill="#e8f1db" text-anchor="middle" font-size="12" font-family="system-ui">PORTAL</text>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="find-heading">
+      <div class="section-heading"><div><div class="section-kicker">Field index</div><h2 id="find-heading">Find a method fast</h2><p>Search topics like spear, cooldown, diamond route, villager trades, redstone timing, or server TPS.</p></div></div>
+      <div class="panel" style="padding:1rem">
+        <form class="search-panel" id="siteSearch" role="search">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Try: PvP cooldown, Lunge, Nether route, farm rates…" aria-label="Search the Minecraft Java professional guide"><span class="muted" aria-hidden="true">⌘</span></label>
+          <button class="pixel-btn primary" type="submit">Search</button>
+        </form>
+        <p class="search-hint">Search filters the field guide sections below. Clear the box to restore every section.</p>
+        <div class="quick-grid pro-jumps" aria-label="Quick links">
+          <a class="quick-card searchable" data-search="combat pvp sword axe spear mace cooldown shield aim spacing" href="#combat"><span class="card-icon" aria-hidden="true">⚔</span><h3>Combat & PvP</h3><p>Choose a weapon for the situation and control the exchange.</p></a>
+          <a class="quick-card searchable" data-search="survival progression nether route mining diamond ore x y z portal" href="#survival"><span class="card-icon" aria-hidden="true">◆</span><h3>Survival routing</h3><p>Turn an expedition into a planned supply chain.</p></a>
+          <a class="quick-card searchable" data-search="redstone farms technical tick rates mob spawning storage" href="#technical"><span class="card-icon" aria-hidden="true">▦</span><h3>Technical systems</h3><p>Design builds around measured game behavior.</p></a>
+          <a class="quick-card searchable" data-search="elytra movement spear lunge mace wind burst pearl water bucket" href="#movement"><span class="card-icon" aria-hidden="true">➤</span><h3>Movement tech</h3><p>Keep momentum while reducing recovery risk.</p></a>
+        </div>
+        <div class="no-results" id="noResults" role="status">No matching professional guide found. Try another term or clear your search.</div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="combat" aria-labelledby="combat-heading" data-search="pvp combat sword axe spear mace shield attack cooldown sprint reset w tap critical hit bow crossbow armor potions hotbar">
+      <div class="section-heading"><div><div class="section-kicker">01 • PvP decision-making</div><h2 id="combat-heading">Combat is timing, spacing, and server rules</h2><p>Build a repeatable decision loop instead of relying on one weapon or one combo.</p></div></div>
+      <div class="pro-grid two">
+        <div class="panel tool-panel">
+          <div class="pro-kicker">Before the duel</div><h3>Set the rules and your loadout</h3>
+          <p class="muted">Confirm the server version, combat plugin, knockback, healing limits, and allowed items before choosing a kit. Vanilla Java’s cooldown-based attacks reward deliberate swings; practice servers may tune or replace those rules.</p>
+          <ul><li>Keep sword, blocks, food, ranged weapon, water or pearls, and emergency healing in predictable hotbar slots.</li><li>Bind direct hotbar selection if scroll-wheel switching makes you overshoot under pressure.</li><li>Use the offhand for the tool that best fits the matchup, then practice swapping without losing target tracking.</li><li>Carry enough food to sprint, heal, and use movement enchantments; hunger is a combat resource.</li></ul>
+        </div>
+        <figure class="pro-diagram">
+          <svg viewBox="0 0 600 270" role="img" aria-labelledby="range-title range-desc">
+            <title id="range-title">PvP spacing and engagement lanes</title><desc id="range-desc">A top-down diagram with a safe reset lane, a contested weapon range, and a close-range danger zone around two players.</desc>
+            <rect width="600" height="270" rx="12" fill="#101a13"/><path d="M30 45h540v180H30Z" fill="#1b2b20" stroke="#49664b" stroke-width="2"/>
+            <path d="M45 73h182v124H45Z" fill="#253d29"/><path d="M227 73h180v124H227Z" fill="#4b4426"/><path d="M407 73h148v124H407Z" fill="#4a2925"/>
+            <text x="136" y="96" fill="#c8f1a9" font-size="14" text-anchor="middle" font-family="system-ui">RESET / REPOSITION</text><text x="317" y="96" fill="#f1dd8b" font-size="14" text-anchor="middle" font-family="system-ui">CONTESTED SPACE</text><text x="481" y="96" fill="#ffc0ad" font-size="14" text-anchor="middle" font-family="system-ui">COMMIT RANGE</text>
+            <circle cx="165" cy="148" r="20" fill="#8bc65c"/><path d="M165 168v22m-15-11 15-12 15 12" stroke="#e8f1db" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="454" cy="148" r="20" fill="#c66b4b"/><path d="M454 168v22m-15-11 15-12 15 12" stroke="#ffe2d4" stroke-width="6" stroke-linecap="round"/>
+            <path d="M202 148h206" stroke="#e6c875" stroke-width="3" stroke-dasharray="8 8"/><path d="m397 139 14 9-14 9" fill="none" stroke="#e6c875" stroke-width="3"/>
+            <text x="300" y="218" fill="#b9c8b6" font-size="13" text-anchor="middle" font-family="system-ui">Trade only when cooldown, aim, and exit are in your favor</text>
+          </svg>
+          <figcaption>Think in lanes: take space, force a response, then choose whether to trade or reset.</figcaption>
+        </figure>
+      </div>
+      <div class="pro-table-wrap" style="margin-top:.8rem">
+        <table class="pro-table"><thead><tr><th>Weapon / tool</th><th>Use it for</th><th>Execution cue</th><th>Common failure</th></tr></thead><tbody>
+          <tr><td><strong>Sword</strong></td><td>Consistent close-range pressure and flexible general combat.</td><td>Let the attack recover on cooldown-based rules; pair a clean hit with a deliberate sprint reset when you need knockback.</td><td>Clicking continuously and giving up timing, spacing, or food management.</td></tr>
+          <tr><td><strong>Axe</strong></td><td>Heavy hits and shield pressure.</td><td>Use it when a shield is the main obstacle; swap back to your normal weapon when the opening closes.</td><td>Slow recovery makes a missed swing expensive. Don’t chase a shield user into a bad angle.</td></tr>
+          <tr><td><strong>Spear</strong></td><td>Charge attacks and reach control; charge damage can scale with movement speed.</td><td>Respect its minimum useful range. Lunge is a jab movement tool; a level view angle helps maximize its travel.</td><td>Charging in a cramped space, lunging while low on hunger, or assuming it works like a sword.</td></tr>
+          <tr><td><strong>Mace</strong></td><td>Converting height into a high-impact smash.</td><td>Secure the drop first. Density increases fall-based damage; Wind Burst can chain launches.</td><td>A Wind Burst smash removes the normal smash fall-protection benefit. Plan the next landing.</td></tr>
+          <tr><td><strong>Bow / crossbow</strong></td><td>Forcing movement, breaking a retreat, and punishing predictable paths.</td><td>Lead a moving target and use cover to reload or draw safely.</td><td>Firing from the same peek repeatedly or ignoring projectile travel time.</td></tr>
+        </tbody></table>
+      </div>
+      <div class="guide-grid" style="margin-top:.8rem">
+        <article class="guide-card searchable" data-search="aim timing cooldown sprint reset w tap strafe critical hit pvp"><span class="tag">Timing</span><h3>Make each hit create a choice</h3><p>On cooldown-based combat, watch the attack indicator if enabled and avoid empty swings. A sprint reset before contact can restore knockback pressure; vary your timing so the opponent cannot read a fixed jump rhythm.</p><p>Critical hits require a valid falling state under the server’s combat rules. Use them when the trade is favorable, not as an automatic opener that sacrifices sprint control.</p></article>
+        <article class="guide-card searchable" data-search="shield axe disable shield defense block placement pvp"><span class="tag">Defense</span><h3>Break line, then re-enter</h3><p>Use blocks, corners, and elevation to interrupt bow sightlines and buy a reset. An axe can disable a shield, but the opening is temporary: decide your follow-up before you swing.</p><p>Keep a defensive slot ready. Water, blocks, pearls, and a clean retreat are often worth more than one extra chase hit.</p></article>
+        <article class="guide-card searchable" data-search="practice drill pvp crosshair tracking strafing hotbar review"><span class="tag">Practice drill</span><h3>Train the repeatable parts</h3><p>Warm up with target tracking while strafing, then cycle your hotbar without looking down. Review a fight by asking: did you miss due to aim, cooldown, range, latency, or a bad entry?</p><p>Change one variable at a time so your practice produces a useful answer.</p></article>
+      </div>
+    </section>
+
+    <section class="section searchable" id="survival" aria-labelledby="survival-heading" data-search="advanced survival route preparation mining diamonds branch mining y level nether portal coordinates 8 to 1 dappled forest straw bed">
+      <div class="section-heading"><div><div class="section-kicker">02 • Expedition planning</div><h2 id="survival-heading">Plan routes around objectives and exits</h2><p>Professional survival is logistics: what you need, how you will reach it, and how you will get home.</p></div></div>
+      <div class="pro-grid">
+        <article class="pro-card"><span class="pro-pill">01 · Objective</span><h3>Pick a measurable target</h3><p>Decide whether the run is for ancient debris, a structure, a villager supply, a biome resource, or an End objective. Carry only the kit that supports that target.</p><p>Write down the start, destination, portal pair, and fallback shelter coordinates.</p></article>
+        <article class="pro-card"><span class="pro-pill">02 · Route</span><h3>Build a route with checkpoints</h3><p>Mark landmarks and safe return points. Prefer covered corridors in dangerous terrain, and keep a spare pick, blocks, food, and fire resistance when the route calls for it.</p><p>Use coordinates and a compass heading together; do not rely on memory after a long Nether run.</p></article>
+        <article class="pro-card"><span class="pro-pill">03 · Exit</span><h3>Define when to turn back</h3><p>Set a stopping rule before leaving: inventory threshold, durability threshold, daylight, or a fixed supply count. A full backpack is not a win if the return path is unsafe.</p><p>Use shulker boxes to separate loot by task and keep a recovery kit at your base.</p></article>
+      </div>
+      <div class="split-grid" style="margin-top:.8rem">
+        <figure class="pro-diagram">
+          <svg viewBox="0 0 620 270" role="img" aria-labelledby="nether-title nether-desc">
+            <title id="nether-title">Overworld and Nether coordinate planning</title><desc id="nether-desc">A diagram showing an Overworld route compressed to a shorter Nether route, with X and Z checkpoints labeled.</desc>
+            <rect width="620" height="270" rx="12" fill="#101a13"/><text x="35" y="42" fill="#d6efbd" font-size="18" font-weight="700" font-family="system-ui">OVERWORLD</text><text x="35" y="160" fill="#e6c875" font-size="18" font-weight="700" font-family="system-ui">NETHER</text>
+            <path d="M72 91h470" stroke="#75c64b" stroke-width="5"/><circle cx="95" cy="91" r="10" fill="#d6efbd"/><circle cx="516" cy="91" r="10" fill="#d6efbd"/><text x="86" y="70" fill="#b9c8b6" font-size="13" font-family="system-ui">Base</text><text x="483" y="70" fill="#b9c8b6" font-size="13" font-family="system-ui">Target</text>
+            <path d="M72 205h208" stroke="#e6c875" stroke-width="5"/><circle cx="95" cy="205" r="10" fill="#fff0b0"/><circle cx="255" cy="205" r="10" fill="#fff0b0"/><text x="77" y="232" fill="#b9c8b6" font-size="12" font-family="system-ui">Portal pair · verify safe exit</text>
+            <path d="M130 113v62m364-62V175" stroke="#5d8750" stroke-width="2" stroke-dasharray="5 6"/><text x="330" y="143" fill="#c6f3a6" font-size="15" font-weight="700" text-anchor="middle" font-family="system-ui">X / Z scale: 8 Overworld blocks ≈ 1 Nether block</text>
+          </svg>
+          <figcaption>Use the 8:1 horizontal coordinate relationship to plan a Nether shortcut; portal search and Y alignment still affect the final link.</figcaption>
+        </figure>
+        <div class="panel tool-panel">
+          <div class="pro-kicker">Mining intelligence</div><h3>Choose the ore route, not a magic Y number</h3>
+          <p class="muted">Modern world generation has different distributions for different ores. For diamonds, official Java notes say ore generates below height 16 and becomes more common farther down; reduced air exposure means branch mining can outperform simply scanning open cave walls.</p>
+          <ul><li>Use F3 coordinates to keep a consistent tunnel elevation.</li><li>At deep levels, bring water, blocks, and a spare pick; lava changes the risk profile.</li><li>Expose long wall faces with parallel branches and mark explored turns to avoid mining the same area twice.</li><li>Recheck the release notes after a world-generation update before trusting an old route chart.</li></ul>
+        </div>
+      </div>
+      <div class="pro-callout" style="margin-top:.8rem"><strong>Current-world note:</strong> Java 26.3 adds the Dappled Forest, Abandoned Camps, and new Explorer Maps. If you are route-planning from an older version or a pre-generated world, confirm which chunks have actually generated before using new structure clues.</div>
+      <div class="guide-grid" style="margin-top:.8rem">
+        <article class="guide-card searchable" data-search="straw bed spawn point 26.3 one use overworld survival"><span class="tag">26.3 field note</span><h3>Sleep without moving your spawn</h3><p>A Straw Bed can pass the night without resetting your spawn point. It is single-use, is destroyed after sleeping, and cannot be used in the Nether or End. Keep it for temporary camps when you want the night skip without changing your established return point.</p></article>
+        <article class="guide-card searchable" data-search="nether portal coordinates 8 ratio link safe tunnel x z y route"><span class="tag">Route math</span><h3>Link portals deliberately</h3><p>Scale Overworld X/Z by eight to estimate the Nether-side route, then check the actual portal pairing and safe arrival area. Build portals away from hazards and carry enough obsidian or a plan to repair a bad link.</p></article>
+        <article class="guide-card searchable" data-search="loot management shulker boxes inventory recovery kit durability survival"><span class="tag">Logistics</span><h3>Separate loot from survival gear</h3><p>Reserve fixed slots for emergency blocks, food, water, and navigation. Put collected resources in labeled shulker boxes when available; keep your recovery kit separate so a death does not erase the next run’s essentials.</p></article>
+      </div>
+    </section>
+
+    <section class="section searchable" id="movement" aria-labelledby="movement-heading" data-search="elytra fireworks flight movement pearl water bucket mace wind burst spear lunge parkour speed">
+      <div class="section-heading"><div><div class="section-kicker">03 • Mobility and recovery</div><h2 id="movement-heading">Convert movement into control</h2><p>Fast travel is useful only when you can arrive with enough room to stop, land, and recover.</p></div></div>
+      <div class="split-grid">
+        <figure class="pro-diagram">
+          <svg viewBox="0 0 620 280" role="img" aria-labelledby="flight-title flight-desc">
+            <title id="flight-title">Elytra flight planning profile</title><desc id="flight-desc">A player glides along a shallow flight path above terrain, with a launch, cruise, and landing zone marked.</desc>
+            <rect width="620" height="280" rx="12" fill="#101a13"/><path d="M0 226 105 194l85 18 83-64 72 36 82-96 83 38 110-61v215H0Z" fill="#203d28"/><path d="M0 239h620v41H0Z" fill="#4c8138"/>
+            <path d="M68 168c104-35 171-49 251-48 89 1 128 8 219 38" fill="none" stroke="#e6c875" stroke-width="4" stroke-dasharray="9 8"/><circle cx="68" cy="168" r="12" fill="#a2ed68"/><circle cx="319" cy="120" r="12" fill="#a2ed68"/><circle cx="538" cy="158" r="12" fill="#e6c875"/>
+            <text x="68" y="145" fill="#e9f3df" font-size="13" text-anchor="middle" font-family="system-ui">LAUNCH</text><text x="319" y="96" fill="#e9f3df" font-size="13" text-anchor="middle" font-family="system-ui">CRUISE</text><text x="538" y="135" fill="#e9f3df" font-size="13" text-anchor="middle" font-family="system-ui">LAND</text>
+            <path d="M295 125 318 113l20 14-21 3Z" fill="#d9e7d1"/><path d="M312 119 300 103m17 16 16-16" stroke="#d9e7d1" stroke-width="4"/><text x="310" y="261" fill="#b9c8b6" font-size="13" text-anchor="middle" font-family="system-ui">Reserve altitude for the landing, not only the cruise</text>
+          </svg>
+          <figcaption>Short, controlled rocket boosts and a planned landing corridor beat a long boost with no recovery space.</figcaption>
+        </figure>
+        <div class="panel tool-panel">
+          <div class="pro-kicker">Mobility toolkit</div><h3>Use the tool that solves the next problem</h3>
+          <div class="pro-step"><span class="pro-step-num">1</span><p><strong>Elytra:</strong> start from a safe launch, use rockets to hold or regain speed, and keep altitude for the final approach. Do not spend every rocket climbing before the destination.</p></div>
+          <div class="pro-step"><span class="pro-step-num">2</span><p><strong>Ender pearl:</strong> aim for a known landing surface and account for health loss. Use it to cross a gap or escape a trap, not as a blind substitute for scouting.</p></div>
+          <div class="pro-step"><span class="pro-step-num">3</span><p><strong>Wind charge:</strong> use the impulse to gain height or break a fall only when you have space to control the follow-up. Practice its trajectory in a safe world.</p></div>
+          <div class="pro-step"><span class="pro-step-num">4</span><p><strong>Spear with Lunge:</strong> the enchantment boosts a jab in the view direction and consumes hunger. Keep the view nearly level for long travel and do not plan on it while swimming or flying with Elytra.</p></div>
+          <div class="pro-step"><span class="pro-step-num">5</span><p><strong>Water / blocks:</strong> keep an emergency slot consistent and practice placing before you need it. Server latency and version behavior can change the timing window.</p></div>
+        </div>
+      </div>
+      <div class="pro-callout" style="margin-top:.8rem"><strong>Mace safety:</strong> a falling smash adds damage based on the fall. A successful smash normally protects the attacker from that fall; Wind Burst can launch you upward for follow-up attacks, but that launch removes the usual smash fall-protection benefit. Plan the next landing before taking the first swing.</div>
+    </section>
+
+    <section class="section searchable" id="technical" aria-labelledby="technical-heading" data-search="technical minecraft redstone farm mob cap spawn tick rates storage comparator observer chunk border measurements">
+      <div class="section-heading"><div><div class="section-kicker">04 • Technical Minecraft</div><h2 id="technical-heading">Engineer for measured behavior</h2><p>A reliable farm is one whose assumptions, output, and failure modes are known.</p></div></div>
+      <div class="pro-grid two">
+        <div class="panel tool-panel">
+          <div class="pro-kicker">Farm design loop</div><h3>Measure before scaling</h3>
+          <div class="pro-step"><span class="pro-step-num">A</span><p><strong>Define the output:</strong> items per minute, XP throughput, or mob drops. Record the version, difficulty, biome, server software, simulation distance, and relevant settings.</p></div>
+          <div class="pro-step"><span class="pro-step-num">B</span><p><strong>Control the inputs:</strong> spawn surface, light, collection path, and AFK position. A farm designed around a particular distance or mob cap may fail when server settings differ.</p></div>
+          <div class="pro-step"><span class="pro-step-num">C</span><p><strong>Test one cycle:</strong> observe every transfer point, check for overflow, and time a repeatable sample. Compare the same test before and after each change.</p></div>
+          <div class="pro-step"><span class="pro-step-num">D</span><p><strong>Scale only after a bottleneck is proven:</strong> adding platforms cannot fix a slow kill chamber, blocked hopper line, unloaded collection area, or server tick lag.</p></div>
+        </div>
+        <figure class="pro-diagram">
+          <svg viewBox="0 0 600 280" role="img" aria-labelledby="redstone-title redstone-desc">
+            <title id="redstone-title">Modular redstone system diagram</title><desc id="redstone-desc">An input sensor feeds a pulse and timing module, then an output mechanism and a monitored storage stage.</desc>
+            <rect width="600" height="280" rx="12" fill="#101a13"/>
+            <g font-family="system-ui" text-anchor="middle"><rect x="24" y="80" width="118" height="104" rx="8" fill="#203824" stroke="#75c64b" stroke-width="2"/><text x="83" y="121" fill="#e8f1db" font-size="16" font-weight="700">INPUT</text><text x="83" y="146" fill="#b9c8b6" font-size="12">sensor / switch</text>
+            <rect x="170" y="80" width="126" height="104" rx="8" fill="#27351e" stroke="#e6c875" stroke-width="2"/><text x="233" y="121" fill="#f5e9b7" font-size="16" font-weight="700">PULSE</text><text x="233" y="146" fill="#c7bd9a" font-size="12">edge / timing</text>
+            <rect x="324" y="80" width="118" height="104" rx="8" fill="#203824" stroke="#75c64b" stroke-width="2"/><text x="383" y="121" fill="#e8f1db" font-size="16" font-weight="700">OUTPUT</text><text x="383" y="146" fill="#b9c8b6" font-size="12">piston / dispenser</text>
+            <rect x="470" y="80" width="106" height="104" rx="8" fill="#272737" stroke="#928dc6" stroke-width="2"/><text x="523" y="121" fill="#e4e0ff" font-size="16" font-weight="700">CHECK</text><text x="523" y="146" fill="#bbb7d4" font-size="12">overflow / state</text></g>
+            <path d="M144 132h20m-7-8 8 8-8 8m130-8h20m-7-8 8 8-8 8m126-8h20m-7-8 8 8-8 8" stroke="#e6c875" stroke-width="3" fill="none"/>
+            <text x="300" y="225" fill="#c6f3a6" font-size="13" text-anchor="middle" font-family="system-ui">Separate detection, timing, action, and storage</text>
+          </svg>
+          <figcaption>Debug one module at a time. Observers detect block-state changes; repeaters add delay and can preserve clean timing between stages.</figcaption>
+        </figure>
+      </div>
+      <div class="guide-grid" style="margin-top:.8rem">
+        <article class="guide-card searchable" data-search="redstone observer pulse repeater comparator edge state clock"><span class="tag">Redstone</span><h3>Design around pulse shape</h3><p>Decide whether the next component needs a short pulse, a sustained signal, or a state change. Observers react to block updates; a pulse extender or latch is needed when the consumer requires a longer hold.</p><p>Keep clocks separate from storage and output logic so you can isolate timing faults.</p></article>
+        <article class="guide-card searchable" data-search="storage hopper comparator item sorter overflow collection"><span class="tag">Storage</span><h3>Make overflow visible</h3><p>Give every sorter a defined overflow path. Use comparator output where container fullness matters, and keep a manual inspection point before items enter a hidden bulk system.</p><p>Prevent a single full chest from stopping the entire production line.</p></article>
+        <article class="guide-card searchable" data-search="server tick mspt tps lag entity load simulation distance farm performance"><span class="tag">Performance</span><h3>Separate FPS from server tick health</h3><p>Client frame rate measures rendering. Farm timing depends on the world simulation and server tick health too. Compare runs under the same load and reduce unnecessary entities, item drops, and active redstone where possible.</p><p>Measure a busy base during real multiplayer load, not only in an empty test world.</p></article>
+      </div>
+      <div class="pro-callout" style="margin-top:.8rem"><strong>Version control:</strong> test redstone and farms in a copy of the target world/version first. Java 26.1 introduced major world-data changes and Java 26.2 added experimental Vulkan rendering; back up before upgrades and benchmark graphics options on your own hardware.</div>
+    </section>
+
+    <section class="section searchable" id="economy" aria-labelledby="economy-heading" data-search="villager economy trading librarian enchantments deterministic trades rebalance experiment 26.1 gear armor tool repair">
+      <div class="section-heading"><div><div class="section-kicker">05 • Gear and supply chain</div><h2 id="economy-heading">Build gear systems you can maintain</h2><p>Prepare a loadout for the job, then keep its replenishment loop predictable.</p></div></div>
+      <div class="pro-grid two">
+        <article class="pro-card"><div class="pro-kicker">Equipment roles</div><h3>Enchant for the environment</h3><ul><li><strong>General travel:</strong> balance protection with fall and fire risk; keep a spare shield and repair materials available.</li><li><strong>Nether work:</strong> protect against fire and carry blocks that remain useful around lava; avoid placing your only escape route behind a risky jump.</li><li><strong>Mining:</strong> prioritize tool durability and efficiency, then bring a backup pick and light source.</li><li><strong>Boss / PvP:</strong> do not carry one universal set. Prepare the weapon, potions, and utility for the rules and opponent you expect.</li><li><strong>Repair strategy:</strong> track durability before a long expedition, and repair or replace before the item reaches a failure point.</li></ul></article>
+        <article class="pro-card"><div class="pro-kicker">Villager operations</div><h3>Account for version and experiments</h3><p>In Java 26.1, villager profession trades are generated from deterministic random sequences tied to the world seed; re-rolling still produces a randomized sequence, but it is seed-determined. The optional Villager Trade Rebalance experiment changes trade behavior separately.</p><p>Before building a large trading hall, confirm whether the experiment is enabled, then test one villager through work, restock, and trade-lock behavior in the same version as your main world.</p><p>Keep workstations accessible and protect villagers from pathing hazards; a compact hall that cannot restock is not a stable supply system.</p></article>
+      </div>
+      <div class="panel tool-panel" style="margin-top:.8rem">
+        <div class="pro-kicker">Field checklist</div><h3>Pre-departure kit check</h3>
+        <ul class="pro-checklist">
+          <li><strong>Tools:</strong> primary tool plus a backup for the route.</li><li><strong>Defense:</strong> armor durability, shield, and a safe offhand setup.</li>
+          <li><strong>Recovery:</strong> food, blocks, water or fire protection, and an escape option.</li><li><strong>Navigation:</strong> coordinates, route notes, and a portal destination.</li>
+          <li><strong>Capacity:</strong> empty slots or storage for the intended loot.</li><li><strong>Version:</strong> confirm world, server, datapack, and snapshot status.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section searchable" id="operations" aria-labelledby="operations-heading" data-search="server operations backups Java 25 version 26.1 java runtime simulation distance profiling snapshots update admin">
+      <div class="section-heading"><div><div class="section-kicker">06 • Server operations</div><h2 id="operations-heading">Protect the world before optimizing it</h2><p>Server owners and technical players need repeatable backups, measurable changes, and clear version notes.</p></div></div>
+      <div class="guide-grid">
+        <article class="guide-card searchable" data-search="backup world before update version snapshots copy server"><span class="tag">World safety</span><h3>Back up before every major change</h3><p>Stop the server cleanly, make a restorable world backup, and test upgrades on a copy before the live world. Keep the original untouched until you confirm terrain, inventories, datapacks, and plugins behave as expected.</p></article>
+        <article class="guide-card searchable" data-search="java 25 26.1 server runtime performance launcher"><span class="tag">Runtime</span><h3>Match Java to the game release</h3><p>Java Edition 26.1 raised the runtime requirement to Java 25. Use the runtime required by the server release and its distribution instructions; do not assume an older system Java is compatible.</p></article>
+        <article class="guide-card searchable" data-search="vulkan 26.2 experimental graphics benchmark fps Intel GPU"><span class="tag">Graphics</span><h3>Benchmark settings, don’t cargo-cult them</h3><p>Java 26.2 introduced experimental Vulkan rendering. Compare backends on your hardware with the same world, view distance, and scene. A faster result on one machine is not a universal setting.</p></article>
+      </div>
+      <div class="panel tool-panel" style="margin-top:.8rem">
+        <h3>Reproduction notes for technical builds</h3>
+        <p class="muted">When sharing a farm or redstone design, include the exact game version, Java server software, datapacks or plugins, relevant settings, build dimensions, AFK position, and a timed output sample. That turns “works for me” into a build others can actually reproduce.</p>
+      </div>
+    </section>
+
+    <section class="section searchable" id="drills" aria-labelledby="drills-heading" data-search="practice training aim movement drill hotbar pvp elytra redstone technical">
+      <div class="section-heading"><div><div class="section-kicker">07 • Practice protocol</div><h2 id="drills-heading">Turn mechanics into dependable habits</h2><p>Short drills produce better feedback than changing an entire setup after one loss.</p></div></div>
+      <div class="guide-grid">
+        <article class="guide-card searchable" data-search="pvp drill aim tracking sprint reset hotbar duel"><span class="tag">PvP • 10 minutes</span><h3>Aim, reset, and recover</h3><p>Track a moving target while strafing; practice one sprint-reset pattern; then swap through your full hotbar without losing the target. Finish with a short duel under the exact server rules you plan to play.</p></article>
+        <article class="guide-card searchable" data-search="movement elytra landing water bucket pearl lunge drill"><span class="tag">Movement • 10 minutes</span><h3>Practice the landing, not only the launch</h3><p>Use a safe test area to rehearse elytra approaches, water placement, pearl landings, and spear Lunge angles. Repeat from the same starting point and change only one input at a time.</p></article>
+        <article class="guide-card searchable" data-search="redstone test farm throughput troubleshooting repeatable measurement"><span class="tag">Technical • one test cycle</span><h3>Instrument the failure</h3><p>Mark the first point where a build stops behaving: sensor, timing, output, transport, or storage. Add a temporary indicator or inspection window and test one stage at a time.</p></article>
+      </div>
+    </section>
+
+    <section class="section searchable" id="references" aria-labelledby="references-heading" data-search="official references version changelog spear mace controls mining 26.3 26.1 26.2">
+      <div class="section-heading"><div><div class="section-kicker">Primary references</div><h2 id="references-heading">Check the release notes when mechanics change</h2><p>Version-sensitive details on this page are linked to official Minecraft sources.</p></div></div>
+      <div class="panel tool-panel">
+        <p class="muted">This guide uses the Java 26.3 stable release as its baseline. Snapshots are test versions; server software, plugins, datapacks, and experimental settings can change behavior. Recheck the exact release notes when a mechanic matters to a tournament, farm, or live world.</p>
+        <div class="source-list">
+          <a href="https://feedback.minecraft.net/hc/en-us/articles/48913133328013-Minecraft-Java-Edition-26-3" target="_blank" rel="noopener noreferrer">Java 26.3 release notes</a>
+          <a href="https://feedback.minecraft.net/hc/en-us/articles/41809981427213-Minecraft-Java-Edition-1-21-11-Mounts-of-Mayhem" target="_blank" rel="noopener noreferrer">Spear mechanics</a>
+          <a href="https://www.minecraft.net/en-us/article/mace" target="_blank" rel="noopener noreferrer">Mace and Wind Burst</a>
+          <a href="https://feedback.minecraft.net/hc/en-us/articles/4415128577293-Minecraft-Java-Edition-1-18" target="_blank" rel="noopener noreferrer">Java ore distribution</a>
+          <a href="https://feedback.minecraft.net/hc/en-us/articles/44551668333837-Minecraft-Java-Edition-26-1" target="_blank" rel="noopener noreferrer">Java 26.1 technical changes</a>
+          <a href="https://www.minecraft.net/en-us/article/minecraft-controls" target="_blank" rel="noopener noreferrer">Minecraft controls</a>
+          <a href="https://feedback.minecraft.net/hc/en-us/sections/360001186971-Release-Changelogs" target="_blank" rel="noopener noreferrer">All release changelogs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-brand"><b>CORE GG</b><span aria-hidden="true">◆</span><span>JAVA PROFESSIONAL FIELD GUIDE</span></div>
+      <p class="footer-disclaimer">CoreGG is an independent fan-made learning resource. It is not an official Minecraft product and is not approved by or associated with Mojang or Microsoft. Minecraft and related game assets belong to their respective owners.</p>
+      <div class="credits"><h2>Game & trademark credits</h2><p><strong>Minecraft Java Edition</strong> is developed by Mojang Studios and published by Microsoft.</p><p>All Minecraft names, trademarks and game content remain the property of their respective owners.</p><p>For current rules on using Minecraft names and assets, read the <a href="https://www.minecraft.net/en-us/usage-guidelines" target="_blank" rel="noopener noreferrer">Minecraft Usage Guidelines</a>.</p><p><a href="./index.html">CoreGG home</a> · <a href="./coreminecraft.html">Java beginner guide</a> · <a href="https://www.minecraft.net/en-us/minecraft-tips-for-beginners" target="_blank" rel="noopener noreferrer">Official Minecraft guide</a></p></div>
+      <div class="footer-bottom">COREMINECRAFTPRO <span aria-hidden="true">•</span> JAVA EDITION <span aria-hidden="true">•</span> VERSION-AWARE FIELD GUIDE</div>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      'use strict';
+      const form = document.getElementById('siteSearch');
+      const input = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const searchableItems = Array.from(document.querySelectorAll('.searchable'))
+        .filter((item) => !item.parentElement.closest('.searchable'));
+
+      function runSearch() {
+        const query = input.value.trim().toLocaleLowerCase();
+        let matches = 0;
+        searchableItems.forEach((item) => {
+          const text = ((item.innerText || item.textContent || '') + ' ' + (item.dataset.search || '')).toLocaleLowerCase();
+          const matched = !query || text.includes(query);
+          item.hidden = !matched;
+          if (matched) matches += 1;
+        });
+        noResults.classList.toggle('show', Boolean(query) && matches === 0);
+        if (query && matches > 0) {
+          const firstVisible = searchableItems.find((item) => !item.hidden);
+          firstVisible?.scrollIntoView({
+            behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+            block: 'center'
+          });
+        }
+      }
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        runSearch();
+      });
+      input.addEventListener('input', () => {
+        if (input.value.trim() === '') runSearch();
+      });
+    })();
+  </script>
+</body>
+</html>

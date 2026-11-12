@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CoreMinecraftPro is an advanced Minecraft Java Edition field guide covering PvP, movement, survival routing, technical farms, redstone, trading, and server operations.">
+  <meta name="description" content="Simple, picture-led Minecraft Java guides for combat, mining, Nether travel, movement, redstone, farms, and server care.">
   <meta name="theme-color" content="#17251b">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="CoreGG">
   <meta property="og:title" content="CoreMinecraftPro | Minecraft Java Professional Guide">
-  <meta property="og:description" content="Advanced Minecraft Java methods for experienced players: PvP, movement, survival routes, redstone, farms, and server operations.">
+  <meta property="og:description" content="Learn Minecraft Java combat, mining, Nether travel, redstone, and server care with clear steps and pictures.">
   <meta name="twitter:card" content="summary">
   <title>CoreMinecraftPro | Minecraft Java Professional Guide</title>
   <style>
@@ -68,10 +68,24 @@
     .quick-grid.pro-jumps .quick-card{min-height:135px}
     .pro-inline-link{color:#c6f3a6;font-weight:800}
     .pro-mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:#c6f3a6}
+    .screenshot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:.85rem 0}
+    .screenshot-frame{margin:0;min-width:0;overflow:hidden;border:2px solid var(--line);border-radius:5px;background:#111a14;box-shadow:var(--shadow)}
+    .screenshot-frame img{display:block;width:100%;height:auto}
+    .screenshot-frame figcaption{padding:.7rem .8rem;color:var(--muted);font-size:.82rem}
+    .screenshot-frame figcaption a{color:var(--green-bright)}
+    .hero-screen{display:flex;flex-direction:column;justify-content:center;align-self:stretch;overflow:hidden;border:2px solid var(--line);border-radius:5px;background:#111a14;box-shadow:var(--shadow)}
+    .hero-screen img{display:block;width:100%;height:100%;min-height:220px;max-height:340px;object-fit:cover}
+    .hero-screen figcaption{padding:.6rem .75rem;color:var(--muted);font-size:.75rem}
+    .hero-screen figcaption a{color:var(--green-bright)}
+    .simple-callout{margin:.8rem 0;padding:.85rem 1rem;border-left:4px solid var(--green);border-radius:3px;background:#203522;color:#eef7e8}
+    .simple-callout strong{color:#fff}
+    .plain-math{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:.7rem;margin:.8rem 0;padding:1rem;border:2px solid var(--line);border-radius:4px;background:#16271a;text-align:center}
+    .plain-math strong{display:block;color:var(--green-bright);font-size:1.05rem}
+    .plain-math span{color:var(--muted);font-size:.82rem}
     @media(max-width:850px){.pro-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media(max-width:560px){.pro-grid,.pro-grid.two,.pro-checklist{grid-template-columns:1fr}.pro-diagram{padding:.65rem}.pro-table{min-width:560px}}
+    @media(max-width:560px){.pro-grid,.pro-grid.two,.pro-checklist,.screenshot-grid{grid-template-columns:1fr}.pro-diagram{padding:.65rem}.pro-table{min-width:560px}.plain-math{grid-template-columns:1fr}.plain-math .math-arrow{transform:rotate(90deg)}}
   </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"CoreMinecraftPro","description":"Advanced Minecraft Java Edition professional guide covering PvP, movement, survival, redstone, farms, trading, and server operations.","inLanguage":"en"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Java Playbook","description":"Simple, picture-led Minecraft Java guides for combat, mining, Nether travel, movement, redstone, farms, and server care.","inLanguage":"en"}</script>
   <!-- Existing CoreGG ad integrations; no ad containers or placements are hidden by this page. -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5444671871825918" crossorigin="anonymous"></script>
   <script src="https://quge5.com/88/tag.min.js" data-zone="307530" async data-cfasync="false"></script>
@@ -80,7 +94,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="brand" href="./index.html" aria-label="CoreGG home"><span class="brand-name">CORE <span>GG</span></span><span class="brand-sub">Minecraft Java Pro Field Guide</span></a>
+      <a class="brand" href="./index.html" aria-label="CoreGG home"><span class="brand-name">CORE <span>GG</span></span><span class="brand-sub">Clear tips for Java players</span></a>
       <nav class="nav" aria-label="Main navigation">
         <a class="pixel-btn" href="./index.html"><span class="icon" aria-hidden="true">⌂</span> Home</a>
         <a class="pixel-btn" href="./coreminecraft.html">Java Beginner Guide</a>
@@ -93,218 +107,214 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-grid">
         <div>
-          <span class="eyebrow">Java Edition • Professional Field Guide</span>
-          <h1 id="hero-title">CoreMinecraft<span>Pro</span></h1>
-          <p>Make every movement, resource run, and redstone cycle deliberate. This field guide is for experienced Java players who want better PvP decisions, reliable technical builds, faster routes, and fewer avoidable losses.</p>
-          <div class="hero-actions"><a class="pixel-btn primary" href="#combat">Open the PvP playbook <span aria-hidden="true">→</span></a><a class="pixel-btn" href="#technical">Jump to technical systems</a></div>
-          <p class="hero-note">Stable-version baseline: Java Edition 26.3, checked November 12, 2026. Server settings, plugins, datapacks, and snapshots can change the mechanics described below.</p>
+          <span class="eyebrow">Simple steps • real game pictures • Java Edition</span>
+          <h1 id="hero-title">The <span>Java Playbook</span></h1>
+          <p>Clear steps and pictures for fighting, finding diamonds, travelling through the Nether, flying safely, and building redstone machines.</p>
+          <div class="hero-actions"><a class="pixel-btn primary" href="#combat">Learn to fight <span aria-hidden="true">→</span></a><a class="pixel-btn" href="#survival">Plan a safe trip</a></div>
+          <p class="hero-note">Tips are written for Java Edition. Server rules and game updates can change how some tricks work, so check them before you play.</p>
         </div>
-        <figure class="pixel-scene pro-hero-scene">
-          <svg viewBox="0 0 520 300" role="img" aria-labelledby="pro-scene-title pro-scene-desc">
-            <title id="pro-scene-title">Advanced Java field operations illustration</title>
-            <desc id="pro-scene-desc">A pixel-style mountain route with a portal, a player, and a marked path between a base and a technical outpost.</desc>
-            <defs><linearGradient id="proSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#203a2b"/><stop offset="1" stop-color="#101a13"/></linearGradient></defs>
-            <rect width="520" height="300" fill="url(#proSky)"/><circle cx="410" cy="58" r="28" fill="#d6ef9c" opacity=".9"/>
-            <path d="M0 196 104 84l82 99 75-132 116 145 66-88 77 97v95H0Z" fill="#294a32"/>
-            <path d="m0 224 130-88 88 89 77-72 95 78 66-45 64 43v71H0Z" fill="#193624"/>
-            <path d="M0 258h520v42H0Z" fill="#496e37"/><path d="M0 258h520v10H0Z" fill="#84bf53"/>
-            <path d="M70 239c65-24 81-7 132-33 49-24 70-23 118-3 36 15 78-3 132-29" fill="none" stroke="#e6c875" stroke-width="4" stroke-dasharray="8 8"/>
-            <rect x="364" y="173" width="58" height="78" fill="#2b1838" stroke="#8f69b5" stroke-width="5"/><rect x="372" y="181" width="42" height="62" fill="#6a4a8b" opacity=".75"/>
-            <rect x="178" y="206" width="22" height="37" fill="#d4ab73"/><rect x="183" y="191" width="12" height="15" fill="#dfb88b"/><rect x="176" y="217" width="8" height="24" fill="#426841"/><rect x="196" y="217" width="8" height="24" fill="#426841"/>
-            <rect x="80" y="212" width="52" height="36" fill="#8a6442" stroke="#493423" stroke-width="4"/><path d="M74 214 105 188l33 26" fill="#526f37" stroke="#30482c" stroke-width="4"/>
-            <text x="101" y="276" fill="#e8f1db" text-anchor="middle" font-size="12" font-family="system-ui">BASE</text><text x="393" y="276" fill="#e8f1db" text-anchor="middle" font-size="12" font-family="system-ui">PORTAL</text>
-          </svg>
+        <figure class="hero-screen">
+          <img src="./images/pro-nether.png" alt="Minecraft Nether cave with lava pools, fire, and dark red blocks" width="1280" height="640" fetchpriority="high">
+          <figcaption>Nether screenshot by <a href="https://commons.wikimedia.org/wiki/File:Screenshot_from_the_Minecraft_Nether.png" target="_blank" rel="noopener noreferrer">Xbox México</a>, used under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>.</figcaption>
         </figure>
       </div>
     </section>
 
     <section class="section" aria-labelledby="find-heading">
-      <div class="section-heading"><div><div class="section-kicker">Field index</div><h2 id="find-heading">Find a method fast</h2><p>Search topics like spear, cooldown, diamond route, villager trades, redstone timing, or server TPS.</p></div></div>
+      <div class="section-heading"><div><div class="section-kicker">Start here</div><h2 id="find-heading">What do you want to do?</h2><p>Search for fighting, diamonds, Nether travel, flying, redstone, or server help.</p></div></div>
       <div class="panel" style="padding:1rem">
         <form class="search-panel" id="siteSearch" role="search">
-          <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Try: PvP cooldown, Lunge, Nether route, farm rates…" aria-label="Search the Minecraft Java professional guide"><span class="muted" aria-hidden="true">⌘</span></label>
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Try: fighting, mining, flying, redstone…" aria-label="Search this Minecraft Java guide"><span class="muted" aria-hidden="true">⌘</span></label>
           <button class="pixel-btn primary" type="submit">Search</button>
         </form>
-        <p class="search-hint">Search filters the field guide sections below. Clear the box to restore every section.</p>
+        <p class="search-hint">Type a word and press Search. Clear the box to see every topic again.</p>
         <div class="quick-grid pro-jumps" aria-label="Quick links">
-          <a class="quick-card searchable" data-search="combat pvp sword axe spear mace cooldown shield aim spacing" href="#combat"><span class="card-icon" aria-hidden="true">⚔</span><h3>Combat & PvP</h3><p>Choose a weapon for the situation and control the exchange.</p></a>
-          <a class="quick-card searchable" data-search="survival progression nether route mining diamond ore x y z portal" href="#survival"><span class="card-icon" aria-hidden="true">◆</span><h3>Survival routing</h3><p>Turn an expedition into a planned supply chain.</p></a>
-          <a class="quick-card searchable" data-search="redstone farms technical tick rates mob spawning storage" href="#technical"><span class="card-icon" aria-hidden="true">▦</span><h3>Technical systems</h3><p>Design builds around measured game behavior.</p></a>
-          <a class="quick-card searchable" data-search="elytra movement spear lunge mace wind burst pearl water bucket" href="#movement"><span class="card-icon" aria-hidden="true">➤</span><h3>Movement tech</h3><p>Keep momentum while reducing recovery risk.</p></a>
+          <a class="quick-card searchable" data-search="combat pvp sword axe spear mace cooldown shield aim spacing" href="#combat"><span class="card-icon" aria-hidden="true">⚔</span><h3>Fight players</h3><p>Pick a weapon and time your hits.</p></a>
+          <a class="quick-card searchable" data-search="survival progression nether route mining diamond ore x y z portal" href="#survival"><span class="card-icon" aria-hidden="true">◆</span><h3>Mine and explore</h3><p>Find what you need and plan a safe way home.</p></a>
+          <a class="quick-card searchable" data-search="redstone farms technical tick rates mob spawning storage" href="#technical"><span class="card-icon" aria-hidden="true">▦</span><h3>Build farms</h3><p>Make redstone machines easier to test and fix.</p></a>
+          <a class="quick-card searchable" data-search="elytra movement spear lunge mace wind burst pearl water bucket" href="#movement"><span class="card-icon" aria-hidden="true">➤</span><h3>Fly and move safely</h3><p>Get around fast and leave room to land.</p></a>
         </div>
-        <div class="no-results" id="noResults" role="status">No matching professional guide found. Try another term or clear your search.</div>
+        <div class="no-results" id="noResults" role="status">No topic matched. Try another word or clear the search.</div>
       </div>
     </section>
 
     <section class="section searchable" id="combat" aria-labelledby="combat-heading" data-search="pvp combat sword axe spear mace shield attack cooldown sprint reset w tap critical hit bow crossbow armor potions hotbar">
-      <div class="section-heading"><div><div class="section-kicker">01 • PvP decision-making</div><h2 id="combat-heading">Combat is timing, spacing, and server rules</h2><p>Build a repeatable decision loop instead of relying on one weapon or one combo.</p></div></div>
+      <div class="section-heading"><div><div class="section-kicker">01 • Fighting players</div><h2 id="combat-heading">Fight with a plan</h2><p>Check the server rules, keep useful items ready, and wait for a good chance to hit.</p></div></div>
       <div class="pro-grid two">
         <div class="panel tool-panel">
-          <div class="pro-kicker">Before the duel</div><h3>Set the rules and your loadout</h3>
-          <p class="muted">Confirm the server version, combat plugin, knockback, healing limits, and allowed items before choosing a kit. Vanilla Java’s cooldown-based attacks reward deliberate swings; practice servers may tune or replace those rules.</p>
-          <ul><li>Keep sword, blocks, food, ranged weapon, water or pearls, and emergency healing in predictable hotbar slots.</li><li>Bind direct hotbar selection if scroll-wheel switching makes you overshoot under pressure.</li><li>Use the offhand for the tool that best fits the matchup, then practice swapping without losing target tracking.</li><li>Carry enough food to sprint, heal, and use movement enchantments; hunger is a combat resource.</li></ul>
+          <div class="pro-kicker">Before a fight</div><h3>Set up your hotbar</h3>
+          <p class="muted">Servers can change how weapons and shields work. Ask about the rules before a duel. In normal Java combat, strong hits need a short pause between swings; some servers change this.</p>
+          <ul><li>Put your sword, blocks, food, bow, water or ender pearls, and healing items in the same slots each time.</li><li>Use the number keys to pick an item if the mouse wheel makes you skip past it.</li><li>Keep your shield or another defense ready in your offhand. Check which items the server allows.</li><li>Bring food. Running, healing, and some special moves use hunger.</li></ul>
         </div>
         <figure class="pro-diagram">
           <svg viewBox="0 0 600 270" role="img" aria-labelledby="range-title range-desc">
-            <title id="range-title">PvP spacing and engagement lanes</title><desc id="range-desc">A top-down diagram with a safe reset lane, a contested weapon range, and a close-range danger zone around two players.</desc>
+            <title id="range-title">Three simple fighting distances</title><desc id="range-desc">A diagram showing when to step back, wait for an opening, or attack at close range.</desc>
             <rect width="600" height="270" rx="12" fill="#101a13"/><path d="M30 45h540v180H30Z" fill="#1b2b20" stroke="#49664b" stroke-width="2"/>
             <path d="M45 73h182v124H45Z" fill="#253d29"/><path d="M227 73h180v124H227Z" fill="#4b4426"/><path d="M407 73h148v124H407Z" fill="#4a2925"/>
-            <text x="136" y="96" fill="#c8f1a9" font-size="14" text-anchor="middle" font-family="system-ui">RESET / REPOSITION</text><text x="317" y="96" fill="#f1dd8b" font-size="14" text-anchor="middle" font-family="system-ui">CONTESTED SPACE</text><text x="481" y="96" fill="#ffc0ad" font-size="14" text-anchor="middle" font-family="system-ui">COMMIT RANGE</text>
+            <text x="136" y="96" fill="#c8f1a9" font-size="14" text-anchor="middle" font-family="system-ui">STEP BACK</text><text x="317" y="96" fill="#f1dd8b" font-size="14" text-anchor="middle" font-family="system-ui">WAIT FOR A CHANCE</text><text x="481" y="96" fill="#ffc0ad" font-size="14" text-anchor="middle" font-family="system-ui">ATTACK RANGE</text>
             <circle cx="165" cy="148" r="20" fill="#8bc65c"/><path d="M165 168v22m-15-11 15-12 15 12" stroke="#e8f1db" stroke-width="6" stroke-linecap="round"/>
             <circle cx="454" cy="148" r="20" fill="#c66b4b"/><path d="M454 168v22m-15-11 15-12 15 12" stroke="#ffe2d4" stroke-width="6" stroke-linecap="round"/>
             <path d="M202 148h206" stroke="#e6c875" stroke-width="3" stroke-dasharray="8 8"/><path d="m397 139 14 9-14 9" fill="none" stroke="#e6c875" stroke-width="3"/>
-            <text x="300" y="218" fill="#b9c8b6" font-size="13" text-anchor="middle" font-family="system-ui">Trade only when cooldown, aim, and exit are in your favor</text>
+            <text x="300" y="218" fill="#b9c8b6" font-size="13" text-anchor="middle" font-family="system-ui">Hit when your aim is ready; step away when it is not</text>
           </svg>
-          <figcaption>Think in lanes: take space, force a response, then choose whether to trade or reset.</figcaption>
+          <figcaption>Green: step back. Yellow: wait. Red: you are close enough to attack.</figcaption>
         </figure>
       </div>
+      <figure class="screenshot-frame" style="max-width:760px;margin:.8rem auto">
+        <img src="./images/pro-end.png" alt="Minecraft Ender Dragon flying above the End island during a boss fight" width="1280" height="640" loading="lazy">
+        <figcaption>This is a boss fight, not PvP. Keep your target and health in view. Screenshot: <a href="https://commons.wikimedia.org/wiki/File:Screenshot_from_the_Minecraft_End.png" target="_blank" rel="noopener noreferrer">Xbox México via Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>.</figcaption>
+      </figure>
       <div class="pro-table-wrap" style="margin-top:.8rem">
-        <table class="pro-table"><thead><tr><th>Weapon / tool</th><th>Use it for</th><th>Execution cue</th><th>Common failure</th></tr></thead><tbody>
-          <tr><td><strong>Sword</strong></td><td>Consistent close-range pressure and flexible general combat.</td><td>Let the attack recover on cooldown-based rules; pair a clean hit with a deliberate sprint reset when you need knockback.</td><td>Clicking continuously and giving up timing, spacing, or food management.</td></tr>
-          <tr><td><strong>Axe</strong></td><td>Heavy hits and shield pressure.</td><td>Use it when a shield is the main obstacle; swap back to your normal weapon when the opening closes.</td><td>Slow recovery makes a missed swing expensive. Don’t chase a shield user into a bad angle.</td></tr>
-          <tr><td><strong>Spear</strong></td><td>Charge attacks and reach control; charge damage can scale with movement speed.</td><td>Respect its minimum useful range. Lunge is a jab movement tool; a level view angle helps maximize its travel.</td><td>Charging in a cramped space, lunging while low on hunger, or assuming it works like a sword.</td></tr>
-          <tr><td><strong>Mace</strong></td><td>Converting height into a high-impact smash.</td><td>Secure the drop first. Density increases fall-based damage; Wind Burst can chain launches.</td><td>A Wind Burst smash removes the normal smash fall-protection benefit. Plan the next landing.</td></tr>
-          <tr><td><strong>Bow / crossbow</strong></td><td>Forcing movement, breaking a retreat, and punishing predictable paths.</td><td>Lead a moving target and use cover to reload or draw safely.</td><td>Firing from the same peek repeatedly or ignoring projectile travel time.</td></tr>
+        <table class="pro-table"><thead><tr><th>Weapon</th><th>Best for</th><th>Simple tip</th><th>Avoid this</th></tr></thead><tbody>
+          <tr><td><strong>Sword</strong></td><td>Most close fights.</td><td>Wait for your attack meter to refill, then hit. Step away and sprint again if you need more knockback.</td><td>Clicking as fast as possible; hits may be weaker before the meter refills.</td></tr>
+          <tr><td><strong>Axe</strong></td><td>Pressuring a player who is holding a shield.</td><td>Use the axe to open a short chance, then switch back to your sword.</td><td>Missing a swing. Axes take longer to swing again.</td></tr>
+          <tr><td><strong>Spear</strong></td><td>Charging and keeping some distance.</td><td>Make room before you charge. Lunge pushes your jab forward and uses hunger; look almost straight ahead for a longer push.</td><td>Charging in a tiny room or when you have little food.</td></tr>
+          <tr><td><strong>Mace</strong></td><td>Smashing an enemy after falling from above.</td><td>Get above your target first. Wind Burst can bounce you up, so plan where you will land next.</td><td>Attacking without checking for a safe landing.</td></tr>
+          <tr><td><strong>Bow / crossbow</strong></td><td>Attacking from far away or making a player move.</td><td>Aim a little ahead of a moving target. Shoot from behind cover.</td><td>Firing from the same place every time.</td></tr>
         </tbody></table>
       </div>
       <div class="guide-grid" style="margin-top:.8rem">
-        <article class="guide-card searchable" data-search="aim timing cooldown sprint reset w tap strafe critical hit pvp"><span class="tag">Timing</span><h3>Make each hit create a choice</h3><p>On cooldown-based combat, watch the attack indicator if enabled and avoid empty swings. A sprint reset before contact can restore knockback pressure; vary your timing so the opponent cannot read a fixed jump rhythm.</p><p>Critical hits require a valid falling state under the server’s combat rules. Use them when the trade is favorable, not as an automatic opener that sacrifices sprint control.</p></article>
-        <article class="guide-card searchable" data-search="shield axe disable shield defense block placement pvp"><span class="tag">Defense</span><h3>Break line, then re-enter</h3><p>Use blocks, corners, and elevation to interrupt bow sightlines and buy a reset. An axe can disable a shield, but the opening is temporary: decide your follow-up before you swing.</p><p>Keep a defensive slot ready. Water, blocks, pearls, and a clean retreat are often worth more than one extra chase hit.</p></article>
-        <article class="guide-card searchable" data-search="practice drill pvp crosshair tracking strafing hotbar review"><span class="tag">Practice drill</span><h3>Train the repeatable parts</h3><p>Warm up with target tracking while strafing, then cycle your hotbar without looking down. Review a fight by asking: did you miss due to aim, cooldown, range, latency, or a bad entry?</p><p>Change one variable at a time so your practice produces a useful answer.</p></article>
+        <article class="guide-card searchable" data-search="aim timing cooldown sprint reset w tap strafe critical hit pvp"><span class="tag">Timing</span><h3>Wait for a strong hit</h3><p>Watch the attack meter if it is turned on. In normal Java combat, let it refill before swinging. Let go of sprint, then sprint again before a hit if you want more knockback. Servers may change this.</p><p>A hit while falling can do extra damage. Try it when you are safe; do not jump if it leaves you open.</p></article>
+        <article class="guide-card searchable" data-search="shield axe disable shield defense block placement pvp"><span class="tag">Stay safe</span><h3>Use cover and keep an exit</h3><p>Hide behind a block or corner to avoid arrows. An axe can lower a shield for a moment; switch weapons and use that short opening.</p><p>Keep water, blocks, or an ender pearl ready so you can escape a bad fight.</p></article>
+        <article class="guide-card searchable" data-search="practice drill pvp crosshair tracking strafing hotbar review"><span class="tag">Practice</span><h3>Practice one skill at a time</h3><p>Move side to side while keeping your crosshair on a target. Then practice changing hotbar slots without looking down.</p><p>After a fight, ask: did I miss because of aim, timing, distance, lag, or a bad approach?</p></article>
       </div>
     </section>
 
     <section class="section searchable" id="survival" aria-labelledby="survival-heading" data-search="advanced survival route preparation mining diamonds branch mining y level nether portal coordinates 8 to 1 dappled forest straw bed">
-      <div class="section-heading"><div><div class="section-kicker">02 • Expedition planning</div><h2 id="survival-heading">Plan routes around objectives and exits</h2><p>Professional survival is logistics: what you need, how you will reach it, and how you will get home.</p></div></div>
+      <div class="section-heading"><div><div class="section-kicker">02 • Mining and exploring</div><h2 id="survival-heading">Plan your trip before you leave</h2><p>Choose one goal, pack for it, and know how you will get back to base.</p></div></div>
       <div class="pro-grid">
-        <article class="pro-card"><span class="pro-pill">01 · Objective</span><h3>Pick a measurable target</h3><p>Decide whether the run is for ancient debris, a structure, a villager supply, a biome resource, or an End objective. Carry only the kit that supports that target.</p><p>Write down the start, destination, portal pair, and fallback shelter coordinates.</p></article>
-        <article class="pro-card"><span class="pro-pill">02 · Route</span><h3>Build a route with checkpoints</h3><p>Mark landmarks and safe return points. Prefer covered corridors in dangerous terrain, and keep a spare pick, blocks, food, and fire resistance when the route calls for it.</p><p>Use coordinates and a compass heading together; do not rely on memory after a long Nether run.</p></article>
-        <article class="pro-card"><span class="pro-pill">03 · Exit</span><h3>Define when to turn back</h3><p>Set a stopping rule before leaving: inventory threshold, durability threshold, daylight, or a fixed supply count. A full backpack is not a win if the return path is unsafe.</p><p>Use shulker boxes to separate loot by task and keep a recovery kit at your base.</p></article>
+        <article class="pro-card"><span class="pro-pill">1 · Choose a goal</span><h3>Know what you are looking for</h3><p>Choose one goal: diamonds, ancient debris, a structure, or a biome item. Take the tools, food, and armor you need for that trip.</p><p>Write down your base and destination coordinates before you go.</p></article>
+        <article class="pro-card"><span class="pro-pill">2 · Mark the way</span><h3>Leave signs for the trip home</h3><p>Use torches, blocks, or landmarks to mark turns. Carry a spare pick, blocks, and food. In the Nether, keep checking your coordinates so you do not lose the route.</p></article>
+        <article class="pro-card"><span class="pro-pill">3 · Turn back safely</span><h3>Decide when to go home</h3><p>Turn back when your food is low, your pick is nearly broken, or your inventory is full. Getting home safely matters more than one extra chest.</p><p>If you have shulker boxes, sort loot by trip. Keep spare gear at your base.</p></article>
       </div>
       <div class="split-grid" style="margin-top:.8rem">
         <figure class="pro-diagram">
           <svg viewBox="0 0 620 270" role="img" aria-labelledby="nether-title nether-desc">
-            <title id="nether-title">Overworld and Nether coordinate planning</title><desc id="nether-desc">A diagram showing an Overworld route compressed to a shorter Nether route, with X and Z checkpoints labeled.</desc>
-            <rect width="620" height="270" rx="12" fill="#101a13"/><text x="35" y="42" fill="#d6efbd" font-size="18" font-weight="700" font-family="system-ui">OVERWORLD</text><text x="35" y="160" fill="#e6c875" font-size="18" font-weight="700" font-family="system-ui">NETHER</text>
+            <title id="nether-title">The Nether makes long trips shorter</title><desc id="nether-desc">The same route is shown across the normal world and the Nether. One Nether block covers about eight blocks across in the normal world.</desc>
+            <rect width="620" height="270" rx="12" fill="#101a13"/><text x="35" y="42" fill="#d6efbd" font-size="18" font-weight="700" font-family="system-ui">NORMAL WORLD</text><text x="35" y="160" fill="#e6c875" font-size="18" font-weight="700" font-family="system-ui">NETHER</text>
             <path d="M72 91h470" stroke="#75c64b" stroke-width="5"/><circle cx="95" cy="91" r="10" fill="#d6efbd"/><circle cx="516" cy="91" r="10" fill="#d6efbd"/><text x="86" y="70" fill="#b9c8b6" font-size="13" font-family="system-ui">Base</text><text x="483" y="70" fill="#b9c8b6" font-size="13" font-family="system-ui">Target</text>
             <path d="M72 205h208" stroke="#e6c875" stroke-width="5"/><circle cx="95" cy="205" r="10" fill="#fff0b0"/><circle cx="255" cy="205" r="10" fill="#fff0b0"/><text x="77" y="232" fill="#b9c8b6" font-size="12" font-family="system-ui">Portal pair · verify safe exit</text>
-            <path d="M130 113v62m364-62V175" stroke="#5d8750" stroke-width="2" stroke-dasharray="5 6"/><text x="330" y="143" fill="#c6f3a6" font-size="15" font-weight="700" text-anchor="middle" font-family="system-ui">X / Z scale: 8 Overworld blocks ≈ 1 Nether block</text>
+            <path d="M130 113v62m364-62V175" stroke="#5d8750" stroke-width="2" stroke-dasharray="5 6"/><text x="330" y="143" fill="#c6f3a6" font-size="15" font-weight="700" text-anchor="middle" font-family="system-ui">Divide X and Z by 8 to plan the Nether trip</text>
           </svg>
-          <figcaption>Use the 8:1 horizontal coordinate relationship to plan a Nether shortcut; portal search and Y alignment still affect the final link.</figcaption>
+          <div class="plain-math" aria-label="Portal coordinate example"><div><strong>Normal world</strong><span>X 800 · Z −240</span></div><span class="math-arrow" aria-hidden="true">÷ 8 →</span><div><strong>Nether</strong><span>X 100 · Z −30</span></div></div>
+          <figcaption>Divide the X and Z numbers by 8. Example: X 800 becomes X 100. The portal may open nearby, so check that the exit is safe.</figcaption>
         </figure>
         <div class="panel tool-panel">
-          <div class="pro-kicker">Mining intelligence</div><h3>Choose the ore route, not a magic Y number</h3>
-          <p class="muted">Modern world generation has different distributions for different ores. For diamonds, official Java notes say ore generates below height 16 and becomes more common farther down; reduced air exposure means branch mining can outperform simply scanning open cave walls.</p>
-          <ul><li>Use F3 coordinates to keep a consistent tunnel elevation.</li><li>At deep levels, bring water, blocks, and a spare pick; lava changes the risk profile.</li><li>Expose long wall faces with parallel branches and mark explored turns to avoid mining the same area twice.</li><li>Recheck the release notes after a world-generation update before trusting an old route chart.</li></ul>
+          <div class="pro-kicker">Finding diamonds</div><h3>Use your Y number to track height</h3>
+          <p class="muted">Press F3 on your keyboard to open the debug screen and see your coordinates. The Y number is your height. In modern Java worlds, diamonds can appear below Y 16, and you usually find more at lower heights. Lava is also more common deep underground.</p>
+          <ul><li>Pick a Y level and keep your tunnels at that height.</li><li>Bring water, blocks, food, and a spare pick in case you meet lava.</li><li>Dig side tunnels and mark where you have already looked.</li><li>Game updates can change ore locations, so check the release notes after an update.</li></ul>
+          <figure class="screenshot-frame" style="margin-top:.7rem"><img src="./images/pro-mining.png" alt="Minecraft cave screenshot showing a turquoise diamond ore block beside a pickaxe" width="1280" height="720" loading="lazy"><figcaption>The blue-green block is diamond ore. Screenshot: <a href="https://commons.wikimedia.org/wiki/File:Screenshot_of_a_player_mining_for_diamonds_in_Minecraft.png" target="_blank" rel="noopener noreferrer">Xbox México via Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>.</figcaption></figure>
         </div>
       </div>
-      <div class="pro-callout" style="margin-top:.8rem"><strong>Current-world note:</strong> Java 26.3 adds the Dappled Forest, Abandoned Camps, and new Explorer Maps. If you are route-planning from an older version or a pre-generated world, confirm which chunks have actually generated before using new structure clues.</div>
+      <div class="pro-callout" style="margin-top:.8rem"><strong>New in Java 26.3:</strong> Look for Dappled Forests, Abandoned Camps, and Explorer Maps. If your world was made on an older version, new places may only appear in areas you have not explored yet.</div>
       <div class="guide-grid" style="margin-top:.8rem">
-        <article class="guide-card searchable" data-search="straw bed spawn point 26.3 one use overworld survival"><span class="tag">26.3 field note</span><h3>Sleep without moving your spawn</h3><p>A Straw Bed can pass the night without resetting your spawn point. It is single-use, is destroyed after sleeping, and cannot be used in the Nether or End. Keep it for temporary camps when you want the night skip without changing your established return point.</p></article>
-        <article class="guide-card searchable" data-search="nether portal coordinates 8 ratio link safe tunnel x z y route"><span class="tag">Route math</span><h3>Link portals deliberately</h3><p>Scale Overworld X/Z by eight to estimate the Nether-side route, then check the actual portal pairing and safe arrival area. Build portals away from hazards and carry enough obsidian or a plan to repair a bad link.</p></article>
-        <article class="guide-card searchable" data-search="loot management shulker boxes inventory recovery kit durability survival"><span class="tag">Logistics</span><h3>Separate loot from survival gear</h3><p>Reserve fixed slots for emergency blocks, food, water, and navigation. Put collected resources in labeled shulker boxes when available; keep your recovery kit separate so a death does not erase the next run’s essentials.</p></article>
+        <article class="guide-card searchable" data-search="straw bed spawn point 26.3 one use overworld survival"><span class="tag">Java 26.3</span><h3>Skip the night at camp</h3><p>A Straw Bed lets you skip one night without changing your home spawn point. It disappears after you use it and does not work in the Nether or the End.</p></article>
+        <article class="guide-card searchable" data-search="nether portal coordinates 8 ratio link safe tunnel x z y route"><span class="tag">Nether portals</span><h3>Plan where your portal opens</h3><p>Divide the normal-world X and Z coordinates by 8 to estimate the Nether location. Build the portal away from lava and cliffs, then check the exit before you travel back through it.</p></article>
+        <article class="guide-card searchable" data-search="loot management shulker boxes inventory recovery kit durability survival"><span class="tag">Pack smart</span><h3>Keep emergency items easy to find</h3><p>Save hotbar slots for food, blocks, water, and navigation. Keep a spare pick and recovery gear at base. If you use shulker boxes, label them by trip.</p></article>
       </div>
     </section>
 
     <section class="section searchable" id="movement" aria-labelledby="movement-heading" data-search="elytra fireworks flight movement pearl water bucket mace wind burst spear lunge parkour speed">
-      <div class="section-heading"><div><div class="section-kicker">03 • Mobility and recovery</div><h2 id="movement-heading">Convert movement into control</h2><p>Fast travel is useful only when you can arrive with enough room to stop, land, and recover.</p></div></div>
+      <div class="section-heading"><div><div class="section-kicker">03 • Flying and moving safely</div><h2 id="movement-heading">Move fast and leave room to land</h2><p>Fast travel only helps if you can stop safely at the other end.</p></div></div>
       <div class="split-grid">
-        <figure class="pro-diagram">
-          <svg viewBox="0 0 620 280" role="img" aria-labelledby="flight-title flight-desc">
-            <title id="flight-title">Elytra flight planning profile</title><desc id="flight-desc">A player glides along a shallow flight path above terrain, with a launch, cruise, and landing zone marked.</desc>
-            <rect width="620" height="280" rx="12" fill="#101a13"/><path d="M0 226 105 194l85 18 83-64 72 36 82-96 83 38 110-61v215H0Z" fill="#203d28"/><path d="M0 239h620v41H0Z" fill="#4c8138"/>
-            <path d="M68 168c104-35 171-49 251-48 89 1 128 8 219 38" fill="none" stroke="#e6c875" stroke-width="4" stroke-dasharray="9 8"/><circle cx="68" cy="168" r="12" fill="#a2ed68"/><circle cx="319" cy="120" r="12" fill="#a2ed68"/><circle cx="538" cy="158" r="12" fill="#e6c875"/>
-            <text x="68" y="145" fill="#e9f3df" font-size="13" text-anchor="middle" font-family="system-ui">LAUNCH</text><text x="319" y="96" fill="#e9f3df" font-size="13" text-anchor="middle" font-family="system-ui">CRUISE</text><text x="538" y="135" fill="#e9f3df" font-size="13" text-anchor="middle" font-family="system-ui">LAND</text>
-            <path d="M295 125 318 113l20 14-21 3Z" fill="#d9e7d1"/><path d="M312 119 300 103m17 16 16-16" stroke="#d9e7d1" stroke-width="4"/><text x="310" y="261" fill="#b9c8b6" font-size="13" text-anchor="middle" font-family="system-ui">Reserve altitude for the landing, not only the cruise</text>
-          </svg>
-          <figcaption>Short, controlled rocket boosts and a planned landing corridor beat a long boost with no recovery space.</figcaption>
+        <figure class="screenshot-frame">
+          <img src="./images/pro-endcity.jpg" alt="Minecraft End City floating above the End island" width="1280" height="683" loading="lazy">
+          <figcaption>End Cities can have ships with Elytra inside. Screenshot: <a href="https://commons.wikimedia.org/wiki/File:Minecraft_-_End_city.jpg" target="_blank" rel="noopener noreferrer">Xbox México via Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>.</figcaption>
         </figure>
         <div class="panel tool-panel">
-          <div class="pro-kicker">Mobility toolkit</div><h3>Use the tool that solves the next problem</h3>
-          <div class="pro-step"><span class="pro-step-num">1</span><p><strong>Elytra:</strong> start from a safe launch, use rockets to hold or regain speed, and keep altitude for the final approach. Do not spend every rocket climbing before the destination.</p></div>
-          <div class="pro-step"><span class="pro-step-num">2</span><p><strong>Ender pearl:</strong> aim for a known landing surface and account for health loss. Use it to cross a gap or escape a trap, not as a blind substitute for scouting.</p></div>
-          <div class="pro-step"><span class="pro-step-num">3</span><p><strong>Wind charge:</strong> use the impulse to gain height or break a fall only when you have space to control the follow-up. Practice its trajectory in a safe world.</p></div>
-          <div class="pro-step"><span class="pro-step-num">4</span><p><strong>Spear with Lunge:</strong> the enchantment boosts a jab in the view direction and consumes hunger. Keep the view nearly level for long travel and do not plan on it while swimming or flying with Elytra.</p></div>
-          <div class="pro-step"><span class="pro-step-num">5</span><p><strong>Water / blocks:</strong> keep an emergency slot consistent and practice placing before you need it. Server latency and version behavior can change the timing window.</p></div>
+          <div class="pro-kicker">Simple movement tips</div><h3>Choose the right tool</h3>
+          <div class="pro-step"><span class="pro-step-num">1</span><p><strong>Elytra:</strong> wear them in your chest slot and jump from a safe height. Use a firework rocket to fly faster. Save some height and rockets for landing.</p></div>
+          <div class="pro-step"><span class="pro-step-num">2</span><p><strong>Ender pearl:</strong> throw it at a place you can see. It moves you there but costs some health, so do not throw it blindly.</p></div>
+          <div class="pro-step"><span class="pro-step-num">3</span><p><strong>Wind charge:</strong> it can push you into the air or help you change direction. Practise in a safe place before using it over a drop.</p></div>
+          <div class="pro-step"><span class="pro-step-num">4</span><p><strong>Spear with Lunge:</strong> the Lunge enchantment pushes you forward when you jab and uses hunger. Look nearly straight ahead for more distance. It does not work while swimming or flying with Elytra.</p></div>
+          <div class="pro-step"><span class="pro-step-num">5</span><p><strong>Water and blocks:</strong> keep them in a hotbar slot you can reach quickly. Practise placing them before you need to stop a fall.</p></div>
         </div>
       </div>
-      <div class="pro-callout" style="margin-top:.8rem"><strong>Mace safety:</strong> a falling smash adds damage based on the fall. A successful smash normally protects the attacker from that fall; Wind Burst can launch you upward for follow-up attacks, but that launch removes the usual smash fall-protection benefit. Plan the next landing before taking the first swing.</div>
+      <div class="pro-callout" style="margin-top:.8rem"><strong>Mace safety:</strong> falling onto an enemy with a mace can add extra damage. Wind Burst bounces you back into the air, so you may fall again. Check that you have a safe place to land.</div>
     </section>
 
     <section class="section searchable" id="technical" aria-labelledby="technical-heading" data-search="technical minecraft redstone farm mob cap spawn tick rates storage comparator observer chunk border measurements">
-      <div class="section-heading"><div><div class="section-kicker">04 • Technical Minecraft</div><h2 id="technical-heading">Engineer for measured behavior</h2><p>A reliable farm is one whose assumptions, output, and failure modes are known.</p></div></div>
+      <div class="section-heading"><div><div class="section-kicker">04 • Farms and redstone</div><h2 id="technical-heading">Build it, test it, then improve it</h2><p>Change one thing at a time so you can see what made your farm faster or fixed it.</p></div></div>
       <div class="pro-grid two">
         <div class="panel tool-panel">
-          <div class="pro-kicker">Farm design loop</div><h3>Measure before scaling</h3>
-          <div class="pro-step"><span class="pro-step-num">A</span><p><strong>Define the output:</strong> items per minute, XP throughput, or mob drops. Record the version, difficulty, biome, server software, simulation distance, and relevant settings.</p></div>
-          <div class="pro-step"><span class="pro-step-num">B</span><p><strong>Control the inputs:</strong> spawn surface, light, collection path, and AFK position. A farm designed around a particular distance or mob cap may fail when server settings differ.</p></div>
-          <div class="pro-step"><span class="pro-step-num">C</span><p><strong>Test one cycle:</strong> observe every transfer point, check for overflow, and time a repeatable sample. Compare the same test before and after each change.</p></div>
-          <div class="pro-step"><span class="pro-step-num">D</span><p><strong>Scale only after a bottleneck is proven:</strong> adding platforms cannot fix a slow kill chamber, blocked hopper line, unloaded collection area, or server tick lag.</p></div>
+          <div class="pro-kicker">Farm checklist</div><h3>Test a small version first</h3>
+          <div class="pro-step"><span class="pro-step-num">1</span><p><strong>Count what it makes:</strong> measure items or XP over 10 minutes. Write down your game version and server settings.</p></div>
+          <div class="pro-step"><span class="pro-step-num">2</span><p><strong>Check where you stand:</strong> farms can stop working if you are too close or too far away. AFK means standing still while the farm runs.</p></div>
+          <div class="pro-step"><span class="pro-step-num">3</span><p><strong>Follow one item:</strong> check that it reaches the chest and that items do not get stuck or spill out.</p></div>
+          <div class="pro-step"><span class="pro-step-num">4</span><p><strong>Fix the slow part:</strong> more platforms will not help if a hopper, kill chamber, or chest is already blocked.</p></div>
         </div>
-        <figure class="pro-diagram">
-          <svg viewBox="0 0 600 280" role="img" aria-labelledby="redstone-title redstone-desc">
-            <title id="redstone-title">Modular redstone system diagram</title><desc id="redstone-desc">An input sensor feeds a pulse and timing module, then an output mechanism and a monitored storage stage.</desc>
-            <rect width="600" height="280" rx="12" fill="#101a13"/>
-            <g font-family="system-ui" text-anchor="middle"><rect x="24" y="80" width="118" height="104" rx="8" fill="#203824" stroke="#75c64b" stroke-width="2"/><text x="83" y="121" fill="#e8f1db" font-size="16" font-weight="700">INPUT</text><text x="83" y="146" fill="#b9c8b6" font-size="12">sensor / switch</text>
-            <rect x="170" y="80" width="126" height="104" rx="8" fill="#27351e" stroke="#e6c875" stroke-width="2"/><text x="233" y="121" fill="#f5e9b7" font-size="16" font-weight="700">PULSE</text><text x="233" y="146" fill="#c7bd9a" font-size="12">edge / timing</text>
-            <rect x="324" y="80" width="118" height="104" rx="8" fill="#203824" stroke="#75c64b" stroke-width="2"/><text x="383" y="121" fill="#e8f1db" font-size="16" font-weight="700">OUTPUT</text><text x="383" y="146" fill="#b9c8b6" font-size="12">piston / dispenser</text>
-            <rect x="470" y="80" width="106" height="104" rx="8" fill="#272737" stroke="#928dc6" stroke-width="2"/><text x="523" y="121" fill="#e4e0ff" font-size="16" font-weight="700">CHECK</text><text x="523" y="146" fill="#bbb7d4" font-size="12">overflow / state</text></g>
-            <path d="M144 132h20m-7-8 8 8-8 8m130-8h20m-7-8 8 8-8 8m126-8h20m-7-8 8 8-8 8" stroke="#e6c875" stroke-width="3" fill="none"/>
-            <text x="300" y="225" fill="#c6f3a6" font-size="13" text-anchor="middle" font-family="system-ui">Separate detection, timing, action, and storage</text>
-          </svg>
-          <figcaption>Debug one module at a time. Observers detect block-state changes; repeaters add delay and can preserve clean timing between stages.</figcaption>
+        <figure class="screenshot-frame">
+          <img src="./images/pro-redstone.png" alt="Minecraft screenshot showing redstone dust leading from a pressure plate to a door" width="1052" height="673" loading="lazy">
+          <figcaption>The red line carries a signal from the floor plate to the door. Screenshot: <a href="https://commons.wikimedia.org/wiki/File:Xbox_Masterclass_Redstone_circuits_(cropped).png" target="_blank" rel="noopener noreferrer">Xbox México via Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>.</figcaption>
         </figure>
       </div>
       <div class="guide-grid" style="margin-top:.8rem">
-        <article class="guide-card searchable" data-search="redstone observer pulse repeater comparator edge state clock"><span class="tag">Redstone</span><h3>Design around pulse shape</h3><p>Decide whether the next component needs a short pulse, a sustained signal, or a state change. Observers react to block updates; a pulse extender or latch is needed when the consumer requires a longer hold.</p><p>Keep clocks separate from storage and output logic so you can isolate timing faults.</p></article>
-        <article class="guide-card searchable" data-search="storage hopper comparator item sorter overflow collection"><span class="tag">Storage</span><h3>Make overflow visible</h3><p>Give every sorter a defined overflow path. Use comparator output where container fullness matters, and keep a manual inspection point before items enter a hidden bulk system.</p><p>Prevent a single full chest from stopping the entire production line.</p></article>
-        <article class="guide-card searchable" data-search="server tick mspt tps lag entity load simulation distance farm performance"><span class="tag">Performance</span><h3>Separate FPS from server tick health</h3><p>Client frame rate measures rendering. Farm timing depends on the world simulation and server tick health too. Compare runs under the same load and reduce unnecessary entities, item drops, and active redstone where possible.</p><p>Measure a busy base during real multiplayer load, not only in an empty test world.</p></article>
+        <article class="guide-card searchable" data-search="redstone observer pulse repeater comparator edge state clock"><span class="tag">Redstone</span><h3>Know what each part does</h3><p>An observer notices when a nearby block changes. A repeater adds a short delay. Use the right part for the job, then test the machine one step at a time.</p></article>
+        <article class="guide-card searchable" data-search="storage hopper comparator item sorter overflow collection"><span class="tag">Storage</span><h3>Stop full chests from jamming a farm</h3><p>Give extra items somewhere to go when a chest fills up. Check the storage during a test run so you can spot a blockage early.</p></article>
+        <article class="guide-card searchable" data-search="server tick mspt tps lag entity load simulation distance farm performance"><span class="tag">Lag</span><h3>Game lag and server lag are different</h3><p>FPS is how smoothly the picture moves on your screen. Server lag is when the game world updates slowly. Test farms while the server has its normal number of players online.</p></article>
       </div>
-      <div class="pro-callout" style="margin-top:.8rem"><strong>Version control:</strong> test redstone and farms in a copy of the target world/version first. Java 26.1 introduced major world-data changes and Java 26.2 added experimental Vulkan rendering; back up before upgrades and benchmark graphics options on your own hardware.</div>
+      <div class="pro-callout" style="margin-top:.8rem"><strong>Before changing versions:</strong> make a backup of your world. Java 26.2 also added an experimental graphics option called Vulkan. It may help some computers and slow down others, so compare it in the same area before keeping it.</div>
     </section>
 
     <section class="section searchable" id="economy" aria-labelledby="economy-heading" data-search="villager economy trading librarian enchantments deterministic trades rebalance experiment 26.1 gear armor tool repair">
-      <div class="section-heading"><div><div class="section-kicker">05 • Gear and supply chain</div><h2 id="economy-heading">Build gear systems you can maintain</h2><p>Prepare a loadout for the job, then keep its replenishment loop predictable.</p></div></div>
+      <div class="section-heading"><div><div class="section-kicker">05 • Gear and villagers</div><h2 id="economy-heading">Pack gear for the job</h2><p>Different trips need different tools. Check your gear before leaving home.</p></div></div>
       <div class="pro-grid two">
-        <article class="pro-card"><div class="pro-kicker">Equipment roles</div><h3>Enchant for the environment</h3><ul><li><strong>General travel:</strong> balance protection with fall and fire risk; keep a spare shield and repair materials available.</li><li><strong>Nether work:</strong> protect against fire and carry blocks that remain useful around lava; avoid placing your only escape route behind a risky jump.</li><li><strong>Mining:</strong> prioritize tool durability and efficiency, then bring a backup pick and light source.</li><li><strong>Boss / PvP:</strong> do not carry one universal set. Prepare the weapon, potions, and utility for the rules and opponent you expect.</li><li><strong>Repair strategy:</strong> track durability before a long expedition, and repair or replace before the item reaches a failure point.</li></ul></article>
-        <article class="pro-card"><div class="pro-kicker">Villager operations</div><h3>Account for version and experiments</h3><p>In Java 26.1, villager profession trades are generated from deterministic random sequences tied to the world seed; re-rolling still produces a randomized sequence, but it is seed-determined. The optional Villager Trade Rebalance experiment changes trade behavior separately.</p><p>Before building a large trading hall, confirm whether the experiment is enabled, then test one villager through work, restock, and trade-lock behavior in the same version as your main world.</p><p>Keep workstations accessible and protect villagers from pathing hazards; a compact hall that cannot restock is not a stable supply system.</p></article>
+        <article class="pro-card"><div class="pro-kicker">Choose your gear</div><h3>Match your items to the trip</h3><ul><li><strong>Travel:</strong> wear armor and bring a shield, food, and a way to stop a fall.</li><li><strong>Nether:</strong> bring fire protection, blocks, food, and a safe route out.</li><li><strong>Mining:</strong> bring a strong pick, a spare pick, and torches.</li><li><strong>Boss or player fight:</strong> choose the weapon and healing items that fit the server rules.</li><li><strong>Before you leave:</strong> repair tools and armor before they are almost broken.</li></ul></article>
+        <article class="pro-card"><div class="pro-kicker">Villager trades</div><h3>Test one villager first</h3><p>In Java 26.1, the world seed helps decide a villager's trade list. It can still look random, but the seed affects the results. The optional Villager Trade Rebalance setting changes some trades.</p><p>Before building a large trading hall, check whether that setting is on. Test one villager: give them a job block, wait for them to restock, and try a few trades.</p><p>Keep job blocks easy to reach and protect villagers from danger. If they cannot reach their block, they may not restock.</p></article>
       </div>
       <div class="panel tool-panel" style="margin-top:.8rem">
-        <div class="pro-kicker">Field checklist</div><h3>Pre-departure kit check</h3>
+        <div class="pro-kicker">Before you leave</div><h3>Quick pack check</h3>
         <ul class="pro-checklist">
-          <li><strong>Tools:</strong> primary tool plus a backup for the route.</li><li><strong>Defense:</strong> armor durability, shield, and a safe offhand setup.</li>
-          <li><strong>Recovery:</strong> food, blocks, water or fire protection, and an escape option.</li><li><strong>Navigation:</strong> coordinates, route notes, and a portal destination.</li>
-          <li><strong>Capacity:</strong> empty slots or storage for the intended loot.</li><li><strong>Version:</strong> confirm world, server, datapack, and snapshot status.</li>
+          <li><strong>Tools:</strong> right pick or weapon, plus a spare.</li><li><strong>Safety:</strong> armor, shield, food, and blocks.</li>
+          <li><strong>Escape:</strong> water, fire protection, or an ender pearl.</li><li><strong>Route:</strong> write down coordinates and portal locations.</li>
+          <li><strong>Space:</strong> leave room in your inventory for loot.</li><li><strong>Game version:</strong> check the version and server rules.</li>
         </ul>
       </div>
     </section>
 
     <section class="section searchable" id="operations" aria-labelledby="operations-heading" data-search="server operations backups Java 25 version 26.1 java runtime simulation distance profiling snapshots update admin">
-      <div class="section-heading"><div><div class="section-kicker">06 • Server operations</div><h2 id="operations-heading">Protect the world before optimizing it</h2><p>Server owners and technical players need repeatable backups, measurable changes, and clear version notes.</p></div></div>
+      <div class="section-heading"><div><div class="section-kicker">06 • Servers and updates</div><h2 id="operations-heading">Keep your world safe</h2><p>Back up before changing game files, plugins, or server settings.</p></div></div>
       <div class="guide-grid">
-        <article class="guide-card searchable" data-search="backup world before update version snapshots copy server"><span class="tag">World safety</span><h3>Back up before every major change</h3><p>Stop the server cleanly, make a restorable world backup, and test upgrades on a copy before the live world. Keep the original untouched until you confirm terrain, inventories, datapacks, and plugins behave as expected.</p></article>
-        <article class="guide-card searchable" data-search="java 25 26.1 server runtime performance launcher"><span class="tag">Runtime</span><h3>Match Java to the game release</h3><p>Java Edition 26.1 raised the runtime requirement to Java 25. Use the runtime required by the server release and its distribution instructions; do not assume an older system Java is compatible.</p></article>
-        <article class="guide-card searchable" data-search="vulkan 26.2 experimental graphics benchmark fps Intel GPU"><span class="tag">Graphics</span><h3>Benchmark settings, don’t cargo-cult them</h3><p>Java 26.2 introduced experimental Vulkan rendering. Compare backends on your hardware with the same world, view distance, and scene. A faster result on one machine is not a universal setting.</p></article>
+        <article class="guide-card searchable" data-search="backup world before update version snapshots copy server"><span class="tag">Backups</span><h3>Copy your world before an update</h3><p>Stop the server, copy the world folder, and try the update on the copy first. Check that your builds, items, plugins, and data packs still work before updating the live world.</p></article>
+        <article class="guide-card searchable" data-search="java 25 26.1 server runtime performance launcher"><span class="tag">Java version</span><h3>Use the Java version the game asks for</h3><p>Java Edition 26.1 and newer need Java 25 to run. Follow the setup instructions for your game or server; an older Java install may not work.</p></article>
+        <article class="guide-card searchable" data-search="vulkan 26.2 experimental graphics benchmark fps Intel GPU"><span class="tag">Graphics</span><h3>Test new graphics options yourself</h3><p>Java 26.2 added an experimental option called Vulkan. It may run faster on one computer and slower on another. Compare the same world and view distance on your own computer.</p></article>
       </div>
       <div class="panel tool-panel" style="margin-top:.8rem">
-        <h3>Reproduction notes for technical builds</h3>
-        <p class="muted">When sharing a farm or redstone design, include the exact game version, Java server software, datapacks or plugins, relevant settings, build dimensions, AFK position, and a timed output sample. That turns “works for me” into a build others can actually reproduce.</p>
+        <h3>When you share a farm or machine</h3>
+        <p class="muted">Write down the game version, server type, plugins or data packs, important settings, build size, where you stand, and how many items it makes in 10 minutes. Other players can then try the same setup.</p>
       </div>
     </section>
 
     <section class="section searchable" id="drills" aria-labelledby="drills-heading" data-search="practice training aim movement drill hotbar pvp elytra redstone technical">
-      <div class="section-heading"><div><div class="section-kicker">07 • Practice protocol</div><h2 id="drills-heading">Turn mechanics into dependable habits</h2><p>Short drills produce better feedback than changing an entire setup after one loss.</p></div></div>
+      <div class="section-heading"><div><div class="section-kicker">07 • Practice</div><h2 id="drills-heading">Get better one skill at a time</h2><p>Practise a short task, notice what went wrong, then try again.</p></div></div>
       <div class="guide-grid">
-        <article class="guide-card searchable" data-search="pvp drill aim tracking sprint reset hotbar duel"><span class="tag">PvP • 10 minutes</span><h3>Aim, reset, and recover</h3><p>Track a moving target while strafing; practice one sprint-reset pattern; then swap through your full hotbar without losing the target. Finish with a short duel under the exact server rules you plan to play.</p></article>
-        <article class="guide-card searchable" data-search="movement elytra landing water bucket pearl lunge drill"><span class="tag">Movement • 10 minutes</span><h3>Practice the landing, not only the launch</h3><p>Use a safe test area to rehearse elytra approaches, water placement, pearl landings, and spear Lunge angles. Repeat from the same starting point and change only one input at a time.</p></article>
-        <article class="guide-card searchable" data-search="redstone test farm throughput troubleshooting repeatable measurement"><span class="tag">Technical • one test cycle</span><h3>Instrument the failure</h3><p>Mark the first point where a build stops behaving: sensor, timing, output, transport, or storage. Add a temporary indicator or inspection window and test one stage at a time.</p></article>
+        <article class="guide-card searchable" data-search="pvp drill aim tracking sprint reset hotbar duel"><span class="tag">Fighting • 10 minutes</span><h3>Keep your aim on a moving player</h3><p>Move side to side while following a target with your crosshair. Practise using your hotbar, then try a short duel with the same rules as your server.</p></article>
+        <article class="guide-card searchable" data-search="movement elytra landing water bucket pearl lunge drill"><span class="tag">Movement • 10 minutes</span><h3>Practise landing safely</h3><p>In a safe area, practise Elytra landings, water placement, ender pearl throws, and spear Lunge. Start from the same spot and change one thing at a time.</p></article>
+        <article class="guide-card searchable" data-search="redstone test farm throughput troubleshooting repeatable measurement"><span class="tag">Redstone • one test</span><h3>Find the first part that fails</h3><p>Watch the machine from start to finish. Check the switch, redstone signal, moving parts, and chest. Fix the first place where it stops working.</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="words-heading">
+      <div class="section-heading"><div><div class="section-kicker">Quick word guide</div><h2 id="words-heading">Minecraft words in simple language</h2><p>Use these meanings while reading the tips above.</p></div></div>
+      <div class="guide-grid">
+        <article class="guide-card"><h3>Coordinates: X, Y, Z</h3><p>X and Z show where you are on the map. Y shows how high or low you are.</p></article>
+        <article class="guide-card"><h3>Attack meter</h3><p>The small meter by your crosshair shows when your next strong sword hit is ready.</p></article>
+        <article class="guide-card"><h3>Knockback</h3><p>How far a hit pushes another player or mob away from you.</p></article>
+        <article class="guide-card"><h3>AFK</h3><p>Standing still near a farm while the game keeps running.</p></article>
+        <article class="guide-card"><h3>Server lag</h3><p>When the server is slow to update the world, even if your screen looks smooth.</p></article>
+        <article class="guide-card"><h3>World seed</h3><p>A number Minecraft uses to make the world's terrain and places.</p></article>
+        <article class="guide-card"><h3>Hotbar</h3><p>The row of item slots at the bottom of your screen. Use it to switch items quickly.</p></article>
+        <article class="guide-card"><h3>Offhand</h3><p>The extra hand slot. Many players keep a shield or another useful item there.</p></article>
+        <article class="guide-card"><h3>Redstone</h3><p>Dust and parts that carry power and make doors, farms, and other machines work.</p></article>
+        <article class="guide-card"><h3>Nether</h3><p>A dangerous, fiery dimension. One block across there equals about eight blocks across in the normal world.</p></article>
+        <article class="guide-card"><h3>Data pack</h3><p>A set of extra rules or content added to a world or server.</p></article>
       </div>
     </section>
 
     <section class="section searchable" id="references" aria-labelledby="references-heading" data-search="official references version changelog spear mace controls mining 26.3 26.1 26.2">
-      <div class="section-heading"><div><div class="section-kicker">Primary references</div><h2 id="references-heading">Check the release notes when mechanics change</h2><p>Version-sensitive details on this page are linked to official Minecraft sources.</p></div></div>
+      <div class="section-heading"><div><div class="section-kicker">Official sources</div><h2 id="references-heading">Check what changed in each update</h2><p>Some details change between game versions. These official pages show the rules used here.</p></div></div>
       <div class="panel tool-panel">
-        <p class="muted">This guide uses the Java 26.3 stable release as its baseline. Snapshots are test versions; server software, plugins, datapacks, and experimental settings can change behavior. Recheck the exact release notes when a mechanic matters to a tournament, farm, or live world.</p>
+        <p class="muted">This guide uses Java 26.3 as its base version. Snapshots are test versions. Servers, plugins, data packs, and experiments can change the rules, so check your server before using a tip in a match or world.</p>
         <div class="source-list">
           <a href="https://feedback.minecraft.net/hc/en-us/articles/48913133328013-Minecraft-Java-Edition-26-3" target="_blank" rel="noopener noreferrer">Java 26.3 release notes</a>
           <a href="https://feedback.minecraft.net/hc/en-us/articles/41809981427213-Minecraft-Java-Edition-1-21-11-Mounts-of-Mayhem" target="_blank" rel="noopener noreferrer">Spear mechanics</a>
@@ -320,10 +330,10 @@
 
   <footer class="site-footer">
     <div class="shell">
-      <div class="footer-brand"><b>CORE GG</b><span aria-hidden="true">◆</span><span>JAVA PROFESSIONAL FIELD GUIDE</span></div>
-      <p class="footer-disclaimer">CoreGG is an independent fan-made learning resource. It is not an official Minecraft product and is not approved by or associated with Mojang or Microsoft. Minecraft and related game assets belong to their respective owners.</p>
-      <div class="credits"><h2>Game & trademark credits</h2><p><strong>Minecraft Java Edition</strong> is developed by Mojang Studios and published by Microsoft.</p><p>All Minecraft names, trademarks and game content remain the property of their respective owners.</p><p>For current rules on using Minecraft names and assets, read the <a href="https://www.minecraft.net/en-us/usage-guidelines" target="_blank" rel="noopener noreferrer">Minecraft Usage Guidelines</a>.</p><p><a href="./index.html">CoreGG home</a> · <a href="./coreminecraft.html">Java beginner guide</a> · <a href="https://www.minecraft.net/en-us/minecraft-tips-for-beginners" target="_blank" rel="noopener noreferrer">Official Minecraft guide</a></p></div>
-      <div class="footer-bottom">COREMINECRAFTPRO <span aria-hidden="true">•</span> JAVA EDITION <span aria-hidden="true">•</span> VERSION-AWARE FIELD GUIDE</div>
+      <div class="footer-brand"><b>CORE GG</b><span aria-hidden="true">◆</span><span>JAVA GUIDE · SIMPLE STEPS</span></div>
+      <p class="footer-disclaimer">CoreGG is a fan-made guide. It is not an official Minecraft site and is not endorsed by Mojang Studios or Microsoft. Minecraft names and game images belong to their owners.</p>
+      <div class="credits"><h2>Minecraft and image credits</h2><p><strong>Minecraft Java Edition</strong> is made by Mojang Studios and published by Microsoft.</p><p>Pictures in this guide are screenshots by Xbox México, shared under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 3.0</a>. Each picture links to its source.</p><p>For current rules on using Minecraft names and images, read the <a href="https://www.minecraft.net/en-us/usage-guidelines" target="_blank" rel="noopener noreferrer">Minecraft Usage Guidelines</a>.</p><p><a href="./index.html">CoreGG home</a> · <a href="./coreminecraft.html">Java beginner guide</a> · <a href="https://www.minecraft.net/en-us/minecraft-tips-for-beginners" target="_blank" rel="noopener noreferrer">Official Minecraft guide</a></p></div>
+      <div class="footer-bottom">JAVA EDITION <span aria-hidden="true">•</span> SIMPLE STEPS <span aria-hidden="true">•</span> PRACTICAL TIPS</div>
     </div>
   </footer>
 

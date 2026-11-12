@@ -3704,8 +3704,9 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
             if (revealVideo.readyState >= 2) {
                 startReveal();
             } else {
+                revealVideo.preload = 'auto';
                 revealVideo.addEventListener('canplay', startReveal, { once: true });
-                revealVideo.load();
+                if (revealVideo.networkState === HTMLMediaElement.NETWORK_EMPTY) revealVideo.load();
             }
         }
 
@@ -3719,6 +3720,12 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
             replayTimer = window.setTimeout(() => playMaterialReveal(sequence), 850);
         }
 
+        function preloadRevealAfterIdleReady() {
+            if (!document.body.classList.contains('materials-mode') || columbinaPlanner.classList.contains('hidden')) return;
+            revealVideo.preload = 'auto';
+            if (revealVideo.readyState < 2) revealVideo.load();
+        }
+
         function openColumbinaPlanner() {
             columbinaBanner.classList.add('hidden');
             columbinaPlanner.classList.remove('hidden');
@@ -3729,9 +3736,14 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
             setPresentationStatus('Columbina is ready. Choose your upgrade and continue to reveal the items.');
             warmColumbinaMaterialIcons(currentMaterialMode);
             idleVideo.preload = 'auto';
-            revealVideo.preload = 'auto';
-            idleVideo.load();
-            revealVideo.load();
+            revealVideo.preload = 'none';
+            idleVideo.removeEventListener('canplay', preloadRevealAfterIdleReady);
+            if (idleVideo.readyState >= 2) {
+                preloadRevealAfterIdleReady();
+            } else {
+                idleVideo.addEventListener('canplay', preloadRevealAfterIdleReady, { once: true });
+                idleVideo.load();
+            }
             showIdleVideo(true);
         }
 
@@ -3740,6 +3752,9 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
             clearTimeout(replayTimer);
             idleVideo.pause();
             revealVideo.pause();
+            idleVideo.removeEventListener('canplay', preloadRevealAfterIdleReady);
+            revealVideo.preload = 'none';
+            revealVideo.load();
             bubbleField.classList.add('hidden');
             materialResults.classList.add('hidden');
             columbinaPlanner.classList.add('hidden');
@@ -3772,7 +3787,11 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
                 materialResults.classList.add('hidden');
                 idleVideo.pause();
                 revealVideo.pause();
+                idleVideo.removeEventListener('canplay', preloadRevealAfterIdleReady);
+                revealVideo.preload = 'none';
+                revealVideo.load();
             } else if (!columbinaPlanner.classList.contains('hidden') && materialResults.classList.contains('hidden')) {
+                preloadRevealAfterIdleReady();
                 if (hasStartedMaterialPresentation) replayMaterialPresentation();
                 else showIdleVideo(false);
             }

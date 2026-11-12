@@ -3427,8 +3427,8 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
         const materialsContinueButton = document.getElementById('materialsContinueButton');
 
         const columbinaMaterialCatalog = {
-            mora: { name: 'Mora', icon: './media/columbina/materials/mora.jpg', short: 'M' },
-            winter: { name: 'Winter Icelea', icon: './media/columbina/materials/winter-icelea.png', short: 'WI' },
+            mora: { name: 'Mora', icon: './images/Mora.png', short: 'M' },
+            winter: { name: 'Winter Icelea', icon: './images/Winter%20Icelea.png', short: 'WI' },
             sliver: { name: 'Varunada Lazurite Sliver', icon: './media/columbina/materials/varunada-sliver.png', short: 'VS' },
             fragment: { name: 'Varunada Lazurite Fragment', icon: './media/columbina/materials/varunada-fragment.png', short: 'VF' },
             chunk: { name: 'Varunada Lazurite Chunk', icon: './media/columbina/materials/varunada-chunk.png', short: 'VC' },

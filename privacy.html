@@ -37,18 +37,18 @@
   <style>
     :root {
       color-scheme: dark;
-      --bg: #111a14;
-      --surface: #1b2a20;
-      --green: #75c64b;
-      --gold: #e6c875;
-      --text: #f1f5e9;
-      --muted: #b9c8b6;
-      --line: #49664b;
+      --bg: #192b38;
+      --surface: rgba(18, 25, 43, 0.92);
+      --green: #a78bfa;
+      --gold: #FFD700;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --line: rgba(255, 255, 255, 0.18);
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      background: radial-gradient(ellipse at top, #1b2a20 0, var(--bg) 62%);
+      background: linear-gradient(180deg, #1a2744 0%, #233554 55%, #192b38 100%);
       color: var(--text);
       font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
       line-height: 1.7;
@@ -57,7 +57,7 @@
     a:hover { color: var(--gold); }
     .topbar {
       border-bottom: 1px solid var(--line);
-      background: rgba(17, 26, 20, .92);
+      background: rgba(18, 25, 43, .92);
     }
     .topbar-inner, main, footer {
       width: min(100% - 2rem, 900px);
@@ -104,7 +104,7 @@
       padding: clamp(1rem, 4vw, 2rem);
       border: 1px solid var(--line);
       border-radius: 16px;
-      background: rgba(27, 42, 32, .82);
+      background: rgba(20, 30, 50, .78);
     }
     .updated { margin: 0 0 1.5rem; font-size: .9rem; }
     footer {

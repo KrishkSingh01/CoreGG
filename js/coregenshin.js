@@ -3696,8 +3696,8 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
                 requestAnimationFrame(() => {
                     if (sequence !== presentationSequence) return;
                     revealVideo.classList.add('is-visible');
-                    idleVideo.classList.remove('is-visible');
-                    window.setTimeout(() => { if (sequence === presentationSequence) idleVideo.pause(); }, 360);
+                    // Keep the looping idle clip visible underneath the presentation fade.
+                    // This prevents the static poster from flashing through during the handoff.
                 });
             };
 

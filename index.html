@@ -898,6 +898,32 @@
             text-transform: uppercase;
         }
 
+        .footer-discovery-links {
+            display: flex;
+            flex: 1 1 520px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 6px 16px;
+        }
+
+        .footer-discovery-links a {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .footer-discovery-links a:hover,
+        .footer-discovery-links a:focus-visible {
+            color: #fff;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
         .bmc-dock {
             display: inline-flex;
             align-items: center;
@@ -1434,6 +1460,14 @@
          ========================================================= -->
     <footer class="footer-strip">
         <span class="footer-text">CoreGG &bull; Thanks for visiting &bull; <a href="privacy.html" style="color:inherit;text-decoration:underline;text-underline-offset:.2em;margin-left:.4em">Privacy Policy</a></span>
+        <nav class="footer-discovery-links" aria-label="CoreGG guides">
+            <a href="coregenshin.html">Genshin Impact</a>
+            <a href="coregenshin-builds.html">Genshin Character Builds</a>
+            <a href="coreminecraft.html">Minecraft Java Guide</a>
+            <a href="coreminecraftbedrock.html">Minecraft Bedrock Guide</a>
+            <a href="coreminecraftpro.html">Minecraft Java Pro Guide</a>
+            <a href="minecraft-bedrock-professional.html">Minecraft Bedrock Pro Guide</a>
+        </nav>
     </footer>
 
     <script>

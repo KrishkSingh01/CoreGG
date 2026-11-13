@@ -10,7 +10,14 @@
     <meta property="og:site_name" content="CoreGG">
     <meta property="og:title" content="CoreGG — Gaming Companion &amp; Toolkit Hub">
     <meta property="og:description" content="CoreGG Gaming Hub — Practical Pity &amp; Crit Value calculators for Genshin Impact alongside Nether Portal &amp; Shulker tools for Minecraft.">
-    <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://coregg.pages.dev/CoreGG%20Neon%20Gaming%20Emblem.png">
+  <meta property="og:image:alt" content="CoreGG Neon Gaming Emblem">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1983">
+  <meta property="og:image:height" content="793">
+      <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://coregg.pages.dev/CoreGG%20Neon%20Gaming%20Emblem.png">
+  <meta name="twitter:image:alt" content="CoreGG Neon Gaming Emblem">
     <title>CoreGG — Gaming Companion &amp; Toolkit Hub</title>
     <style>
         :root {
@@ -1076,17 +1083,46 @@
                 animation-duration: 36s;
             }
         }
+            h2.tool-header { margin: 0; }
     </style>
 
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5444671871825918" crossorigin="anonymous"></script>
     
-<script src="https://5gvci.com/act/files/tag.min.js?z=12245744" data-cfasync="false" async></script>
-<script>(function(s){s.dataset.zone='12245747',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+
+
 
 <link rel="canonical" href="https://coregg.pages.dev/">
   <meta property="og:url" content="https://coregg.pages.dev/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"CoreGG","description":"CoreGG Gaming Hub — Practical Pity & Crit Value calculators for Genshin Impact alongside Nether Portal & Shulker tools for Minecraft.","url":"https://coregg.pages.dev/","inLanguage":"en"}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://coregg.pages.dev/#organization",
+      "name": "CoreGG",
+      "url": "https://coregg.pages.dev/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://coregg.pages.dev/CoreGG%20Neon%20Gaming%20Emblem.png",
+        "width": 1983,
+        "height": 793
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://coregg.pages.dev/#website",
+      "name": "CoreGG",
+      "description": "CoreGG Gaming Hub — Practical Pity & Crit Value calculators for Genshin Impact alongside Nether Portal & Shulker tools for Minecraft.",
+      "url": "https://coregg.pages.dev/",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://coregg.pages.dev/#organization" }
+    }
+  ]
+}
+</script>
+  <script>(function(s){s.dataset.zone='12252123',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
 </head>
 <body>
     <div class="base-bg"></div>
@@ -1134,29 +1170,29 @@
                             <span class="banner-name">Genshin Impact</span>
                         </div>
                         <div class="banner-icons">
-                            <img src="https://enka.network/ui/UI_ItemIcon_201.png" alt="Primogem" title="Primogem" loading="eager" decoding="async">
-                            <img src="https://enka.network/ui/UI_ItemIcon_223.png" alt="Intertwined Fate" title="Intertwined Fate" loading="eager" decoding="async">
+                            <img src="https://enka.network/ui/UI_ItemIcon_201.png" alt="Primogem" title="Primogem" loading="eager" decoding="async" width="26" height="26">
+                            <img src="https://enka.network/ui/UI_ItemIcon_223.png" alt="Intertwined Fate" title="Intertwined Fate" loading="eager" decoding="async" width="26" height="26">
                         </div>
                     </div>
                 </div>
 
                 <!-- TOOL 1: Interactive 5-Star Pity & Primogem Wish Calculator -->
                 <div class="tool-card">
-                    <div class="tool-header">
+                    <h2 class="tool-header">
                         <span>5★ Pity &amp; Wish Calculator</span>
                         <span class="guarantee-toggle" id="pity-guarantee-btn" role="button" tabindex="0" title="Click to toggle 50/50 vs Guaranteed">50/50 Mode</span>
-                    </div>
+                    </h2>
                     <div class="calc-row">
                         <label class="calc-field" title="Current Banner Pity (0-89)">
                             <span class="coord-lbl">Pity:</span>
                             <input type="number" id="gi-pity" class="calc-input" min="0" max="89" value="30">
                         </label>
                         <label class="calc-field" title="Saved Primogems">
-                            <img src="https://enka.network/ui/UI_ItemIcon_201.png" alt="Primogem" loading="eager" decoding="async">
+                            <img src="https://enka.network/ui/UI_ItemIcon_201.png" alt="Primogem" loading="eager" decoding="async" width="16" height="16">
                             <input type="number" id="gi-primos" class="calc-input" min="0" step="160" value="3200" placeholder="Primos">
                         </label>
                         <label class="calc-field" title="Saved Intertwined Fates">
-                            <img src="https://enka.network/ui/UI_ItemIcon_223.png" alt="Fates" loading="lazy" decoding="async">
+                            <img src="https://enka.network/ui/UI_ItemIcon_223.png" alt="Fates" loading="lazy" decoding="async" width="16" height="16">
                             <input type="number" id="gi-fates" class="calc-input" min="0" value="5" placeholder="Fates">
                         </label>
                     </div>
@@ -1171,10 +1207,10 @@
 
                 <!-- TOOL 2: Live Artifact Crit Value (CV) Scorer (CR*2 + CD) -->
                 <div class="tool-card">
-                    <div class="tool-header">
+                    <h2 class="tool-header">
                         <span>Artifact Crit Value (CV) Calc</span>
                         <span class="tool-header-sub">CV = (CR &times; 2) + CD</span>
-                    </div>
+                    </h2>
                     <div class="calc-row">
                         <label class="calc-field" aria-label="Artifact CRIT Rate Percentage">
                             <span class="coord-lbl">CRIT Rate %:</span>
@@ -1193,25 +1229,25 @@
 
                 <!-- TOOL 3: Meta Stat & Pity Breakpoints (Hard Numbers Players Need) -->
                 <div class="tool-card">
-                    <div class="tool-header">
+                    <h2 class="tool-header">
                         <span>Key Pity &amp; Stat Caps</span>
                         <span class="tool-header-sub">1:2 Crit Ratio Rule</span>
-                    </div>
+                    </h2>
                     <div class="ref-grid">
                         <div class="ref-chip" title="Character Banner Soft Pity starts at 74, Hard Pity at 90">
-                            <img src="https://enka.network/ui/UI_ItemIcon_223.png" alt="Character Pity" loading="lazy" decoding="async">
+                            <img src="https://enka.network/ui/UI_ItemIcon_223.png" alt="Character Pity" loading="lazy" decoding="async" width="16" height="16">
                             <span>Char Pity: <strong>74 / 90</strong></span>
                         </div>
                         <div class="ref-chip" title="Weapon Banner Soft Pity starts at 63, Hard Pity at 80 (Max 1 Fate Point)">
-                            <img src="https://enka.network/ui/UI_ItemIcon_201.png" alt="Weapon Pity" loading="lazy" decoding="async">
+                            <img src="https://enka.network/ui/UI_ItemIcon_201.png" alt="Weapon Pity" loading="lazy" decoding="async" width="16" height="16">
                             <span>Weapon: <strong>63 / 80</strong> (1 FP)</span>
                         </div>
                         <div class="ref-chip" title="Hyperbloom, Burgeon & Swirl scale purely with Character Level (Lv.90) + EM">
-                            <img src="https://enka.network/ui/UI_ItemIcon_201.png" alt="Hyperbloom EM" loading="lazy" decoding="async">
+                            <img src="https://enka.network/ui/UI_ItemIcon_201.png" alt="Hyperbloom EM" loading="lazy" decoding="async" width="16" height="16">
                             <span>Bloom/Swirl: <strong>900+ EM</strong></span>
                         </div>
                         <div class="ref-chip" title="Optimal Elemental Mastery sweet spot for Vaporize & Melt carries before diminishing returns">
-                            <img src="https://enka.network/ui/UI_ItemIcon_223.png" alt="Vape Melt EM" loading="lazy" decoding="async">
+                            <img src="https://enka.network/ui/UI_ItemIcon_223.png" alt="Vape Melt EM" loading="lazy" decoding="async" width="16" height="16">
                             <span>Vape/Melt: <strong>200–300 EM</strong></span>
                         </div>
                     </div>
@@ -1308,21 +1344,21 @@
                             <span class="banner-name">Minecraft</span>
                         </div>
                         <div class="banner-icons">
-                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/diamond_pickaxe.png" alt="Diamond Pickaxe" title="Diamond Pickaxe" loading="lazy" decoding="async">
-                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/totem_of_undying.png" alt="Totem of Undying" title="Totem of Undying" loading="lazy" decoding="async">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/diamond_pickaxe.png" alt="Diamond Pickaxe" title="Diamond Pickaxe" loading="lazy" decoding="async" width="26" height="26">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/totem_of_undying.png" alt="Totem of Undying" title="Totem of Undying" loading="lazy" decoding="async" width="26" height="26">
                         </div>
                     </div>
                 </div>
 
                 <!-- TOOL 1: Bidirectional Nether Portal Coordinate Linker (÷8 / ×8) -->
                 <div class="tool-card">
-                    <div class="tool-header">
+                    <h2 class="tool-header">
                         <span>Nether Portal Linker</span>
                         <span class="tool-header-sub">1 Nether = 8 Overworld</span>
-                    </div>
+                    </h2>
                     <div class="calc-row">
                         <label class="calc-field" aria-label="Overworld X Coordinate">
-                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/grass_block_side.png" alt="Overworld" loading="lazy" decoding="async">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/grass_block_side.png" alt="Overworld" loading="lazy" decoding="async" width="16" height="16">
                             <span class="coord-lbl">OW X:</span>
                             <input type="number" id="ow-x" class="calc-input" value="800" placeholder="X">
                         </label>
@@ -1333,7 +1369,7 @@
                     </div>
                     <div class="calc-row">
                         <label class="calc-field" aria-label="Nether X Coordinate">
-                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/obsidian.png" alt="Nether" loading="lazy" decoding="async">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/obsidian.png" alt="Nether" loading="lazy" decoding="async" width="16" height="16">
                             <span class="coord-lbl">Nether X:</span>
                             <input type="number" id="nether-x" class="calc-input" value="100" placeholder="X">
                         </label>
@@ -1346,13 +1382,13 @@
 
                 <!-- TOOL 2: Build Material Stack & Shulker Box Converter -->
                 <div class="tool-card">
-                    <div class="tool-header">
+                    <h2 class="tool-header">
                         <span>Block &rarr; Stack &amp; Shulker Calc</span>
                         <span class="tool-header-sub">1 Shulker = 1,728</span>
-                    </div>
+                    </h2>
                     <div class="calc-row">
                         <label class="calc-field" aria-label="Total Blocks Needed">
-                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/crafting_table_front.png" alt="Blocks" loading="lazy" decoding="async">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/blocks/crafting_table_front.png" alt="Blocks" loading="lazy" decoding="async" width="16" height="16">
                             <span class="coord-lbl">Blocks:</span>
                             <input type="number" id="mc-blocks-input" class="calc-input" min="0" value="2500" placeholder="Total blocks">
                         </label>
@@ -1365,25 +1401,25 @@
 
                 <!-- TOOL 3: Optimal 1.21+ Ore & Lava-Safe Y-Levels -->
                 <div class="tool-card">
-                    <div class="tool-header">
+                    <h2 class="tool-header">
                         <span>Best Mining Y-Levels (1.21+)</span>
                         <span class="tool-header-sub">Lava Pool Ceiling: Y = -55</span>
-                    </div>
+                    </h2>
                     <div class="ref-grid">
                         <div class="ref-chip" title="Y=-54 avoids Y=-55 lava aquifers while mining peak Deepslate Diamonds">
-                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/diamond.png" alt="Diamond" loading="lazy" decoding="async">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/diamond.png" alt="Diamond" loading="lazy" decoding="async" width="16" height="16">
                             <span>Diamond: <strong>Y = -54</strong> (Safe)</span>
                         </div>
                         <div class="ref-chip" title="Best Nether Y-Level for Ancient Debris / Netherite">
-                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/netherite_scrap.png" alt="Ancient Debris" loading="lazy" decoding="async">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/netherite_scrap.png" alt="Ancient Debris" loading="lazy" decoding="async" width="16" height="16">
                             <span>Debris: <strong>Y = 15</strong> (Nether)</span>
                         </div>
                         <div class="ref-chip">
-                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_ingot.png" alt="Iron" loading="lazy" decoding="async">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/iron_ingot.png" alt="Iron" loading="lazy" decoding="async" width="16" height="16">
                             <span>Iron: <strong>Y = 16</strong> / <strong>Y = 232</strong></span>
                         </div>
                         <div class="ref-chip">
-                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/coal.png" alt="Coal" loading="lazy" decoding="async">
+                            <img class="pixel-sprite" src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/master/data/1.20.2/items/coal.png" alt="Coal" loading="lazy" decoding="async" width="16" height="16">
                             <span>Coal: <strong>Y = 96</strong> (No Deepslate)</span>
                         </div>
                     </div>

@@ -1,6 +1,7 @@
-self.options = {
-    "domain": "5gvci.com",
-    "zoneId": 12245744
-}
-self.lary = ""
-importScripts('https://5gvci.com/act/files/service-worker.min.js?r=sw')
+/* Retire the obsolete Monetag service worker previously served as /sw.js. */
+self.addEventListener('install', function (event) {
+  event.waitUntil(self.skipWaiting());
+});
+self.addEventListener('activate', function (event) {
+  event.waitUntil(self.registration.unregister());
+});

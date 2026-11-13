@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact Character Builds & Guides | CoreGenshin</title>
+    
+    <meta name="description" content="Explore Genshin Impact character builds, weapons, artifacts, team recommendations, and the CoreGenshin materials planner.">
+    <meta name="theme-color" content="#1c1f2e">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CoreGG">
+    <meta property="og:title" content="Genshin Impact Character Builds &amp; Guides | CoreGenshin">
+    <meta property="og:description" content="Explore Genshin Impact character builds, weapons, artifacts, team recommendations, and the CoreGenshin materials planner.">
+  <meta property="og:image" content="https://coregg.pages.dev/CoreGG%20Neon%20Gaming%20Emblem.png">
+  <meta property="og:image:alt" content="CoreGG Neon Gaming Emblem">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1983">
+  <meta property="og:image:height" content="793">
+      <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://coregg.pages.dev/CoreGG%20Neon%20Gaming%20Emblem.png">
+  <meta name="twitter:image:alt" content="CoreGG Neon Gaming Emblem">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/coregenshin.css">
+    <link rel="stylesheet" href="./css/coregenshin-builds-nav.css">
+<link rel="canonical" href="https://coregg.pages.dev/coregenshin-builds">
+  <meta property="og:url" content="https://coregg.pages.dev/coregenshin-builds">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Genshin Impact Character Builds & Guides | CoreGenshin","description":"Explore Genshin Impact character builds, weapons, artifacts, team recommendations, and the CoreGenshin materials planner.","url":"https://coregg.pages.dev/coregenshin-builds","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"CoreGG","url":"https://coregg.pages.dev/"}}</script>
+    <script src="./js/coregenshin.js" defer></script>
+    <script src="./js/coregenshin-builds-nav.js" defer></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function (registrations) {
+          registrations.forEach(function (registration) {
+            var worker = registration.active || registration.waiting || registration.installing;
+            if (worker && new URL(worker.scriptURL).origin === location.origin && new URL(worker.scriptURL).pathname.endsWith('/sw.js')) {
+              registration.unregister();
+            }
+          });
+        }).catch(function () {});
+      }
+    </script></head>
+
+<body>
+    <!-- Live Genshin Ambient Background -->
+    <div class="live-bg" aria-hidden="true" id="liveBg">
+        <div class="aurora-glow-1"></div>
+        <div class="aurora-glow-2"></div>
+        <div class="aurora-glow-3"></div>
+        <div class="star-layer"></div>
+    </div>
+
+    <header class="ui-header coregg-header">
+    <a class="coregg-brand" href="./coregenshin.html" aria-label="CoreGenshin home">
+        <span class="coregg-brand-name">CORE <span>GENSHIN</span></span>
+        <span class="coregg-brand-subtitle">TEYVAT COMPANION</span>
+    </a>
+    <button type="button" id="coregenshinMenuToggle" class="coregenshin-menu-toggle" aria-expanded="false" aria-controls="coregenshinPrimaryNav" aria-label="Open CoreGenshin navigation">
+        <span class="menu-toggle-lines" aria-hidden="true"></span><span class="menu-toggle-label">Menu</span>
+    </button>
+    <nav class="header-nav" id="coregenshinPrimaryNav" aria-label="CoreGenshin navigation">
+        <a href="./coregenshin.html" class="btn-home"><span>Home</span></a>
+        <a href="./coregenshin-builds.html" class="btn-home" aria-current="page"><span>Builds</span></a>
+        <button type="button" id="materialsNavBtn" class="btn-materials-nav" aria-pressed="false" aria-controls="materialsExperience"><span>Materials</span></button>
+        <a href="./coregenshin.html#about" class="btn-home"><span>About</span></a>
+    </nav>
+    <div class="header-right">
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" placeholder="Search Character..." class="search-input" aria-label="Search Genshin Impact characters">
+            <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+        </div>
+        <a href="https://www.buymeacoffee.com/otaku_krishna" target="_blank" rel="noopener noreferrer" class="btn-support-feedback" aria-label="Optionally support CoreGG on Buy Me a Coffee" title="Optional support for CoreGG">
+            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+            <span>Support CoreGG</span>
+            <i class="fa-solid fa-arrow-up-right-from-square support-external-icon" aria-hidden="true"></i>
+        </a>
+    </div>
+</header>
+
+    <main>
+        <section id="archiveIntro" class="archive-intro" aria-labelledby="archive-title">
+            <div class="archive-copy">
+                <p class="archive-kicker">CoreGG · Field archive</p>
+                <h1 class="archive-title" id="archive-title">Character <span>builds</span></h1>
+                <p class="archive-description">Find a guide by character, element, rarity, or role. Open a profile to explore builds and team ideas.</p>
+            </div>
+            <div class="archive-count" aria-live="polite" aria-atomic="true">
+                <span class="archive-count-number" id="resultsCount">—</span>
+                <span class="archive-count-label">Profiles matched</span>
+            </div>
+        </section>
+
+        <!-- Modern Multi-Layer Filter Section -->
+        <div id="archiveFilters" class="filter-controls">
+            <div class="active-filters-display" id="activeFiltersContainer"></div>
+
+            <button type="button" class="btn-modern-filter" id="filterToggleBtn" aria-controls="filterPanel" aria-expanded="false">
+                <i class="fa-solid fa-sliders"></i> Filters
+            </button>
+
+            <div class="filter-dropdown-panel" id="filterPanel">
+                
+                <div class="filter-group">
+                    <div class="filter-group-title">Rarity</div>
+                    <div class="filter-options">
+                        <button class="filter-chip active" data-type="rarity" data-val="All">All</button>
+                        <button class="filter-chip" data-type="rarity" data-val="5"><i class="fa-solid fa-star" style="color: var(--gi-goldBright)"></i> 5-Star</button>
+                        <button class="filter-chip" data-type="rarity" data-val="4"><i class="fa-solid fa-star" style="color: #a879ba"></i> 4-Star</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-group-title">Element</div>
+                    <div class="filter-options">
+                        <button class="filter-chip active" data-type="element" data-val="All">All</button>
+                        <button class="filter-chip" data-type="element" data-val="Pyro"><img src="https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Element_Pyro.svg/revision/latest?cb=20240401115510" referrerpolicy="no-referrer" class="elem-svg" alt="Pyro" loading="eager" decoding="async" fetchpriority="high"> Pyro</button>
+                        <button class="filter-chip" data-type="element" data-val="Hydro"><img src="https://static.wikia.nocookie.net/gensin-impact/images/8/80/Element_Hydro.svg/revision/latest?cb=20240401115449" referrerpolicy="no-referrer" class="elem-svg" alt="Hydro" loading="eager" decoding="async"> Hydro</button>
+                        <button class="filter-chip" data-type="element" data-val="Anemo"><img src="https://static.wikia.nocookie.net/gensin-impact/images/1/10/Element_Anemo.svg/revision/latest?cb=20240401115016" referrerpolicy="no-referrer" class="elem-svg" alt="Anemo" loading="eager" decoding="async"> Anemo</button>
+                        <button class="filter-chip" data-type="element" data-val="Electro"><img src="https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Element_Electro.svg/revision/latest?cb=20240401115329" referrerpolicy="no-referrer" class="elem-svg" alt="Electro" loading="eager" decoding="async"> Electro</button>
+                        <button class="filter-chip" data-type="element" data-val="Dendro"><img src="https://static.wikia.nocookie.net/gensin-impact/images/7/73/Element_Dendro.svg/revision/latest?cb=20240401115226" referrerpolicy="no-referrer" class="elem-svg" alt="Dendro" loading="eager" decoding="async"> Dendro</button>
+                        <button class="filter-chip" data-type="element" data-val="Cryo"><img src="https://static.wikia.nocookie.net/gensin-impact/images/7/72/Element_Cryo.svg/revision/latest?cb=20240401115157" referrerpolicy="no-referrer" class="elem-svg" alt="Cryo" loading="lazy" decoding="async"> Cryo</button>
+                        <button class="filter-chip" data-type="element" data-val="Geo"><img src="https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Element_Geo.svg/revision/latest?cb=20240401115352" referrerpolicy="no-referrer" class="elem-svg" alt="Geo" loading="lazy" decoding="async"> Geo</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-group-title">Role Focus</div>
+                    <div class="filter-options">
+                        <button class="filter-chip active" data-type="role" data-val="All">All</button>
+                        <button class="filter-chip" data-type="role" data-val="DPS"><i class="fa-solid fa-burst"></i> Main DPS</button>
+                        <button class="filter-chip" data-type="role" data-val="Support"><i class="fa-solid fa-wand-magic-sparkles"></i> Support / Sub-DPS</button>
+                        <button class="filter-chip" data-type="role" data-val="Healer"><i class="fa-solid fa-shield-heart"></i> Healer / Shielder</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <section id="characterGrid" class="char-grid"></section>
+        
+        <div id="emptyState" class="empty-state hidden">
+            <i class="fa-solid fa-ghost empty-icon"></i>
+            <h2 class="empty-text">No records found in Irminsul...</h2>
+        </div>
+
+        <section id="materialsExperience" class="materials-experience hidden" aria-labelledby="materials-title" aria-hidden="true">
+            <div class="materials-heading">
+                <p class="materials-eyebrow">CoreGG · Character progression</p>
+                <h2 class="materials-title" id="materials-title">Ascension &amp; Talent Materials</h2>
+                <p class="materials-description">Choose Columbina, pick a level range, and see the materials you need. The video presents the items after her animation.</p>
+            </div>
+
+            <button type="button" id="columbinaBanner" class="materials-banner materials-panel">
+                <img id="columbinaBannerImage" class="materials-banner-image" src="https://img.game8.co/4383821/1792ce751a6cc1bf6eeddda7ecdeb340.png/show" alt="Columbina character portrait" width="320" height="320" loading="lazy" decoding="async">
+                <span class="materials-banner-copy">
+                    <span class="materials-banner-kicker">Hydro · Catalyst · 5-star</span>
+                    <span class="materials-banner-name">Columbina</span>
+                    <span class="materials-banner-copy-text">Open her progression planner to calculate character ascension or talent level-up materials.</span>
+                    <span class="materials-banner-cta"><i class="fa-solid fa-sparkles" aria-hidden="true"></i> View materials</span>
+                </span>
+            </button>
+
+            <div id="columbinaPlanner" class="hidden" aria-hidden="true">
+                <div class="materials-return-row">
+                    <button type="button" id="materialsBackButton" class="materials-action"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to Columbina</button>
+                </div>
+                <div class="materials-planner materials-panel">
+                    <div class="materials-form" aria-labelledby="materials-form-title">
+                        <h3 class="materials-form-title" id="materials-form-title">Plan your upgrade</h3>
+                        <p class="materials-form-copy">Choose what you are upgrading and set the level range.</p>
+
+                        <div class="materials-choice-group" role="group" aria-label="Material type">
+                            <button type="button" class="materials-choice" data-material-mode="ascension" aria-pressed="true">Character</button>
+                            <button type="button" class="materials-choice" data-material-mode="talent" aria-pressed="false">Talent</button>
+                        </div>
+
+                        <div class="materials-range">
+                            <label class="materials-field" for="materialsLevelFrom">From level
+                                <select id="materialsLevelFrom" class="materials-select"></select>
+                            </label>
+                            <label class="materials-field" for="materialsLevelTo">To level
+                                <select id="materialsLevelTo" class="materials-select"></select>
+                            </label>
+                        </div>
+
+                        <div id="materialsTalentField" class="materials-talent-field hidden">
+                            <label class="materials-field" for="materialsTalentSelect">Talent to upgrade
+                                <select id="materialsTalentSelect" class="materials-select">
+                                    <option value="skill">Elemental Skill</option>
+                                    <option value="burst">Elemental Burst</option>
+                                    <option value="normal">Normal Attack</option>
+                                    <option value="all">All three talents</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <button type="button" id="materialsContinueButton" class="materials-action materials-continue"><i class="fa-solid fa-play" aria-hidden="true"></i> Continue</button>
+                        <p class="materials-note">Ascension costs include ascension materials and Mora. Talent costs are per selected talent. Character EXP books and character-leveling Mora are not included in ascension totals. Material reference: <a href="https://game8.co/games/Genshin-Impact/archives/572623" target="_blank" rel="noopener noreferrer">Game8</a>.</p>
+                    </div>
+
+                    <div class="materials-preview-column">
+                        <div class="material-video-frame" id="columbinaVideoFrame" aria-label="Columbina materials presentation">
+                            <img class="material-video-poster" src="https://img.game8.co/4383821/1792ce751a6cc1bf6eeddda7ecdeb340.png/show" alt="" aria-hidden="true" width="928" height="992" loading="lazy" decoding="async">
+                            <video id="columbinaIdleVideo" class="material-video is-visible" muted playsinline loop preload="none" aria-label="Columbina idle animation">
+                                <source src="./media/columbina/idle.mp4" type="video/mp4">
+                            </video>
+                            <video id="columbinaRevealVideo" class="material-video" muted playsinline preload="none" aria-label="Columbina materials presentation animation">
+                                <source src="./media/columbina/presentation.mp4" type="video/mp4">
+                            </video>
+                            <div id="materialBubbleField" class="material-bubble-field hidden" aria-hidden="true"></div>
+                        </div>
+                        <p id="materialPresentationStatus" class="material-presentation-status" role="status" aria-live="polite">Columbina is ready. Choose your upgrade and continue to reveal the items.</p>
+                        <div id="materialResults" class="hidden" aria-live="polite">
+                            <h3 class="materials-form-title" style="margin:.25rem 0 .75rem">Materials needed</h3>
+                            <ul id="materialResultList" class="material-result-list"></ul>
+                            <p id="materialResultRange" class="materials-note"></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="materials-note">Material counts are cross-checked against <a href="https://genshin-center.com/characters/columbina" target="_blank" rel="noopener noreferrer">Genshin Center</a> and <a href="https://gamewith.net/genshin-impact/article/show/72196" target="_blank" rel="noopener noreferrer">GameWith</a>. Material icons are served locally for faster loading.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="coregg-footer">
+        <div class="footer-brand-line"><span>CORE GG</span><i class="fa-solid fa-circle" aria-hidden="true"></i><span>GENSHIN BUILDS</span></div>
+        <p class="footer-disclaimer">This website is a fan-made project and is not affiliated with or endorsed by HoYoverse or COGNOSPHERE PTE. LTD.</p>
+        <section class="credits-section" aria-labelledby="credits-title">
+            <h2 id="credits-title" class="credits-title"><i class="fa-solid fa-star" aria-hidden="true"></i> Credits</h2>
+            <p class="credits-text">Many of the character, weapon, artifact, and team-comp images used in this fan project were sourced from <a class="credits-link" href="https://game8.co/" target="_blank" rel="noopener noreferrer">Game8</a>. Full credit to Game8 for the supplied visual assets.</p>
+        </section>
+        <div class="footer-bottom-line">BUILT FOR THE ADVENTURE <span>✦</span> &bull; <a href="privacy.html" style="color:inherit;text-decoration:underline;text-underline-offset:.2em;margin-left:.4em">Privacy Policy</a></div>
+    </footer>
+
+    <!-- Modal Container -->
+    <div id="modal-overlay">
+        <button type="button" id="closeModalBtn" class="btn-close" aria-label="Close character details"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        <div id="modal-content" role="dialog" aria-modal="true" aria-label="Character build details">
+            <div id="modal-body" class="modal-body"></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

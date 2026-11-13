@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://coregg.pages.dev/sitemap.xml
+Sitemap: https://coregg.pages.dev/sitemap.txt

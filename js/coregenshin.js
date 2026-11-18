@@ -3100,9 +3100,20 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
             
         };
 
-        function openModal(char) {
+        function openModal(char, skipHistory) {
             const bgClass = char.rarity === 5 ? 'bg-5star' : 'bg-4star';
             const rgbColor = hexToRgb(char.elementColor);
+            if (!skipHistory) {
+                const charSlug = encodeURIComponent(char.name.toLowerCase().replace(/\s+/g, '-'));
+                const newHash = '#character=' + charSlug;
+                if (window.location.hash !== newHash) {
+                    try {
+                        history.pushState({ modalOpen: true, character: char.name }, '', newHash);
+                    } catch (_) {
+                        window.location.hash = newHash;
+                    }
+                }
+            }
             
             const statsRows = [...(char.stats || []), ...(publishingStatGuidance[char.name] || [])].map(stat => `
                 <tr class="stat-tr">
@@ -3385,9 +3396,16 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
             });
         }
 
-        function closeModal() {
+        function closeModal(skipHistory) {
             modalOverlay.classList.remove('active');
             document.body.style.overflow = '';
+            if (!skipHistory && window.location.hash.startsWith('#character=')) {
+                try {
+                    history.pushState(null, '', window.location.pathname + window.location.search);
+                } catch (_) {
+                    window.location.hash = '';
+                }
+            }
         }
 
         searchInput.addEventListener('input', (e) => {
@@ -3395,13 +3413,30 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
             renderCards();
         });
 
-        closeModalBtn.addEventListener('click', closeModal);
+        closeModalBtn.addEventListener('click', () => closeModal());
         modalOverlay.addEventListener('click', (e) => {
             if (e.target === modalOverlay) closeModal();
         });
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') closeModal();
         });
+
+        function checkHashForModal() {
+            const match = window.location.hash.match(/#character=([^&]+)/i);
+            if (match) {
+                const charSlug = decodeURIComponent(match[1]).toLowerCase();
+                const found = characters.find(c => c.name.toLowerCase().replace(/\s+/g, '-') === charSlug || c.name.toLowerCase() === charSlug);
+                if (found) {
+                    openModal(found, true);
+                    return;
+                }
+            }
+            if (modalOverlay.classList.contains('active')) {
+                closeModal(true);
+            }
+        }
+        window.addEventListener('popstate', checkHashForModal);
+        checkHashForModal();
 
         // Columbina materials calculator and C1-to-C2 video transition.
         const materialsNavBtn = document.getElementById('materialsNavBtn');
@@ -3488,41 +3523,6 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
         let replayTimer = 0;
         let archiveHadResults = true;
         const materialBubbleRevealTime = 0.60;
-        const materialAdSelector = 'ins.adsbygoogle, iframe, [id*="google_ads"], [id*="google_vignette"], [id*="aswift_"], [class*="monetag"], [id*="monetag"], [id*="container-85e2c64c52b450fcf94f916544cdd28b"]';
-        let materialAdObserver = null;
-
-        function hideMaterialAdNodes(root) {
-            if (!root || !root.querySelectorAll) return;
-            const nodes = [];
-            if (root instanceof Element && root.matches(materialAdSelector)) nodes.push(root);
-            nodes.push(...root.querySelectorAll(materialAdSelector));
-            nodes.forEach((node) => {
-                node.classList.add('coregg-ad-hidden-in-materials');
-                const wrapper = node.closest('div');
-                if (wrapper && wrapper !== document.body && wrapper !== document.documentElement && !wrapper.closest('#materialsExperience')) {
-                    wrapper.classList.add('coregg-ad-wrapper-hidden-in-materials');
-                }
-            });
-        }
-
-        function setMaterialAdSuppression(enabled) {
-            if (enabled) {
-                hideMaterialAdNodes(document.body);
-                if (!materialAdObserver) {
-                    materialAdObserver = new MutationObserver((mutations) => {
-                        if (!document.body.classList.contains('materials-mode')) return;
-                        mutations.forEach((mutation) => mutation.addedNodes.forEach(hideMaterialAdNodes));
-                    });
-                }
-                materialAdObserver.observe(document.body, { childList: true, subtree: true });
-                return;
-            }
-            materialAdObserver?.disconnect();
-            document.querySelectorAll('.coregg-ad-hidden-in-materials, .coregg-ad-wrapper-hidden-in-materials').forEach((node) => {
-                node.classList.remove('coregg-ad-hidden-in-materials', 'coregg-ad-wrapper-hidden-in-materials');
-            });
-        }
-
         function revealMaterialBubbles(sequence) {
             const activeSequence = String(sequence);
             if (!hasStartedMaterialPresentation || bubbleField.dataset.presentationSequence !== activeSequence || bubbleField.dataset.bubblesShownFor === activeSequence) return;
@@ -3686,13 +3686,26 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
             setPresentationStatus('Watch Columbina open her hand. The materials will appear with the motion.');
             try { revealVideo.currentTime = 0; } catch (_) { /* Video metadata is still loading. */ }
 
+            let revealTimeout = null;
+            const fallbackReveal = () => {
+                if (sequence !== presentationSequence) return;
+                clearTimeout(revealTimeout);
+                bubbleField.dataset.bubblesShownFor = String(sequence);
+                bubbleField.classList.remove('hidden');
+                materialResults.classList.remove('hidden');
+                setPresentationStatus('Materials ready for the selected level range.', 'ready');
+            };
+
             const startReveal = () => {
                 if (sequence !== presentationSequence) return;
                 const playPromise = revealVideo.play();
                 if (playPromise && typeof playPromise.catch === 'function') {
-                    playPromise.catch(() => setPresentationStatus('The video could not start. Press Continue to try again.'));
+                    playPromise.catch(() => {
+                        fallbackReveal();
+                    });
                 }
                 trackMaterialBubbleReveal(sequence);
+                revealTimeout = window.setTimeout(fallbackReveal, 2200);
                 requestAnimationFrame(() => {
                     if (sequence !== presentationSequence) return;
                     revealVideo.classList.add('is-visible');
@@ -3701,11 +3714,16 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
                 });
             };
 
+            revealVideo.onerror = () => {
+                if (sequence === presentationSequence) fallbackReveal();
+            };
+
             if (revealVideo.readyState >= 2) {
                 startReveal();
             } else {
                 revealVideo.preload = 'auto';
                 revealVideo.addEventListener('canplay', startReveal, { once: true });
+                revealVideo.addEventListener('error', fallbackReveal, { once: true });
                 if (revealVideo.networkState === HTMLMediaElement.NETWORK_EMPTY) revealVideo.load();
             }
         }
@@ -3766,7 +3784,6 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
 
         function showMaterialsView(show) {
             document.body.classList.toggle('materials-mode', show);
-            setMaterialAdSuppression(show);
             materialsNavBtn.setAttribute('aria-pressed', String(show));
             materialsExperience.classList.toggle('hidden', !show);
             materialsExperience.setAttribute('aria-hidden', String(!show));

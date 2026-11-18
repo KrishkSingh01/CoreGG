@@ -187,6 +187,9 @@
 .lore-hero-image-fallback{min-height:220px;aspect-ratio:16/9}
 
 .lore-reader{width:min(980px,calc(100% - 40px));margin:0 auto;padding:20px 0 70px}
+.lore-reader-topbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:12px}
+.lore-reader-topbar .lore-reader-crumbs{flex:1 1 auto}
+.lore-reader-topbar .lore-interface-switch{flex-shrink:0}
 .lore-reader-crumbs{display:flex;flex-wrap:wrap;gap:9px;align-items:center;color:#8996a4;font-size:11px}
 .lore-reader-crumbs a{color:var(--lore-gold);text-decoration:underline;text-underline-offset:3px}
 .lore-reader-article{margin-top:24px;padding:clamp(22px,5vw,54px);border:1px solid var(--lore-line);background:linear-gradient(150deg,var(--lore-panel-raised),var(--lore-panel));box-shadow:var(--lore-shadow)}

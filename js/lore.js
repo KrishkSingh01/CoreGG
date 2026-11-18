@@ -55,53 +55,73 @@
     if (countNode) countNode.textContent = readCount + (readCount === 1 ? " record read" : " records read");
     if (detailNode) detailNode.textContent = readCount ? "Saved on this device · " + data.entries.length + " records in the archive" : "Your reading progress stays on this device.";
   }
+  function setPickerOpen(isOpen) {
+    if (!picker) return;
+    picker.hidden = !isOpen;
+    body.classList.toggle("lore-picker-open", isOpen);
+    if (switchButton) switchButton.setAttribute("aria-expanded", String(isOpen));
+  }
   function setInterface(name) {
     if (name !== "archive" && name !== "core") return;
     selectedInterface = name;
     body.setAttribute("data-lore-interface", name);
     safeSet("coregg:lore-interface", name);
-    picker.hidden = true;
-    if (switchButton) switchButton.setAttribute("aria-expanded", "false");
+    setPickerOpen(false);
     liveRegion.textContent = name === "archive" ? "Teyvat Archive interface selected." : "Core Interface selected.";
     if (returnFocus && returnFocus.focus) returnFocus.focus();
   }
   function openPicker() {
     returnFocus = document.activeElement;
-    cancelPicker.hidden = !selectedInterface;
-    picker.hidden = false;
-    switchButton.setAttribute("aria-expanded", "true");
-    var firstChoice = picker.querySelector("[data-interface-choice]");
-    if (firstChoice) firstChoice.focus();
-  }
-  if (selectedInterface === "archive" || selectedInterface === "core") {
-    body.setAttribute("data-lore-interface", selectedInterface);
-    picker.hidden = true;
-  } else {
-    selectedInterface = null;
-    picker.hidden = false;
-  }
-  if (switchButton) switchButton.setAttribute("aria-expanded", String(!picker.hidden));
-  picker.addEventListener("click", function (event) {
-    var choice = event.target.closest("[data-interface-choice]");
-    if (choice) { setInterface(choice.getAttribute("data-interface-choice")); return; }
-  });
-  picker.addEventListener("keydown", function (event) {
-    if (event.key === "Escape" && selectedInterface) { picker.hidden = true; switchButton.setAttribute("aria-expanded", "false"); switchButton.focus(); return; }
-    if (event.key === "Tab") {
-      var focusable = Array.from(picker.querySelectorAll("button:not([hidden])"));
-      if (!focusable.length) return;
-      var first = focusable[0], last = focusable[focusable.length - 1];
-      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
-      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
-    }
-  });
-  switchButton.addEventListener("click", openPicker);
-  cancelPicker.addEventListener("click", function () { picker.hidden = true; switchButton.setAttribute("aria-expanded", "false"); switchButton.focus(); });
-  if (!selectedInterface) {
-    var firstChoice = picker.querySelector("[data-interface-choice]");
+    if (cancelPicker) cancelPicker.hidden = !selectedInterface;
+    setPickerOpen(true);
+    var firstChoice = picker && picker.querySelector("[data-interface-choice]");
     if (firstChoice) firstChoice.focus();
   }
 
+  if (selectedInterface === "archive" || selectedInterface === "core") {
+    body.setAttribute("data-lore-interface", selectedInterface);
+    setPickerOpen(false);
+  } else {
+    selectedInterface = null;
+    setPickerOpen(true);
+  }
+
+  if (picker) {
+    picker.addEventListener("click", function (event) {
+      var choice = event.target.closest("[data-interface-choice]");
+      if (choice) {
+        setInterface(choice.getAttribute("data-interface-choice"));
+        return;
+      }
+      if (selectedInterface && event.target.classList && event.target.classList.contains("lore-picker-backdrop")) {
+        setPickerOpen(false);
+        if (switchButton) switchButton.focus();
+      }
+    });
+    picker.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && selectedInterface) {
+        setPickerOpen(false);
+        if (switchButton) switchButton.focus();
+        return;
+      }
+      if (event.key === "Tab") {
+        var focusable = Array.from(picker.querySelectorAll("button:not([hidden])"));
+        if (!focusable.length) return;
+        var first = focusable[0], last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
+    });
+  }
+  if (switchButton) switchButton.addEventListener("click", openPicker);
+  if (cancelPicker) cancelPicker.addEventListener("click", function () {
+    setPickerOpen(false);
+    if (switchButton) switchButton.focus();
+  });
+  if (!selectedInterface && picker) {
+    var firstChoice = picker.querySelector("[data-interface-choice]");
+    if (firstChoice) firstChoice.focus();
+  }
   var heroImage = document.querySelector(".lore-hero-art img");
   if (heroImage) heroImage.addEventListener("error", function () {
     var figure = heroImage.closest("figure"); if (!figure) return; heroImage.remove();

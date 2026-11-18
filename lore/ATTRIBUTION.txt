@@ -1,0 +1,193 @@
+Source image: https://genshin-impact.fandom.com/wiki/Mondstadt?file=Mondstadt.png
+Direct image: https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Mondstadt.png/revision/latest?cb=20230818202148
+Displayed on the Mondstadt region record. Attribution is shown beside the image. Genshin Impact assets remain the property of HoYoverse and their respective rights holders; this file does not claim ownership.
+
+Additional wiki page thumbnails are local copies of page images served by Genshin Impact Wiki / Fandom. Each lore record links to its source page beside the image. All Genshin Impact assets remain the property of HoYoverse and their respective rights holders; CoreGG does not claim ownership.
+liyue: https://genshin-impact.fandom.com/wiki/Liyue
+inazuma: https://genshin-impact.fandom.com/wiki/Inazuma
+sumeru: https://genshin-impact.fandom.com/wiki/Sumeru
+fontaine: https://genshin-impact.fandom.com/wiki/Fontaine
+natlan: https://genshin-impact.fandom.com/wiki/Natlan
+nod-krai: https://genshin-impact.fandom.com/wiki/Nod-Krai
+snezhnaya: https://genshin-impact.fandom.com/wiki/Snezhnaya
+teyvat: https://genshin-impact.fandom.com/wiki/Teyvat
+venti-barbatos: https://genshin-impact.fandom.com/wiki/Venti
+zhongli-morax: https://genshin-impact.fandom.com/wiki/Zhongli
+raiden-ei: https://genshin-impact.fandom.com/wiki/Raiden_Shogun
+nahida-kusanali: https://genshin-impact.fandom.com/wiki/Nahida
+before-sun-and-moon: https://genshin-impact.fandom.com/wiki/Before_Sun_and_Moon
+decarabian-old-mondstadt: https://genshin-impact.fandom.com/wiki/Decarabian%27s_Mondstadt
+guili-assembly: https://genshin-impact.fandom.com/wiki/Guili_Assembly
+khaenriah: https://genshin-impact.fandom.com/wiki/Khaenri%27ah
+remuria: https://genshin-impact.fandom.com/wiki/Remuria
+knights-of-favonius: https://genshin-impact.fandom.com/wiki/Knights_of_Favonius
+liyue-qixing: https://genshin-impact.fandom.com/wiki/Liyue_Qixing
+sumeru-akademiya: https://genshin-impact.fandom.com/wiki/Sumeru_Akademiya
+fatui: https://genshin-impact.fandom.com/wiki/Fatui
+prologue-song-of-dragon-and-freedom: https://genshin-impact.fandom.com/wiki/Archon_Quest
+song-of-the-welkin-moon: https://genshin-impact.fandom.com/wiki/Nod-Krai
+gnoses: https://genshin-impact.fandom.com/wiki/Gnosis
+skyfrost-nail: https://genshin-impact.fandom.com/wiki/Skyfrost_Nail
+melusines: https://genshin-impact.fandom.com/wiki/Melusine
+saurians: https://genshin-impact.fandom.com/wiki/Saurian
+irminsul: https://genshin-impact.fandom.com/wiki/Irminsul
+three-moons: https://genshin-impact.fandom.com/wiki/Nod-Krai
+celestia-unanswered-questions: https://genshin-impact.fandom.com/wiki/Celestia
+paimon-origin-theories: https://genshin-impact.fandom.com/wiki/Paimon
+
+Catalog image sources (each article shows its linked source beside the image):
+github-images-02/images--lore--catalog--fdda53fc1816.webp — https://genshin-impact.fandom.com/wiki/Biography_of_Gunnhildr
+github-images-02/images--lore--catalog--eb5ed4d1d11c.webp — https://genshin-impact.fandom.com/wiki/1000_Years_of_Loneliness
+github-images-01/images--lore--catalog--685ac709dee4.webp — https://genshin-impact.fandom.com/wiki/Wind,_Courage,_and_Wings_(Book)
+github-images-02/images--lore--catalog--c7194f831e1e.webp — https://genshin-impact.fandom.com/wiki/Knights_of_Favonius_Handbook_-_5th_Edition
+github-images-02/images--lore--catalog--c188d5e948fa.webp — https://genshin-impact.fandom.com/wiki/Gliding_Instruction_Manual
+github-images-01/images--lore--catalog--61936dd205fa.webp — https://genshin-impact.fandom.com/wiki/Along_with_Divinity:_Prologue
+github-images-02/images--lore--catalog--f49c06dbd3f7.webp — https://genshin-impact.fandom.com/wiki/History_of_Kings_and_Clans:_Prologue
+github-images-01/images--lore--catalog--432ca5626aa3.webp — https://genshin-impact.fandom.com/wiki/Ragged_Notebook_(Time_and_Wind)
+github-images-02/images--lore--catalog--c56297782471.webp — https://genshin-impact.fandom.com/wiki/Diary_of_Roald_the_Adventurer
+github-images-01/images--lore--catalog--9726114e558d.webp — https://genshin-impact.fandom.com/wiki/Humor_From_Tianheng
+github-images-01/images--lore--catalog--8d0449cdc264.webp — https://genshin-impact.fandom.com/wiki/Linling%27s_Anthology_of_Selected_Poetry
+github-images-02/images--lore--catalog--ed4533915446.webp — https://genshin-impact.fandom.com/wiki/Records_of_Jueyun
+github-images-02/images--lore--catalog--c8f054ac5eed.webp — https://genshin-impact.fandom.com/wiki/The_Legend_of_Vennessa
+github-images-01/images--lore--catalog--ad44bce257ab.webp — https://genshin-impact.fandom.com/wiki/The_Fox_in_the_Dandelion_Sea
+github-images-02/images--lore--catalog--c090950bde60.webp — https://genshin-impact.fandom.com/wiki/Hilichurl_Ballad_Selection
+github-images-01/images--lore--catalog--ade7ce47715d.webp — https://genshin-impact.fandom.com/wiki/The_Boar_Princess
+github-images-01/images--lore--catalog--944e4b26ee3c.webp — https://genshin-impact.fandom.com/wiki/The_Mondstadt_Tower
+github-images-01/images--lore--catalog--052aadfdaa1f.webp — https://genshin-impact.fandom.com/wiki/Hilichurl_Cultural_Customs
+github-images-02/images--lore--catalog--f9a25e83e77f.webp — https://genshin-impact.fandom.com/wiki/Ballads_of_the_Squire
+github-images-01/images--lore--catalog--391f2cfa6e60.webp — https://genshin-impact.fandom.com/wiki/Heart_of_Clear_Springs
+github-images-01/images--lore--catalog--9ae65093c291.webp — https://genshin-impact.fandom.com/wiki/Draft_Hilichurl_Ballads
+github-images-01/images--lore--catalog--24e74a384e04.webp — https://genshin-impact.fandom.com/wiki/Hex_%26_Hound
+github-images-01/images--lore--catalog--952005c4db1a.webp — https://genshin-impact.fandom.com/wiki/Moonlit_Bamboo_Forest
+github-images-01/images--lore--catalog--3f52ccbd776d.webp — https://genshin-impact.fandom.com/wiki/A_Drunkard%27s_Tale
+github-images-01/images--lore--catalog--316db6427428.webp — https://genshin-impact.fandom.com/wiki/Rex_Incognito
+github-images-01/images--lore--catalog--61b5fdfd57a3.webp — https://genshin-impact.fandom.com/wiki/Customs_of_Liyue
+github-images-01/images--lore--catalog--a126bc274def.webp — https://genshin-impact.fandom.com/wiki/Records_of_the_Gallant
+github-images-01/images--lore--catalog--5f4ca96855fa.webp — https://genshin-impact.fandom.com/wiki/Breeze_Amidst_the_Forest
+github-images-02/images--lore--catalog--dc6c05c6dff8.webp — https://genshin-impact.fandom.com/wiki/%22Of_Mountains_and_Seas%22
+github-images-01/images--lore--catalog--84f9a99d00d0.webp — https://genshin-impact.fandom.com/wiki/Ancient_Investigation_Journal:_Part_II
+github-images-01/images--lore--catalog--674b80884433.webp — https://genshin-impact.fandom.com/wiki/Meadow_of_Gems
+github-images-02/images--lore--catalog--c0967de64581.webp — https://genshin-impact.fandom.com/wiki/Hilichurlian
+github-images-01/images--lore--catalog--318a19c9fcc1.webp — https://genshin-impact.fandom.com/wiki/Pharmacist%27s_Notebook_(III)
+github-images-02/images--lore--catalog--fcad07209529.webp — https://genshin-impact.fandom.com/wiki/Onibudou
+github-images-01/images--lore--catalog--3e51386f32ee.webp — https://genshin-impact.fandom.com/wiki/Springs_of_Hidden_Jade
+github-images-01/images--lore--catalog--8d64a3376290.webp — https://genshin-impact.fandom.com/wiki/Mt._Lingmeng_Gossip
+github-images-02/images--lore--catalog--ff6a68b2fa5e.webp — https://genshin-impact.fandom.com/wiki/Stone_Tablet_Compilations:_Vol._I
+github-images-01/images--lore--catalog--18fc562c60f4.webp — https://genshin-impact.fandom.com/wiki/Verses_of_Equilibrium
+github-images-01/images--lore--catalog--7f72fb423537.webp — https://genshin-impact.fandom.com/wiki/Yakshas:_The_Guardian_Adepti
+github-images-01/images--lore--catalog--24aabe735ac4.webp — https://genshin-impact.fandom.com/wiki/Tales_From_the_Waves
+github-images-01/images--lore--catalog--1da9568c92a8.webp — https://genshin-impact.fandom.com/wiki/String_of_Pearls
+github-images-02/images--lore--catalog--b842ff893643.webp — https://genshin-impact.fandom.com/wiki/New_Chronicles_of_the_Six_Kitsune
+github-images-01/images--lore--catalog--070e80ecc30d.webp — https://genshin-impact.fandom.com/wiki/The_Saga_of_Hamavaran
+github-images-02/images--lore--catalog--b9c68006c868.webp — https://genshin-impact.fandom.com/wiki/Sangonomiya_Chronicles
+github-images-02/images--lore--catalog--dc434d0f9450.webp — https://genshin-impact.fandom.com/wiki/Toki_Alley_Tales
+github-images-02/images--lore--catalog--b82417bcfc70.webp — https://genshin-impact.fandom.com/wiki/Treasured_Tales_of_the_Chouken_Shinkageuchi
+github-images-02/images--lore--catalog--c8cc3f3e0142.webp — https://genshin-impact.fandom.com/wiki/A_Preliminary_Study_of_Sangonomiya_Folk_Belief
+github-images-01/images--lore--catalog--7882c48eba83.webp — https://genshin-impact.fandom.com/wiki/The_Life_of_Mouun_the_Shrine_Maiden
+github-images-02/images--lore--catalog--f6832638ae3f.webp — https://genshin-impact.fandom.com/wiki/Debates_on_the_%22Viceroy_of_the_East%22
+github-images-01/images--lore--catalog--12d673854a19.webp — https://genshin-impact.fandom.com/wiki/The_Serpent_and_Drakes_of_Tokoyokoku
+github-images-01/images--lore--catalog--42ba0ca15804.webp — https://genshin-impact.fandom.com/wiki/Pretty_Please,_Kitsune_Guuji%3F
+github-images-01/images--lore--catalog--00d60a8491da.webp — https://genshin-impact.fandom.com/wiki/Shogun_Almighty:_Reborn_as_Raiden_With_Unlimited_Power
+github-images-01/images--lore--catalog--99baf15268b3.webp — https://genshin-impact.fandom.com/wiki/The_Tale_of_Shiruyeh_and_Shirin
+github-images-01/images--lore--catalog--02f57f88b3d7.webp — https://genshin-impact.fandom.com/wiki/The_Folio_of_Foliage
+github-images-01/images--lore--catalog--aab5b2333acc.webp — https://genshin-impact.fandom.com/wiki/Scroll_of_Streaming_Song
+github-images-01/images--lore--catalog--6043ea775c63.webp — https://genshin-impact.fandom.com/wiki/An_Ode_to_Khvarena
+github-images-02/images--lore--catalog--dde7c0148908.webp — https://genshin-impact.fandom.com/wiki/The_Lay_of_Al-Ahmar
+github-images-01/images--lore--catalog--9c84072adb63.webp — https://genshin-impact.fandom.com/wiki/The_Shepherd_and_the_Magic_Bottle
+github-images-01/images--lore--catalog--05dbc45fd502.webp — https://genshin-impact.fandom.com/wiki/A_Thousand_Nights
+github-images-02/images--lore--catalog--df9dd89cbdcd.webp — https://genshin-impact.fandom.com/wiki/King_of_Invokations_(Book)
+github-images-01/images--lore--catalog--518d72e5138b.webp — https://genshin-impact.fandom.com/wiki/The_History_of_the_Decline_and_Fall_of_Remuria
+github-images-01/images--lore--catalog--3313f8ef56a5.webp — https://genshin-impact.fandom.com/wiki/Robben_versus_Chesterton:_Iridescent_Brooch
+github-images-01/images--lore--catalog--9b9d210eafdd.webp — https://genshin-impact.fandom.com/wiki/La_Chanson_d%27Erinnyes
+github-images-01/images--lore--catalog--3ddea8ecc62e.webp — https://genshin-impact.fandom.com/wiki/The_Fall_of_the_Faded_Castle
+github-images-02/images--lore--catalog--e28c12880878.webp — https://genshin-impact.fandom.com/wiki/The_Two_Musketeers
+github-images-02/images--lore--catalog--e248125e02c7.webp — https://genshin-impact.fandom.com/wiki/Time_Trekker
+github-images-01/images--lore--catalog--1214167bb2d2.webp — https://genshin-impact.fandom.com/wiki/Anecdota_Septentrionalis
+github-images-01/images--lore--catalog--50a8fc61c145.webp — https://genshin-impact.fandom.com/wiki/Maawe_and_Monetoo
+github-images-01/images--lore--catalog--33c341e3d73a.webp — https://genshin-impact.fandom.com/wiki/A_Nameless_Adventurer%27s_Notes
+github-images-01/images--lore--catalog--a9b8f7db51d4.webp — https://genshin-impact.fandom.com/wiki/Fires_of_Autumn_Twilight
+github-images-02/images--lore--catalog--c4e3111bd28b.webp — https://genshin-impact.fandom.com/wiki/Glimpses_of_Mysterious_Inazuma
+github-images-01/images--lore--catalog--41e789e3dcef.webp — https://genshin-impact.fandom.com/wiki/Kompore_the_Cunning
+github-images-01/images--lore--catalog--13b8800681a6.webp — https://genshin-impact.fandom.com/wiki/Vera%27s_Melancholy
+github-images-02/images--lore--catalog--ceb03260beef.webp — https://genshin-impact.fandom.com/wiki/Legend_of_the_Shattered_Halberd
+github-images-01/images--lore--catalog--7beea2fe6ea3.webp — https://genshin-impact.fandom.com/wiki/Heart%27s_Desire
+github-images-02/images--lore--catalog--b2cb0c13f066.webp — https://genshin-impact.fandom.com/wiki/The_Pale_Princess_and_the_Six_Pygmies
+github-images-01/images--lore--catalog--1535feec8be4.webp — https://genshin-impact.fandom.com/wiki/Legend_of_the_Lone_Sword
+github-images-02/images--lore--catalog--c7092c20c72b.webp — https://genshin-impact.fandom.com/wiki/Teyvat_Travel_Guide
+github-images-02/images--lore--catalog--b8e6059b2a55.webp — https://genshin-impact.fandom.com/wiki/A_Legend_of_Sword
+github-images-01/images--lore--catalog--4def64a4f069.webp — https://genshin-impact.fandom.com/wiki/Princess_Mina_of_the_Fallen_Nation
+github-images-02/images--lore--catalog--e156b0e929d7.webp — https://genshin-impact.fandom.com/wiki/Flowers_for_Princess_Fischl
+github-images-01/images--lore--catalog--4e4bec5ee8cd.webp — https://genshin-impact.fandom.com/wiki/Before_Sun_and_Moon
+github-images-01/images--lore--catalog--1ea88dfb6472.webp — https://genshin-impact.fandom.com/wiki/Let%27s_Go,_Dodoco!
+github-images-01/images--lore--catalog--221c49fa0b81.webp — https://genshin-impact.fandom.com/wiki/Fables_de_Fontaine
+github-images-02/images--lore--catalog--b3ef1aa3b375.webp — https://genshin-impact.fandom.com/wiki/Tales_of_a_Snow-Winged_Goose
+github-images-01/images--lore--catalog--01e2202a7c5e.webp — https://genshin-impact.fandom.com/wiki/Perinheri
+github-images-01/images--lore--catalog--8e5a92e1319f.webp — https://genshin-impact.fandom.com/wiki/The_Little_Witch_and_the_Undying_Fire
+github-images-02/images--lore--catalog--dfab78a0914f.webp — https://genshin-impact.fandom.com/wiki/Dreams_of_the_Ancient_Capital
+github-images-01/images--lore--catalog--6f88df8118c9.webp — https://genshin-impact.fandom.com/wiki/Records_of_Hanan_Pacha
+github-images-01/images--lore--catalog--573c53044d93.webp — https://genshin-impact.fandom.com/wiki/The_Volcano_Lord_and_the_Shadow_Pins
+github-images-02/images--lore--catalog--b9f0daa9ecff.webp — https://genshin-impact.fandom.com/wiki/The_Tale_of_Kuntur
+github-images-01/images--lore--catalog--53c9512c7a4c.webp — https://genshin-impact.fandom.com/wiki/Somewhat_Aged_Copy_of_%22Tequil_the_Brave%22
+github-images-01/images--lore--catalog--06b908e89fca.webp — https://genshin-impact.fandom.com/wiki/Spanking_New_Copy_of_%22Tequil_the_Brave%22
+github-images-01/images--lore--catalog--51e29ffd3aa6.webp — https://genshin-impact.fandom.com/wiki/Men_of_Lithin
+github-images-02/images--lore--catalog--ecca21ef4b55.webp — https://genshin-impact.fandom.com/wiki/Sundjatta%27s_First_Foray
+github-images-01/images--lore--catalog--46d77d975fc0.webp — https://genshin-impact.fandom.com/wiki/The_Headless_Coquitao
+github-images-02/images--lore--catalog--e8a109840fe7.webp — https://genshin-impact.fandom.com/wiki/Rangi_Nui%27s_End
+github-images-01/images--lore--catalog--a3feb7912d4d.webp — https://genshin-impact.fandom.com/wiki/The_Legends_of_Reed_Miller,_Thief_Extraordinaire
+github-images-01/images--lore--catalog--292acd233022.webp — https://genshin-impact.fandom.com/wiki/Hymns_of_the_Far_North
+github-images-01/images--lore--catalog--44d02826de58.webp — https://genshin-impact.fandom.com/wiki/Conch_Echoes
+github-images-01/images--lore--catalog--2de45bc3316c.webp — https://genshin-impact.fandom.com/wiki/A_Brief_History_of_the_Pale_Starborn
+github-images-02/images--lore--catalog--f82525621bf9.webp — https://genshin-impact.fandom.com/wiki/Tales_Carried_by_the_Northwind
+github-images-01/images--lore--catalog--29b8d211e792.webp — https://genshin-impact.fandom.com/wiki/Night_Murmurs_From_the_Far_Border
+github-images-01/images--lore--catalog--6d133b14c3cb.webp — https://genshin-impact.fandom.com/wiki/General_History_of_Snezhnaya
+github-images-01/images--lore--catalog--ab39cda0b62f.webp — https://genshin-impact.fandom.com/wiki/Polestar_Ballet_Anthology
+github-images-01/images--lore--catalog--a1c0082a64fc.webp — https://genshin-impact.fandom.com/wiki/Heart_of_the_Abyssal_Beast
+github-images-02/images--lore--catalog--ba770f3a62d8.webp — https://genshin-impact.fandom.com/wiki/General_History_of_Snezhnaya_Supplement
+github-images-01/images--lore--catalog--47eddfffb07a.webp — https://genshin-impact.fandom.com/wiki/Belyi_and_Chernyi
+github-images-01/images--lore--catalog--0cf7d2d81375.webp — https://genshin-impact.fandom.com/wiki/The_Feline_Firm
+github-images-02/images--lore--catalog--c4d23b3246ee.webp — https://genshin-impact.fandom.com/wiki/Moongazer%27s_Engraving
+github-images-01/images--lore--catalog--1b0bc4971c1b.webp — https://genshin-impact.fandom.com/wiki/Dvalin
+github-images-01/images--lore--catalog--37040b0b22fb.webp — https://genshin-impact.fandom.com/wiki/Khaenri%27ah
+github-images-01/images--lore--catalog--33358e2258ef.webp — https://genshin-impact.fandom.com/wiki/Abyss_Order
+github-images-01/images--lore--catalog--a1717b572b82.webp — https://genshin-impact.fandom.com/wiki/Dainsleif
+github-images-01/images--lore--catalog--0ec0b994b556.webp — https://genshin-impact.fandom.com/wiki/Guizhong
+github-images-02/images--lore--catalog--fc576a1efdba.webp — https://genshin-impact.fandom.com/wiki/Decarabian
+github-images-02/images--lore--catalog--f941355d3fce.webp — https://genshin-impact.fandom.com/wiki/Albedo
+github-images-01/images--lore--catalog--5061c7742509.webp — https://genshin-impact.fandom.com/wiki/Alice
+github-images-01/images--lore--catalog--8c71c6cc95e0.webp — https://genshin-impact.fandom.com/wiki/Mare_Jivari
+github-images-02/images--lore--catalog--ff106981c2d6.webp — https://genshin-impact.fandom.com/wiki/Hexenzirkel
+github-images-02/images--lore--catalog--ec380dd9f004.webp — https://genshin-impact.fandom.com/wiki/The_Seven
+github-images-01/images--lore--catalog--2223107fe2d1.webp — https://genshin-impact.fandom.com/wiki/Seelie
+github-images-01/images--lore--catalog--5c14846dfb1d.webp — https://genshin-impact.fandom.com/wiki/Dragonspine
+github-images-01/images--lore--catalog--570742ab5a82.webp — https://genshin-impact.fandom.com/wiki/Yaksha
+github-images-01/images--lore--catalog--32fc8ecd01ce.webp — https://genshin-impact.fandom.com/wiki/Istaroth
+github-images-01/images--lore--catalog--8c8d6b003e4d.webp — https://genshin-impact.fandom.com/wiki/Sal_Vindagnyr
+github-images-02/images--lore--catalog--ee3c01fbd871.webp — https://genshin-impact.fandom.com/wiki/Rhinedottir
+github-images-02/images--lore--catalog--fd36a9e4ba69.webp — https://genshin-impact.fandom.com/wiki/Tsurumi_Island
+github-images-02/images--lore--catalog--be0e03a2f50e.webp — https://genshin-impact.fandom.com/wiki/The_Immovable_God_and_the_Eternal_Euthymia
+github-images-01/images--lore--catalog--4bc410421ab5.webp — https://genshin-impact.fandom.com/wiki/Orobashi
+github-images-01/images--lore--catalog--63b2c480e322.webp — https://genshin-impact.fandom.com/wiki/Omnipresence_Over_Mortals
+github-images-01/images--lore--catalog--8ae9e802b2c0.webp — https://genshin-impact.fandom.com/wiki/Enkanomiya
+github-images-02/images--lore--catalog--df91697fadb7.webp — https://genshin-impact.fandom.com/wiki/Vishap
+github-images-02/images--lore--catalog--b4aee262e9a7.webp — https://genshin-impact.fandom.com/wiki/Incandescent_Ode_of_Resurrection
+github-images-02/images--lore--catalog--ed69a0c288ae.webp — https://genshin-impact.fandom.com/wiki/Masquerade_of_the_Guilty
+github-images-01/images--lore--catalog--02112b7c4266.webp — https://genshin-impact.fandom.com/wiki/King_Deshret
+github-images-02/images--lore--catalog--cda0647ef355.webp — https://genshin-impact.fandom.com/wiki/Nabu_Malikata
+github-images-02/images--lore--catalog--f0ab5390bdf0.webp — https://genshin-impact.fandom.com/wiki/Gurabad
+github-images-01/images--lore--catalog--22c547670642.webp — https://genshin-impact.fandom.com/wiki/Four_Shades
+github-images-01/images--lore--catalog--37eac80a469c.webp — https://genshin-impact.fandom.com/wiki/King_Deshret_and_the_Three_Magi
+github-images-01/images--lore--catalog--7ffe89967f6f.webp — https://genshin-impact.fandom.com/wiki/Neuvillette
+github-images-01/images--lore--catalog--02d04aa38205.webp — https://genshin-impact.fandom.com/wiki/Pari
+github-images-01/images--lore--catalog--3fcdb35c3442.webp — https://genshin-impact.fandom.com/wiki/Furina
+github-images-02/images--lore--catalog--c11cdf7c4d2e.webp — https://genshin-impact.fandom.com/wiki/Narzissenkreuz_Ordo
+github-images-01/images--lore--catalog--96e4b8caec58.webp — https://genshin-impact.fandom.com/wiki/Sword_of_Narzissenkreuz
+github-images-02/images--lore--catalog--c05acad2baf4.webp — https://genshin-impact.fandom.com/wiki/Frostmoon_Scions
+github-images-02/images--lore--catalog--bf40bdbe938c.webp — https://genshin-impact.fandom.com/wiki/Truth_Amongst_the_Pages_of_Purana
+github-images-02/images--lore--catalog--fe62da9a4167.webp — https://genshin-impact.fandom.com/wiki/Ley_Line
+github-images-02/images--lore--catalog--f3ddcb19a1d4.webp — https://genshin-impact.fandom.com/wiki/Descender
+github-images-01/images--lore--catalog--8fa366fc2c1c.webp — https://genshin-impact.fandom.com/wiki/Nibelung
+
+Optimized hero thumbnail: github-images-02/images--lore--mondstadt-preview.webp
+Original image: https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Mondstadt.png/revision/latest?cb=20230818202148
+Source: https://genshin-impact.fandom.com/wiki/Mondstadt?file=Mondstadt.png
+This 960-pixel WebP preview reduces initial mobile loading. HoYoverse and other rights holders retain ownership of the game art.

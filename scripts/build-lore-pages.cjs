@@ -45,7 +45,7 @@ function makePage(entry) {
   const crumbs = { "@context":"https://schema.org", "@type":"BreadcrumbList", itemListElement:[
     {"@type":"ListItem",position:1,name:"CoreGG",item:site.baseUrl+"/"},
     {"@type":"ListItem",position:2,name:"CoreGenshin",item:site.baseUrl+"/coregenshin"},
-    {"@type":"ListItem",position:3,name:"Lore Archive",item:site.baseUrl+"/lore.html"},
+    {"@type":"ListItem",position:3,name:"Lore Archive",item:site.baseUrl+"/lore"},
     {"@type":"ListItem",position:4,name:entry.title,item:canonical}
   ] };
   const guide = longFormGuides[entry.title];

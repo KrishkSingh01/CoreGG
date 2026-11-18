@@ -11,7 +11,7 @@ for (const match of source.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
   const block = match[1];
   const value = (tag) => (block.match(new RegExp(`<${tag}>([\\s\\S]*?)<\\/${tag}>`)) || [])[1] || "";
   const loc = value("loc").trim();
-  if (!loc || /\/(?:lore\/entries(?:-\d+)?|lore-entries-\d+)\//.test(loc)) continue;
+  if (!loc || loc === baseUrl + "/lore.html" || /\/(?:lore\/entries(?:-\d+)?|lore-entries-\d+)\//.test(loc)) continue;
   staticEntries.set(loc, { loc, lastmod: value("lastmod").trim() || "2026-11-18", changefreq: value("changefreq").trim() || "monthly", priority: Number(value("priority").trim()) || 0.5 });
 }
 const fileDate = (relative) => {
@@ -31,7 +31,7 @@ for (let index = 0; index < data.entries.length; index += 1) {
     priority: 0.5
   });
 }
-staticEntries.set(`${baseUrl}/lore.html`, { loc: `${baseUrl}/lore.html`, lastmod: fileDate("lore.html"), changefreq: "monthly", priority: 0.8 });
+staticEntries.set(`${baseUrl}/lore`, { loc: `${baseUrl}/lore`, lastmod: fileDate("lore.html"), changefreq: "monthly", priority: 0.8 });
 const entries = [...staticEntries.values()].sort((a, b) => b.priority - a.priority || b.lastmod.localeCompare(a.lastmod) || a.loc.localeCompare(b.loc));
 if (entries.length > 50000) throw new Error("This sitemap needs an index and multiple child files.");
 const xmlEscape = (value) => String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&apos;");

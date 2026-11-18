@@ -1,6 +1,6 @@
 https://coregg.pages.dev/
 https://coregg.pages.dev/coregenshin
-https://coregg.pages.dev/lore.html
+https://coregg.pages.dev/lore
 https://coregg.pages.dev/coregenshin-builds
 https://coregg.pages.dev/coreminecraft
 https://coregg.pages.dev/coreminecraftbedrock

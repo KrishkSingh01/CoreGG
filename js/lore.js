@@ -23,9 +23,9 @@
   var entryIndexById = Object.create(null);
   data.entries.forEach(function (entry, index) { entryIndexById[entry.id] = index; });
   function entryUrl(entry) {
-    var group = Math.floor(entryIndexById[entry.id] / 99) + 1;
-    var folder = group === 1 ? "entries" : "entries-" + ("0" + group).slice(-2);
-    return "./lore/" + folder + "/" + entry.slug + ".html";
+    var group = Math.floor(entryIndexById[entry.id] / 66) + 1;
+    var folder = "lore-entries-" + ("0" + group).slice(-2);
+    return "./" + folder + "/" + entry.slug + ".html";
   }
   var returnFocus = null;
 

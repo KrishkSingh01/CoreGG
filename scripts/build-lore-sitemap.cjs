@@ -11,7 +11,7 @@ for (const match of source.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
   const block = match[1];
   const value = (tag) => (block.match(new RegExp(`<${tag}>([\\s\\S]*?)<\\/${tag}>`)) || [])[1] || "";
   const loc = value("loc").trim();
-  if (!loc || /\/lore\/entries(?:-\d+)?\//.test(loc)) continue;
+  if (!loc || /\/(?:lore\/entries(?:-\d+)?|lore-entries-\d+)\//.test(loc)) continue;
   staticEntries.set(loc, { loc, lastmod: value("lastmod").trim() || "2026-11-18", changefreq: value("changefreq").trim() || "monthly", priority: Number(value("priority").trim()) || 0.5 });
 }
 const fileDate = (relative) => {
@@ -21,9 +21,8 @@ const fileDate = (relative) => {
 };
 for (let index = 0; index < data.entries.length; index += 1) {
   const entry = data.entries[index];
-  const group = Math.floor(index / 99) + 1;
-  const folder = group === 1 ? "entries" : "entries-" + String(group).padStart(2, "0");
-  const relativePath = path.join("lore", folder, entry.slug + ".html");
+  const folder = "lore-entries-" + String(Math.floor(index / 66) + 1).padStart(2, "0");
+  const relativePath = path.join(folder, entry.slug + ".html");
   const loc = baseUrl + "/" + relativePath.split(path.sep).join("/");
   staticEntries.set(loc, {
     loc,

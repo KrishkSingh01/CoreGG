@@ -35,7 +35,7 @@
   function updateRegionBackdrop(regionId) {
     if (!siteShell) return;
     var region = regionId === "all" ? null : getRegion(regionId);
-    var imagePath = region && typeof region.background === "string" && /^images\/lore\/[a-z0-9_./-]+\.(?:webp|png|jpe?g)$/i.test(region.background) ? region.background : "";
+    var imagePath = region && typeof region.background === "string" && /^github-images-0[1-4]\/[a-z0-9_.-]+\.(?:webp|png|jpe?g|svg)$/i.test(region.background) ? region.background : "";
     siteShell.dataset.regionSelected = imagePath ? "true" : "false";
     if (imagePath) siteShell.style.setProperty("--lore-region-image", 'url("./' + imagePath + '")');
     else siteShell.style.removeProperty("--lore-region-image");

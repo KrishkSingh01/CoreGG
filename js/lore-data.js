@@ -12,63 +12,63 @@
       "id": "mondstadt",
       "name": "Mondstadt",
       "note": "A nation associated with freedom and the Anemo Archon.",
-      "background": "images/lore/mondstadt-preview.webp",
+      "background": "github-images-02/images--lore--mondstadt-preview.webp",
       "backgroundAlt": "Mondstadt as shown in Genshin Impact"
     },
     {
       "id": "liyue",
       "name": "Liyue",
       "note": "A harbor nation shaped by contracts, trade, and long memory.",
-      "background": "images/lore/records/liyue.webp",
+      "background": "github-images-02/images--lore--records--liyue.webp",
       "backgroundAlt": "Liyue as shown in Genshin Impact"
     },
     {
       "id": "inazuma",
       "name": "Inazuma",
       "note": "An island nation whose stories turn around change and eternity.",
-      "background": "images/lore/records/inazuma.webp",
+      "background": "github-images-02/images--lore--records--inazuma.webp",
       "backgroundAlt": "Inazuma as shown in Genshin Impact"
     },
     {
       "id": "sumeru",
       "name": "Sumeru",
       "note": "A land of scholarship, forests, desert, and living memory.",
-      "background": "images/lore/records/sumeru.webp",
+      "background": "github-images-02/images--lore--records--sumeru.webp",
       "backgroundAlt": "Sumeru as shown in Genshin Impact"
     },
     {
       "id": "fontaine",
       "name": "Fontaine",
       "note": "A nation of water, courts, invention, and performance.",
-      "background": "images/lore/records/fontaine.webp",
+      "background": "github-images-02/images--lore--records--fontaine.webp",
       "backgroundAlt": "Fontaine as shown in Genshin Impact"
     },
     {
       "id": "natlan",
       "name": "Natlan",
       "note": "A nation of tribes, contests, and the Pyro element.",
-      "background": "images/lore/records/natlan.webp",
+      "background": "github-images-02/images--lore--records--natlan.webp",
       "backgroundAlt": "Natlan as shown in Genshin Impact"
     },
     {
       "id": "nod-krai",
       "name": "Nod-Krai",
       "note": "A borderland at Teyvat’s northern edge, tied to the Song of the Welkin Moon.",
-      "background": "images/lore/records/nod-krai.webp",
+      "background": "github-images-02/images--lore--records--nod-krai.webp",
       "backgroundAlt": "Nod-Krai as shown in Genshin Impact"
     },
     {
       "id": "snezhnaya",
       "name": "Snezhnaya",
       "note": "A Cryo nation whose full story remains to be told.",
-      "background": "images/lore/records/snezhnaya.webp",
+      "background": "github-images-02/images--lore--records--snezhnaya.webp",
       "backgroundAlt": "Snezhnaya as shown in Genshin Impact"
     },
     {
       "id": "teyvat-unknown",
       "name": "Teyvat & Unknown",
       "note": "Records that cross borders or remain difficult to place.",
-      "background": "images/lore/records/teyvat.webp",
+      "background": "github-images-02/images--lore--records--teyvat.webp",
       "backgroundAlt": "Teyvat & Unknown as shown in Genshin Impact"
     }
   ],
@@ -165,7 +165,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/%22Of_Mountains_and_Seas%22"
       },
       "image": {
-        "path": "images/lore/catalog/dc6c05c6dff8.webp",
+        "path": "github-images-02/images--lore--catalog--dc6c05c6dff8.webp",
         "width": 480,
         "height": 480,
         "alt": "\"Of Mountains and Seas\" image from the Genshin Impact Wiki",
@@ -212,7 +212,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/1000_Years_of_Loneliness"
       },
       "image": {
-        "path": "images/lore/catalog/eb5ed4d1d11c.webp",
+        "path": "github-images-02/images--lore--catalog--eb5ed4d1d11c.webp",
         "width": 480,
         "height": 480,
         "alt": "1000 Years of Loneliness image from the Genshin Impact Wiki",
@@ -260,7 +260,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/A_Brief_History_of_the_Pale_Starborn"
       },
       "image": {
-        "path": "images/lore/catalog/2de45bc3316c.webp",
+        "path": "github-images-01/images--lore--catalog--2de45bc3316c.webp",
         "width": 480,
         "height": 480,
         "alt": "A Brief History of the Pale Starborn image from the Genshin Impact Wiki",
@@ -307,7 +307,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/A_Drunkard%27s_Tale"
       },
       "image": {
-        "path": "images/lore/catalog/3f52ccbd776d.webp",
+        "path": "github-images-01/images--lore--catalog--3f52ccbd776d.webp",
         "width": 480,
         "height": 480,
         "alt": "A Drunkard's Tale image from the Genshin Impact Wiki",
@@ -355,7 +355,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/A_Legend_of_Sword"
       },
       "image": {
-        "path": "images/lore/catalog/b8e6059b2a55.webp",
+        "path": "github-images-02/images--lore--catalog--b8e6059b2a55.webp",
         "width": 480,
         "height": 480,
         "alt": "A Legend of Sword image from the Genshin Impact Wiki",
@@ -402,7 +402,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/A_Nameless_Adventurer%27s_Notes"
       },
       "image": {
-        "path": "images/lore/catalog/33c341e3d73a.webp",
+        "path": "github-images-01/images--lore--catalog--33c341e3d73a.webp",
         "width": 480,
         "height": 480,
         "alt": "A Nameless Adventurer's Notes image from the Genshin Impact Wiki",
@@ -450,7 +450,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/A_Preliminary_Study_of_Sangonomiya_Folk_Belief"
       },
       "image": {
-        "path": "images/lore/catalog/c8cc3f3e0142.webp",
+        "path": "github-images-02/images--lore--catalog--c8cc3f3e0142.webp",
         "width": 480,
         "height": 480,
         "alt": "A Preliminary Study of Sangonomiya Folk Belief image from the Genshin Impact Wiki",
@@ -498,7 +498,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/A_Thousand_Nights"
       },
       "image": {
-        "path": "images/lore/catalog/05dbc45fd502.webp",
+        "path": "github-images-01/images--lore--catalog--05dbc45fd502.webp",
         "width": 480,
         "height": 480,
         "alt": "A Thousand Nights image from the Genshin Impact Wiki",
@@ -547,7 +547,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Abyss_Order"
       },
       "image": {
-        "path": "images/lore/catalog/33358e2258ef.webp",
+        "path": "github-images-01/images--lore--catalog--33358e2258ef.webp",
         "width": 480,
         "height": 269,
         "alt": "Abyss Order image from the Genshin Impact Wiki",
@@ -589,7 +589,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Albedo"
       },
       "image": {
-        "path": "images/lore/catalog/f941355d3fce.webp",
+        "path": "github-images-02/images--lore--catalog--f941355d3fce.webp",
         "width": 270,
         "height": 480,
         "alt": "Albedo image from the Genshin Impact Wiki",
@@ -631,7 +631,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Alice"
       },
       "image": {
-        "path": "images/lore/catalog/5061c7742509.webp",
+        "path": "github-images-01/images--lore--catalog--5061c7742509.webp",
         "width": 332,
         "height": 480,
         "alt": "Alice image from the Genshin Impact Wiki",
@@ -671,7 +671,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Along_with_Divinity:_Prologue"
       },
       "image": {
-        "path": "images/lore/catalog/61936dd205fa.webp",
+        "path": "github-images-01/images--lore--catalog--61936dd205fa.webp",
         "width": 480,
         "height": 480,
         "alt": "Along with Divinity: Prologue image from the Genshin Impact Wiki",
@@ -718,7 +718,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/An_Ode_to_Khvarena"
       },
       "image": {
-        "path": "images/lore/catalog/6043ea775c63.webp",
+        "path": "github-images-01/images--lore--catalog--6043ea775c63.webp",
         "width": 480,
         "height": 480,
         "alt": "An Ode to Khvarena image from the Genshin Impact Wiki",
@@ -765,7 +765,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Ancient_Investigation_Journal:_Part_I"
       },
       "image": {
-        "path": "images/lore/catalog/84f9a99d00d0.webp",
+        "path": "github-images-01/images--lore--catalog--84f9a99d00d0.webp",
         "width": 480,
         "height": 480,
         "alt": "Ancient Investigation Journal: Part I image from the Genshin Impact Wiki",
@@ -812,7 +812,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Ancient_Investigation_Journal:_Part_II"
       },
       "image": {
-        "path": "images/lore/catalog/84f9a99d00d0.webp",
+        "path": "github-images-01/images--lore--catalog--84f9a99d00d0.webp",
         "width": 480,
         "height": 480,
         "alt": "Ancient Investigation Journal: Part II image from the Genshin Impact Wiki",
@@ -859,7 +859,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Ancient_Investigation_Journal:_Part_III"
       },
       "image": {
-        "path": "images/lore/catalog/84f9a99d00d0.webp",
+        "path": "github-images-01/images--lore--catalog--84f9a99d00d0.webp",
         "width": 480,
         "height": 480,
         "alt": "Ancient Investigation Journal: Part III image from the Genshin Impact Wiki",
@@ -906,7 +906,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Anecdota_Septentrionalis"
       },
       "image": {
-        "path": "images/lore/catalog/1214167bb2d2.webp",
+        "path": "github-images-01/images--lore--catalog--1214167bb2d2.webp",
         "width": 480,
         "height": 480,
         "alt": "Anecdota Septentrionalis image from the Genshin Impact Wiki",
@@ -953,7 +953,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Ballads_of_the_Squire"
       },
       "image": {
-        "path": "images/lore/catalog/f9a25e83e77f.webp",
+        "path": "github-images-02/images--lore--catalog--f9a25e83e77f.webp",
         "width": 480,
         "height": 480,
         "alt": "Ballads of the Squire image from the Genshin Impact Wiki",
@@ -1001,7 +1001,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/catalog/4e4bec5ee8cd.webp",
+        "path": "github-images-01/images--lore--catalog--4e4bec5ee8cd.webp",
         "width": 480,
         "height": 480,
         "alt": "Before Sun and Moon image from the Genshin Impact Wiki",
@@ -1048,7 +1048,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Belyi_and_Chernyi"
       },
       "image": {
-        "path": "images/lore/catalog/47eddfffb07a.webp",
+        "path": "github-images-01/images--lore--catalog--47eddfffb07a.webp",
         "width": 480,
         "height": 480,
         "alt": "Belyi and Chernyi image from the Genshin Impact Wiki",
@@ -1095,7 +1095,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Biography_of_Gunnhildr"
       },
       "image": {
-        "path": "images/lore/catalog/fdda53fc1816.webp",
+        "path": "github-images-02/images--lore--catalog--fdda53fc1816.webp",
         "width": 480,
         "height": 480,
         "alt": "Biography of Gunnhildr image from the Genshin Impact Wiki",
@@ -1142,7 +1142,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Breeze_Amidst_the_Forest"
       },
       "image": {
-        "path": "images/lore/catalog/5f4ca96855fa.webp",
+        "path": "github-images-01/images--lore--catalog--5f4ca96855fa.webp",
         "width": 480,
         "height": 480,
         "alt": "Breeze Amidst the Forest image from the Genshin Impact Wiki",
@@ -1188,7 +1188,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/celestia-unanswered-questions.webp",
+        "path": "github-images-02/images--lore--records--celestia-unanswered-questions.webp",
         "alt": "Celestia: What Is Still Unknown? image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Celestia",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -1228,7 +1228,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Conch_Echoes"
       },
       "image": {
-        "path": "images/lore/catalog/44d02826de58.webp",
+        "path": "github-images-01/images--lore--catalog--44d02826de58.webp",
         "width": 480,
         "height": 480,
         "alt": "Conch Echoes image from the Genshin Impact Wiki",
@@ -1276,7 +1276,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Customs_of_Liyue"
       },
       "image": {
-        "path": "images/lore/catalog/61b5fdfd57a3.webp",
+        "path": "github-images-01/images--lore--catalog--61b5fdfd57a3.webp",
         "width": 480,
         "height": 480,
         "alt": "Customs of Liyue image from the Genshin Impact Wiki",
@@ -1325,7 +1325,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Dainsleif"
       },
       "image": {
-        "path": "images/lore/catalog/a1717b572b82.webp",
+        "path": "github-images-01/images--lore--catalog--a1717b572b82.webp",
         "width": 189,
         "height": 480,
         "alt": "Dainsleif image from the Genshin Impact Wiki",
@@ -1365,7 +1365,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Debates_on_the_%22Viceroy_of_the_East%22"
       },
       "image": {
-        "path": "images/lore/catalog/f6832638ae3f.webp",
+        "path": "github-images-02/images--lore--catalog--f6832638ae3f.webp",
         "width": 480,
         "height": 480,
         "alt": "Debates on the \"Viceroy of the East\" image from the Genshin Impact Wiki",
@@ -1414,7 +1414,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Decarabian"
       },
       "image": {
-        "path": "images/lore/catalog/fc576a1efdba.webp",
+        "path": "github-images-02/images--lore--catalog--fc576a1efdba.webp",
         "width": 320,
         "height": 480,
         "alt": "Decarabian image from the Genshin Impact Wiki",
@@ -1456,7 +1456,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Descender"
       },
       "image": {
-        "path": "images/lore/catalog/f3ddcb19a1d4.webp",
+        "path": "github-images-02/images--lore--catalog--f3ddcb19a1d4.webp",
         "width": 480,
         "height": 229,
         "alt": "Descender image from the Genshin Impact Wiki",
@@ -1497,7 +1497,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Diary_of_Roald_the_Adventurer"
       },
       "image": {
-        "path": "images/lore/catalog/c56297782471.webp",
+        "path": "github-images-02/images--lore--catalog--c56297782471.webp",
         "width": 480,
         "height": 480,
         "alt": "Diary of Roald the Adventurer image from the Genshin Impact Wiki",
@@ -1544,7 +1544,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Draft_Hilichurl_Ballads"
       },
       "image": {
-        "path": "images/lore/catalog/9ae65093c291.webp",
+        "path": "github-images-01/images--lore--catalog--9ae65093c291.webp",
         "width": 480,
         "height": 480,
         "alt": "Draft Hilichurl Ballads image from the Genshin Impact Wiki",
@@ -1593,7 +1593,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Dragonspine"
       },
       "image": {
-        "path": "images/lore/catalog/5c14846dfb1d.webp",
+        "path": "github-images-01/images--lore--catalog--5c14846dfb1d.webp",
         "width": 480,
         "height": 270,
         "alt": "Dragonspine image from the Genshin Impact Wiki",
@@ -1634,7 +1634,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Dreams_of_the_Ancient_Capital"
       },
       "image": {
-        "path": "images/lore/catalog/dfab78a0914f.webp",
+        "path": "github-images-02/images--lore--catalog--dfab78a0914f.webp",
         "width": 480,
         "height": 480,
         "alt": "Dreams of the Ancient Capital image from the Genshin Impact Wiki",
@@ -1683,7 +1683,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Enkanomiya"
       },
       "image": {
-        "path": "images/lore/catalog/8ae9e802b2c0.webp",
+        "path": "github-images-01/images--lore--catalog--8ae9e802b2c0.webp",
         "width": 480,
         "height": 270,
         "alt": "Enkanomiya image from the Genshin Impact Wiki",
@@ -1759,7 +1759,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Fables_de_Fontaine"
       },
       "image": {
-        "path": "images/lore/catalog/221c49fa0b81.webp",
+        "path": "github-images-01/images--lore--catalog--221c49fa0b81.webp",
         "width": 480,
         "height": 480,
         "alt": "Fables de Fontaine image from the Genshin Impact Wiki",
@@ -1806,7 +1806,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Fires_of_Autumn_Twilight"
       },
       "image": {
-        "path": "images/lore/catalog/a9b8f7db51d4.webp",
+        "path": "github-images-01/images--lore--catalog--a9b8f7db51d4.webp",
         "width": 480,
         "height": 480,
         "alt": "Fires of Autumn Twilight image from the Genshin Impact Wiki",
@@ -1853,7 +1853,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/First_Apprentice_of_Guhua"
       },
       "image": {
-        "path": "images/lore/catalog/13b8800681a6.webp",
+        "path": "github-images-01/images--lore--catalog--13b8800681a6.webp",
         "width": 480,
         "height": 480,
         "alt": "First Apprentice of Guhua image from the Genshin Impact Wiki",
@@ -1901,7 +1901,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Flowers_for_Princess_Fischl"
       },
       "image": {
-        "path": "images/lore/catalog/e156b0e929d7.webp",
+        "path": "github-images-02/images--lore--catalog--e156b0e929d7.webp",
         "width": 480,
         "height": 480,
         "alt": "Flowers for Princess Fischl image from the Genshin Impact Wiki",
@@ -1947,7 +1947,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/fontaine.webp",
+        "path": "github-images-02/images--lore--records--fontaine.webp",
         "alt": "Fontaine: The Nation of Justice image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Fontaine",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -1988,7 +1988,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Four_Shades"
       },
       "image": {
-        "path": "images/lore/catalog/22c547670642.webp",
+        "path": "github-images-01/images--lore--catalog--22c547670642.webp",
         "width": 480,
         "height": 270,
         "alt": "Four Shades image from the Genshin Impact Wiki",
@@ -2030,7 +2030,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Frostmoon_Scions"
       },
       "image": {
-        "path": "images/lore/catalog/c05acad2baf4.webp",
+        "path": "github-images-02/images--lore--catalog--c05acad2baf4.webp",
         "width": 480,
         "height": 479,
         "alt": "Frostmoon Scions image from the Genshin Impact Wiki",
@@ -2072,7 +2072,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Furina"
       },
       "image": {
-        "path": "images/lore/catalog/3fcdb35c3442.webp",
+        "path": "github-images-01/images--lore--catalog--3fcdb35c3442.webp",
         "width": 240,
         "height": 480,
         "alt": "Furina image from the Genshin Impact Wiki",
@@ -2113,7 +2113,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/General_History_of_Snezhnaya"
       },
       "image": {
-        "path": "images/lore/catalog/6d133b14c3cb.webp",
+        "path": "github-images-01/images--lore--catalog--6d133b14c3cb.webp",
         "width": 480,
         "height": 480,
         "alt": "General History of Snezhnaya image from the Genshin Impact Wiki",
@@ -2161,7 +2161,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/General_History_of_Snezhnaya_Supplement"
       },
       "image": {
-        "path": "images/lore/catalog/ba770f3a62d8.webp",
+        "path": "github-images-02/images--lore--catalog--ba770f3a62d8.webp",
         "width": 480,
         "height": 480,
         "alt": "General History of Snezhnaya Supplement image from the Genshin Impact Wiki",
@@ -2208,7 +2208,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Gliding_Instruction_Manual"
       },
       "image": {
-        "path": "images/lore/catalog/c188d5e948fa.webp",
+        "path": "github-images-02/images--lore--catalog--c188d5e948fa.webp",
         "width": 480,
         "height": 480,
         "alt": "Gliding Instruction Manual image from the Genshin Impact Wiki",
@@ -2256,7 +2256,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Glimpses_of_Mysterious_Inazuma"
       },
       "image": {
-        "path": "images/lore/catalog/c4e3111bd28b.webp",
+        "path": "github-images-02/images--lore--catalog--c4e3111bd28b.webp",
         "width": 480,
         "height": 480,
         "alt": "Glimpses of Mysterious Inazuma image from the Genshin Impact Wiki",
@@ -2305,7 +2305,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Guizhong"
       },
       "image": {
-        "path": "images/lore/catalog/0ec0b994b556.webp",
+        "path": "github-images-01/images--lore--catalog--0ec0b994b556.webp",
         "width": 306,
         "height": 480,
         "alt": "Guizhong image from the Genshin Impact Wiki",
@@ -2347,7 +2347,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Gurabad"
       },
       "image": {
-        "path": "images/lore/catalog/f0ab5390bdf0.webp",
+        "path": "github-images-02/images--lore--catalog--f0ab5390bdf0.webp",
         "width": 480,
         "height": 240,
         "alt": "Gurabad image from the Genshin Impact Wiki",
@@ -2387,7 +2387,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Handy_Handbook_of_Hilichurlian"
       },
       "image": {
-        "path": "images/lore/catalog/c0967de64581.webp",
+        "path": "github-images-02/images--lore--catalog--c0967de64581.webp",
         "width": 480,
         "height": 480,
         "alt": "Handy Handbook of Hilichurlian image from the Genshin Impact Wiki",
@@ -2434,7 +2434,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Heart_of_Clear_Springs"
       },
       "image": {
-        "path": "images/lore/catalog/391f2cfa6e60.webp",
+        "path": "github-images-01/images--lore--catalog--391f2cfa6e60.webp",
         "width": 480,
         "height": 480,
         "alt": "Heart of Clear Springs image from the Genshin Impact Wiki",
@@ -2481,7 +2481,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Heart_of_the_Abyssal_Beast"
       },
       "image": {
-        "path": "images/lore/catalog/a1c0082a64fc.webp",
+        "path": "github-images-01/images--lore--catalog--a1c0082a64fc.webp",
         "width": 480,
         "height": 480,
         "alt": "Heart of the Abyssal Beast image from the Genshin Impact Wiki",
@@ -2528,7 +2528,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Heart%27s_Desire"
       },
       "image": {
-        "path": "images/lore/catalog/7beea2fe6ea3.webp",
+        "path": "github-images-01/images--lore--catalog--7beea2fe6ea3.webp",
         "width": 480,
         "height": 480,
         "alt": "Heart's Desire image from the Genshin Impact Wiki",
@@ -2581,7 +2581,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Hex_%26_Hound"
       },
       "image": {
-        "path": "images/lore/catalog/24e74a384e04.webp",
+        "path": "github-images-01/images--lore--catalog--24e74a384e04.webp",
         "width": 480,
         "height": 480,
         "alt": "Hex & Hound image from the Genshin Impact Wiki",
@@ -2630,7 +2630,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Hexenzirkel"
       },
       "image": {
-        "path": "images/lore/catalog/ff106981c2d6.webp",
+        "path": "github-images-02/images--lore--catalog--ff106981c2d6.webp",
         "width": 480,
         "height": 479,
         "alt": "Hexenzirkel image from the Genshin Impact Wiki",
@@ -2671,7 +2671,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Hilichurl_Ballad_Selection"
       },
       "image": {
-        "path": "images/lore/catalog/c090950bde60.webp",
+        "path": "github-images-02/images--lore--catalog--c090950bde60.webp",
         "width": 480,
         "height": 480,
         "alt": "Hilichurl Ballad Selection image from the Genshin Impact Wiki",
@@ -2719,7 +2719,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Hilichurl_Cultural_Customs"
       },
       "image": {
-        "path": "images/lore/catalog/052aadfdaa1f.webp",
+        "path": "github-images-01/images--lore--catalog--052aadfdaa1f.webp",
         "width": 480,
         "height": 480,
         "alt": "Hilichurl Cultural Customs image from the Genshin Impact Wiki",
@@ -2768,7 +2768,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Hilichurlian"
       },
       "image": {
-        "path": "images/lore/catalog/c0967de64581.webp",
+        "path": "github-images-02/images--lore--catalog--c0967de64581.webp",
         "width": 480,
         "height": 480,
         "alt": "Hilichurlian image from the Genshin Impact Wiki",
@@ -2808,7 +2808,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/History_of_Kings_and_Clans:_Prologue"
       },
       "image": {
-        "path": "images/lore/catalog/f49c06dbd3f7.webp",
+        "path": "github-images-02/images--lore--catalog--f49c06dbd3f7.webp",
         "width": 480,
         "height": 480,
         "alt": "History of Kings and Clans: Prologue image from the Genshin Impact Wiki",
@@ -2856,7 +2856,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Humor_From_Tianheng"
       },
       "image": {
-        "path": "images/lore/catalog/9726114e558d.webp",
+        "path": "github-images-01/images--lore--catalog--9726114e558d.webp",
         "width": 480,
         "height": 480,
         "alt": "Humor From Tianheng image from the Genshin Impact Wiki",
@@ -2904,7 +2904,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Hymns_of_the_Far_North"
       },
       "image": {
-        "path": "images/lore/catalog/292acd233022.webp",
+        "path": "github-images-01/images--lore--catalog--292acd233022.webp",
         "width": 480,
         "height": 480,
         "alt": "Hymns of the Far North image from the Genshin Impact Wiki",
@@ -2950,7 +2950,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/inazuma.webp",
+        "path": "github-images-02/images--lore--records--inazuma.webp",
         "alt": "Inazuma: Islands and Eternity image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Inazuma",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -2991,7 +2991,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Incandescent_Ode_of_Resurrection"
       },
       "image": {
-        "path": "images/lore/catalog/b4aee262e9a7.webp",
+        "path": "github-images-02/images--lore--catalog--b4aee262e9a7.webp",
         "width": 480,
         "height": 240,
         "alt": "Incandescent Ode of Resurrection image from the Genshin Impact Wiki",
@@ -3034,7 +3034,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/irminsul.webp",
+        "path": "github-images-02/images--lore--records--irminsul.webp",
         "alt": "Irminsul and the World’s Memories image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Irminsul",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -3075,7 +3075,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Istaroth"
       },
       "image": {
-        "path": "images/lore/catalog/32fc8ecd01ce.webp",
+        "path": "github-images-01/images--lore--catalog--32fc8ecd01ce.webp",
         "width": 480,
         "height": 270,
         "alt": "Istaroth image from the Genshin Impact Wiki",
@@ -3114,7 +3114,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/khaenriah.webp",
+        "path": "github-images-02/images--lore--records--khaenriah.webp",
         "alt": "Khaenri’ah image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Khaenri%27ah",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -3155,7 +3155,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/King_Deshret"
       },
       "image": {
-        "path": "images/lore/catalog/02112b7c4266.webp",
+        "path": "github-images-01/images--lore--catalog--02112b7c4266.webp",
         "width": 480,
         "height": 300,
         "alt": "King Deshret image from the Genshin Impact Wiki",
@@ -3197,7 +3197,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/King_Deshret_and_the_Three_Magi"
       },
       "image": {
-        "path": "images/lore/catalog/37eac80a469c.webp",
+        "path": "github-images-01/images--lore--catalog--37eac80a469c.webp",
         "width": 480,
         "height": 240,
         "alt": "King Deshret and the Three Magi image from the Genshin Impact Wiki",
@@ -3237,7 +3237,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/King_of_Invokations_(Book)"
       },
       "image": {
-        "path": "images/lore/catalog/df9dd89cbdcd.webp",
+        "path": "github-images-02/images--lore--catalog--df9dd89cbdcd.webp",
         "width": 480,
         "height": 480,
         "alt": "King of Invokations (Book) image from the Genshin Impact Wiki",
@@ -3283,7 +3283,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/knights-of-favonius.webp",
+        "path": "github-images-02/images--lore--records--knights-of-favonius.webp",
         "alt": "Knights of Favonius image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Knights_of_Favonius",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -3322,7 +3322,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Knights_of_Favonius_Handbook_-_5th_Edition"
       },
       "image": {
-        "path": "images/lore/catalog/c7194f831e1e.webp",
+        "path": "github-images-02/images--lore--catalog--c7194f831e1e.webp",
         "width": 480,
         "height": 480,
         "alt": "Knights of Favonius Handbook - 5th Edition image from the Genshin Impact Wiki",
@@ -3370,7 +3370,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Kompore_the_Cunning"
       },
       "image": {
-        "path": "images/lore/catalog/41e789e3dcef.webp",
+        "path": "github-images-01/images--lore--catalog--41e789e3dcef.webp",
         "width": 480,
         "height": 480,
         "alt": "Kompore the Cunning image from the Genshin Impact Wiki",
@@ -3417,7 +3417,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/La_Chanson_d%27Erinnyes"
       },
       "image": {
-        "path": "images/lore/catalog/9b9d210eafdd.webp",
+        "path": "github-images-01/images--lore--catalog--9b9d210eafdd.webp",
         "width": 480,
         "height": 480,
         "alt": "La Chanson d'Erinnyes image from the Genshin Impact Wiki",
@@ -3464,7 +3464,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Legend_of_the_Lone_Sword"
       },
       "image": {
-        "path": "images/lore/catalog/1535feec8be4.webp",
+        "path": "github-images-01/images--lore--catalog--1535feec8be4.webp",
         "width": 480,
         "height": 480,
         "alt": "Legend of the Lone Sword image from the Genshin Impact Wiki",
@@ -3512,7 +3512,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Legend_of_the_Shattered_Halberd"
       },
       "image": {
-        "path": "images/lore/catalog/ceb03260beef.webp",
+        "path": "github-images-02/images--lore--catalog--ceb03260beef.webp",
         "width": 480,
         "height": 480,
         "alt": "Legend of the Shattered Halberd image from the Genshin Impact Wiki",
@@ -3559,7 +3559,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Let%27s_Go,_Dodoco!"
       },
       "image": {
-        "path": "images/lore/catalog/1ea88dfb6472.webp",
+        "path": "github-images-01/images--lore--catalog--1ea88dfb6472.webp",
         "width": 480,
         "height": 480,
         "alt": "Let's Go, Dodoco! image from the Genshin Impact Wiki",
@@ -3608,7 +3608,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Ley_Line"
       },
       "image": {
-        "path": "images/lore/catalog/fe62da9a4167.webp",
+        "path": "github-images-02/images--lore--catalog--fe62da9a4167.webp",
         "width": 480,
         "height": 270,
         "alt": "Ley Line image from the Genshin Impact Wiki",
@@ -3648,7 +3648,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Linling%27s_Anthology_of_Selected_Poetry"
       },
       "image": {
-        "path": "images/lore/catalog/8d0449cdc264.webp",
+        "path": "github-images-01/images--lore--catalog--8d0449cdc264.webp",
         "width": 480,
         "height": 480,
         "alt": "Linling's Anthology of Selected Poetry image from the Genshin Impact Wiki",
@@ -3695,7 +3695,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/liyue.webp",
+        "path": "github-images-02/images--lore--records--liyue.webp",
         "alt": "Liyue: A Harbor of Contracts image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Liyue",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -3734,7 +3734,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Lost_Adventure_Notebook"
       },
       "image": {
-        "path": "images/lore/catalog/c56297782471.webp",
+        "path": "github-images-02/images--lore--catalog--c56297782471.webp",
         "width": 480,
         "height": 480,
         "alt": "Lost Adventure Notebook image from the Genshin Impact Wiki",
@@ -3782,7 +3782,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Maawe_and_Monetoo"
       },
       "image": {
-        "path": "images/lore/catalog/50a8fc61c145.webp",
+        "path": "github-images-01/images--lore--catalog--50a8fc61c145.webp",
         "width": 480,
         "height": 480,
         "alt": "Maawe and Monetoo image from the Genshin Impact Wiki",
@@ -3831,7 +3831,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Mare_Jivari"
       },
       "image": {
-        "path": "images/lore/catalog/8c71c6cc95e0.webp",
+        "path": "github-images-01/images--lore--catalog--8c71c6cc95e0.webp",
         "width": 480,
         "height": 258,
         "alt": "Mare Jivari image from the Genshin Impact Wiki",
@@ -3873,7 +3873,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Masquerade_of_the_Guilty"
       },
       "image": {
-        "path": "images/lore/catalog/ed69a0c288ae.webp",
+        "path": "github-images-02/images--lore--catalog--ed69a0c288ae.webp",
         "width": 480,
         "height": 240,
         "alt": "Masquerade of the Guilty image from the Genshin Impact Wiki",
@@ -3913,7 +3913,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Meadow_of_Gems"
       },
       "image": {
-        "path": "images/lore/catalog/674b80884433.webp",
+        "path": "github-images-01/images--lore--catalog--674b80884433.webp",
         "width": 480,
         "height": 480,
         "alt": "Meadow of Gems image from the Genshin Impact Wiki",
@@ -3961,7 +3961,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Men_of_Lithin"
       },
       "image": {
-        "path": "images/lore/catalog/51e29ffd3aa6.webp",
+        "path": "github-images-01/images--lore--catalog--51e29ffd3aa6.webp",
         "width": 480,
         "height": 480,
         "alt": "Men of Lithin image from the Genshin Impact Wiki",
@@ -4007,7 +4007,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Mondstadt"
       },
       "image": {
-        "path": "images/lore/mondstadt-preview.webp",
+        "path": "github-images-02/images--lore--mondstadt-preview.webp",
         "alt": "Mondstadt as shown in Genshin Impact",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Mondstadt?file=Mondstadt.png",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -4048,7 +4048,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Moongazer%27s_Engraving"
       },
       "image": {
-        "path": "images/lore/catalog/c4d23b3246ee.webp",
+        "path": "github-images-02/images--lore--catalog--c4d23b3246ee.webp",
         "width": 480,
         "height": 480,
         "alt": "Moongazer's Engraving image from the Genshin Impact Wiki",
@@ -4095,7 +4095,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Moonlit_Bamboo_Forest"
       },
       "image": {
-        "path": "images/lore/catalog/952005c4db1a.webp",
+        "path": "github-images-01/images--lore--catalog--952005c4db1a.webp",
         "width": 480,
         "height": 480,
         "alt": "Moonlit Bamboo Forest image from the Genshin Impact Wiki",
@@ -4148,7 +4148,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Mountainous_Miscellany"
       },
       "image": {
-        "path": "images/lore/catalog/fcad07209529.webp",
+        "path": "github-images-02/images--lore--catalog--fcad07209529.webp",
         "width": 480,
         "height": 480,
         "alt": "Mountainous Miscellany image from the Genshin Impact Wiki",
@@ -4195,7 +4195,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Mt._Lingmeng_Gossip"
       },
       "image": {
-        "path": "images/lore/catalog/8d64a3376290.webp",
+        "path": "github-images-01/images--lore--catalog--8d64a3376290.webp",
         "width": 480,
         "height": 480,
         "alt": "Mt. Lingmeng Gossip image from the Genshin Impact Wiki",
@@ -4244,7 +4244,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Nabu_Malikata"
       },
       "image": {
-        "path": "images/lore/catalog/cda0647ef355.webp",
+        "path": "github-images-02/images--lore--catalog--cda0647ef355.webp",
         "width": 280,
         "height": 480,
         "alt": "Nabu Malikata image from the Genshin Impact Wiki",
@@ -4283,7 +4283,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/nahida-kusanali.webp",
+        "path": "github-images-02/images--lore--records--nahida-kusanali.webp",
         "alt": "Nahida and Lesser Lord Kusanali image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Nahida",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -4324,7 +4324,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Narzissenkreuz_Ordo"
       },
       "image": {
-        "path": "images/lore/catalog/c11cdf7c4d2e.webp",
+        "path": "github-images-02/images--lore--catalog--c11cdf7c4d2e.webp",
         "width": 480,
         "height": 480,
         "alt": "Narzissenkreuz Ordo image from the Genshin Impact Wiki",
@@ -4363,7 +4363,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/natlan.webp",
+        "path": "github-images-02/images--lore--records--natlan.webp",
         "alt": "Natlan: The Nation of War image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Natlan",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -4401,7 +4401,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/saurians.webp",
+        "path": "github-images-02/images--lore--records--saurians.webp",
         "alt": "Natlan’s Saurians image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Saurian",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -4442,7 +4442,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Neuvillette"
       },
       "image": {
-        "path": "images/lore/catalog/7ffe89967f6f.webp",
+        "path": "github-images-01/images--lore--catalog--7ffe89967f6f.webp",
         "width": 240,
         "height": 480,
         "alt": "Neuvillette image from the Genshin Impact Wiki",
@@ -4482,7 +4482,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/New_Chronicles_of_the_Six_Kitsune"
       },
       "image": {
-        "path": "images/lore/catalog/b842ff893643.webp",
+        "path": "github-images-02/images--lore--catalog--b842ff893643.webp",
         "width": 480,
         "height": 480,
         "alt": "New Chronicles of the Six Kitsune image from the Genshin Impact Wiki",
@@ -4531,7 +4531,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Nibelung"
       },
       "image": {
-        "path": "images/lore/catalog/8fa366fc2c1c.webp",
+        "path": "github-images-01/images--lore--catalog--8fa366fc2c1c.webp",
         "width": 480,
         "height": 270,
         "alt": "Nibelung image from the Genshin Impact Wiki",
@@ -4572,7 +4572,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Night_Murmurs_From_the_Far_Border"
       },
       "image": {
-        "path": "images/lore/catalog/29b8d211e792.webp",
+        "path": "github-images-01/images--lore--catalog--29b8d211e792.webp",
         "width": 480,
         "height": 480,
         "alt": "Night Murmurs From the Far Border image from the Genshin Impact Wiki",
@@ -4618,7 +4618,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/nod-krai.webp",
+        "path": "github-images-02/images--lore--records--nod-krai.webp",
         "alt": "Nod-Krai: The Northern Borderland image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Nod-Krai",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -4656,7 +4656,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/decarabian-old-mondstadt.webp",
+        "path": "github-images-02/images--lore--records--decarabian-old-mondstadt.webp",
         "alt": "Old Mondstadt and Decarabian image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Decarabian%27s_Mondstadt",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -4697,7 +4697,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Omnipresence_Over_Mortals"
       },
       "image": {
-        "path": "images/lore/catalog/63b2c480e322.webp",
+        "path": "github-images-01/images--lore--catalog--63b2c480e322.webp",
         "width": 480,
         "height": 240,
         "alt": "Omnipresence Over Mortals image from the Genshin Impact Wiki",
@@ -4737,7 +4737,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Onibudou"
       },
       "image": {
-        "path": "images/lore/catalog/fcad07209529.webp",
+        "path": "github-images-02/images--lore--catalog--fcad07209529.webp",
         "width": 480,
         "height": 480,
         "alt": "Onibudou image from the Genshin Impact Wiki",
@@ -4786,7 +4786,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Orobashi"
       },
       "image": {
-        "path": "images/lore/catalog/4bc410421ab5.webp",
+        "path": "github-images-01/images--lore--catalog--4bc410421ab5.webp",
         "width": 480,
         "height": 405,
         "alt": "Orobashi image from the Genshin Impact Wiki",
@@ -4823,7 +4823,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/paimon-origin-theories.webp",
+        "path": "github-images-02/images--lore--records--paimon-origin-theories.webp",
         "alt": "Paimon’s Origin: Community Theories image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Paimon",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -4864,7 +4864,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Pari"
       },
       "image": {
-        "path": "images/lore/catalog/02d04aa38205.webp",
+        "path": "github-images-01/images--lore--catalog--02d04aa38205.webp",
         "width": 480,
         "height": 480,
         "alt": "Pari image from the Genshin Impact Wiki",
@@ -4904,7 +4904,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Perinheri"
       },
       "image": {
-        "path": "images/lore/catalog/01e2202a7c5e.webp",
+        "path": "github-images-01/images--lore--catalog--01e2202a7c5e.webp",
         "width": 480,
         "height": 480,
         "alt": "Perinheri image from the Genshin Impact Wiki",
@@ -4951,7 +4951,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Pharmacist%27s_Notebook_(I)"
       },
       "image": {
-        "path": "images/lore/catalog/318a19c9fcc1.webp",
+        "path": "github-images-01/images--lore--catalog--318a19c9fcc1.webp",
         "width": 480,
         "height": 480,
         "alt": "Pharmacist's Notebook (I) image from the Genshin Impact Wiki",
@@ -4998,7 +4998,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Pharmacist%27s_Notebook_(II)"
       },
       "image": {
-        "path": "images/lore/catalog/318a19c9fcc1.webp",
+        "path": "github-images-01/images--lore--catalog--318a19c9fcc1.webp",
         "width": 480,
         "height": 480,
         "alt": "Pharmacist's Notebook (II) image from the Genshin Impact Wiki",
@@ -5045,7 +5045,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Pharmacist%27s_Notebook_(III)"
       },
       "image": {
-        "path": "images/lore/catalog/318a19c9fcc1.webp",
+        "path": "github-images-01/images--lore--catalog--318a19c9fcc1.webp",
         "width": 480,
         "height": 480,
         "alt": "Pharmacist's Notebook (III) image from the Genshin Impact Wiki",
@@ -5092,7 +5092,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Polestar_Ballet_Anthology"
       },
       "image": {
-        "path": "images/lore/catalog/ab39cda0b62f.webp",
+        "path": "github-images-01/images--lore--catalog--ab39cda0b62f.webp",
         "width": 480,
         "height": 480,
         "alt": "Polestar Ballet Anthology image from the Genshin Impact Wiki",
@@ -5139,7 +5139,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Pretty_Please,_Kitsune_Guuji%3F"
       },
       "image": {
-        "path": "images/lore/catalog/42ba0ca15804.webp",
+        "path": "github-images-01/images--lore--catalog--42ba0ca15804.webp",
         "width": 480,
         "height": 480,
         "alt": "Pretty Please, Kitsune Guuji? image from the Genshin Impact Wiki",
@@ -5222,7 +5222,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Princess_Mina_of_the_Fallen_Nation"
       },
       "image": {
-        "path": "images/lore/catalog/4def64a4f069.webp",
+        "path": "github-images-01/images--lore--catalog--4def64a4f069.webp",
         "width": 480,
         "height": 480,
         "alt": "Princess Mina of the Fallen Nation image from the Genshin Impact Wiki",
@@ -5267,7 +5267,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/prologue-song-of-dragon-and-freedom.webp",
+        "path": "github-images-02/images--lore--records--prologue-song-of-dragon-and-freedom.webp",
         "alt": "Prologue: Song of the Dragon and Freedom image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Archon_Quest",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -5306,7 +5306,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Ragged_Notebook_(Bygones_Times_Like_Dust_Passing)"
       },
       "image": {
-        "path": "images/lore/catalog/318a19c9fcc1.webp",
+        "path": "github-images-01/images--lore--catalog--318a19c9fcc1.webp",
         "width": 480,
         "height": 480,
         "alt": "Ragged Notebook (Bygones Times Like Dust Passing) image from the Genshin Impact Wiki",
@@ -5353,7 +5353,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Ragged_Notebook_(Time_and_Wind)"
       },
       "image": {
-        "path": "images/lore/catalog/432ca5626aa3.webp",
+        "path": "github-images-01/images--lore--catalog--432ca5626aa3.webp",
         "width": 480,
         "height": 480,
         "alt": "Ragged Notebook (Time and Wind) image from the Genshin Impact Wiki",
@@ -5400,7 +5400,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/raiden-ei.webp",
+        "path": "github-images-02/images--lore--records--raiden-ei.webp",
         "alt": "Raiden Ei and the Shogun image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Raiden_Shogun",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -5439,7 +5439,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Rangi_Nui%27s_End"
       },
       "image": {
-        "path": "images/lore/catalog/e8a109840fe7.webp",
+        "path": "github-images-02/images--lore--catalog--e8a109840fe7.webp",
         "width": 480,
         "height": 480,
         "alt": "Rangi Nui's End image from the Genshin Impact Wiki",
@@ -5486,7 +5486,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Records_of_a_Changing_Village"
       },
       "image": {
-        "path": "images/lore/catalog/fcad07209529.webp",
+        "path": "github-images-02/images--lore--catalog--fcad07209529.webp",
         "width": 480,
         "height": 480,
         "alt": "Records of a Changing Village image from the Genshin Impact Wiki",
@@ -5534,7 +5534,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Records_of_Hanan_Pacha"
       },
       "image": {
-        "path": "images/lore/catalog/6f88df8118c9.webp",
+        "path": "github-images-01/images--lore--catalog--6f88df8118c9.webp",
         "width": 480,
         "height": 480,
         "alt": "Records of Hanan Pacha image from the Genshin Impact Wiki",
@@ -5582,7 +5582,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Records_of_Jueyun"
       },
       "image": {
-        "path": "images/lore/catalog/ed4533915446.webp",
+        "path": "github-images-02/images--lore--catalog--ed4533915446.webp",
         "width": 480,
         "height": 480,
         "alt": "Records of Jueyun image from the Genshin Impact Wiki",
@@ -5629,7 +5629,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Records_of_the_Gallant"
       },
       "image": {
-        "path": "images/lore/catalog/a126bc274def.webp",
+        "path": "github-images-01/images--lore--catalog--a126bc274def.webp",
         "width": 480,
         "height": 480,
         "alt": "Records of the Gallant image from the Genshin Impact Wiki",
@@ -5675,7 +5675,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/remuria.webp",
+        "path": "github-images-02/images--lore--records--remuria.webp",
         "alt": "Remuria image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Remuria",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -5714,7 +5714,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Rex_Incognito"
       },
       "image": {
-        "path": "images/lore/catalog/316db6427428.webp",
+        "path": "github-images-01/images--lore--catalog--316db6427428.webp",
         "width": 480,
         "height": 480,
         "alt": "Rex Incognito image from the Genshin Impact Wiki",
@@ -5763,7 +5763,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Rhinedottir"
       },
       "image": {
-        "path": "images/lore/catalog/ee3c01fbd871.webp",
+        "path": "github-images-02/images--lore--catalog--ee3c01fbd871.webp",
         "width": 272,
         "height": 480,
         "alt": "Rhinedottir image from the Genshin Impact Wiki",
@@ -5803,7 +5803,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Robben_versus_Chesterton:_Iridescent_Brooch"
       },
       "image": {
-        "path": "images/lore/catalog/3313f8ef56a5.webp",
+        "path": "github-images-01/images--lore--catalog--3313f8ef56a5.webp",
         "width": 480,
         "height": 480,
         "alt": "Robben versus Chesterton: Iridescent Brooch image from the Genshin Impact Wiki",
@@ -5850,7 +5850,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Sacred_Sakura_Cleansing_Summary"
       },
       "image": {
-        "path": "images/lore/catalog/fcad07209529.webp",
+        "path": "github-images-02/images--lore--catalog--fcad07209529.webp",
         "width": 480,
         "height": 480,
         "alt": "Sacred Sakura Cleansing Summary image from the Genshin Impact Wiki",
@@ -5899,7 +5899,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Sal_Vindagnyr"
       },
       "image": {
-        "path": "images/lore/catalog/8c8d6b003e4d.webp",
+        "path": "github-images-01/images--lore--catalog--8c8d6b003e4d.webp",
         "width": 480,
         "height": 270,
         "alt": "Sal Vindagnyr image from the Genshin Impact Wiki",
@@ -5939,7 +5939,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Sangonomiya_Chronicles"
       },
       "image": {
-        "path": "images/lore/catalog/b9c68006c868.webp",
+        "path": "github-images-02/images--lore--catalog--b9c68006c868.webp",
         "width": 480,
         "height": 480,
         "alt": "Sangonomiya Chronicles image from the Genshin Impact Wiki",
@@ -5987,7 +5987,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Scroll_of_Streaming_Song"
       },
       "image": {
-        "path": "images/lore/catalog/aab5b2333acc.webp",
+        "path": "github-images-01/images--lore--catalog--aab5b2333acc.webp",
         "width": 480,
         "height": 480,
         "alt": "Scroll of Streaming Song image from the Genshin Impact Wiki",
@@ -6036,7 +6036,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Seelie"
       },
       "image": {
-        "path": "images/lore/catalog/2223107fe2d1.webp",
+        "path": "github-images-01/images--lore--catalog--2223107fe2d1.webp",
         "width": 480,
         "height": 270,
         "alt": "Seelie image from the Genshin Impact Wiki",
@@ -6076,7 +6076,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Shogun_Almighty:_Reborn_as_Raiden_With_Unlimited_Power"
       },
       "image": {
-        "path": "images/lore/catalog/00d60a8491da.webp",
+        "path": "github-images-01/images--lore--catalog--00d60a8491da.webp",
         "width": 480,
         "height": 480,
         "alt": "Shogun Almighty: Reborn as Raiden With Unlimited Power image from the Genshin Impact Wiki",
@@ -6122,7 +6122,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/snezhnaya.webp",
+        "path": "github-images-02/images--lore--records--snezhnaya.webp",
         "alt": "Snezhnaya: A Nation Still Unfolding image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Snezhnaya",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -6161,7 +6161,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Someone%27s_Diary"
       },
       "image": {
-        "path": "images/lore/catalog/fcad07209529.webp",
+        "path": "github-images-02/images--lore--catalog--fcad07209529.webp",
         "width": 480,
         "height": 480,
         "alt": "Someone's Diary image from the Genshin Impact Wiki",
@@ -6208,7 +6208,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Somewhat_Aged_Copy_of_%22Tequil_the_Brave%22"
       },
       "image": {
-        "path": "images/lore/catalog/53c9512c7a4c.webp",
+        "path": "github-images-01/images--lore--catalog--53c9512c7a4c.webp",
         "width": 480,
         "height": 480,
         "alt": "Somewhat Aged Copy of \"Tequil the Brave\" image from the Genshin Impact Wiki",
@@ -6263,7 +6263,7 @@
       ],
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/song-of-the-welkin-moon.webp",
+        "path": "github-images-02/images--lore--records--song-of-the-welkin-moon.webp",
         "alt": "Song of the Welkin Moon image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Nod-Krai",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -6302,7 +6302,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Spanking_New_Copy_of_%22Tequil_the_Brave%22"
       },
       "image": {
-        "path": "images/lore/catalog/06b908e89fca.webp",
+        "path": "github-images-01/images--lore--catalog--06b908e89fca.webp",
         "width": 480,
         "height": 480,
         "alt": "Spanking New Copy of \"Tequil the Brave\" image from the Genshin Impact Wiki",
@@ -6349,7 +6349,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Springs_of_Hidden_Jade"
       },
       "image": {
-        "path": "images/lore/catalog/3e51386f32ee.webp",
+        "path": "github-images-01/images--lore--catalog--3e51386f32ee.webp",
         "width": 480,
         "height": 480,
         "alt": "Springs of Hidden Jade image from the Genshin Impact Wiki",
@@ -6402,7 +6402,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Stone_Tablet_Compilations:_Vol._I"
       },
       "image": {
-        "path": "images/lore/catalog/ff6a68b2fa5e.webp",
+        "path": "github-images-02/images--lore--catalog--ff6a68b2fa5e.webp",
         "width": 480,
         "height": 480,
         "alt": "Stone Tablet Compilations: Vol. I image from the Genshin Impact Wiki",
@@ -6450,7 +6450,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/String_of_Pearls"
       },
       "image": {
-        "path": "images/lore/catalog/1da9568c92a8.webp",
+        "path": "github-images-01/images--lore--catalog--1da9568c92a8.webp",
         "width": 480,
         "height": 480,
         "alt": "String of Pearls image from the Genshin Impact Wiki",
@@ -6497,7 +6497,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/sumeru.webp",
+        "path": "github-images-02/images--lore--records--sumeru.webp",
         "alt": "Sumeru: Knowledge and Memory image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Sumeru",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -6537,7 +6537,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Sundjatta%27s_First_Foray"
       },
       "image": {
-        "path": "images/lore/catalog/ecca21ef4b55.webp",
+        "path": "github-images-02/images--lore--catalog--ecca21ef4b55.webp",
         "width": 480,
         "height": 480,
         "alt": "Sundjatta's First Foray image from the Genshin Impact Wiki",
@@ -6586,7 +6586,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Sword_of_Narzissenkreuz"
       },
       "image": {
-        "path": "images/lore/catalog/96e4b8caec58.webp",
+        "path": "github-images-01/images--lore--catalog--96e4b8caec58.webp",
         "width": 480,
         "height": 480,
         "alt": "Sword of Narzissenkreuz image from the Genshin Impact Wiki",
@@ -6626,7 +6626,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Tales_Carried_by_the_Northwind"
       },
       "image": {
-        "path": "images/lore/catalog/f82525621bf9.webp",
+        "path": "github-images-02/images--lore--catalog--f82525621bf9.webp",
         "width": 480,
         "height": 480,
         "alt": "Tales Carried by the Northwind image from the Genshin Impact Wiki",
@@ -6673,7 +6673,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Tales_From_the_Waves"
       },
       "image": {
-        "path": "images/lore/catalog/24aabe735ac4.webp",
+        "path": "github-images-01/images--lore--catalog--24aabe735ac4.webp",
         "width": 480,
         "height": 480,
         "alt": "Tales From the Waves image from the Genshin Impact Wiki",
@@ -6721,7 +6721,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Tales_of_a_Snow-Winged_Goose"
       },
       "image": {
-        "path": "images/lore/catalog/b3ef1aa3b375.webp",
+        "path": "github-images-02/images--lore--catalog--b3ef1aa3b375.webp",
         "width": 480,
         "height": 480,
         "alt": "Tales of a Snow-Winged Goose image from the Genshin Impact Wiki",
@@ -6769,7 +6769,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Teyvat_Travel_Guide"
       },
       "image": {
-        "path": "images/lore/catalog/c7092c20c72b.webp",
+        "path": "github-images-02/images--lore--catalog--c7092c20c72b.webp",
         "width": 480,
         "height": 480,
         "alt": "Teyvat Travel Guide image from the Genshin Impact Wiki",
@@ -6814,7 +6814,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/teyvat.webp",
+        "path": "github-images-02/images--lore--records--teyvat.webp",
         "alt": "Teyvat: The Known World image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Teyvat",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -6854,7 +6854,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Boar_Princess"
       },
       "image": {
-        "path": "images/lore/catalog/ade7ce47715d.webp",
+        "path": "github-images-01/images--lore--catalog--ade7ce47715d.webp",
         "width": 480,
         "height": 480,
         "alt": "The Boar Princess image from the Genshin Impact Wiki",
@@ -6901,7 +6901,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Byakuyakoku_Collection"
       },
       "image": {
-        "path": "images/lore/catalog/4e4bec5ee8cd.webp",
+        "path": "github-images-01/images--lore--catalog--4e4bec5ee8cd.webp",
         "width": 480,
         "height": 480,
         "alt": "The Byakuyakoku Collection image from the Genshin Impact Wiki",
@@ -6984,7 +6984,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Fall_of_the_Faded_Castle"
       },
       "image": {
-        "path": "images/lore/catalog/3ddea8ecc62e.webp",
+        "path": "github-images-01/images--lore--catalog--3ddea8ecc62e.webp",
         "width": 480,
         "height": 480,
         "alt": "The Fall of the Faded Castle image from the Genshin Impact Wiki",
@@ -7030,7 +7030,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/fatui.webp",
+        "path": "github-images-02/images--lore--records--fatui.webp",
         "alt": "The Fatui image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Fatui",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -7070,7 +7070,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Feline_Firm"
       },
       "image": {
-        "path": "images/lore/catalog/0cf7d2d81375.webp",
+        "path": "github-images-01/images--lore--catalog--0cf7d2d81375.webp",
         "width": 480,
         "height": 480,
         "alt": "The Feline Firm image from the Genshin Impact Wiki",
@@ -7117,7 +7117,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Folio_of_Foliage"
       },
       "image": {
-        "path": "images/lore/catalog/02f57f88b3d7.webp",
+        "path": "github-images-01/images--lore--catalog--02f57f88b3d7.webp",
         "width": 480,
         "height": 480,
         "alt": "The Folio of Foliage image from the Genshin Impact Wiki",
@@ -7164,7 +7164,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Fox_in_the_Dandelion_Sea"
       },
       "image": {
-        "path": "images/lore/catalog/ad44bce257ab.webp",
+        "path": "github-images-01/images--lore--catalog--ad44bce257ab.webp",
         "width": 480,
         "height": 480,
         "alt": "The Fox in the Dandelion Sea image from the Genshin Impact Wiki",
@@ -7209,7 +7209,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/gnoses.webp",
+        "path": "github-images-02/images--lore--records--gnoses.webp",
         "alt": "The Gnoses image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Gnosis",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -7247,7 +7247,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/guili-assembly.webp",
+        "path": "github-images-02/images--lore--records--guili-assembly.webp",
         "alt": "The Guili Assembly image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Guili_Assembly",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -7287,7 +7287,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Headless_Coquitao"
       },
       "image": {
-        "path": "images/lore/catalog/46d77d975fc0.webp",
+        "path": "github-images-01/images--lore--catalog--46d77d975fc0.webp",
         "width": 480,
         "height": 480,
         "alt": "The Headless Coquitao image from the Genshin Impact Wiki",
@@ -7334,7 +7334,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_History_of_the_Decline_and_Fall_of_Remuria"
       },
       "image": {
-        "path": "images/lore/catalog/518d72e5138b.webp",
+        "path": "github-images-01/images--lore--catalog--518d72e5138b.webp",
         "width": 480,
         "height": 480,
         "alt": "The History of the Decline and Fall of Remuria image from the Genshin Impact Wiki",
@@ -7383,7 +7383,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Immovable_God_and_the_Eternal_Euthymia"
       },
       "image": {
-        "path": "images/lore/catalog/be0e03a2f50e.webp",
+        "path": "github-images-02/images--lore--catalog--be0e03a2f50e.webp",
         "width": 480,
         "height": 240,
         "alt": "The Immovable God and the Eternal Euthymia image from the Genshin Impact Wiki",
@@ -7423,7 +7423,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Lay_of_Al-Ahmar"
       },
       "image": {
-        "path": "images/lore/catalog/dde7c0148908.webp",
+        "path": "github-images-02/images--lore--catalog--dde7c0148908.webp",
         "width": 480,
         "height": 480,
         "alt": "The Lay of Al-Ahmar image from the Genshin Impact Wiki",
@@ -7470,7 +7470,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Legend_of_Vennessa"
       },
       "image": {
-        "path": "images/lore/catalog/c8f054ac5eed.webp",
+        "path": "github-images-02/images--lore--catalog--c8f054ac5eed.webp",
         "width": 480,
         "height": 480,
         "alt": "The Legend of Vennessa image from the Genshin Impact Wiki",
@@ -7518,7 +7518,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Legends_of_Reed_Miller,_Thief_Extraordinaire"
       },
       "image": {
-        "path": "images/lore/catalog/a3feb7912d4d.webp",
+        "path": "github-images-01/images--lore--catalog--a3feb7912d4d.webp",
         "width": 480,
         "height": 480,
         "alt": "The Legends of Reed Miller, Thief Extraordinaire image from the Genshin Impact Wiki",
@@ -7565,7 +7565,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Life_of_Mouun_the_Shrine_Maiden"
       },
       "image": {
-        "path": "images/lore/catalog/7882c48eba83.webp",
+        "path": "github-images-01/images--lore--catalog--7882c48eba83.webp",
         "width": 480,
         "height": 480,
         "alt": "The Life of Mouun the Shrine Maiden image from the Genshin Impact Wiki",
@@ -7613,7 +7613,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Little_Witch_and_the_Undying_Fire"
       },
       "image": {
-        "path": "images/lore/catalog/8e5a92e1319f.webp",
+        "path": "github-images-01/images--lore--catalog--8e5a92e1319f.webp",
         "width": 480,
         "height": 480,
         "alt": "The Little Witch and the Undying Fire image from the Genshin Impact Wiki",
@@ -7658,7 +7658,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/liyue-qixing.webp",
+        "path": "github-images-02/images--lore--records--liyue-qixing.webp",
         "alt": "The Liyue Qixing image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Liyue_Qixing",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -7696,7 +7696,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/melusines.webp",
+        "path": "github-images-02/images--lore--records--melusines.webp",
         "alt": "The Melusines image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Melusine",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -7735,7 +7735,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Mondstadt_Tower"
       },
       "image": {
-        "path": "images/lore/catalog/944e4b26ee3c.webp",
+        "path": "github-images-01/images--lore--catalog--944e4b26ee3c.webp",
         "width": 480,
         "height": 480,
         "alt": "The Mondstadt Tower image from the Genshin Impact Wiki",
@@ -7783,7 +7783,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/catalog/b2cb0c13f066.webp",
+        "path": "github-images-02/images--lore--catalog--b2cb0c13f066.webp",
         "width": 480,
         "height": 480,
         "alt": "The Pale Princess and the Six Pygmies image from the Genshin Impact Wiki",
@@ -7830,7 +7830,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Saga_of_Hamavaran"
       },
       "image": {
-        "path": "images/lore/catalog/070e80ecc30d.webp",
+        "path": "github-images-01/images--lore--catalog--070e80ecc30d.webp",
         "width": 480,
         "height": 480,
         "alt": "The Saga of Hamavaran image from the Genshin Impact Wiki",
@@ -7877,7 +7877,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Serpent_and_Drakes_of_Tokoyokoku"
       },
       "image": {
-        "path": "images/lore/catalog/12d673854a19.webp",
+        "path": "github-images-01/images--lore--catalog--12d673854a19.webp",
         "width": 480,
         "height": 480,
         "alt": "The Serpent and Drakes of Tokoyokoku image from the Genshin Impact Wiki",
@@ -7953,7 +7953,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Shepherd_and_the_Magic_Bottle"
       },
       "image": {
-        "path": "images/lore/catalog/9c84072adb63.webp",
+        "path": "github-images-01/images--lore--catalog--9c84072adb63.webp",
         "width": 480,
         "height": 480,
         "alt": "The Shepherd and the Magic Bottle image from the Genshin Impact Wiki",
@@ -7999,7 +7999,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/skyfrost-nail.webp",
+        "path": "github-images-02/images--lore--records--skyfrost-nail.webp",
         "alt": "The Skyfrost Nail image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Skyfrost_Nail",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -8036,7 +8036,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/sumeru-akademiya.webp",
+        "path": "github-images-02/images--lore--records--sumeru-akademiya.webp",
         "alt": "The Sumeru Akademiya image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Sumeru_Akademiya",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -8076,7 +8076,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Tale_of_Kuntur"
       },
       "image": {
-        "path": "images/lore/catalog/b9f0daa9ecff.webp",
+        "path": "github-images-02/images--lore--catalog--b9f0daa9ecff.webp",
         "width": 480,
         "height": 480,
         "alt": "The Tale of Kuntur image from the Genshin Impact Wiki",
@@ -8124,7 +8124,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Tale_of_Qoyllor_and_Ukuku"
       },
       "image": {
-        "path": "images/lore/catalog/b9f0daa9ecff.webp",
+        "path": "github-images-02/images--lore--catalog--b9f0daa9ecff.webp",
         "width": 480,
         "height": 480,
         "alt": "The Tale of Qoyllor and Ukuku image from the Genshin Impact Wiki",
@@ -8171,7 +8171,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Tale_of_Shiruyeh_and_Shirin"
       },
       "image": {
-        "path": "images/lore/catalog/99baf15268b3.webp",
+        "path": "github-images-01/images--lore--catalog--99baf15268b3.webp",
         "width": 480,
         "height": 480,
         "alt": "The Tale of Shiruyeh and Shirin image from the Genshin Impact Wiki",
@@ -8221,7 +8221,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/three-moons.webp",
+        "path": "github-images-02/images--lore--records--three-moons.webp",
         "alt": "The Three Moons image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Nod-Krai",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -8267,7 +8267,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Two_Musketeers"
       },
       "image": {
-        "path": "images/lore/catalog/e28c12880878.webp",
+        "path": "github-images-02/images--lore--catalog--e28c12880878.webp",
         "width": 480,
         "height": 480,
         "alt": "The Two Musketeers image from the Genshin Impact Wiki",
@@ -8315,7 +8315,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/The_Volcano_Lord_and_the_Shadow_Pins"
       },
       "image": {
-        "path": "images/lore/catalog/573c53044d93.webp",
+        "path": "github-images-01/images--lore--catalog--573c53044d93.webp",
         "width": 480,
         "height": 480,
         "alt": "The Volcano Lord and the Shadow Pins image from the Genshin Impact Wiki",
@@ -8362,7 +8362,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Thick_Notebook"
       },
       "image": {
-        "path": "images/lore/catalog/c56297782471.webp",
+        "path": "github-images-02/images--lore--catalog--c56297782471.webp",
         "width": 480,
         "height": 480,
         "alt": "Thick Notebook image from the Genshin Impact Wiki",
@@ -8410,7 +8410,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Time_Trekker"
       },
       "image": {
-        "path": "images/lore/catalog/e248125e02c7.webp",
+        "path": "github-images-02/images--lore--catalog--e248125e02c7.webp",
         "width": 480,
         "height": 480,
         "alt": "Time Trekker image from the Genshin Impact Wiki",
@@ -8458,7 +8458,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Toki_Alley_Tales"
       },
       "image": {
-        "path": "images/lore/catalog/dc434d0f9450.webp",
+        "path": "github-images-02/images--lore--catalog--dc434d0f9450.webp",
         "width": 480,
         "height": 480,
         "alt": "Toki Alley Tales image from the Genshin Impact Wiki",
@@ -8505,7 +8505,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Treasured_Tales_of_the_Chouken_Shinkageuchi"
       },
       "image": {
-        "path": "images/lore/catalog/b82417bcfc70.webp",
+        "path": "github-images-02/images--lore--catalog--b82417bcfc70.webp",
         "width": 480,
         "height": 480,
         "alt": "Treasured Tales of the Chouken Shinkageuchi image from the Genshin Impact Wiki",
@@ -8554,7 +8554,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Truth_Amongst_the_Pages_of_Purana"
       },
       "image": {
-        "path": "images/lore/catalog/bf40bdbe938c.webp",
+        "path": "github-images-02/images--lore--catalog--bf40bdbe938c.webp",
         "width": 480,
         "height": 240,
         "alt": "Truth Amongst the Pages of Purana image from the Genshin Impact Wiki",
@@ -8596,7 +8596,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Tsurumi_Island"
       },
       "image": {
-        "path": "images/lore/catalog/fd36a9e4ba69.webp",
+        "path": "github-images-02/images--lore--catalog--fd36a9e4ba69.webp",
         "width": 480,
         "height": 270,
         "alt": "Tsurumi Island image from the Genshin Impact Wiki",
@@ -8636,7 +8636,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/venti-barbatos.webp",
+        "path": "github-images-02/images--lore--records--venti-barbatos.webp",
         "alt": "Venti and Barbatos image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Venti",
         "credit": "Genshin Impact Wiki / HoYoverse",
@@ -8675,7 +8675,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Vera%27s_Melancholy"
       },
       "image": {
-        "path": "images/lore/catalog/13b8800681a6.webp",
+        "path": "github-images-01/images--lore--catalog--13b8800681a6.webp",
         "width": 480,
         "height": 480,
         "alt": "Vera's Melancholy image from the Genshin Impact Wiki",
@@ -8722,7 +8722,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Verses_of_Equilibrium"
       },
       "image": {
-        "path": "images/lore/catalog/18fc562c60f4.webp",
+        "path": "github-images-01/images--lore--catalog--18fc562c60f4.webp",
         "width": 480,
         "height": 480,
         "alt": "Verses of Equilibrium image from the Genshin Impact Wiki",
@@ -8771,7 +8771,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Vishap"
       },
       "image": {
-        "path": "images/lore/catalog/df91697fadb7.webp",
+        "path": "github-images-02/images--lore--catalog--df91697fadb7.webp",
         "width": 480,
         "height": 480,
         "alt": "Vishap image from the Genshin Impact Wiki",
@@ -8811,7 +8811,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Wind,_Courage,_and_Wings_(Book)"
       },
       "image": {
-        "path": "images/lore/catalog/685ac709dee4.webp",
+        "path": "github-images-01/images--lore--catalog--685ac709dee4.webp",
         "width": 480,
         "height": 480,
         "alt": "Wind, Courage, and Wings (Book) image from the Genshin Impact Wiki",
@@ -8889,7 +8889,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Yaksha"
       },
       "image": {
-        "path": "images/lore/catalog/570742ab5a82.webp",
+        "path": "github-images-01/images--lore--catalog--570742ab5a82.webp",
         "width": 480,
         "height": 270,
         "alt": "Yaksha image from the Genshin Impact Wiki",
@@ -8929,7 +8929,7 @@
         "url": "https://genshin-impact.fandom.com/wiki/Yakshas:_The_Guardian_Adepti"
       },
       "image": {
-        "path": "images/lore/catalog/7f72fb423537.webp",
+        "path": "github-images-01/images--lore--catalog--7f72fb423537.webp",
         "width": 480,
         "height": 480,
         "alt": "Yakshas: The Guardian Adepti image from the Genshin Impact Wiki",
@@ -8976,7 +8976,7 @@
       },
       "addedOn": "2026-11-18",
       "image": {
-        "path": "images/lore/records/zhongli-morax.webp",
+        "path": "github-images-02/images--lore--records--zhongli-morax.webp",
         "alt": "Zhongli and Morax image related to Genshin Impact lore",
         "sourceUrl": "https://genshin-impact.fandom.com/wiki/Zhongli",
         "credit": "Genshin Impact Wiki / HoYoverse",

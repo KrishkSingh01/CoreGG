@@ -3427,21 +3427,21 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
         const materialsContinueButton = document.getElementById('materialsContinueButton');
 
         const columbinaMaterialCatalog = {
-            mora: { name: 'Mora', icon: './images/Mora.png', short: 'M' },
-            winter: { name: 'Winter Icelea', icon: './images/Winter%20Icelea.png', short: 'WI' },
-            sliver: { name: 'Varunada Lazurite Sliver', icon: './media/columbina/materials/varunada-sliver.png', short: 'VS' },
-            fragment: { name: 'Varunada Lazurite Fragment', icon: './media/columbina/materials/varunada-fragment.png', short: 'VF' },
-            chunk: { name: 'Varunada Lazurite Chunk', icon: './media/columbina/materials/varunada-chunk.png', short: 'VC' },
-            gemstone: { name: 'Varunada Lazurite Gemstone', icon: './media/columbina/materials/varunada-gemstone.png', short: 'VG' },
-            condensate: { name: 'Slime Condensate', icon: './media/columbina/materials/slime-condensate.png', short: 'SC' },
-            secretions: { name: 'Slime Secretions', icon: './media/columbina/materials/slime-secretions.png', short: 'SS' },
-            concentrate: { name: 'Slime Concentrate', icon: './media/columbina/materials/slime-concentrate.png', short: 'SX' },
-            antler: { name: 'Radiant Antler', icon: './media/columbina/materials/radiant-antler.png', short: 'RA' },
-            teachings: { name: 'Teachings of Moonlight', icon: './media/columbina/materials/teachings-moonlight.png', short: 'TM' },
-            guide: { name: 'Guide to Moonlight', icon: './media/columbina/materials/guide-moonlight.png', short: 'GM' },
-            philosophies: { name: 'Philosophies of Moonlight', icon: './media/columbina/materials/philosophies-moonlight.png', short: 'PM' },
-            mask: { name: 'Mask of the Virtuous Doctor', icon: './media/columbina/materials/mask-virtuous-doctor.png', short: 'MD' },
-            crown: { name: 'Crown of Insight', icon: './media/columbina/materials/crown-insight.png', short: 'CI' }
+            mora: { name: 'Mora', icon: './github-images-02/images--mora.png', short: 'M' },
+            winter: { name: 'Winter Icelea', icon: './github-images-02/images--winter-icelea.png', short: 'WI' },
+            sliver: { name: 'Varunada Lazurite Sliver', icon: './github-images-04/media--columbina--materials--varunada-sliver.png', short: 'VS' },
+            fragment: { name: 'Varunada Lazurite Fragment', icon: './github-images-04/media--columbina--materials--varunada-fragment.png', short: 'VF' },
+            chunk: { name: 'Varunada Lazurite Chunk', icon: './github-images-04/media--columbina--materials--varunada-chunk.png', short: 'VC' },
+            gemstone: { name: 'Varunada Lazurite Gemstone', icon: './github-images-04/media--columbina--materials--varunada-gemstone.png', short: 'VG' },
+            condensate: { name: 'Slime Condensate', icon: './github-images-04/media--columbina--materials--slime-condensate.png', short: 'SC' },
+            secretions: { name: 'Slime Secretions', icon: './github-images-04/media--columbina--materials--slime-secretions.png', short: 'SS' },
+            concentrate: { name: 'Slime Concentrate', icon: './github-images-04/media--columbina--materials--slime-concentrate.png', short: 'SX' },
+            antler: { name: 'Radiant Antler', icon: './github-images-04/media--columbina--materials--radiant-antler.png', short: 'RA' },
+            teachings: { name: 'Teachings of Moonlight', icon: './github-images-04/media--columbina--materials--teachings-moonlight.png', short: 'TM' },
+            guide: { name: 'Guide to Moonlight', icon: './github-images-04/media--columbina--materials--guide-moonlight.png', short: 'GM' },
+            philosophies: { name: 'Philosophies of Moonlight', icon: './github-images-04/media--columbina--materials--philosophies-moonlight.png', short: 'PM' },
+            mask: { name: 'Mask of the Virtuous Doctor', icon: './github-images-04/media--columbina--materials--mask-virtuous-doctor.png', short: 'MD' },
+            crown: { name: 'Crown of Insight', icon: './github-images-04/media--columbina--materials--crown-insight.png', short: 'CI' }
         };
 
         const columbinaMaterialIconCache = new Map();

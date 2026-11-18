@@ -68,13 +68,13 @@ function makePage(entry) {
   return `<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0b1424">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#0b1424">
   <meta name="description" content="${description}"><meta name="robots" content="index,follow,max-image-preview:large">
   <title>${esc(entry.title)} | Genshin Impact Lore | CoreGG</title><link rel="canonical" href="${canonical}">
   <meta property="og:type" content="article"><meta property="og:site_name" content="CoreGG"><meta property="og:title" content="${esc(entry.title)} | CoreGG Teyvat Lore Archive"><meta property="og:description" content="${description}"><meta property="og:url" content="${canonical}">
   ${entry.image ? "<meta property=\"og:image\" content=\"" + site.baseUrl + "/" + esc(entry.image.path) + "\"><meta property=\"og:image:alt\" content=\"" + esc(entry.image.alt) + "\">" : ""}
   <meta name="twitter:card" content="${entry.image ? "summary_large_image" : "summary"}"><meta name="twitter:title" content="${esc(entry.title)}"><meta name="twitter:description" content="${description}">
-  <link rel="icon" href="../github-images-02/images--lore--coregg-lore-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../css/coregg-lore.css?v=mobile-20261118-2">
+  <link rel="icon" href="../github-images-02/images--lore--coregg-lore-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../css/coregg-lore.css?v=mobile-20261118-3">
   <script type="application/ld+json">${json(articleJson)}</script><script type="application/ld+json">${json(crumbs)}</script>
   <script src="../js/lore-entry.js" defer></script>
 </head>

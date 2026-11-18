@@ -347,3 +347,65 @@
 .lore-site[data-lore-interface="core"] #lore-regions .lore-region-card.lore-region-all .lore-region-card-meta{color:#aac8ec}
 .lore-site[data-lore-interface="core"] .lore-core-navigator::before{content:"";position:absolute;top:50%;left:50%;width:77%;height:83%;transform:translate(-50%,-50%);border:1px solid rgba(0,243,255,.15);border-radius:50%;box-shadow:0 0 22px rgba(0,243,255,.035);pointer-events:none}
 @media(max-width:960px){.lore-site[data-lore-interface="core"] .lore-core-navigator::before{display:none}.lore-site[data-lore-interface="core"] .lore-core-reactor svg,.lore-site[data-lore-interface="core"] .lore-reactor-ring{animation:none}.lore-site-shell::before{background-position:center 35%}}
+
+/* Touchscreen phones/tablets can request a desktop-width viewport. Keep the Lore UI reflowed for touch devices in that mode too. */
+@media (any-pointer: coarse) and (min-width: 761px) and (max-width: 1100px) {
+  .lore-header{min-height:66px;padding:10px 16px;gap:10px;flex-wrap:wrap}
+  .lore-brand-mark{width:34px;height:34px}
+  .lore-header-nav{gap:4px}
+  .lore-header-nav a,.lore-interface-switch{min-height:44px;padding:8px 11px;font-size:12px}
+  .lore-interface-switch{margin-left:auto}
+  .lore-hero{width:calc(100% - 28px);min-height:0;margin-top:14px;grid-template-columns:minmax(0,1fr);gap:22px;padding:26px 20px}
+  .lore-hero h1{font-size:clamp(40px,7vw,65px)}
+  .lore-hero-lede{margin:15px 0 20px;font-size:15px}
+  .lore-hero-art{width:100%;max-width:720px;margin-inline:auto}
+  .lore-search-section{width:calc(100% - 28px);padding:17px;grid-template-columns:minmax(0,1fr);gap:8px}
+  .lore-progress-card{min-width:0;padding:9px 0 0;border:0;border-top:1px solid var(--lore-line-soft)}
+  .lore-region-section,.lore-archive-section,.lore-recent-section,.lore-reference-section{width:calc(100% - 28px);padding:48px 0}
+  .lore-region-rail{display:flex;overflow-x:auto;padding:2px 2px 10px;scroll-snap-type:x mandatory;scrollbar-width:thin}
+  .lore-region-card{flex:0 0 190px;min-height:104px;scroll-snap-align:start}
+  .lore-archive-section{padding-top:22px}
+  .lore-archive-layout{grid-template-columns:minmax(0,1fr);gap:14px}
+  .lore-category-panel{position:static}
+  .lore-category-heading{padding:12px 14px}
+  .lore-category-nav{display:flex;overflow-x:auto;gap:7px;scroll-snap-type:x proximity;scrollbar-width:thin;padding:10px}
+  .lore-category-button{flex:0 0 auto;width:auto;min-width:max-content;min-height:44px;justify-content:start;gap:8px;scroll-snap-align:start}
+  .lore-results-toolbar{align-items:flex-start;flex-direction:column;padding-bottom:13px}
+  .lore-toolbar-actions{width:100%}
+  .lore-toolbar-actions button{flex:1;min-height:44px}
+  .lore-card-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .lore-entry-card{min-height:0}
+  .lore-entry-image{height:clamp(116px,22vw,180px)}
+  .lore-entry-card-body{padding:12px}
+  .lore-entry-card h4{font-size:17px}
+  .lore-entry-card p{font-size:12px}
+  .lore-recent-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lore-reference-section{grid-template-columns:minmax(0,1fr);gap:18px}
+  .lore-footer{padding:36px 18px 0}
+  .lore-footer-main{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 18px}
+  .lore-footer-brand,.lore-footer-credits{grid-column:1/-1}
+  .lore-picker-options{grid-template-columns:minmax(0,1fr)}
+  .lore-picker-panel{padding:22px 20px}
+  .lore-preview{height:150px}
+  .lore-reader{width:calc(100% - 28px);padding:14px 0 42px}
+  .lore-reader-article{margin-top:18px;padding:clamp(22px,4vw,38px)}
+  .lore-reader-header{margin-bottom:22px}
+  .lore-reader-summary{font-size:16px}
+  .lore-reader-columns{grid-template-columns:minmax(0,1fr);gap:22px}
+  .lore-reader-body p{font-size:15px}
+  .lore-article-toc ol{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lore-related-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lore-site[data-lore-interface="core"] .lore-core-navigator{height:auto;min-height:0;padding:156px 12px 16px;overflow:hidden}
+  .lore-site[data-lore-interface="core"] .lore-core-circuit-lines{display:none}
+  .lore-site[data-lore-interface="core"] .lore-core-navigator::before{display:none}
+  .lore-site[data-lore-interface="core"] .lore-core-reactor{top:70px;width:142px;height:142px}
+  .lore-site[data-lore-interface="core"] .lore-core-reactor svg,.lore-site[data-lore-interface="core"] .lore-reactor-ring{animation:none}
+  .lore-site[data-lore-interface="core"] .lore-core-readout{display:none}
+  .lore-site[data-lore-interface="core"] #lore-regions{position:relative;inset:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+  .lore-site[data-lore-interface="core"] #lore-regions .lore-region-card,.lore-site[data-lore-interface="core"] #lore-regions .lore-region-card:nth-child(n){position:relative;top:auto;left:auto;width:100%;height:auto;min-height:70px;padding:10px;transform:none}
+  .lore-site[data-lore-interface="core"] #lore-regions .lore-region-card:hover,.lore-site[data-lore-interface="core"] #lore-regions .lore-region-card:focus-visible,.lore-site[data-lore-interface="core"] #lore-regions .lore-region-card[aria-pressed="true"]{transform:translateY(-2px)}
+  .lore-site[data-lore-interface="core"] .lore-core-hub-note{position:relative;top:auto;left:auto;justify-content:center;margin:13px 0 0;transform:none;white-space:normal;text-align:center}
+  .lore-site[data-lore-interface="core"] .lore-category-nav{display:flex;overflow-x:auto;gap:7px;padding:10px}
+  .lore-site[data-lore-interface="core"] .lore-category-nav::before{top:50%;right:18px;bottom:auto;left:18px;width:auto;height:1px}
+  .lore-site[data-lore-interface="core"] .lore-category-button{flex:0 0 auto;width:auto;min-width:max-content;min-height:44px;padding:8px 12px 8px 26px}
+}

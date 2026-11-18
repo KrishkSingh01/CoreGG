@@ -74,7 +74,7 @@ function makePage(entry) {
   <meta property="og:type" content="article"><meta property="og:site_name" content="CoreGG"><meta property="og:title" content="${esc(entry.title)} | CoreGG Teyvat Lore Archive"><meta property="og:description" content="${description}"><meta property="og:url" content="${canonical}">
   ${entry.image ? "<meta property=\"og:image\" content=\"" + site.baseUrl + "/" + esc(entry.image.path) + "\"><meta property=\"og:image:alt\" content=\"" + esc(entry.image.alt) + "\">" : ""}
   <meta name="twitter:card" content="${entry.image ? "summary_large_image" : "summary"}"><meta name="twitter:title" content="${esc(entry.title)}"><meta name="twitter:description" content="${description}">
-  <link rel="icon" href="../github-images-02/images--lore--coregg-lore-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../css/coregg-lore.css">
+  <link rel="icon" href="../github-images-02/images--lore--coregg-lore-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../css/coregg-lore.css?v=mobile-20261118">
   <script type="application/ld+json">${json(articleJson)}</script><script type="application/ld+json">${json(crumbs)}</script>
   <script src="../js/lore-entry.js" defer></script>
 </head>

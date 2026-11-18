@@ -348,8 +348,8 @@
 .lore-site[data-lore-interface="core"] .lore-core-navigator::before{content:"";position:absolute;top:50%;left:50%;width:77%;height:83%;transform:translate(-50%,-50%);border:1px solid rgba(0,243,255,.15);border-radius:50%;box-shadow:0 0 22px rgba(0,243,255,.035);pointer-events:none}
 @media(max-width:960px){.lore-site[data-lore-interface="core"] .lore-core-navigator::before{display:none}.lore-site[data-lore-interface="core"] .lore-core-reactor svg,.lore-site[data-lore-interface="core"] .lore-reactor-ring{animation:none}.lore-site-shell::before{background-position:center 35%}}
 
-/* Touchscreen phones/tablets can request a desktop-width viewport. Keep the Lore UI reflowed for touch devices in that mode too. */
-@media (any-pointer: coarse) and (min-width: 761px) and (max-width: 1100px) {
+/* Use a compact tablet layout for narrow viewports, including Android browsers requesting desktop-site width. */
+@media (min-width: 761px) and (max-width: 1100px) {
   .lore-header{min-height:66px;padding:10px 16px;gap:10px;flex-wrap:wrap}
   .lore-brand-mark{width:34px;height:34px}
   .lore-header-nav{gap:4px}

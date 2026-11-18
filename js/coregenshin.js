@@ -3488,7 +3488,7 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
         let replayTimer = 0;
         let archiveHadResults = true;
         const materialBubbleRevealTime = 0.60;
-        const materialAdSelector = 'ins.adsbygoogle, iframe, [id*="google_ads"], [id*="google_vignette"], [id*="aswift_"], [class*="monetag"], [id*="monetag"]';
+        const materialAdSelector = 'ins.adsbygoogle, iframe, [id*="google_ads"], [id*="google_vignette"], [id*="aswift_"], [class*="monetag"], [id*="monetag"], [id*="container-85e2c64c52b450fcf94f916544cdd28b"]';
         let materialAdObserver = null;
 
         function hideMaterialAdNodes(root) {

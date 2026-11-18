@@ -8,6 +8,14 @@ const esc = (value) => String(value == null ? "" : value).replace(/[&<>"']/g, (c
 const json = (value) => JSON.stringify(value).replace(/</g, "\\u003c");
 const regionName = (id) => (regions.find((item) => item.id === id) || {}).name || "Teyvat & Unknown";
 const categoryName = (id) => (categories.find((item) => item.id === id) || {}).name || "Archive Entry";
+const entryIndexById = new Map(entries.map((entry, index) => [entry.id, index]));
+const entryFolder = (entry) => {
+  const index = entryIndexById.get(entry.id);
+  if (index === undefined) throw new Error("Unknown Lore entry: " + entry.id);
+  const group = Math.floor(index / 99) + 1;
+  return group === 1 ? "entries" : "entries-" + String(group).padStart(2, "0");
+};
+const entryPath = (entry) => path.join("lore", entryFolder(entry), entry.slug + ".html");
 const titleCase = (text) => text ? text[0].toUpperCase() + text.slice(1) : "Canon";
 const anchorId = (text) => String(text).toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "section";
 const sourceLinks = (entry) => {
@@ -24,12 +32,15 @@ const buildPicker = `<div class="lore-interface-picker" id="lore-interface-picke
   <div class="lore-picker-backdrop" aria-hidden="true"></div><div class="lore-picker-panel"><p class="lore-kicker">Choose your reading experience</p><h2 id="lore-picker-title">Two ways to explore Teyvat</h2><p class="lore-picker-lede">Both interfaces use the same records and saved reading progress. You can switch styles any time.</p>
   <div class="lore-picker-options"><button class="lore-picker-option" type="button" data-interface-choice="archive"><span class="lore-preview lore-preview-archive" aria-hidden="true"><span class="lore-preview-top">TEYVAT ARCHIVE</span><span class="lore-preview-art"></span><span class="lore-preview-line"></span><span class="lore-preview-line short"></span><span class="lore-preview-card"></span></span><span class="lore-picker-option-title"><span>INTERFACE 01</span><strong>Teyvat Archive</strong><small>Deep navy, fine gold borders, and a quiet library feel.</small></span><span class="lore-picker-choose">Choose this interface <span aria-hidden="true">→</span></span></button><button class="lore-picker-option" type="button" data-interface-choice="core"><span class="lore-preview lore-preview-core" aria-hidden="true"><span class="lore-preview-top">COREGG / LORE</span><span class="lore-preview-orbit"><i></i><i></i><b>CORE</b></span><span class="lore-preview-line"></span><span class="lore-preview-line short"></span><span class="lore-preview-card"></span></span><span class="lore-picker-option-title"><span>INTERFACE 02</span><strong>Core Interface</strong><small>CoreGG’s futuristic blue background and golden accents.</small></span><span class="lore-picker-choose">Choose this interface <span aria-hidden="true">→</span></span></button></div><button class="lore-picker-cancel" id="lore-picker-cancel" type="button" hidden>Keep my current interface</button><p class="lore-picker-note">Your choice is saved in this browser when storage is available.</p></div></div><div class="lore-visually-hidden" id="lore-live-region" aria-live="polite" aria-atomic="true"></div>`;
 function makePage(entry) {
-  const canonical = site.baseUrl + "/lore/entries/" + entry.slug + ".html";
+  const canonical = site.baseUrl + "/" + entryPath(entry).split(path.sep).join("/");
   const imagePath = entry.image ? "../../" + entry.image.path : "";
   const imageMarkup = entry.image
     ? `<figure class="lore-reader-image"><img src="${esc(imagePath)}" width="${esc(entry.image.width || 1200)}" height="${esc(entry.image.height || 675)}" alt="${esc(entry.image.alt)}" loading="eager" decoding="async"><figcaption>${esc(entry.image.credit || "Genshin Impact Wiki / HoYoverse")} · <a href="${esc(entry.image.sourceUrl)}" target="_blank" rel="noopener noreferrer">image source</a></figcaption></figure>`
     : `<figure class="lore-reader-image lore-reader-image-empty"><div class="lore-image-fallback"><span aria-hidden="true">✧</span><strong>No Visual Record Available</strong><small>Source notes are available below.</small></div></figure>`;
-  const related = relatedEntries(entry).map((item) => `<a class="lore-related-card" href="./${esc(item.slug)}.html"><small>${esc(regionName(item.region))} · ${esc(categoryName(item.category))}</small><strong>${esc(item.title)}</strong><span>Read this record →</span></a>`).join("");
+  const related = relatedEntries(entry).map((item) => {
+    const href = entryFolder(item) === entryFolder(entry) ? "./" + item.slug + ".html" : "../" + entryFolder(item) + "/" + item.slug + ".html";
+    return '<a class="lore-related-card" href="' + esc(href) + '"><small>' + esc(regionName(item.region)) + " \u00b7 " + esc(categoryName(item.category)) + '</small><strong>' + esc(item.title) + '</strong><span>Read this record \u2192</span></a>';
+  }).join("");
   const articleJson = { "@context":"https://schema.org", "@type":"Article", headline:entry.title, description:entry.summary, datePublished:entry.addedOn, dateModified:entry.updatedOn || entry.addedOn, mainEntityOfPage:{"@type":"WebPage","@id":canonical}, author:{"@type":"Organization",name:"CoreGG"}, publisher:{"@type":"Organization",name:"CoreGG",url:site.baseUrl}, isBasedOn:entry.source.url, inLanguage:"en" };
   if (entry.image) articleJson.image = site.baseUrl + "/" + entry.image.path;
   const crumbs = { "@context":"https://schema.org", "@type":"BreadcrumbList", itemListElement:[
@@ -85,7 +96,7 @@ function makePage(entry) {
 </body></html>`;
 }
 for (const entry of entries) {
-  const destination = path.join(root, "lore", "entries", entry.slug + ".html");
+  const destination = path.join(root, entryPath(entry));
   fs.mkdirSync(path.dirname(destination), { recursive: true });
   fs.writeFileSync(destination, makePage(entry), "utf8");
 }

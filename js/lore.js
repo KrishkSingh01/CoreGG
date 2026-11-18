@@ -20,6 +20,13 @@
   var selectedInterface = safeGet("coregg:lore-interface");
   var state = { region: "all", category: "all", query: "", sort: "title", limit: 24 };
   var readProgress = parseProgress(safeGet("coregg:lore-reading:v1"));
+  var entryIndexById = Object.create(null);
+  data.entries.forEach(function (entry, index) { entryIndexById[entry.id] = index; });
+  function entryUrl(entry) {
+    var group = Math.floor(entryIndexById[entry.id] / 99) + 1;
+    var folder = group === 1 ? "entries" : "entries-" + ("0" + group).slice(-2);
+    return "./lore/" + folder + "/" + entry.slug + ".html";
+  }
   var returnFocus = null;
 
   function safeGet(key) { try { return window.localStorage.getItem(key); } catch (error) { return null; } }
@@ -191,7 +198,7 @@
     meta.append(metaLabel, createTag(entry.classification));
     if (entry.bookDetails && entry.bookDetails.volumeCount) { var volumes = document.createElement("small"); volumes.className = "lore-book-volume"; volumes.textContent = entry.bookDetails.volumeCount + (entry.bookDetails.volumeCount === 1 ? " volume" : " volumes"); meta.appendChild(volumes); }
     var heading = document.createElement("h4");
-    var link = document.createElement("a"); link.href = "./lore/entries/" + entry.slug + ".html"; link.textContent = entry.title; heading.appendChild(link);
+    var link = document.createElement("a"); link.href = entryUrl(entry); link.textContent = entry.title; heading.appendChild(link);
     var summary = document.createElement("p"); summary.textContent = entry.summary;
     var more = document.createElement("a"); more.className = "lore-entry-card-link"; more.href = link.href; more.textContent = "Read this record "; var arrow = document.createElement("span"); arrow.setAttribute("aria-hidden", "true"); arrow.textContent = "→"; more.appendChild(arrow);
     if (readProgress[entry.id] && Number(readProgress[entry.id].percent) >= 85) { var read = document.createElement("small"); read.className = "lore-read-mark"; read.textContent = "Read"; more.prepend(read); }
@@ -221,7 +228,7 @@
   function renderRecent() {
     recentRoot.replaceChildren();
     data.entries.slice().sort(function (a, b) { return String(b.addedOn || "").localeCompare(String(a.addedOn || "")) || b.title.localeCompare(a.title); }).slice(0, 4).forEach(function (entry) {
-      var card = document.createElement("a"); card.className = "lore-recent-card"; card.href = "./lore/entries/" + entry.slug + ".html";
+      var card = document.createElement("a"); card.className = "lore-recent-card"; card.href = entryUrl(entry);
       var region = getRegion(entry.region); var label = document.createElement("small"); label.textContent = (region ? region.name : "Teyvat") + " · Added " + formatDate(entry.addedOn);
       var title = document.createElement("strong"); title.textContent = entry.title;
       var arrow = document.createElement("span"); arrow.textContent = "Open archive record →";
@@ -242,7 +249,7 @@
   searchForm.addEventListener("submit", function (event) { event.preventDefault(); state.query = searchInput.value.trim(); state.sort = "title"; state.limit = 24; renderCategories(); renderCards(); document.getElementById("archive").scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" }); });
   searchInput.addEventListener("input", function () { state.query = searchInput.value.trim(); state.sort = "title"; state.limit = 24; renderCategories(); renderCards(); });
   document.getElementById("lore-recent-button").addEventListener("click", function (event) { state.sort = state.sort === "recent" ? "title" : "recent"; state.limit = 24; event.currentTarget.textContent = state.sort === "recent" ? "Sort by title" : "Recently added"; renderCards(); });
-  document.getElementById("lore-random-button").addEventListener("click", function () { var choices = getFilteredEntries(); if (!choices.length) choices = data.entries.slice(); var entry = choices[Math.floor(Math.random() * choices.length)]; if (entry) window.location.href = "./lore/entries/" + entry.slug + ".html"; });
+  document.getElementById("lore-random-button").addEventListener("click", function () { var choices = getFilteredEntries(); if (!choices.length) choices = data.entries.slice(); var entry = choices[Math.floor(Math.random() * choices.length)]; if (entry) window.location.href = entryUrl(entry); });
   document.getElementById("lore-clear-filters").addEventListener("click", function () { state.region = "all"; state.category = "all"; state.query = ""; state.sort = "title"; state.limit = 24; searchInput.value = ""; updateRegionBackdrop("all"); regionsRoot.querySelectorAll("[data-region]").forEach(function (item) { item.setAttribute("aria-pressed", String(item.dataset.region === "all")); }); renderCategories(); renderCards(); });
   if (loadMoreButton) loadMoreButton.addEventListener("click", function () { state.limit += 24; renderCards(); });
   updateReadSummary(); renderRegions(); updateRegionBackdrop(state.region); renderCategories(); renderCards(); renderRecent();

@@ -2,8 +2,13 @@
   "use strict";
 
   document.documentElement.classList.add("cg-build-nav-js");
-  const toggle = document.getElementById("coregenshinMenuToggle");
-  const nav = document.getElementById("coregenshinPrimaryNav");
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const lowPowerDevice = window.matchMedia("(max-width: 720px)").matches
+    || (typeof navigator.deviceMemory === "number" && navigator.deviceMemory <= 4)
+    || Boolean(navigator.connection && navigator.connection.saveData);
+  if (reducedMotion || lowPowerDevice) document.documentElement.classList.add("cg-lite-fx");
+  const toggle = document.getElementById("cgMenuToggle");
+  const nav = document.getElementById("cgPrimaryNav");
   const materialsButton = document.getElementById("materialsNavBtn");
   const materialsPanel = document.getElementById("materialsExperience");
   const archiveIntro = document.getElementById("archiveIntro");
@@ -12,21 +17,21 @@
     toggle.addEventListener("click", function () {
       const open = toggle.getAttribute("aria-expanded") !== "true";
       toggle.setAttribute("aria-expanded", String(open));
-      toggle.setAttribute("aria-label", open ? "Close CoreGenshin navigation" : "Open CoreGenshin navigation");
+      toggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
       nav.classList.toggle("is-open", open);
     });
     nav.addEventListener("click", function (event) {
       if (event.target.closest("a") || event.target.closest("#materialsNavBtn")) {
         nav.classList.remove("is-open");
         toggle.setAttribute("aria-expanded", "false");
-        toggle.setAttribute("aria-label", "Open CoreGenshin navigation");
+        toggle.setAttribute("aria-label", "Open navigation");
       }
     });
     document.addEventListener("keydown", function (event) {
       if (event.key === "Escape" && nav.classList.contains("is-open")) {
         nav.classList.remove("is-open");
         toggle.setAttribute("aria-expanded", "false");
-        toggle.setAttribute("aria-label", "Open CoreGenshin navigation");
+        toggle.setAttribute("aria-label", "Open navigation");
         toggle.focus();
       }
     });

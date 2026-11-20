@@ -498,9 +498,9 @@
   .lore-reader-columns { grid-template-columns: minmax(0,1fr); }
   .lore-reader-factbox { position: static; }
   .lore-reference-section { grid-template-columns: minmax(0,1fr); }
-  .lore-site[data-lore-interface="core"] .lore-core-navigator { height: auto; min-height: 0; padding: 156px 14px 18px; }
+  .lore-site[data-lore-interface="core"] .lore-core-navigator { height: auto; min-height: 0; padding: 148px 14px 18px; }
   .lore-site[data-lore-interface="core"] .lore-core-circuit-lines { display: none; }
-  .lore-site[data-lore-interface="core"] .lore-core-reactor { top: 70px; width: 142px; height: 142px; }
+  .lore-site[data-lore-interface="core"] .lore-core-reactor { top: 12px; width: 120px; height: 120px; }
   .lore-site[data-lore-interface="core"] .lore-core-reactor svg,
   .lore-site[data-lore-interface="core"] .lore-reactor-ring { animation: none; }
   .lore-site[data-lore-interface="core"] .lore-core-readout { display: none; }

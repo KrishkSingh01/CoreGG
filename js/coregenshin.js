@@ -356,17 +356,23 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
 
         const liveBg = document.getElementById('liveBg');
         const moteColors = ['#e6c875', '#00bfff', '#20b2aa', '#cca574', '#8a2be2', '#ece5d8'];
-        for (let i = 0; i < 22; i++) {
-            const mote = document.createElement('div');
-            mote.className = 'mote';
-            const size = Math.random() * 4 + 2;
-            mote.style.width = `${size}px`;
-            mote.style.height = `${size}px`;
-            mote.style.left = `${Math.random() * 100}%`;
-            mote.style.color = moteColors[Math.floor(Math.random() * moteColors.length)];
-            mote.style.animationDuration = `${Math.random() * 14 + 10}s`;
-            mote.style.animationDelay = `${Math.random() * 8}s`;
-            liveBg.appendChild(mote);
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const lowPowerDevice = window.matchMedia('(max-width: 720px)').matches
+            || (typeof navigator.deviceMemory === 'number' && navigator.deviceMemory <= 4)
+            || Boolean(navigator.connection && navigator.connection.saveData);
+        if (!reducedMotion && !lowPowerDevice && liveBg) {
+            for (let i = 0; i < 22; i++) {
+                const mote = document.createElement('div');
+                mote.className = 'mote';
+                const size = Math.random() * 4 + 2;
+                mote.style.width = `${size}px`;
+                mote.style.height = `${size}px`;
+                mote.style.left = `${Math.random() * 100}%`;
+                mote.style.color = moteColors[Math.floor(Math.random() * moteColors.length)];
+                mote.style.animationDuration = `${Math.random() * 14 + 10}s`;
+                mote.style.animationDelay = `${Math.random() * 8}s`;
+                liveBg.appendChild(mote);
+            }
         }
 
         const characters = [
@@ -3462,21 +3468,21 @@ const PLACEHOLDER_IMG = "https://imgs.search.brave.com/jNSHTC95w0LTB5G03ugTbOUsP
         const materialsContinueButton = document.getElementById('materialsContinueButton');
 
         const columbinaMaterialCatalog = {
-            mora: { name: 'Mora', icon: './github-images-02/images--mora.png', short: 'M' },
-            winter: { name: 'Winter Icelea', icon: './github-images-02/images--winter-icelea.png', short: 'WI' },
-            sliver: { name: 'Varunada Lazurite Sliver', icon: './github-images-04/media--columbina--materials--varunada-sliver.png', short: 'VS' },
-            fragment: { name: 'Varunada Lazurite Fragment', icon: './github-images-04/media--columbina--materials--varunada-fragment.png', short: 'VF' },
-            chunk: { name: 'Varunada Lazurite Chunk', icon: './github-images-04/media--columbina--materials--varunada-chunk.png', short: 'VC' },
-            gemstone: { name: 'Varunada Lazurite Gemstone', icon: './github-images-04/media--columbina--materials--varunada-gemstone.png', short: 'VG' },
-            condensate: { name: 'Slime Condensate', icon: './github-images-04/media--columbina--materials--slime-condensate.png', short: 'SC' },
-            secretions: { name: 'Slime Secretions', icon: './github-images-04/media--columbina--materials--slime-secretions.png', short: 'SS' },
-            concentrate: { name: 'Slime Concentrate', icon: './github-images-04/media--columbina--materials--slime-concentrate.png', short: 'SX' },
-            antler: { name: 'Radiant Antler', icon: './github-images-04/media--columbina--materials--radiant-antler.png', short: 'RA' },
-            teachings: { name: 'Teachings of Moonlight', icon: './github-images-04/media--columbina--materials--teachings-moonlight.png', short: 'TM' },
-            guide: { name: 'Guide to Moonlight', icon: './github-images-04/media--columbina--materials--guide-moonlight.png', short: 'GM' },
-            philosophies: { name: 'Philosophies of Moonlight', icon: './github-images-04/media--columbina--materials--philosophies-moonlight.png', short: 'PM' },
-            mask: { name: 'Mask of the Virtuous Doctor', icon: './github-images-04/media--columbina--materials--mask-virtuous-doctor.png', short: 'MD' },
-            crown: { name: 'Crown of Insight', icon: './github-images-04/media--columbina--materials--crown-insight.png', short: 'CI' }
+            mora: { name: 'Mora', icon: './genshin-materials-columbina/mora.png', short: 'M' },
+            winter: { name: 'Winter Icelea', icon: './genshin-materials-columbina/winter-icelea.png', short: 'WI' },
+            sliver: { name: 'Varunada Lazurite Sliver', icon: './genshin-materials-columbina/varunada-sliver.png', short: 'VS' },
+            fragment: { name: 'Varunada Lazurite Fragment', icon: './genshin-materials-columbina/varunada-fragment.png', short: 'VF' },
+            chunk: { name: 'Varunada Lazurite Chunk', icon: './genshin-materials-columbina/varunada-chunk.png', short: 'VC' },
+            gemstone: { name: 'Varunada Lazurite Gemstone', icon: './genshin-materials-columbina/varunada-gemstone.png', short: 'VG' },
+            condensate: { name: 'Slime Condensate', icon: './genshin-materials-columbina/slime-condensate.png', short: 'SC' },
+            secretions: { name: 'Slime Secretions', icon: './genshin-materials-columbina/slime-secretions.png', short: 'SS' },
+            concentrate: { name: 'Slime Concentrate', icon: './genshin-materials-columbina/slime-concentrate.png', short: 'SX' },
+            antler: { name: 'Radiant Antler', icon: './genshin-materials-columbina/radiant-antler.png', short: 'RA' },
+            teachings: { name: 'Teachings of Moonlight', icon: './genshin-materials-columbina/teachings-moonlight.png', short: 'TM' },
+            guide: { name: 'Guide to Moonlight', icon: './genshin-materials-columbina/guide-moonlight.png', short: 'GM' },
+            philosophies: { name: 'Philosophies of Moonlight', icon: './genshin-materials-columbina/philosophies-moonlight.png', short: 'PM' },
+            mask: { name: 'Mask of the Virtuous Doctor', icon: './genshin-materials-columbina/mask-virtuous-doctor.png', short: 'MD' },
+            crown: { name: 'Crown of Insight', icon: './genshin-materials-columbina/crown-insight.png', short: 'CI' }
         };
 
         const columbinaMaterialIconCache = new Map();

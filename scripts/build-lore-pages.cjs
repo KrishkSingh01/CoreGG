@@ -54,44 +54,15 @@ function makePage(entry) {
   let guideSections;
   if (guide && guide.length > 0) {
     guideSections = guide;
-  } else if (entry.bookDetails) {
-    const bodyParagraphs = Array.isArray(entry.body) ? entry.body : (entry.body ? [entry.body] : []);
-    guideSections = [
-      {
-        heading: "Synopsis & Archival Overview",
-        paragraphs: [entry.summary, ...(bodyParagraphs.slice(0, 2))]
-      },
-      {
-        heading: "Lore Significance & Narrative Themes",
-        paragraphs: bodyParagraphs.length > 2
-          ? bodyParagraphs.slice(2)
-          : [
-              `As part of ${regionName(entry.region)}'s literary and historical heritage, "${entry.title}" provides vital cultural context and perspective on regional traditions, folklore, and historical events.`,
-              "Scholars and travelers often consult such works to understand how ordinary citizens, chroniclers, and storytellers interpret the divine interventions, elemental anomalies, and major societal shifts that have shaped Teyvat over millennia."
-            ]
-      },
-      {
-        heading: "Archival Record & Critical Analysis",
-        paragraphs: [
-          `"${entry.title}" is classified in the archive as a ${entry.bookDetails.recordType || "written record"} from ${regionName(entry.region)}${entry.bookDetails.author ? ` attributed to ${entry.bookDetails.author}` : ""}${entry.bookDetails.volumeCount ? `, comprising ${entry.bookDetails.volumeCount} volume${entry.bookDetails.volumeCount > 1 ? "s" : ""}` : ""}.`,
-          "In Genshin Impact, written records span a wide spectrum from literal historical documentation to mythological allegories, theatrical fiction, and speculative treatises. When analyzing texts from the in-game Archive, players should consider the narrator's vantage point, biases, and historical era. Allegorical tales often veil profound truths regarding the Primordial One, the Seelie race, the Cataclysm, or the Heavenly Principles beneath poetic metaphors."
-        ]
-      },
-      {
-        heading: "In-Game Text & Archive Sources",
-        paragraphs: [
-          `To read the complete unabridged text in Genshin Impact, inspect the Books tab in the Archive menu or collect physical volumes scattered throughout ${regionName(entry.region)} (frequently found in libraries, bookstands, quest locations, or purchased from regional book merchants).`,
-          "The source references linked below direct to verified community archive records on the Genshin Impact Wiki and HoYoWiki, detailing exact volume coordinates, achievement associations, and dialogue prompts."
-        ]
-      }
-    ];
   } else {
-    guideSections = [
-      { heading: "Archive Overview", paragraphs: [entry.summary] },
-      { heading: "Detailed Record", paragraphs: Array.isArray(entry.body) ? entry.body : [entry.body] }
-    ];
+    const rawBody = Array.isArray(entry.body) ? entry.body : (entry.body ? [entry.body] : []);
+    const summary = String(entry.summary || '').trim();
+    const details = rawBody.map((item) => String(item == null ? '' : item).trim()).filter((item) => item && item !== summary);
+    guideSections = [];
+    if (summary) guideSections.push({ heading: entry.bookDetails ? 'Record overview' : 'Overview', paragraphs: [summary] });
+    if (details.length) guideSections.push({ heading: entry.bookDetails ? 'Catalog notes' : 'Documented details', paragraphs: details });
+    if (!guideSections.length) throw new Error('Lore entry has no guide, summary, or body: ' + entry.id);
   }
-
   const toc = guideSections.length > 2 ? `<nav class="lore-article-toc" aria-label="On this page"><strong>On this page</strong><ol>${guideSections.map((section) => `<li><a href="#guide-${anchorId(section.heading)}">${esc(section.heading)}</a></li>`).join("")}</ol></nav>` : "";
   const guideMarkup = guideSections.map((section) => `<section class="lore-guide-section" id="guide-${anchorId(section.heading)}"><h2>${esc(section.heading)}</h2>${section.paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}</section>`).join("\n");
   const visibleSummary = esc(entry.summary);
@@ -108,7 +79,7 @@ function makePage(entry) {
   <meta property="og:type" content="article"><meta property="og:site_name" content="CoreGG"><meta property="og:title" content="${esc(entry.title)} | CoreGG Teyvat Lore Archive"><meta property="og:description" content="${description}"><meta property="og:url" content="${canonical}">
   ${entry.image ? "<meta property=\"og:image\" content=\"" + site.baseUrl + "/" + esc(entry.image.path) + "\"><meta property=\"og:image:alt\" content=\"" + esc(entry.image.alt) + "\">" : ""}
   <meta name="twitter:card" content="${entry.image ? "summary_large_image" : "summary"}"><meta name="twitter:title" content="${esc(entry.title)}"><meta name="twitter:description" content="${description}">
-  <link rel="icon" href="../github-images-02/images--lore--coregg-lore-mark.svg" type="image/svg+xml">
+  <link rel="icon" href="../lore-brand/coregg-lore-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../css/coregg-lore.css?v=20261118-5">
   <link rel="stylesheet" href="../css/coregg-lore-redesign.css?v=20261118-3">
   <script type="application/ld+json">${json(articleJson)}</script><script type="application/ld+json">${json(crumbs)}</script>
@@ -129,13 +100,20 @@ function makePage(entry) {
       <section class="lore-related-section" aria-labelledby="lore-related-heading"><h2 id="lore-related-heading">Related lore</h2><div class="lore-related-grid">${related || "<p>More related records will appear as the archive grows.</p>"}</div></section>
     </article>
   </main>
-  <footer class="lore-footer"><div class="lore-footer-main"><section class="lore-footer-brand"><a href="../lore.html#home" class="lore-footer-logo">COREGG <span>LORE ARCHIVE</span></a><p>An independent gaming archive exploring the worlds, stories and details of Genshin Impact.</p><small>© 2026 CoreGG. Original archive reading guides and website design.</small></section><nav class="lore-footer-column" aria-label="Explore"><h2>Explore</h2><a href="../lore.html#home">Home</a><a href="../lore.html#archive">Teyvat Archive</a><a href="../index.html">Back to CoreGG</a></nav><nav class="lore-footer-column" aria-label="Resources"><h2>Resources</h2><a href="https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki" target="_blank" rel="noopener noreferrer">Genshin Wiki</a><a href="https://wiki.hoyolab.com/pc/genshin/aggregate/book?crawler=Googlebot&amp;game_id=" target="_blank" rel="noopener noreferrer">HoYoWiki · Books</a><a href="../lore.html#references">Sources &amp; References</a><a href="../lore.html#about">About the Archive</a><a href="https://www.buymeacoffee.com/otaku_krishna" target="_blank" rel="noopener noreferrer">Support CoreGG</a><a href="https://www.instagram.com/otaku_krishna1/" target="_blank" rel="noopener noreferrer">Support &amp; Feedback</a></nav><section class="lore-footer-credits"><h2>Credits</h2><p>Genshin Impact Wiki / Fandom is credited for referenced information and linked image sources. HoYoverse created Genshin Impact and its original game content. CoreGG created this archive’s original design, organization, and reading guides.</p><p class="lore-disclaimer">CoreGG is an independent fan-made project and is not affiliated with, endorsed by or sponsored by HoYoverse. Genshin Impact and its associated characters, artwork and assets belong to their respective rights holders.</p></section></div><div class="lore-footer-bottom"><span>Built for curious Travelers</span><a href="../privacy.html">Privacy policy</a></div></footer>
+  <footer class="lore-footer"><div class="lore-footer-main"><section class="lore-footer-brand"><a href="../lore.html#home" class="lore-footer-logo">COREGG <span>LORE ARCHIVE</span></a><p>Original reading guides to Genshin Impact quests, books, characters, and places, with links to the sources.</p><small>© 2026 CoreGG. Original archive reading guides and website design.</small></section><nav class="lore-footer-column" aria-label="Explore"><h2>Explore</h2><a href="../lore.html#home">Home</a><a href="../lore.html#archive">Teyvat Archive</a><a href="../index.html">Back to CoreGG</a></nav><nav class="lore-footer-column" aria-label="Resources"><h2>Resources</h2><a href="https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki" target="_blank" rel="noopener noreferrer">Genshin Wiki</a><a href="https://wiki.hoyolab.com/pc/genshin/aggregate/book?crawler=Googlebot&amp;game_id=" target="_blank" rel="noopener noreferrer">HoYoWiki · Books</a><a href="../lore.html#references">Sources &amp; References</a><a href="../lore.html#about">About the Archive</a><a href="https://www.buymeacoffee.com/otaku_krishna" target="_blank" rel="noopener noreferrer">Support CoreGG</a><a href="https://www.instagram.com/otaku_krishna1/" target="_blank" rel="noopener noreferrer">Support &amp; Feedback</a></nav><section class="lore-footer-credits"><h2>Credits</h2><p>Genshin Impact Wiki / Fandom is credited for referenced information and linked image sources. HoYoverse created Genshin Impact and its original game content. CoreGG created this archive’s original design, organization, and reading guides.</p><p class="lore-disclaimer">CoreGG is an independent fan-made project and is not affiliated with, endorsed by or sponsored by HoYoverse. Genshin Impact and its associated characters, artwork and assets belong to their respective rights holders.</p></section></div><div class="lore-footer-bottom"><span>Source-linked Genshin lore</span><a href="../privacy.html">Privacy policy</a></div></footer>
   </div>${buildPicker}
 </body></html>`;
 }
-for (const entry of entries) {
+const requestedEntryId = process.argv[2] || null;
+const selectedEntries = requestedEntryId ? entries.filter((entry) => entry.id === requestedEntryId) : entries;
+if (requestedEntryId && selectedEntries.length !== 1) throw new Error("Unknown Lore entry id: " + requestedEntryId);
+for (const entry of selectedEntries) {
   const destination = path.join(root, entryPath(entry));
   fs.mkdirSync(path.dirname(destination), { recursive: true });
-  fs.writeFileSync(destination, makePage(entry), "utf8");
+  const html = makePage(entry).replace(
+    /<nav class="lore-footer-column" aria-label="Resources">[\s\S]*?<\/nav>/,
+    '<nav class="lore-footer-column" aria-label="Resources"><h2>Archive</h2><a href="../lore.html#references">Sources &amp; References</a><a href="../lore.html#about">About the Archive</a><a href="../lore.html#archive">Browse the archive</a><a href="https://www.buymeacoffee.com/otaku_krishna" target="_blank" rel="noopener noreferrer">Support CoreGG</a><a href="https://www.instagram.com/otaku_krishna1/" target="_blank" rel="noopener noreferrer">Support &amp; Feedback</a></nav>'
+  );
+  fs.writeFileSync(destination, html, "utf8");
 }
-console.log("Generated " + entries.length + " source-linked lore pages.");
+console.log("Generated " + selectedEntries.length + " source-linked lore pages.");

@@ -5,20 +5,26 @@ const root = fs.existsSync(path.join(__dirname, "js", "lore-data.js")) ? __dirna
 const data = require(path.join(root, "js/lore-data.js"));
 const baseUrl = data.site.baseUrl;
 const xmlPath = path.join(root, "sitemap.xml");
-const source = fs.readFileSync(xmlPath, "utf8");
 const staticEntries = new Map();
-for (const match of source.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
-  const block = match[1];
-  const value = (tag) => (block.match(new RegExp(`<${tag}>([\\s\\S]*?)<\\/${tag}>`)) || [])[1] || "";
-  const loc = value("loc").trim();
-  if (!loc || loc === baseUrl + "/lore.html" || /\/(?:lore\/entries(?:-\d+)?|lore-entries-\d+)\//.test(loc)) continue;
-  staticEntries.set(loc, { loc, lastmod: value("lastmod").trim() || "2026-11-18", changefreq: value("changefreq").trim() || "monthly", priority: Number(value("priority").trim()) || 0.5 });
-}
 const fileDate = (relative) => {
   const file = path.join(root, relative);
   if (!fs.existsSync(file)) throw new Error(`Sitemap target is missing: ${relative}`);
   return new Date(fs.statSync(file).mtimeMs).toISOString().slice(0, 10);
 };
+const staticPages = [
+  { file: "index.html", route: "/", priority: 1.0 },
+  { file: "coregenshin.html", route: "/coregenshin", priority: 0.8 },
+  { file: "coregenshin-builds.html", route: "/coregenshin-builds", priority: 0.8 },
+  { file: "coreminecraft.html", route: "/coreminecraft", priority: 0.6 },
+  { file: "coreminecraftbedrock.html", route: "/coreminecraftbedrock", priority: 0.6 },
+  { file: "coreminecraftpro.html", route: "/coreminecraftpro", priority: 0.6 },
+  { file: "minecraft-bedrock-professional.html", route: "/minecraft-bedrock-professional", priority: 0.6 },
+  { file: "privacy.html", route: "/privacy", priority: 0.4 }
+];
+for (const page of staticPages) {
+  const loc = baseUrl + page.route;
+  staticEntries.set(loc, { loc, lastmod: fileDate(page.file), changefreq: "monthly", priority: page.priority });
+}
 for (let index = 0; index < data.entries.length; index += 1) {
   const entry = data.entries[index];
   const folder = "lore-entries-" + String(Math.floor(index / 66) + 1).padStart(2, "0");

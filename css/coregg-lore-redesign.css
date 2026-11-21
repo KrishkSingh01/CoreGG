@@ -382,6 +382,27 @@
 .lore-reader-topbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 12px; }
 .lore-reader-topbar .lore-reader-crumbs { flex: 1 1 auto; }
 .lore-reader-topbar .lore-interface-switch { flex-shrink: 0; }
+.lore-reader-back {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 15px;
+  border: 1px solid var(--lore-line);
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(217,184,117,.14), rgba(217,184,117,.04));
+  color: var(--lore-gold-bright);
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color .18s ease, border-color .18s ease, transform .18s ease;
+}
+.lore-reader-back:hover,
+.lore-reader-back:focus-visible { border-color: var(--lore-gold-bright); background-color: rgba(217,184,117,.13); transform: translateY(-1px); }
+.lore-reader-back-arrow { font-size: 17px; line-height: 1; }
+.lore-reader-return { display: flex; justify-content: center; margin: 28px auto 0; }
 .lore-reader-crumbs { gap: 10px; padding: 5px 2px; font-size: 11px; }
 .lore-reader-article {
   margin-top: 18px;

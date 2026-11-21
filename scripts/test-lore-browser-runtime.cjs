@@ -120,6 +120,12 @@ assert.ok(html.includes('<a href="./coregenshin.html">Home</a>') && fs.existsSyn
   "the Lore Home link should open the CoreGenshin home page");
 const homePage = fs.readFileSync(path.join(root, "coregenshin.html"), "utf8");
 const buildsPage = fs.readFileSync(path.join(root, "coregenshin-builds.html"), "utf8");
+for (const [index, entry] of data.entries.entries()) {
+  const folder = `lore-entries-${String(Math.floor(index / 66) + 1).padStart(2, "0")}`;
+  const page = fs.readFileSync(path.join(root, folder, `${entry.slug}.html`), "utf8");
+  assert.equal((page.match(/class="lore-reader-back" href="\.\.\/lore\.html#archive"/g) || []).length, 2,
+    `${entry.slug} should have a top and bottom back-to-selection link`);
+}
 for (const [name, page] of [["CoreGenshin home", homePage], ["CoreGenshin builds", buildsPage]]) {
   assert.ok(page.includes("https://www.buymeacoffee.com/otaku_krishna"), `${name} header should include Support`);
   assert.ok(page.includes("https://www.instagram.com/otaku_krishna1/"), `${name} header should include Feedback`);
